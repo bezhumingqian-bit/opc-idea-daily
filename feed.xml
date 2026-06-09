@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>OPC IDEA 日报</title>
+  <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
+  <description>每天推送 3 条一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
+  <language>zh-CN</language>
+  <lastBuildDate>Tue, 09 Jun 2026 09:34:00 +0800</lastBuildDate>
+  <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 01 · 本地商家 GEO（AI 搜索）优化服务</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/#idea-01</link>
+    <description>帮餐饮/家政/教培等本地商家优化在 DeepSeek、豆包、Kimi、文小言等 AI 搜索结果里的曝光排名。痛点：80% 中小商家完全不懂 AI 搜索时代的优化逻辑。Next Step：第 1 周调研 3 个本地行业各 10 家头部商家，第 3-4 周定价 1000-3000 元/月。</description>
+    <pubDate>Tue, 09 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-001-01</guid>
+    <category>GEO / 本地服务</category>
+  </item>
+
+  <item>
+    <title>IDEA 02 · 垂直 AI Agent 代搭建服务（中国版）</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/#idea-02</link>
+    <description>基于扣子、Dify、Coze 为跨境电商、宠物医院、房产中介搭建定制 Agent，按"搭建费 + 月费"收费。一次性 5000-2 万 + 月费 500-2000，客户粘性极高。</description>
+    <pubDate>Tue, 09 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-001-02</guid>
+    <category>垂直 Agent</category>
+  </item>
+
+  <item>
+    <title>IDEA 03 · Niche Research Agent（独立开发者工具）</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/#idea-03</link>
+    <description>给一个关键词/App 名/赛道，自动分析竞品、关键词排名、用户评论 sentiment、市场缺口。$29-99/月，target 500-1000 个 indie maker 客户。</description>
+    <pubDate>Tue, 09 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-001-03</guid>
+    <category>Indie Tool</category>
+  </item>
+
+  <item>
+    <title>IDEA 04 · AI 截图 / PDF / HTML-to-Image API</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/#idea-04</link>
+    <description>面向开发者的轻量 API，按调用次数计费。Sarah Chen 的 ScreenshotAPI 10 个月做到 $10K MRR 已被验证。$5K-50K MRR 区间。</description>
+    <pubDate>Tue, 09 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-001-04</guid>
+    <category>Developer API</category>
+  </item>
+
+  <item>
+    <title>IDEA 05 · 垂直 CRM（健身 / 纹身 / 婚礼策划师）</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/#idea-05</link>
+    <description>为被通用 CRM 忽略的小行业做一个"啥都帮你想到了"的客户管理工具。Lovable / Bubble 可搞定，2-3 周可 MVP。</description>
+    <pubDate>Tue, 09 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-001-05</guid>
+    <category>Vertical SaaS</category>
+  </item>
+
+  <item>
+    <title>IDEA 06 · Uptime 监控 + 品牌化状态页（双线）</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/#idea-06</link>
+    <description>开发者友好的极简监控工具，自动生成可对外公开的品牌化状态页。$3K-40K MRR。uptime-kuma 8.6 万 stars 已验证需求。</description>
+    <pubDate>Tue, 09 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-001-06</guid>
+    <category>Dev Tool</category>
+  </item>
+
+  <item>
+    <title>IDEA 07 · Invoice 收款自动化（自由职业者 / 中小 Agency）</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/#idea-07</link>
+    <description>自动按礼貌节奏催收未付发票，集成 Stripe / PayPal。自动催款可将平均回款时间从 45 天降到 18 天。</description>
+    <pubDate>Tue, 09 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-001-07</guid>
+    <category>Fintech</category>
+  </item>
+
+  <item>
+    <title>IDEA 08 · CLAUDE.md / Skill / Sub-agent 模板包销售</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/#idea-08</link>
+    <description>把"行业专属 CLAUDE.md 提示词包"做成一次付费 $19-49 的数字资产。新品类，类似当年 SEO 关键词库。</description>
+    <pubDate>Tue, 09 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-001-08</guid>
+    <category>数字资产</category>
+  </item>
+
+  <item>
+    <title>IDEA 09 · Premium Niche Newsletter（付费邮件订阅）</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/#idea-09</link>
+    <description>5000-20000 订户即可年入 $60K-1.2M。大众 Newsletter 饱和，垂直细分每周都有新机会。</description>
+    <pubDate>Tue, 09 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-001-09</guid>
+    <category>Content</category>
+  </item>
+
+  <item>
+    <title>IDEA 10 · AI 短剧 / 播客 / 音频内容工厂</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/#idea-10</link>
+    <description>用 AI 全流程（脚本 → 配音 → 剪辑 → 字幕）生成内容，按集/按分钟计费。声音经济 2025 年规模 6110 亿。</description>
+    <pubDate>Tue, 09 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-001-10</guid>
+    <category>Content Factory</category>
+  </item>
+
+  <item>
+    <title>IDEA 11 · TrustMRR / DataFast 模式（横向产品堆）</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/#idea-11</link>
+    <description>Marc Lou 4 个产品月营收 $80K。Boilerplate 共享是护城河，新产品 7-14 天上线。</description>
+    <pubDate>Tue, 09 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-001-11</guid>
+    <category>横向产品堆</category>
+  </item>
+
+  <item>
+    <title>IDEA 12 · Polsia 类 Agent 编排平台</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/#idea-12</link>
+    <description>让用户用 Agent 跑公司（战略 + 代码 + 客服 + 营销），$49/月订阅。Polsia 已验证 30 天 $1M ARR。</description>
+    <pubDate>Tue, 09 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-001-12</guid>
+    <category>高 ARR / 高难度</category>
+  </item>
+</channel>
+</rss>

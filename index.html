@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OPC IDEA 日报 · 2026-06-09</title>
 <meta name="description" content="每天推送 3 条 OPC（一人公司）方向的精筛 IDEA，周末合并为深度版。独立开发者 / solopreneur / 创业探索者专用。">
+<meta name="theme-color" content="#8b6f47">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="OPC IDEA">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="alternate" type="application/rss+xml" title="OPC IDEA 日报" href="feed.xml">
 <style>
   :root {
     --bg: #faf8f3;
@@ -679,5 +686,15 @@
 </footer>
 
 </div>
+<script>
+  // Register Service Worker for PWA offline support
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js').catch(err => {
+        console.warn('[OPC] SW registration failed:', err);
+      });
+    });
+  }
+</script>
 </body>
 </html>

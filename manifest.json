@@ -1,0 +1,36 @@
+{
+  "name": "OPC IDEA 日报",
+  "short_name": "OPC",
+  "description": "每天 09:00 推送 3 条一人公司（One-Person Company）方向的精筛 IDEA",
+  "start_url": "/opc-idea-daily/",
+  "scope": "/opc-idea-daily/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#faf8f3",
+  "theme_color": "#8b6f47",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "/opc-idea-daily/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/opc-idea-daily/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "business", "news"],
+  "share_target": {
+    "action": "/opc-idea-daily/share",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
+}
