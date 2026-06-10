@@ -2,11 +2,38 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>OPC IDEA 日报 · 2026年6月10日 · 公众号版</title>
+<style>
+  .copy-bar {
+    position: fixed; top:0; left:0; right:0; z-index:999;
+    background:#FAF7EE; border-bottom:1px solid #E6E1D6;
+    padding:14px 20px; text-align:center;
+  }
+  .copy-bar button {
+    padding:10px 28px;
+    background:#5F5B53; color:#FFFEFC; border:none;
+    border-radius:2px; font-size:14px; font-weight:500;
+    cursor:pointer; letter-spacing:1px;
+    font-family: -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  }
+  .copy-bar button:hover { background:#4A4740; }
+  .copy-bar button.copied { background:#4A6741; }
+  .copy-bar .hint {
+    font-size:12px; color:#7A766C; margin-top:6px; letter-spacing:0.5px;
+    font-family: -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  }
+  #copy-target { padding:70px 0 0; }
+</style>
 </head>
 <body style="margin:0;padding:0;background:#F5F1E8;">
 
-<!-- ⚠️ 公众号正文：请直接复制下面 table 的全部内容粘贴到公众号编辑器 -->
+<div class="copy-bar">
+  <button onclick="doCopy()" id="copyBtn">📋 一键复制 · 粘贴到公众号后台</button>
+  <div class="hint" id="copyHint">复制后 → 打开公众号后台 → Cmd+V 粘贴 → 发表</div>
+</div>
+
+<div id="copy-target">
 
 <!-- ──────── HEADER ──────── -->
 <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#F5F1E8;max-width:680px;margin:0 auto;">
@@ -144,5 +171,29 @@
 </td></tr>
 </table>
 
+</div>
+
+<script>
+function doCopy() {
+  const target = document.getElementById('copy-target');
+  const range = document.createRange();
+  range.selectNodeContents(target);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  document.execCommand('copy');
+  sel.removeAllRanges();
+  const btn = document.getElementById('copyBtn');
+  const hint = document.getElementById('copyHint');
+  btn.textContent = '✅ 已复制！去公众号后台 Cmd+V';
+  btn.className = 'copied';
+  hint.textContent = '已复制到剪贴板 → 切换回公众号后台 → Cmd+V 粘贴 → 发表';
+  setTimeout(() => {
+    btn.textContent = '📋 一键复制 · 粘贴到公众号后台';
+    btn.className = '';
+    hint.textContent = '复制后 → 打开公众号后台 → Cmd+V 粘贴 → 发表';
+  }, 4000);
+}
+</script>
 </body>
 </html>
