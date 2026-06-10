@@ -2,710 +2,507 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OPC IDEA 日报 · 2026-06-09</title>
-<meta name="description" content="每天推送 3 条 OPC（一人公司）方向的精筛 IDEA，周末合并为深度版。独立开发者 / solopreneur / 创业探索者专用。">
-<meta name="theme-color" content="#8b6f47">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="OPC IDEA">
-<link rel="manifest" href="manifest.json">
-<link rel="apple-touch-icon" href="icon-192.png">
-<link rel="alternate" type="application/rss+xml" title="OPC IDEA 日报" href="feed.xml">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<title>OPC IDEA 深度版 Vol.001 · 2026年6月9日</title>
+<meta name="description" content="12条一人公司方向精筛 IDEA · 9个百万美元真实案例拆解 · 4维评分">
 <style>
-  :root {
-    --bg: #faf8f3;
-    --paper: #ffffff;
-    --ink: #1a1a1a;
-    --ink-2: #4a4a4a;
-    --ink-3: #888;
-    --line: #e8e4da;
-    --line-2: #f0ece2;
-    --accent: #8b6f47;
-    --accent-soft: #f5efe2;
-    --good: #4a6741;
-    --warn: #a86b3c;
-    --bad: #8b3a3a;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { -webkit-font-smoothing: antialiased; }
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans GB", "PingFang SC", "Microsoft YaHei", sans-serif;
-    background: var(--bg);
-    color: var(--ink);
-    line-height: 1.7;
-    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+    background: #F5F1E8;
+    color: #2C2A26;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
   }
-  .wrap { max-width: 880px; margin: 0 auto; padding: 48px 32px 96px; }
-  /* Header */
-  header.site {
-    border-bottom: 1px solid var(--line);
-    padding-bottom: 28px;
-    margin-bottom: 36px;
+  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px; }
+  a { color: #8A8474; }
+  /* ── Header ── */
+  .header {
+    background: #FAF7EE;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 32px 28px 28px;
+    margin-bottom: 16px;
   }
   .brand {
-    display: flex;
-    align-items: baseline;
-    gap: 14px;
-    margin-bottom: 8px;
-  }
-  .logo {
-    font-size: 13px;
-    letter-spacing: 0.18em;
-    color: var(--accent);
-    font-weight: 600;
-  }
-  .tag {
     font-size: 11px;
-    letter-spacing: 0.1em;
-    color: var(--ink-3);
-    border: 1px solid var(--line);
-    padding: 2px 8px;
-    border-radius: 2px;
-  }
-  h1 {
-    font-size: 32px;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    line-height: 1.25;
-    margin-bottom: 12px;
-  }
-  .meta {
-    font-size: 12px;
-    color: var(--ink-3);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-  .meta span::before { content: "·"; margin-right: 8px; color: var(--line); }
-  .meta span:first-child::before { display: none; }
-  /* Sections */
-  section { margin-bottom: 44px; }
-  h2 {
-    font-size: 13px;
-    letter-spacing: 0.16em;
+    letter-spacing: 4px;
+    color: #B5B0A4;
     text-transform: uppercase;
-    color: var(--accent);
-    border-bottom: 1px solid var(--line);
-    padding-bottom: 8px;
-    margin-bottom: 18px;
-    font-weight: 600;
+    margin-bottom: 14px;
   }
-  h3 {
-    font-size: 19px;
-    font-weight: 600;
-    margin-bottom: 8px;
-    letter-spacing: -0.01em;
+  .header-title {
+    font-size: 26px;
+    font-weight: 500;
+    color: #2C2A26;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    margin-bottom: 6px;
   }
-  h4 {
+  .header-date {
     font-size: 13px;
-    font-weight: 600;
-    color: var(--ink-2);
-    margin: 14px 0 6px;
-    letter-spacing: 0.05em;
+    color: #7A766C;
+    letter-spacing: 0.5px;
   }
-  p { color: var(--ink-2); margin-bottom: 10px; }
-  /* TL;DR */
-  ul.tldr {
-    list-style: none;
-    border-left: 3px solid var(--accent);
-    padding-left: 20px;
+  .divider {
+    height: 1px;
+    background: #E6E1D6;
+    margin: 18px 0;
   }
-  ul.tldr li {
-    margin-bottom: 12px;
-    color: var(--ink);
-    padding-left: 4px;
+  .header-meta { display: flex; flex-wrap: wrap; gap: 8px; }
+  .header-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top:12px; padding-top:12px; border-top:1px solid #EEEAE0; }
+  .chip {
+    padding: 3px 10px;
+    background: transparent;
+    border: 1px solid #D8D2C5;
+    border-radius: 2px;
+    font-size: 11px;
+    color: #7A766C;
+    letter-spacing: 0.5px;
   }
-  ul.tldr li::before {
-    content: counter(tldr) ".";
-    counter-increment: tldr;
-    color: var(--accent);
-    font-weight: 600;
-    margin-right: 10px;
-    font-variant-numeric: tabular-nums;
+  .link-chip {
+    padding: 3px 10px;
+    background: transparent;
+    border: 1px solid #D8D2C5;
+    border-radius: 2px;
+    font-size: 11px;
+    color: #8A8474;
+    letter-spacing: 0.5px;
+    text-decoration: none;
   }
-  ul.tldr { counter-reset: tldr; }
-  ul.list { padding-left: 20px; }
-  ul.list li { margin-bottom: 8px; color: var(--ink-2); }
-  /* Table */
+  .link-chip:hover { border-color: #8A8474; }
+  /* ── Section divider ── */
+  .section-head {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #B5B0A4;
+    text-transform: uppercase;
+    margin: 22px 0 12px;
+  }
+  /* ── Tldr ── */
+  .tldr {
+    background: #FFFEFC;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 22px 24px;
+    margin-bottom: 10px;
+  }
+  .tldr-item {
+    font-size: 13.5px;
+    color: #2C2A26;
+    line-height: 1.75;
+    padding: 8px 0;
+    border-bottom: 1px solid #EEEAE0;
+    letter-spacing: 0.2px;
+  }
+  .tldr-item:last-child { border-bottom: none; }
+  .tldr-num {
+    display: inline-block;
+    width: 20px;
+    font-size: 11px;
+    color: #B5B0A4;
+    letter-spacing: 1px;
+    margin-right: 4px;
+  }
+  /* ── Table ── */
+  .table-wrap {
+    background: #FFFEFC;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin-bottom: 10px;
+    overflow-x: auto;
+  }
   table {
     width: 100%;
     border-collapse: collapse;
-    background: var(--paper);
-    border: 1px solid var(--line);
-    margin-bottom: 12px;
-    font-size: 14px;
-  }
-  th, td {
-    text-align: left;
-    padding: 10px 12px;
-    border-bottom: 1px solid var(--line-2);
-    color: var(--ink-2);
+    font-size: 12.5px;
   }
   th {
-    background: var(--accent-soft);
-    color: var(--ink);
-    font-weight: 600;
-    font-size: 12px;
-    letter-spacing: 0.05em;
+    text-align: left;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #B5B0A4;
+    font-weight: 500;
+    padding: 6px 0 10px;
+    border-bottom: 1px solid #E6E1D6;
+  }
+  td {
+    padding: 8px 0;
+    border-bottom: 1px solid #EEEAE0;
+    color: #5F5B53;
+    vertical-align: top;
+    line-height: 1.6;
   }
   tr:last-child td { border-bottom: none; }
-  td.num { font-variant-numeric: tabular-nums; color: var(--ink); font-weight: 500; }
-  /* Idea card */
-  .idea {
-    background: var(--paper);
-    border: 1px solid var(--line);
+  /* ── Card (idea details) ── */
+  .card {
+    background: #FFFEFC;
+    border: 1px solid #E6E1D6;
     border-radius: 4px;
-    padding: 22px 26px;
-    margin-bottom: 20px;
-  }
-  .idea-head {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 16px;
+    padding: 22px 24px;
     margin-bottom: 10px;
-    flex-wrap: wrap;
   }
-  .idea-num {
+  .card-num {
     font-size: 11px;
-    letter-spacing: 0.18em;
-    color: var(--accent);
-    font-weight: 700;
+    letter-spacing: 3px;
+    color: #B5B0A4;
+    margin-bottom: 8px;
   }
-  .idea-tag {
-    font-size: 11px;
-    color: var(--ink-3);
-    border: 1px solid var(--line);
-    padding: 2px 8px;
-    border-radius: 2px;
-  }
-  .idea-pitch {
-    font-size: 16px;
-    color: var(--ink);
+  .card-title {
+    font-size: 17px;
     font-weight: 500;
-    margin-bottom: 14px;
-    padding: 10px 14px;
-    background: var(--accent-soft);
-    border-left: 3px solid var(--accent);
-    border-radius: 0 2px 2px 0;
+    color: #2C2A26;
+    letter-spacing: 0.3px;
+    line-height: 1.4;
+    margin-bottom: 10px;
   }
-  .score {
+  .card-pitch {
+    font-size: 13.5px;
+    color: #2C2A26;
+    line-height: 1.75;
+    padding: 12px 16px;
+    background: #F7F4EC;
+    border-left: 2px solid #8A8474;
+    border-radius: 0 2px 2px 0;
+    margin-bottom: 14px;
+  }
+  .card-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #B5B0A4;
+    text-transform: uppercase;
+    margin: 14px 0 6px;
+  }
+  .card-text {
+    font-size: 13px;
+    color: #5F5B53;
+    line-height: 1.75;
+    margin-bottom: 6px;
+  }
+  .score-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 8px;
     margin: 12px 0;
     padding: 10px 12px;
-    background: var(--bg);
+    background: #FAF7EE;
     border-radius: 3px;
-    font-size: 12px;
-  }
-  .score div { color: var(--ink-2); }
-  .score b {
-    display: block;
-    color: var(--ink);
-    font-size: 18px;
-    font-weight: 600;
-    font-variant-numeric: tabular-nums;
-    margin-top: 2px;
-  }
-  .score div.s4 b { color: var(--good); }
-  .score div.s3 b { color: var(--accent); }
-  .score div.s2 b { color: var(--warn); }
-  .next-step {
-    background: #f6f3eb;
-    padding: 12px 14px;
-    border-radius: 3px;
-    font-size: 13px;
-    color: var(--ink);
-    margin-top: 8px;
-  }
-  .next-step b { color: var(--accent); }
-  /* Source list */
-  .src-list { font-size: 13px; }
-  .src-list li {
-    list-style: none;
-    padding: 6px 0;
-    border-bottom: 1px dashed var(--line-2);
-    display: flex;
-    gap: 12px;
-  }
-  .src-list li:last-child { border-bottom: none; }
-  .src-list .src-name {
-    flex: 0 0 200px;
-    color: var(--ink);
-    font-weight: 500;
-  }
-  .src-list .src-url {
-    color: var(--ink-3);
-    font-size: 12px;
-    word-break: break-all;
-    font-family: ui-monospace, "SF Mono", Menlo, monospace;
-  }
-  .src-list a { color: var(--ink-2); text-decoration: none; border-bottom: 1px dotted var(--ink-3); }
-  .src-list a:hover { color: var(--accent); border-bottom-color: var(--accent); }
-  /* Footer */
-  footer.site {
-    margin-top: 64px;
-    padding-top: 24px;
-    border-top: 1px solid var(--line);
-    font-size: 12px;
-    color: var(--ink-3);
+    border: 1px solid #EEEAE0;
     text-align: center;
   }
-  /* Responsive */
-  @media (max-width: 640px) {
-    .wrap { padding: 32px 18px 64px; }
-    h1 { font-size: 26px; }
-    .score { grid-template-columns: repeat(2, 1fr); }
-    .src-list li { flex-direction: column; gap: 2px; }
-    .src-list .src-name { flex: none; }
-  }
-  /* Filter chips */
-  .chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 18px;
-  }
-  .chip {
+  .score-item {
     font-size: 11px;
-    letter-spacing: 0.05em;
-    color: var(--ink-2);
-    border: 1px solid var(--line);
-    background: var(--paper);
-    padding: 4px 10px;
-    border-radius: 2px;
+    color: #7A766C;
+    letter-spacing: 1px;
   }
-  .chip b { color: var(--accent); }
+  .score-val {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2C2A26;
+    display: block;
+    margin-top: 2px;
+  }
+  .next-step-box {
+    padding: 10px 12px;
+    background: #F7F4EC;
+    border-radius: 3px;
+    font-size: 12.5px;
+    color: #2C2A26;
+    line-height: 1.7;
+    margin-top: 10px;
+  }
+  /* ── Hook box ── */
+  .hook-box {
+    background: #F7F4EC;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin-bottom: 10px;
+  }
+  .hook-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #B5B0A4;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .hook-text {
+    font-size: 14px;
+    color: #2C2A26;
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+  }
+  /* ── Footer ── */
+  .footer {
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    font-size: 11px;
+    color: #B5B0A4;
+    letter-spacing: 0.5px;
+    line-height: 2;
+  }
+  .note { font-size: 11px; color: #B5B0A4; letter-spacing: 0.5px; margin-top: 4px; }
+  @media (max-width: 640px) {
+    .container { padding: 12px 12px 32px; }
+    .header { padding: 24px 20px 22px; }
+    .header-title { font-size: 22px; }
+    .card { padding: 18px 16px; }
+    .score-grid { grid-template-columns: repeat(2, 1fr); }
+  }
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="container">
 
-<header class="site">
-  <div class="brand">
-    <span class="logo">OPC IDEA · 日报</span>
-    <span class="tag">VOL.001 · 2026-06-09</span>
+<!-- ── HEADER ── -->
+<div class="header">
+  <div class="brand">OPC IDEA · 深度版</div>
+  <div class="header-title">12条一人公司方向精筛IDEA</div>
+  <div class="header-date">Vol.001 · 2026年6月9日 · 周末深度合并版</div>
+  <div class="divider"></div>
+  <div class="header-meta">
+    <span class="chip">5信源·12条精筛</span>
+    <span class="chip">9个百万案例</span>
+    <span class="chip">4维评分</span>
+    <span class="chip">一手源14+</span>
   </div>
-  <h1>2026 每周刷新 · 一人公司 12 条深度 IDEA</h1>
-  <div class="meta">
-    <span>数据窗口 2026-04 至 2026-06</span>
-    <span>5 个信息源 · 12 条精筛</span>
-    <span>适用于 indie hacker / solopreneur</span>
+  <div class="header-links">
+    <a href="daily.html" class="link-chip">📰 今日快讯</a>
+    <a href="subscribe.html" class="link-chip">📧 订阅日报</a>
+    <a href="feed.xml" class="link-chip">📡 RSS</a>
+    <a href="newsletter-strategy.md" class="link-chip">📋 启动策略</a>
   </div>
-  <div class="meta" style="margin-top:14px;padding-top:14px;border-top:1px dashed var(--line);">
-    <span><a href="daily.html" style="color:var(--accent);text-decoration:none;font-weight:500;">📰 今日快讯</a> · 3条精筛</span>
-    <span><a href="subscribe.html" style="color:var(--accent);text-decoration:none;font-weight:500;">📧 订阅日报</a> · 每天 09:00 自动收到</span>
-    <span><a href="feed.xml" style="color:var(--accent);text-decoration:none;font-weight:500;">📡 RSS 订阅</a></span>
-    <span><a href="newsletter-strategy.md" style="color:var(--accent);text-decoration:none;font-weight:500;">📋 启动策略</a></span>
+</div>
+
+<!-- ── TL;DR ── -->
+<div class="section-head">TL;DR · 一句话总结</div>
+<div class="tldr">
+  <div class="tldr-item"><span class="tldr-num">01</span><b>AI Agent + 垂直 workflow</b> 是2026年OPC最大的金矿：Polsia 30天$1M ARR、Medvi 1年$4.01亿。</div>
+  <div class="tldr-item"><span class="tldr-num">02</span><b>中国GEO市场几乎空白</b>：80%中小商家不懂在DeepSeek／豆包／Kimi里被搜到，6-12个月内最低门槛OPC切入点。</div>
+  <div class="tldr-item"><span class="tldr-num">03</span><b>Micro-SaaS中位数$500／月</b>：1000+项目调研，30%永远跑不到$1K MRR——选niche比写代码重要10倍。</div>
+  <div class="tldr-item"><span class="tldr-num">04</span><b>Prompt as Product新范式</b>：CLAUDE.md／Skill／Sub-agent模板正在成为新"SEO关键词"，每个垂直$19-49打包卖。</div>
+  <div class="tldr-item"><span class="tldr-num">05</span><b>Marc Lou模式可复制</b>：4个微SaaS月营收$80K，关键在boilerplate共享。</div>
+</div>
+
+<!-- ── CASE TABLE ── -->
+<div class="section-head">数据快照 · 真实百万美元案例</div>
+<div class="table-wrap">
+<table>
+<thead><tr><th>案例</th><th>启动</th><th>团队</th><th>周期</th><th>营收</th><th>打法</th></tr></thead>
+<tbody>
+<tr><td><b>Polsia</b></td><td>&lt;$1K</td><td>1+Agent</td><td>30天</td><td>$1M ARR</td><td>$49／月+跨公司学习</td></tr>
+<tr><td><b>Medvi</b></td><td>$20K</td><td>1(+1)</td><td>14月</td><td>$4.01亿／年</td><td>GLP-1减肥药+AI全栈</td></tr>
+<tr><td><b>Base44</b></td><td>&lt;$50K</td><td>1</td><td>6月</td><td>$80M收购</td><td>自然语言建站</td></tr>
+<tr><td><b>Felix</b></td><td>&lt;$5K</td><td>1+Agent</td><td>几周</td><td>$200K</td><td>PDF+Skill市场</td></tr>
+<tr><td><b>ScreenshotAPI</b></td><td>&lt;$1K</td><td>1</td><td>10月</td><td>$10K MRR</td><td>利基开发者API</td></tr>
+<tr><td><b>Marc Lou</b></td><td>$0</td><td>1</td><td>3年</td><td>$80K／月</td><td>横向产品堆</td></tr>
+<tr><td><b>Pieter Levels</b></td><td>$0</td><td>1</td><td>持续</td><td>$200K+／月</td><td>12+产品</td></tr>
+<tr><td><b>Jacob Bank</b></td><td>&lt;$5K</td><td>1+40Agent</td><td>持续</td><td>$1M／年</td><td>AI全marketing</td></tr>
+<tr><td><b>Marcus</b></td><td>&lt;$2K</td><td>1+Agent</td><td>持续</td><td>$55K MRR</td><td>垂直建筑PM</td></tr>
+</tbody>
+</table>
+<p class="note">注：以上数字均来自公开报道与播客披露，未经独立审计，仅作量级参考。</p>
+</div>
+
+<!-- ── 12 IDEA CARDS ── -->
+<div class="section-head">12条深度IDEA · 按综合评分排序</div>
+
+<div class="card">
+  <div class="card-num">IDEA 01</div>
+  <div class="card-title">本地商家 GEO 优化服务</div>
+  <div class="card-pitch">帮餐饮／家政／教培等本地商家优化在 DeepSeek、豆包、Kimi、文小言等 AI 搜索结果里的曝光排名。</div>
+  <div class="card-label">痛点</div>
+  <div class="card-text">80%中小商家完全不懂AI搜索时代的优化逻辑，还在投大众点评、抖音本地推。消费者搜索行为已迁移，国内GEO服务商几乎空白。</div>
+  <div class="card-label">来源</div>
+  <div class="card-text">opcwang.com 2026-06-04列为赛道二；海外雏形 Profound、Otterly 已出现。</div>
+  <div class="score-grid">
+    <div class="score-item">痛点<span class="score-val">4</span></div>
+    <div class="score-item">可自动化<span class="score-val">3</span></div>
+    <div class="score-item">商业化<span class="score-val">4</span></div>
+    <div class="score-item">个人可执行<span class="score-val">5</span></div>
   </div>
-</header>
+  <div class="next-step-box">Next Step → 第1周调研3个本地行业各10家头部商家的AI搜索现状 → 第2周做样例报告免费PoC → 第3-4周定价1000-3000元／月，开通小红书获客。</div>
+</div>
 
-<section>
-  <h2>TL;DR · 一句话总结</h2>
-  <ul class="tldr">
-    <li><b>AI Agent + 垂直 workflow</b> 是 2026 年 OPC 最大的金矿：Polsia 30 天 $1M ARR、Medvi 1 年 $4.01 亿，证明"1 人 + Agent 军团"已不是 PPT。</li>
-    <li><b>中国市场的 GEO（AI 搜索优化）几乎是空白</b>：80% 中小商家不懂在 DeepSeek / 豆包 / Kimi 里被搜到，是 6-12 个月内最低门槛的 OPC 切入点。</li>
-    <li><b>Micro-SaaS 真实数据极冷峻</b>：1000+ 项目调研显示中位数只有 <b>$500/月</b>，30% 永远跑不到 $1K MRR——选 niche 比写代码重要 10 倍。</li>
-    <li><b>新范式崛起：Prompt as Product</b>：CLAUDE.md / Skill / Sub-agent 模板正在成为新"SEO 关键词"，每个垂直行业都可以打包卖 $19-49。</li>
-    <li><b>Marc Lou 模式可复制但不可速成</b>：4 个微 SaaS 月营收 $80K 不是 1 个 hero product，是"indie maker 工具栈"的横向占领，配套 boilerplate 是关键。</li>
-  </ul>
-</section>
-
-<section>
-  <h2>一、数据快照 · 真实百万美元案例</h2>
-  <table>
-    <thead>
-      <tr><th>案例</th><th>启动</th><th>团队</th><th>周期</th><th>营收</th><th>关键打法</th></tr>
-    </thead>
-    <tbody>
-      <tr><td><b>Polsia</b> (Ben Broca)</td><td class="num">&lt; $1K</td><td class="num">1 + Agent</td><td class="num">30 天</td><td class="num">$1M ARR</td><td>$49/月 + 跨公司学习</td></tr>
-      <tr><td><b>Medvi</b> (Gallagher)</td><td class="num">$20K</td><td class="num">1（后+1）</td><td class="num">14 月</td><td class="num">$4.01 亿/年</td><td>GLP-1 减肥药 + AI 全栈</td></tr>
-      <tr><td><b>Base44</b> (Shlomo)</td><td class="num">&lt; $50K</td><td class="num">1</td><td class="num">6 月</td><td class="num">$80M 被收购</td><td>Vibe Coding 自然语言建站</td></tr>
-      <tr><td><b>Felix</b> (Nat Eliason)</td><td class="num">&lt; $5K</td><td class="num">1 + Agent</td><td class="num">几周</td><td class="num">$200K</td><td>PDF + Skill 市场 + 定制</td></tr>
-      <tr><td><b>ScreenshotAPI</b></td><td class="num">&lt; $1K</td><td class="num">1</td><td class="num">10 月</td><td class="num">$10K MRR</td><td>利基开发者 API</td></tr>
-      <tr><td><b>Marc Lou 矩阵</b></td><td class="num">$0</td><td class="num">1</td><td class="num">3 年</td><td class="num">$80K/月</td><td>横向产品堆 + 内导</td></tr>
-      <tr><td><b>Pieter Levels</b></td><td class="num">$0</td><td class="num">1</td><td class="num">持续</td><td class="num">$200K+/月</td><td>12+ 产品 + Nomad List</td></tr>
-      <tr><td><b>Jacob Bank</b></td><td class="num">&lt; $5K</td><td class="num">1 + 40 Agent</td><td class="num">持续</td><td class="num">$1M/年</td><td>AI agent 跑全 marketing</td></tr>
-      <tr><td><b>Marcus（建筑 PM）</b></td><td class="num">&lt; $2K</td><td class="num">1 + Agent</td><td class="num">持续</td><td class="num">$55K MRR</td><td>垂直行业 + AI 客服</td></tr>
-    </tbody>
-  </table>
-  <p style="font-size:12px;color:var(--ink-3);">注：以上数字均来自公开报道与播客披露，未经独立审计，仅作量级参考。</p>
-</section>
-
-<section>
-  <h2>二、12 条深度 IDEA · 按综合评分排序</h2>
-  <div class="chips">
-    <span class="chip">评分维度 <b>痛点强度 / 可自动化 / 商业化潜力 / 个人可执行性</b> 各 1-5 分</span>
+<div class="card">
+  <div class="card-num">IDEA 02</div>
+  <div class="card-title">垂直 AI Agent 代搭建服务</div>
+  <div class="card-pitch">基于扣子／Dify／Coze给跨境电商／宠物医院／房产中介搭建定制Agent，按"搭建费+月费"收费。</div>
+  <div class="card-label">痛点</div>
+  <div class="card-text">中小企业主听说过AI但不会用、不会搭。通用Agent满足不了行业属性。外包开发5-10万起步。</div>
+  <div class="card-label">来源</div>
+  <div class="card-text">opcwang.com赛道三；21财经多个真实案例：跨境电商客服Agent、房产中介卖点提炼Agent。</div>
+  <div class="score-grid">
+    <div class="score-item">痛点<span class="score-val">4</span></div>
+    <div class="score-item">可自动化<span class="score-val">4</span></div>
+    <div class="score-item">商业化<span class="score-val">5</span></div>
+    <div class="score-item">个人可执行<span class="score-val">4</span></div>
   </div>
+  <div class="next-step-box">Next Step → 第1周选定1个垂直（宠物医院）做Demo → 第2周小红书/视频号演示 → 第3-4周找5家免费试用，转化2家付费（一次性5000-2万+月费500-2000）。</div>
+</div>
 
-  <article class="idea">
-    <div class="idea-head">
-      <span class="idea-num">IDEA 01</span>
-      <span class="idea-tag">GEO / 本地服务</span>
-    </div>
-    <h3>本地商家 GEO（AI 搜索）优化服务</h3>
-    <div class="idea-pitch">帮餐饮/家政/教培等本地商家优化在 DeepSeek、豆包、Kimi、文小言等 AI 搜索结果里的曝光排名。</div>
-    <h4>痛点</h4>
-    <p>80% 中小商家完全不懂 AI 搜索时代的优化逻辑，还在投大众点评、抖音本地推；消费者搜索行为已迁移（"附近哪家火锅好吃" → "推荐一家适合 4 人聚餐的川式火锅"）；现在的 GEO 服务商几乎空白。</p>
-    <h4>来源与案例</h4>
-    <p>国内 opcwang.com 2026-06-04 文章列为"赛道二"重点；海外同类雏形：ChatGPT Optimization / LLM SEO 服务（Profound、Otterly）开始出现，国内几乎 0。</p>
-    <h4>竞品格局</h4>
-    <p>传统 SEO 公司（不做 LLM）；少数 LLM SEO 海外服务，国内空白。</p>
-    <div class="score">
-      <div>痛点强度<b>4</b></div>
-      <div>可自动化<b>3</b></div>
-      <div class="s4">商业化<b>4</b></div>
-      <div class="s4">个人可执行<b>5</b></div>
-    </div>
-    <div class="next-step">
-      <b>Next Step →</b> 第 1 周调研 3 个本地行业（餐饮/家政/教培），抓 10 家头部商家的 AI 搜索现状；第 2 周做样例报告免费 PoC；第 3-4 周定价 1000-3000 元/月，开通小红书/抖音获客。
-    </div>
-  </article>
-
-  <article class="idea">
-    <div class="idea-head">
-      <span class="idea-num">IDEA 02</span>
-      <span class="idea-tag">垂直 Agent</span>
-    </div>
-    <h3>垂直 AI Agent 代搭建服务（中国版）</h3>
-    <div class="idea-pitch">基于扣子、Dify、Coze 等低代码平台，为跨境电商、宠物医院、房产中介等垂直行业搭建定制 Agent，按"搭建费 + 月费"收费。</div>
-    <h4>痛点</h4>
-    <p>大量中小企业主听说过 AI 但不会用、不会搭；通用客服/销售 Agent 满足不了行业属性（宠物医院要懂疫苗提醒）；自研成本太高，外包开发公司报价 5-10 万起步。</p>
-    <h4>来源与案例</h4>
-    <p>opcwang.com 列为"赛道三"；21 财经报道多个真实案例：跨境电商客服 Agent 处理物流+退换货、房产中介卖点提炼 Agent。</p>
-    <h4>竞品格局</h4>
-    <p>通用 Agent 平台（扣子/Dify/FastGPT）；少数垂直 Agent 团队都做 SaaS 不做"代搭建服务"。</p>
-    <div class="score">
-      <div>痛点强度<b>4</b></div>
-      <div class="s4">可自动化<b>4</b></div>
-      <div class="s4">商业化<b>5</b></div>
-      <div class="s4">个人可执行<b>4</b></div>
-    </div>
-    <div class="next-step">
-      <b>Next Step →</b> 第 1 周选定 1 个垂直（宠物医院）做 Demo；第 2 周发小红书/视频号演示；第 3-4 周找 5 家免费试用，转化 2 家付费（一次性 5000-2 万 + 月费 500-2000）。
-    </div>
-  </article>
-
-  <article class="idea">
-    <div class="idea-head">
-      <span class="idea-num">IDEA 03</span>
-      <span class="idea-tag">Indie Tool</span>
-    </div>
-    <h3>Niche Research Agent（独立开发者工具）</h3>
-    <div class="idea-pitch">给一个关键词/App 名/赛道，自动分析竞品、关键词排名、用户评论 sentiment、市场缺口，输出结构化报告。</div>
-    <h4>痛点</h4>
-    <p>独立开发者最痛的不是写代码，是不知道"该写什么"；手动做竞品调研 3-5 天，PMF 验证周期过长；Sensor Tower、App Annie $200+/月起步太贵。</p>
-    <h4>来源与案例</h4>
-    <p>wsq.be 2026-05-09 GitHub trending 分析中明确推荐 fork dexter 的研究架构；类似竞品 Glimpse、Sparktoro 偏通用营销。</p>
-    <h4>竞品格局</h4>
-    <p>通用 AI 研究工具（Perplexity、ChatGPT Deep Research）；通用 ASO 工具（Sensor Tower、数据狗）；垂直 niche 研究 agent 几乎空白。</p>
-    <div class="score">
-      <div class="s4">痛点强度<b>5</b></div>
-      <div class="s4">可自动化<b>5</b></div>
-      <div class="s4">商业化<b>4</b></div>
-      <div>个人可执行<b>4</b></div>
-    </div>
-    <div class="next-step">
-      <b>Next Step →</b> 第 1 周选第一个 niche（App Store ASO）跑通 demo；第 2 周发 IndieHackers、r/SideProject 收 10 个 beta；第 3-6 周每月迭代一个 niche（先 ASO、再 Vertical Drama、再 Indie Maker）。
-    </div>
-  </article>
-
-  <article class="idea">
-    <div class="idea-head">
-      <span class="idea-num">IDEA 04</span>
-      <span class="idea-tag">Developer API</span>
-    </div>
-    <h3>AI 截图 / PDF / HTML-to-Image API</h3>
-    <div class="idea-pitch">面向开发者的轻量 API，按调用次数计费，把"截图 / PDF 渲染 / OG 图生成"做成一行代码调用。</div>
-    <h4>痛点</h4>
-    <p>开发者反复写 Puppeteer / Playwright 代码处理截图，坑极多（中文乱码、字体丢失、并发爆炸）；现有方案（ApiFlash、ScreenShotOne）按月起步 $49 太贵；pdfrocket 等老牌服务 UI 落后。</p>
-    <h4>来源与案例</h4>
-    <p>greyjournal.net 列为 2026 年最佳 micro-SaaS 第 1 名；Sarah Chen 的 ScreenshotAPI 10 个月做到 $10K MRR 已被验证；ApiFlash、ScreenShotOne、pdfrocket 都在盈利。</p>
-    <h4>竞品格局</h4>
-    <p>老牌服务 UI 老化；大厂方案（AWS Lambda + Chrome）太复杂。</p>
-    <div class="score">
-      <div class="s4">痛点强度<b>5</b></div>
-      <div>可自动化<b>4</b></div>
-      <div class="s4">商业化<b>5</b></div>
-      <div class="s3">个人可执行<b>3</b></div>
-    </div>
-    <div class="next-step">
-      <b>Next Step →</b> 第 1 周用 Railway + Puppeteer 搭 MVP API + Stripe 收款；第 2 周 HN Show "show HN"，目标 50 个注册；第 3-8 月迭代稳定性，按调用量计费。
-    </div>
-  </article>
-
-  <article class="idea">
-    <div class="idea-head">
-      <span class="idea-num">IDEA 05</span>
-      <span class="idea-tag">Vertical SaaS</span>
-    </div>
-    <h3>垂直 CRM（健身 / 纹身 / 婚礼策划师）</h3>
-    <div class="idea-pitch">为一个被通用 CRM 完全忽略的小行业做一个"啥都帮你想到了"的客户管理工具。</div>
-    <h4>痛点</h4>
-    <p>通用 CRM 对小行业完全不友好；这些行业的人还在用 Excel、Instagram 私信、纸质本子；现有垂直 CRM（Mindbody、TrainHeroic）只覆盖大行业头部。</p>
-    <h4>来源与案例</h4>
-    <p>nxcode.io 列出 7 个垂直 CRM idea（健身/摄影/纹身/婚礼/宠物/教师/清洁）；ideaproof.io 列出 4 个垂直 SaaS 案例；TrainHeroic 已成功。</p>
-    <h4>竞品格局</h4>
-    <p>大行业已有（健身 = TrainHeroic）；长尾小行业（纹身师、宠物照护、清洁、婚礼策划）几乎空白。</p>
-    <div class="score">
-      <div>痛点强度<b>4</b></div>
-      <div class="s4">可自动化<b>5</b></div>
-      <div class="s4">商业化<b>4</b></div>
-      <div class="s4">个人可执行<b>5</b></div>
-    </div>
-    <div class="next-step">
-      <b>Next Step →</b> 第 1 周选 1 个最熟的 niche；第 2 周用 Lovable / Bubble 搭 demo，5 个用户访谈；第 3-6 周 MVP 上线，定价 $29-49/月，先收 20 个种子用户。
-    </div>
-  </article>
-
-  <article class="idea">
-    <div class="idea-head">
-      <span class="idea-num">IDEA 06</span>
-      <span class="idea-tag">Dev Tool</span>
-    </div>
-    <h3>Uptime 监控 + 品牌化状态页（双线）</h3>
-    <div class="idea-pitch">开发者友好的极简监控工具，自动生成可对外公开的品牌化状态页。</div>
-    <h4>痛点</h4>
-    <p>StatusPage 太贵、Datadog 太复杂；uptime-kuma 等开源工具对非技术用户不友好；中小公司愿意为"客户能看到我们服务没挂"付费。</p>
-    <h4>来源与案例</h4>
-    <p>greyjournal.net 列为 2026 年 micro-SaaS 重点推荐；GitHub 上 uptime-kuma 8.6 万 stars 已验证需求；Better Stack、Hyperping、Statuspage 在做。</p>
-    <h4>竞品格局</h4>
-    <p>开源自部署（uptime-kuma）免费但要自己运维；SaaS 托管 $19-199/月。</p>
-    <div class="score">
-      <div>痛点强度<b>4</b></div>
-      <div class="s4">可自动化<b>5</b></div>
-      <div class="s4">商业化<b>4</b></div>
-      <div>个人可执行<b>4</b></div>
-    </div>
-    <div class="next-step">
-      <b>Next Step →</b> 第 1 周 fork uptime-kuma 加"一键生成品牌化状态页"；第 2 周双线定价（自部署免费 / 托管 $19-99/月）；第 3-8 周 HN、r/sysadmin 发贴，目标 100 注册。
-    </div>
-  </article>
-
-  <article class="idea">
-    <div class="idea-head">
-      <span class="idea-num">IDEA 07</span>
-      <span class="idea-tag">Fintech</span>
-    </div>
-    <h3>Invoice 收款自动化（自由职业者 / 中小 Agency）</h3>
-    <div class="idea-pitch">自动按礼貌节奏催收未付发票，集成 Stripe / PayPal，提升回款率 30-40%。</div>
-    <h4>痛点</h4>
-    <p>自由职业者 / 中小 Agency 平均 5-10% 收入因欠款流失；人工催款尴尬且低效；现有方案（InvoiceSherpa、Chaser）面向中大型企业。</p>
-    <h4>来源与案例</h4>
-    <p>ideaproof.io 第 2 名推荐；自动催款可将平均回款时间从 45 天降到 18 天。</p>
-    <h4>竞品格局</h4>
-    <p>中大型企业方案（Chaser、InvoiceSherpa）；小型 / 自由职业者市场基本空白。</p>
-    <div class="score">
-      <div>痛点强度<b>4</b></div>
-      <div class="s4">可自动化<b>5</b></div>
-      <div class="s4">商业化<b>4</b></div>
-      <div>个人可执行<b>4</b></div>
-    </div>
-    <div class="next-step">
-      <b>Next Step →</b> 第 1 周 MVP（Stripe 集成 + 邮件模板引擎）；第 2 周 IndieHackers 招募 20 个 beta；第 3-8 周定价 $29-99/月或按回款抽佣。
-    </div>
-  </article>
-
-  <article class="idea">
-    <div class="idea-head">
-      <span class="idea-num">IDEA 08</span>
-      <span class="idea-tag">数字资产</span>
-    </div>
-    <h3>CLAUDE.md / Skill / Sub-agent 模板包销售</h3>
-    <div class="idea-pitch">把"行业专属 CLAUDE.md 提示词包"、"垂直 Sub-agent 模板"做成一次付费 $19-49 的数字资产。</div>
-    <h4>痛点</h4>
-    <p>Agent 时代，所有人都在写 CLAUDE.md / Skill / Sub-agent；99% 的人不会写、不知道行业最佳实践；类似当年 SEO 关键词库——早进场的能赚钱。</p>
-    <h4>来源与案例</h4>
-    <p>wsq.be 2026-04-30 trending 分析中明确点名"行业专属 CLAUDE.md 包"是新品类；karpathy/skills 等仓库已标准化这一资产；类似 Gumroad 上的 Prompt 包。</p>
-    <h4>竞品格局</h4>
-    <p>通用 Prompt 市场（Gumroad、Etsy 上的 Prompt 卖家）；行业垂直 CLAUDE.md / Skill 模板包几乎空白。</p>
-    <div class="score">
-      <div>痛点强度<b>3</b></div>
-      <div class="s4">可自动化<b>5</b></div>
-      <div class="s4">商业化<b>4</b></div>
-      <div class="s4">个人可执行<b>5</b></div>
-    </div>
-    <div class="next-step">
-      <b>Next Step →</b> 第 1 周选 3 个垂直（iOS 独立开发、AI 短剧 writer、跨境电商客服）；第 2 周各写 1 份 CLAUDE.md + 5-10 个 Skill + 演示视频；第 3 周挂 Gumroad / 闲鱼 / 小报童，定价 $19-49。
-    </div>
-  </article>
-
-  <article class="idea">
-    <div class="idea-head">
-      <span class="idea-num">IDEA 09</span>
-      <span class="idea-tag">Content</span>
-    </div>
-    <h3>Premium Niche Newsletter（付费邮件订阅）</h3>
-    <div class="idea-pitch">在 1 个具体细分人群里做付费邮件简报，5000-20000 订户即可年入 $60K-1.2M。</div>
-    <h4>痛点</h4>
-    <p>大量从业者（律师、医生、独立开发者、PM）信息过载但缺乏"高质量过滤"；大众 Newsletter（Stratechery、Benedict Evans）已饱和；垂直领域几乎空白。</p>
-    <h4>来源与案例</h4>
-    <p>opc.community 列为 2026 年 15 个 OPC idea 第 4 名；5000-20000 订户的垂直 Newsletter，赞助 $1000-5000/期；Lenny's Newsletter、Demand Curve 已跑通。</p>
-    <h4>竞品格局</h4>
-    <p>大众 Newsletter 头部稳固；垂直细分每周都有新机会。</p>
-    <div class="score">
-      <div>痛点强度<b>3</b></div>
-      <div>可自动化<b>3</b></div>
-      <div class="s4">商业化<b>5</b></div>
-      <div class="s3">个人可执行<b>3</b></div>
-    </div>
-    <div class="next-step">
-      <b>Next Step →</b> 第 1-4 周选 niche 每周免费写 1 期，连续 12 期；第 3 个月开放付费（$7-15/月 或 $50-100/年）；第 6 个月达 2000 订户即可接赞助。
-    </div>
-  </article>
-
-  <article class="idea">
-    <div class="idea-head">
-      <span class="idea-num">IDEA 10</span>
-      <span class="idea-tag">Content Factory</span>
-    </div>
-    <h3>AI 短剧 / 播客 / 音频内容工厂</h3>
-    <div class="idea-pitch">用 AI 全流程（脚本 → 配音 → 剪辑 → 字幕）生成短剧 / 播客 / 音频产品，按集 / 按分钟计费卖给 MCN、品牌方。</div>
-    <h4>痛点</h4>
-    <p>短剧 / 播客市场需求爆炸，但产能被"编剧 + 配音 + 剪辑"卡死；传统流程单条 3-7 天，AI 流水线可压到 1-2 小时；MCN 愿意为可量产、稳定质量的内容付费。</p>
-    <h4>来源与案例</h4>
-    <p>21 财经报道"单人短剧内容工厂"是 AI 时代一人公司 7 大模式之一；声音经济 2025 年规模 6110 亿，2029 年预计 7415 亿；广州烁谷科技"悟声"语音克隆 3 秒样本 99.5% 相似度。</p>
-    <h4>竞品格局</h4>
-    <p>MCN 自有团队成本高；纯 AI 工具不解决"端到端交付"；单人内容工厂模式几乎空白。</p>
-    <div class="score">
-      <div>痛点强度<b>4</b></div>
-      <div>可自动化<b>4</b></div>
-      <div class="s4">商业化<b>4</b></div>
-      <div class="s3">个人可执行<b>3</b></div>
-    </div>
-    <div class="next-step">
-      <b>Next Step →</b> 第 1 周选 1 个细分（"知识博主 60 秒口播"）；第 2-3 周 ChatGPT + ElevenLabs + CapCut 跑通 5 个样品；第 4 周联系 10 个知识博主免费送 1 条。
-    </div>
-  </article>
-
-  <article class="idea">
-    <div class="idea-head">
-      <span class="idea-num">IDEA 11</span>
-      <span class="idea-tag">横向产品堆</span>
-    </div>
-    <h3>TrustMRR / DataFast 模式（indie maker 工具栈）</h3>
-    <div class="idea-pitch">模仿 Marc Lou，做"indie maker 工具栈"的横向占领，3-5 个互导的微 SaaS 月入 $30K-80K。</div>
-    <h4>痛点</h4>
-    <p>单个 micro-SaaS 中位数 $500/月，太薄；但围绕"indie maker"这一共同用户群做 3-5 个互补产品，能形成稳定现金流；关键是 boilerplate 共享，新产品 7-14 天上线。</p>
-    <h4>来源与案例</h4>
-    <p>Marc Lou 2026-02 月营收：TrustMRR $33.3K + DataFast $19.7K + CodeFast $14.9K + ShipFast $13K ≈ $80K；主力不是最早的产品（ShipFast 反而开始衰退），而是后来 TrustMRR/DataFast。</p>
-    <h4>竞品格局</h4>
-    <p>单点工具市场已成熟；横向产品堆 + 内导链路是结构性机会。</p>
-    <div class="score">
-      <div>痛点强度<b>4</b></div>
-      <div>可自动化<b>4</b></div>
-      <div class="s4">商业化<b>5</b></div>
-      <div class="s3">个人可执行<b>3</b></div>
-    </div>
-    <div class="next-step">
-      <b>Next Step →</b> 第 1-2 月选 1 个用户群（indie maker）+ 共享 boilerplate；第 3-6 月连续 ship 3 个产品，每个聚焦 1 个高频痛点；持续：每个新产品的发布页都强引导到已有产品列表。
-    </div>
-  </article>
-
-  <article class="idea">
-    <div class="idea-head">
-      <span class="idea-num">IDEA 12</span>
-      <span class="idea-tag">高 ARR / 高难度</span>
-    </div>
-    <h3>Polsia 类 Agent 编排平台</h3>
-    <div class="idea-pitch">做一个平台让用户用 Agent 跑公司（战略 + 代码 + 客服 + 营销），$49/月订阅。</div>
-    <h4>痛点</h4>
-    <p>大量 solo 创业者不会写代码、不会做营销、不会做客服；想雇"AI 员工"但不知道如何编排；Polsia 已经证明这个需求存在（30 天 $1M ARR）。</p>
-    <h4>来源与案例</h4>
-    <p>Polsia 2026-02 上线 30 天 $1M ARR，Ben Broca 1 人；关键架构：跨公司学习系统；Agent 角色矩阵：CEO Agent（Claude）、Marketing Agent、Sales Agent、Support Agent。</p>
-    <h4>竞品格局</h4>
-    <p>Polsia 已占位，但市场足够大（VC 都预测 2026 年 40% 企业应用会内置 Agent）；Lindy.ai、Relay.app 等做"Agent 编排"工具，不直接跑公司。</p>
-    <div class="score">
-      <div class="s4">痛点强度<b>5</b></div>
-      <div class="s4">可自动化<b>5</b></div>
-      <div class="s4">商业化<b>5</b></div>
-      <div class="s2">个人可执行<b>2</b></div>
-    </div>
-    <div class="next-step">
-      <b>Next Step →</b> 第 1-3 月聚焦 1 个垂直（"AI 营销 Agent 编排"）做小版本；第 4-6 月跑通单 vertical PMF；第 7-12 月横向扩展到战略、客服、销售。
-    </div>
-  </article>
-</section>
-
-<section>
-  <h2>三、2026 年 OPC 的 5 条趋势暗线</h2>
-  <ul class="list">
-    <li><b>Agent 编排是新的 SaaS</b>：垂直 SaaS → AI Wrapper → Agent 编排平台，三代进化方向已清晰。</li>
-    <li><b>"卖结果"取代"卖工具"</b>：用户付费越来越不愿意学工具，愿意为"最终交付物"（截图、PDF、文章、音乐）付钱。</li>
-    <li><b>Niche 比规模重要 10 倍</b>：通用 CRM 输给垂直 CRM，通用 SEO 输给垂直 GEO，通用 newsletter 输给 niche newsletter。</li>
-    <li><b>开源 freemium 是新 GTM</b>：先做开源产品 → 自部署免费 → 托管增值，比纯闭源 SaaS 获客快 2-3 倍。</li>
-    <li><b>Boilerplate 共享是 Marc Lou 模式的护城河</b>：不是某个产品牛，是整个产品栈共用同一代码库带来的边际成本优势。</li>
-  </ul>
-</section>
-
-<section>
-  <h2>四、风险提示</h2>
-  <ul class="list">
-    <li><b>数据真实性</b>：所有营收数字均来自二手报道，未经独立审计。决策前请用一手来源二次核实。</li>
-    <li><b>门槛被低估</b>：micro-SaaS 中位数 $500/月，30% 跑不到 $1K MRR，不要只看头部故事。</li>
-    <li><b>AI Wrapper 同质化</b>：GPT-4 / Claude / Gemini 包装类产品高度同质化，垂直 + 留存机制是唯一护城河。</li>
-    <li><b>推理成本风险</b>：Agent 类产品（Polsia 模式）对 token 消耗敏感，规模上去后毛利率会被压缩。</li>
-    <li><b>合规风险</b>：医疗（Medvi）、金融（FinceptTerminal）等 vertical 在中国需要资质，海外有 SEC 合规。</li>
-  </ul>
-</section>
-
-<section>
-  <h2>五、行动建议 · 按你时间投入分类</h2>
-  <table>
-    <thead>
-      <tr><th>你能投入的时间</th><th>推荐组合</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>业余 5-10 小时/周</td><td>IDEA 01（本地商家 GEO）+ IDEA 08（CLAUDE.md 模板包）</td></tr>
-      <tr><td>半全职 20-30 小时/周</td><td>IDEA 04（截图 API）+ IDEA 05（垂直 CRM）+ IDEA 06（uptime 托管）</td></tr>
-      <tr><td>全职</td><td>IDEA 11（横向产品堆）+ IDEA 12（Agent 编排平台）</td></tr>
-      <tr><td>想做内容生意</td><td>IDEA 09（Premium Newsletter）+ IDEA 10（AI 短剧工厂）</td></tr>
-    </tbody>
-  </table>
-</section>
-
-<section>
-  <h2>六、本期来源 · 可溯源</h2>
-  <ul class="src-list">
-    <li><span class="src-name">opcwang.com 2026-06-04</span><a class="src-url" href="https://www.opcwang.com/article/2026nian-yi-ren-gong-si-wu-da-huang-jin-sai-dao-quan-jie-xi-cong-xuan-fang-xiang-dao-pao-tong-bian-xian-de-wan-zheng-zhi-nan" target="_blank">国内 OPC 综合</a></li>
-    <li><span class="src-name">21 财经 2026-04-28</span><a class="src-url" href="https://www.21jingji.com/article/20260428/herald/81e23c60c940fcb2f1af07a01acf83ce.html" target="_blank">国内 AI 一人公司 7 模式</a></li>
-    <li><span class="src-name">opc.community 2026</span><a class="src-url" href="https://www.opc.community/blog/one-person-company-ideas-2026" target="_blank">海外 15 个 OPC 模型</a></li>
-    <li><span class="src-name">ideaproof.io 2026-06-07</span><a class="src-url" href="https://ideaproof.io/lists/micro-saas-ideas" target="_blank">Micro-SaaS 50 idea</a></li>
-    <li><span class="src-name">ideaproof.io 2026</span><a class="src-url" href="https://ideaproof.io/lists/solo-business-ideas" target="_blank">Solopreneur 50 idea</a></li>
-    <li><span class="src-name">nxcode.io 2026</span><a class="src-url" href="https://www.nxcode.io/zh/resources/news/micro-saas-ideas-2026" target="_blank">中文 50 个 Micro-SaaS</a></li>
-    <li><span class="src-name">greyjournal.net 2026-04</span><a class="src-url" href="https://greyjournal.net/hustle/micro-saas-ideas-solo-founders-2026/" target="_blank">8 个 micro-SaaS + 数据</a></li>
-    <li><span class="src-name">greyjournal.net 2026</span><a class="src-url" href="https://greyjournal.net/hustle/work-tech/solo-founders-ai-agents-zero-employees" target="_blank">Solo + Agent 案例</a></li>
-    <li><span class="src-name">contextstudios.ai 2026-02</span><a class="src-url" href="https://www.contextstudios.ai/en/blog/polsia-how-a-solo-founder-hit-1m-arr-in-30-days-with-ai-agents" target="_blank">Polsia $1M ARR 拆解</a></li>
-    <li><span class="src-name">BAAI Hub 2026</span><a class="src-url" href="https://hub.baai.ac.cn/view/53670" target="_blank">Medvi $4 亿案例</a></li>
-    <li><span class="src-name">panewslab.com 2026</span><a class="src-url" href="https://www.panewslab.com/en/articles/019cd639-669a-77e8-9ec6-2f61deaa70c9" target="_blank">Felix $200K 案例</a></li>
-    <li><span class="src-name">wsq.be 2026-05-28</span><a class="src-url" href="https://wsq.be/opportunity-radar-2026-05-28" target="_blank">Marc Lou 拆解</a></li>
-    <li><span class="src-name">wsq.be 2026-05-09</span><a class="src-url" href="https://wsq.be/github-trending-2026-05-09/" target="_blank">GitHub trending 解读</a></li>
-    <li><span class="src-name">wsq.be 2026-04-30</span><a class="src-url" href="https://wsq.be/github-trending-2026-04-30" target="_blank">GitHub trending 解读</a></li>
-  </ul>
-</section>
-
-<footer class="site">
-  <div style="background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:24px 28px;margin-bottom:24px;text-align:center;">
-    <p style="font-size:16px;font-weight:600;color:var(--ink);margin-bottom:6px;">📧 每天 09:00 自动收到这 3 条</p>
-    <p style="font-size:13px;color:var(--ink-2);margin-bottom:14px;">工作日 3 条精筛 · 周末 12 条深度版 · 全部免费</p>
-    <a href="subscribe.html" style="display:inline-block;padding:10px 24px;background:var(--accent);color:var(--paper);text-decoration:none;border-radius:4px;font-size:14px;font-weight:600;letter-spacing:0.05em;">免费订阅</a>
+<div class="card">
+  <div class="card-num">IDEA 03</div>
+  <div class="card-title">Niche Research Agent</div>
+  <div class="card-pitch">给一个关键词／App名／赛道，自动分析竞品、关键词排名、用户评论sentiment、市场缺口，输出结构化报告。</div>
+  <div class="card-label">痛点</div>
+  <div class="card-text">独立开发者最痛的不是写代码，是不知道"该写什么"。Sensor Tower、App Annie $200+／月太贵。</div>
+  <div class="card-label">来源</div>
+  <div class="card-text">wsq.be GitHub trending分析推荐fork dexter架构；Glimpse、Sparktoro偏通用营销。</div>
+  <div class="score-grid">
+    <div class="score-item">痛点<span class="score-val">5</span></div>
+    <div class="score-item">可自动化<span class="score-val">5</span></div>
+    <div class="score-item">商业化<span class="score-val">4</span></div>
+    <div class="score-item">个人可执行<span class="score-val">4</span></div>
   </div>
-  <p>OPC IDEA 日报 · Vol.001 · 生成于 2026-06-09 17:34 GMT+8</p>
-  <p style="margin-top:6px;">Daily 增量刷新 · 周末合并深度版 · 部署位置：GitHub Pages</p>
-</footer>
+  <div class="next-step-box">Next Step → 第1周选第一个niche（App Store ASO）跑通demo → 第2周IndieHackers收10个beta → 第3-6周每月迭代一个niche。</div>
+</div>
+
+<div class="card">
+  <div class="card-num">IDEA 04</div>
+  <div class="card-title">AI截图／PDF／HTML-to-Image API</div>
+  <div class="card-pitch">面向开发者的轻量API，按调用次数计费，ScreenshotAPI已10个月到$10K MRR。</div>
+  <div class="card-text">开发者反复写Puppeteer处理截图，中文乱码、字体丢失、并发爆炸。ApiFlash、ScreenShotOne按月$49太贵。</div>
+  <div class="score-grid">
+    <div class="score-item">痛点<span class="score-val">5</span></div>
+    <div class="score-item">可自动化<span class="score-val">4</span></div>
+    <div class="score-item">商业化<span class="score-val">5</span></div>
+    <div class="score-item">个人可执行<span class="score-val">3</span></div>
+  </div>
+  <div class="next-step-box">Next Step → Railway + Puppeteer搭MVP API + Stripe → HN Show "show HN" → 按调用量计费。</div>
+</div>
+
+<div class="card">
+  <div class="card-num">IDEA 05</div>
+  <div class="card-title">垂直 CRM（健身／纹身／婚礼策划师）</div>
+  <div class="card-pitch">为一个被通用CRM忽略的小行业做"啥都帮你想到了"的客户管理工具。Lovable / Bubble 可搞定。</div>
+  <div class="card-text">通用CRM对小行业不友好；这些行业的人还在用Excel、IG私信、纸质本子。长尾小行业几乎空白。</div>
+  <div class="score-grid">
+    <div class="score-item">痛点<span class="score-val">4</span></div>
+    <div class="score-item">可自动化<span class="score-val">5</span></div>
+    <div class="score-item">商业化<span class="score-val">4</span></div>
+    <div class="score-item">个人可执行<span class="score-val">5</span></div>
+  </div>
+  <div class="next-step-box">Next Step → 选1个最熟niche → Lovable搭demo → 5个用户访谈 → MVP上线$29-49／月，收20个种子用户。</div>
+</div>
+
+<div class="card">
+  <div class="card-num">IDEA 06</div>
+  <div class="card-title">Uptime监控 + 品牌化状态页</div>
+  <div class="card-pitch">开源自部署+托管双线，uptime-kuma 8.6万stars已验证需求。</div>
+  <div class="card-text">StatusPage太贵、Datadog太复杂、开源工具对非技术用户不友好。中小公司愿意为对外状态页付费。</div>
+  <div class="score-grid">
+    <div class="score-item">痛点<span class="score-val">4</span></div>
+    <div class="score-item">可自动化<span class="score-val">5</span></div>
+    <div class="score-item">商业化<span class="score-val">4</span></div>
+    <div class="score-item">个人可执行<span class="score-val">4</span></div>
+  </div>
+  <div class="next-step-box">Next Step → fork uptime-kuma加"一键生成品牌状态页" → 双线定价（自部署免费／托管$19-99／月）。</div>
+</div>
+
+<div class="card">
+  <div class="card-num">IDEA 07</div>
+  <div class="card-title">Invoice收款自动化</div>
+  <div class="card-pitch">自动按礼貌节奏催收未付发票，集成Stripe／PayPal，回款时间从45天降18天。</div>
+  <div class="card-text">自由职业者5-10%收入因欠款流失；人工催款尴尬低效；Chaser、InvoiceSherpa面向中大企业。</div>
+  <div class="score-grid">
+    <div class="score-item">痛点<span class="score-val">4</span></div>
+    <div class="score-item">可自动化<span class="score-val">5</span></div>
+    <div class="score-item">商业化<span class="score-val">4</span></div>
+    <div class="score-item">个人可执行<span class="score-val">4</span></div>
+  </div>
+  <div class="next-step-box">Next Step → MVP（Stripe集成+邮件模板引擎）→ IndieHackers招募20个beta → 定价$29-99／月。</div>
+</div>
+
+<div class="card">
+  <div class="card-num">IDEA 08</div>
+  <div class="card-title">CLAUDE.md／Skill模板包销售</div>
+  <div class="card-pitch">把行业专属CLAUDE.md模板做成$19-49一次付费数字资产，类似当年SEO关键词库。</div>
+  <div class="card-text">所有人都在写CLAUDE.md但99%不会写、不知道最佳实践。新品类，早进场能赚钱。</div>
+  <div class="score-grid">
+    <div class="score-item">痛点<span class="score-val">3</span></div>
+    <div class="score-item">可自动化<span class="score-val">5</span></div>
+    <div class="score-item">商业化<span class="score-val">4</span></div>
+    <div class="score-item">个人可执行<span class="score-val">5</span></div>
+  </div>
+  <div class="next-step-box">Next Step → 选3个最熟垂直各写1份CLAUDE.md+5-10个Skill+演示视频 → 挂Gumroad／闲鱼／小报童。</div>
+</div>
+
+<div class="card">
+  <div class="card-num">IDEA 09</div>
+  <div class="card-title">Premium Niche Newsletter</div>
+  <div class="card-pitch">5000-20000订户的垂直Newsletter年入$60K-1.2M。大众饱和，垂直空白。</div>
+  <div class="card-text">从业者信息过载但缺高质量过滤。大众Newsletter饱和，垂直细分每周都有新机会。</div>
+  <div class="score-grid">
+    <div class="score-item">痛点<span class="score-val">3</span></div>
+    <div class="score-item">可自动化<span class="score-val">3</span></div>
+    <div class="score-item">商业化<span class="score-val">5</span></div>
+    <div class="score-item">个人可执行<span class="score-val">3</span></div>
+  </div>
+  <div class="next-step-box">Next Step → 选niche每周免费写1期连续12期 → 第3个月开放付费$7-15／月 → 第6个月达2000订户接赞助。</div>
+</div>
+
+<div class="card">
+  <div class="card-num">IDEA 10</div>
+  <div class="card-title">AI短剧／播客／音频内容工厂</div>
+  <div class="card-pitch">AI全流程（脚本→配音→剪辑→字幕），按集／按分钟卖给MCN。声音经济6110亿。</div>
+  <div class="card-text">短剧需求爆炸但产能被"编剧+配音+剪辑"卡死；AI流水线1-2小时出片，MCN愿意为稳定量产付费。</div>
+  <div class="score-grid">
+    <div class="score-item">痛点<span class="score-val">4</span></div>
+    <div class="score-item">可自动化<span class="score-val">4</span></div>
+    <div class="score-item">商业化<span class="score-val">4</span></div>
+    <div class="score-item">个人可执行<span class="score-val">3</span></div>
+  </div>
+  <div class="next-step-box">Next Step → 选1个细分（知识博主60秒口播）→ ChatGPT+ElevenLabs+CapCut跑通5个样品 → 联系10个知识博主送1条。</div>
+</div>
+
+<div class="card">
+  <div class="card-num">IDEA 11</div>
+  <div class="card-title">TrustMRR／DataFast 横向产品堆</div>
+  <div class="card-pitch">Marc Lou 4个产品月营收$80K，boilerplate共享新产品7-14天上线。</div>
+  <div class="card-text">单micro-SaaS中位数$500／月太薄；围绕"indie maker"这一用户群做3-5个互补产品形成稳定现金流。</div>
+  <div class="score-grid">
+    <div class="score-item">痛点<span class="score-val">4</span></div>
+    <div class="score-item">可自动化<span class="score-val">4</span></div>
+    <div class="score-item">商业化<span class="score-val">5</span></div>
+    <div class="score-item">个人可执行<span class="score-val">3</span></div>
+  </div>
+  <div class="next-step-box">Next Step → 第1-2月选1个用户群+共享boilerplate → 第3-6月连续ship 3个产品。</div>
+</div>
+
+<div class="card">
+  <div class="card-num">IDEA 12</div>
+  <div class="card-title">Polsia类 Agent编排平台</div>
+  <div class="card-pitch">让用户用Agent跑公司（战略+代码+客服+营销），$49／月订阅。Polsia已验证30天$1M ARR。</div>
+  <div class="card-text">大量solo创业者不会写代码、不会做营销、不会做客服。Agent角色矩阵：CEO／Marketing／Sales／Support。</div>
+  <div class="score-grid">
+    <div class="score-item">痛点<span class="score-val">5</span></div>
+    <div class="score-item">可自动化<span class="score-val">5</span></div>
+    <div class="score-item">商业化<span class="score-val">5</span></div>
+    <div class="score-item">个人可执行<span class="score-val">2</span></div>
+  </div>
+  <div class="next-step-box">Next Step → 第1-3月聚焦1个垂直（AI营销Agent编排）做小版本 → 第4-6月跑通单vertical PMF → 第7-12月横向扩展。</div>
+</div>
+
+<!-- ── TRENDS ── -->
+<div class="section-head">2026年OPC的5条趋势暗线</div>
+<div class="tldr">
+  <div class="tldr-item">1. Agent编排是新的SaaS：垂直SaaS → AI Wrapper → Agent编排平台</div>
+  <div class="tldr-item">2."卖结果"取代"卖工具"：用户付费愿意为最终交付物（截图／PDF／文章／音乐）付钱</div>
+  <div class="tldr-item">3. Niche比规模重要10倍：通用CRM输给垂直CRM，通用SEO输给垂直GEO</div>
+  <div class="tldr-item">4. 开源freemium是新GTM：自部署免费+托管增值，比纯闭源SaaS获客快2-3倍</div>
+  <div class="tldr-item">5. Boilerplate共享是Marc Lou模式的护城河：边际成本优势</div>
+</div>
+
+<div class="footer">
+  OPC IDEA · 日报 ／ <a href="daily.html">今日快讯</a> ／ <a href="subscribe.html">订阅日报</a> ／ <a href="feed.xml">RSS</a> ／ <a href="newsletter-strategy.md">启动策略</a><br>
+  数据窗口 2026-04至2026-06 · 14个来源 · 报告生成 2026-06-09<br>
+  商业·认知观察者·出品
+</div>
 
 </div>
-<script>
-  // Register Service Worker for PWA offline support
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('sw.js').catch(err => {
-        console.warn('[OPC] SW registration failed:', err);
-      });
-    });
-  }
-</script>
 </body>
 </html>
