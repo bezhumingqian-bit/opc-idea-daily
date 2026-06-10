@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<title>OPC IDEA 深度版 Vol.001 · 2026年6月9日</title>
-<meta name="description" content="12条一人公司方向精筛 IDEA · 9个百万美元真实案例拆解 · 4维评分">
+<title>OPC IDEA · 日报归档</title>
+<meta name="description" content="一人公司方向每日精筛 IDEA · 工作日每天 3 条 · 周末深度版 · 全量归档">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
   body {
@@ -16,13 +16,11 @@
     min-height: 100vh;
   }
   .container { max-width: 720px; margin: 0 auto; padding: 20px 16px; }
-  a { color: #8A8474; }
-  /* ── Header ── */
   .header {
     background: #FAF7EE;
     border: 1px solid #E6E1D6;
     border-radius: 4px;
-    padding: 32px 28px 28px;
+    padding: 36px 28px 30px;
     margin-bottom: 16px;
   }
   .brand {
@@ -32,475 +30,170 @@
     text-transform: uppercase;
     margin-bottom: 14px;
   }
-  .header-title {
-    font-size: 26px;
+  h1 {
+    font-size: 28px;
     font-weight: 500;
     color: #2C2A26;
-    letter-spacing: 1px;
-    line-height: 1.3;
-    margin-bottom: 6px;
+    letter-spacing: 1.5px;
   }
-  .header-date {
+  .subtitle {
     font-size: 13px;
     color: #7A766C;
+    margin-top: 6px;
     letter-spacing: 0.5px;
   }
-  .divider {
-    height: 1px;
-    background: #E6E1D6;
-    margin: 18px 0;
+  .divider { height: 1px; background: #E6E1D6; margin: 20px 0; }
+  .desc {
+    font-size: 13px;
+    line-height: 1.85;
+    color: #5F5B53;
+    max-width: 540px;
+    letter-spacing: 0.2px;
   }
-  .header-meta { display: flex; flex-wrap: wrap; gap: 8px; }
-  .header-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top:12px; padding-top:12px; border-top:1px solid #EEEAE0; }
-  .chip {
-    padding: 3px 10px;
-    background: transparent;
-    border: 1px solid #D8D2C5;
-    border-radius: 2px;
+  .section-label {
     font-size: 11px;
-    color: #7A766C;
-    letter-spacing: 0.5px;
+    letter-spacing: 3px;
+    color: #B5B0A4;
+    text-transform: uppercase;
+    margin: 20px 4px 10px;
   }
-  .link-chip {
-    padding: 3px 10px;
-    background: transparent;
-    border: 1px solid #D8D2C5;
-    border-radius: 2px;
-    font-size: 11px;
-    color: #8A8474;
-    letter-spacing: 0.5px;
+  .today-link {
+    background: #FFFEFC;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 20px 24px;
     text-decoration: none;
-  }
-  .link-chip:hover { border-color: #8A8474; }
-  /* ── Section divider ── */
-  .section-head {
-    font-size: 12px;
-    letter-spacing: 3px;
-    color: #B5B0A4;
-    text-transform: uppercase;
-    margin: 22px 0 12px;
-  }
-  /* ── Tldr ── */
-  .tldr {
-    background: #FFFEFC;
-    border: 1px solid #E6E1D6;
-    border-radius: 4px;
-    padding: 22px 24px;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
     margin-bottom: 10px;
+    transition: border-color 0.15s, background 0.15s;
   }
-  .tldr-item {
-    font-size: 13.5px;
-    color: #2C2A26;
-    line-height: 1.75;
-    padding: 8px 0;
-    border-bottom: 1px solid #EEEAE0;
-    letter-spacing: 0.2px;
-  }
-  .tldr-item:last-child { border-bottom: none; }
-  .tldr-num {
-    display: inline-block;
-    width: 20px;
-    font-size: 11px;
-    color: #B5B0A4;
-    letter-spacing: 1px;
-    margin-right: 4px;
-  }
-  /* ── Table ── */
-  .table-wrap {
-    background: #FFFEFC;
-    border: 1px solid #E6E1D6;
-    border-radius: 4px;
-    padding: 16px 20px;
-    margin-bottom: 10px;
-    overflow-x: auto;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 12.5px;
-  }
-  th {
-    text-align: left;
-    font-size: 11px;
-    letter-spacing: 1px;
-    color: #B5B0A4;
-    font-weight: 500;
-    padding: 6px 0 10px;
-    border-bottom: 1px solid #E6E1D6;
-  }
-  td {
-    padding: 8px 0;
-    border-bottom: 1px solid #EEEAE0;
-    color: #5F5B53;
-    vertical-align: top;
-    line-height: 1.6;
-  }
-  tr:last-child td { border-bottom: none; }
-  /* ── Card (idea details) ── */
-  .card {
-    background: #FFFEFC;
-    border: 1px solid #E6E1D6;
-    border-radius: 4px;
-    padding: 22px 24px;
-    margin-bottom: 10px;
-  }
-  .card-num {
-    font-size: 11px;
-    letter-spacing: 3px;
-    color: #B5B0A4;
-    margin-bottom: 8px;
-  }
-  .card-title {
-    font-size: 17px;
-    font-weight: 500;
-    color: #2C2A26;
-    letter-spacing: 0.3px;
-    line-height: 1.4;
-    margin-bottom: 10px;
-  }
-  .card-pitch {
-    font-size: 13.5px;
-    color: #2C2A26;
-    line-height: 1.75;
-    padding: 12px 16px;
-    background: #F7F4EC;
-    border-left: 2px solid #8A8474;
-    border-radius: 0 2px 2px 0;
-    margin-bottom: 14px;
-  }
-  .card-label {
-    font-size: 11px;
-    letter-spacing: 2px;
-    color: #B5B0A4;
-    text-transform: uppercase;
-    margin: 14px 0 6px;
-  }
-  .card-text {
-    font-size: 13px;
-    color: #5F5B53;
-    line-height: 1.75;
-    margin-bottom: 6px;
-  }
-  .score-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
-    margin: 12px 0;
-    padding: 10px 12px;
+  .today-link:hover, .today-link:active {
+    border-color: #C4BBA9;
     background: #FAF7EE;
-    border-radius: 3px;
-    border: 1px solid #EEEAE0;
-    text-align: center;
   }
-  .score-item {
-    font-size: 11px;
-    color: #7A766C;
-    letter-spacing: 1px;
-  }
-  .score-val {
-    font-size: 18px;
-    font-weight: 500;
-    color: #2C2A26;
-    display: block;
-    margin-top: 2px;
-  }
-  .next-step-box {
-    padding: 10px 12px;
-    background: #F7F4EC;
-    border-radius: 3px;
-    font-size: 12.5px;
-    color: #2C2A26;
-    line-height: 1.7;
-    margin-top: 10px;
-  }
-  /* ── Hook box ── */
-  .hook-box {
-    background: #F7F4EC;
+  .archive-list { display: flex; flex-direction: column; gap: 10px; }
+  .archive-item {
+    background: #FFFEFC;
     border: 1px solid #E6E1D6;
     border-radius: 4px;
-    padding: 16px 20px;
-    margin-bottom: 10px;
+    padding: 20px 24px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    transition: border-color 0.15s, background 0.15s;
   }
-  .hook-label {
-    font-size: 11px;
-    letter-spacing: 2px;
-    color: #B5B0A4;
-    text-transform: uppercase;
-    margin-bottom: 8px;
+  .archive-item:hover {
+    border-color: #C4BBA9;
+    background: #FAF7EE;
   }
-  .hook-text {
-    font-size: 14px;
+  .item-left { flex: 1; min-width: 0; }
+  .item-date {
+    font-size: 12px;
+    color: #8A8474;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+  }
+  .item-title {
+    font-size: 14.5px;
+    font-weight: 500;
+    line-height: 1.55;
     color: #2C2A26;
-    line-height: 1.7;
     letter-spacing: 0.2px;
   }
-  /* ── Footer ── */
+  .item-arrow { color: #8A8474; font-size: 16px; flex-shrink: 0; }
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 4px 10px;
+  }
+  .nav-link {
+    padding: 4px 12px;
+    background: #FFFEFC;
+    border: 1px solid #E6E1D6;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #8A8474;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .nav-link:hover { border-color: #8A8474; color: #5F5B53; }
   .footer {
+    background: #FAF7EE;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 18px;
     text-align: center;
-    margin-top: 28px;
-    margin-bottom: 20px;
+    margin-top: 16px;
     font-size: 11px;
     color: #B5B0A4;
-    letter-spacing: 0.5px;
-    line-height: 2;
+    letter-spacing: 1px;
   }
-  .note { font-size: 11px; color: #B5B0A4; letter-spacing: 0.5px; margin-top: 4px; }
-  @media (max-width: 640px) {
-    .container { padding: 12px 12px 32px; }
-    .header { padding: 24px 20px 22px; }
-    .header-title { font-size: 22px; }
-    .card { padding: 18px 16px; }
-    .score-grid { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 480px) {
+    .header { padding: 28px 20px 24px; }
+    h1 { font-size: 24px; }
   }
 </style>
 </head>
 <body>
 <div class="container">
 
-<!-- ── HEADER ── -->
 <div class="header">
-  <div class="brand">OPC IDEA · 深度版</div>
-  <div class="header-title">12条一人公司方向精筛IDEA</div>
-  <div class="header-date">Vol.001 · 2026年6月9日 · 周末深度合并版</div>
+  <div class="brand">OPC IDEA · 日报</div>
+  <h1>一人公司方向<br>每日精筛IDEA</h1>
+  <div class="subtitle">工作日每天 3 条 · 周末深度版 · 全量归档 · 零广告</div>
   <div class="divider"></div>
-  <div class="header-meta">
-    <span class="chip">5信源·12条精筛</span>
-    <span class="chip">9个百万案例</span>
-    <span class="chip">4维评分</span>
-    <span class="chip">一手源14+</span>
-  </div>
-  <div class="header-links">
-    <a href="daily.html" class="link-chip">📰 今日快讯</a>
-    <a href="subscribe.html" class="link-chip">📧 订阅日报</a>
-    <a href="feed.xml" class="link-chip">📡 RSS</a>
-    <a href="newsletter-strategy.md" class="link-chip">📋 启动策略</a>
+  <div class="desc">
+    每天 09:00 从 Product Hunt、GitHub Trending、DEV Community、Reddit、即刻等信源中精筛 3 条一人公司方向的创业 IDEA。每条带来源、分析和行动建议。周末合并 12 条深度版。不卖课、不收钱、全文可读。
   </div>
 </div>
 
-<!-- ── TL;DR ── -->
-<div class="section-head">TL;DR · 一句话总结</div>
-<div class="tldr">
-  <div class="tldr-item"><span class="tldr-num">01</span><b>AI Agent + 垂直 workflow</b> 是2026年OPC最大的金矿：Polsia 30天$1M ARR、Medvi 1年$4.01亿。</div>
-  <div class="tldr-item"><span class="tldr-num">02</span><b>中国GEO市场几乎空白</b>：80%中小商家不懂在DeepSeek／豆包／Kimi里被搜到，6-12个月内最低门槛OPC切入点。</div>
-  <div class="tldr-item"><span class="tldr-num">03</span><b>Micro-SaaS中位数$500／月</b>：1000+项目调研，30%永远跑不到$1K MRR——选niche比写代码重要10倍。</div>
-  <div class="tldr-item"><span class="tldr-num">04</span><b>Prompt as Product新范式</b>：CLAUDE.md／Skill／Sub-agent模板正在成为新"SEO关键词"，每个垂直$19-49打包卖。</div>
-  <div class="tldr-item"><span class="tldr-num">05</span><b>Marc Lou模式可复制</b>：4个微SaaS月营收$80K，关键在boilerplate共享。</div>
+<div class="nav-links">
+  <a href="daily.html" class="nav-link">今日快讯</a>
+  <a href="deep.html" class="nav-link">深度版 Vol.001</a>
+  <a href="subscribe.html" class="nav-link">订阅</a>
+  <a href="feed.xml" class="nav-link">RSS</a>
+  <a href="newsletter-strategy.md" class="nav-link">启动策略</a>
 </div>
 
-<!-- ── CASE TABLE ── -->
-<div class="section-head">数据快照 · 真实百万美元案例</div>
-<div class="table-wrap">
-<table>
-<thead><tr><th>案例</th><th>启动</th><th>团队</th><th>周期</th><th>营收</th><th>打法</th></tr></thead>
-<tbody>
-<tr><td><b>Polsia</b></td><td>&lt;$1K</td><td>1+Agent</td><td>30天</td><td>$1M ARR</td><td>$49／月+跨公司学习</td></tr>
-<tr><td><b>Medvi</b></td><td>$20K</td><td>1(+1)</td><td>14月</td><td>$4.01亿／年</td><td>GLP-1减肥药+AI全栈</td></tr>
-<tr><td><b>Base44</b></td><td>&lt;$50K</td><td>1</td><td>6月</td><td>$80M收购</td><td>自然语言建站</td></tr>
-<tr><td><b>Felix</b></td><td>&lt;$5K</td><td>1+Agent</td><td>几周</td><td>$200K</td><td>PDF+Skill市场</td></tr>
-<tr><td><b>ScreenshotAPI</b></td><td>&lt;$1K</td><td>1</td><td>10月</td><td>$10K MRR</td><td>利基开发者API</td></tr>
-<tr><td><b>Marc Lou</b></td><td>$0</td><td>1</td><td>3年</td><td>$80K／月</td><td>横向产品堆</td></tr>
-<tr><td><b>Pieter Levels</b></td><td>$0</td><td>1</td><td>持续</td><td>$200K+／月</td><td>12+产品</td></tr>
-<tr><td><b>Jacob Bank</b></td><td>&lt;$5K</td><td>1+40Agent</td><td>持续</td><td>$1M／年</td><td>AI全marketing</td></tr>
-<tr><td><b>Marcus</b></td><td>&lt;$2K</td><td>1+Agent</td><td>持续</td><td>$55K MRR</td><td>垂直建筑PM</td></tr>
-</tbody>
-</table>
-<p class="note">注：以上数字均来自公开报道与播客披露，未经独立审计，仅作量级参考。</p>
-</div>
-
-<!-- ── 12 IDEA CARDS ── -->
-<div class="section-head">12条深度IDEA · 按综合评分排序</div>
-
-<div class="card">
-  <div class="card-num">IDEA 01</div>
-  <div class="card-title">本地商家 GEO 优化服务</div>
-  <div class="card-pitch">帮餐饮／家政／教培等本地商家优化在 DeepSeek、豆包、Kimi、文小言等 AI 搜索结果里的曝光排名。</div>
-  <div class="card-label">痛点</div>
-  <div class="card-text">80%中小商家完全不懂AI搜索时代的优化逻辑，还在投大众点评、抖音本地推。消费者搜索行为已迁移，国内GEO服务商几乎空白。</div>
-  <div class="card-label">来源</div>
-  <div class="card-text">opcwang.com 2026-06-04列为赛道二；海外雏形 Profound、Otterly 已出现。</div>
-  <div class="score-grid">
-    <div class="score-item">痛点<span class="score-val">4</span></div>
-    <div class="score-item">可自动化<span class="score-val">3</span></div>
-    <div class="score-item">商业化<span class="score-val">4</span></div>
-    <div class="score-item">个人可执行<span class="score-val">5</span></div>
+<div class="section-label">今日</div>
+<a href="daily.html" class="today-link">
+  <div class="item-left">
+    <div class="item-date">2026年6月10日 · 星期三</div>
+    <div class="item-title">AI 创业计划代写 · $0建SaaS免费栈 · Agent生态工具</div>
   </div>
-  <div class="next-step-box">Next Step → 第1周调研3个本地行业各10家头部商家的AI搜索现状 → 第2周做样例报告免费PoC → 第3-4周定价1000-3000元／月，开通小红书获客。</div>
-</div>
+  <span class="item-arrow">→</span>
+</a>
 
-<div class="card">
-  <div class="card-num">IDEA 02</div>
-  <div class="card-title">垂直 AI Agent 代搭建服务</div>
-  <div class="card-pitch">基于扣子／Dify／Coze给跨境电商／宠物医院／房产中介搭建定制Agent，按"搭建费+月费"收费。</div>
-  <div class="card-label">痛点</div>
-  <div class="card-text">中小企业主听说过AI但不会用、不会搭。通用Agent满足不了行业属性。外包开发5-10万起步。</div>
-  <div class="card-label">来源</div>
-  <div class="card-text">opcwang.com赛道三；21财经多个真实案例：跨境电商客服Agent、房产中介卖点提炼Agent。</div>
-  <div class="score-grid">
-    <div class="score-item">痛点<span class="score-val">4</span></div>
-    <div class="score-item">可自动化<span class="score-val">4</span></div>
-    <div class="score-item">商业化<span class="score-val">5</span></div>
-    <div class="score-item">个人可执行<span class="score-val">4</span></div>
-  </div>
-  <div class="next-step-box">Next Step → 第1周选定1个垂直（宠物医院）做Demo → 第2周小红书/视频号演示 → 第3-4周找5家免费试用，转化2家付费（一次性5000-2万+月费500-2000）。</div>
-</div>
+<div class="section-label">往期归档</div>
+<div class="archive-list">
+  <a href="daily.html" class="archive-item">
+    <div class="item-left">
+      <div class="item-date">2026年6月10日 · Vol.002</div>
+      <div class="item-title">AI 创业计划代写 · $0 建 SaaS 免费栈 · Agent 生态工具新蓝海</div>
+    </div>
+    <span class="item-arrow">→</span>
+  </a>
 
-<div class="card">
-  <div class="card-num">IDEA 03</div>
-  <div class="card-title">Niche Research Agent</div>
-  <div class="card-pitch">给一个关键词／App名／赛道，自动分析竞品、关键词排名、用户评论sentiment、市场缺口，输出结构化报告。</div>
-  <div class="card-label">痛点</div>
-  <div class="card-text">独立开发者最痛的不是写代码，是不知道"该写什么"。Sensor Tower、App Annie $200+／月太贵。</div>
-  <div class="card-label">来源</div>
-  <div class="card-text">wsq.be GitHub trending分析推荐fork dexter架构；Glimpse、Sparktoro偏通用营销。</div>
-  <div class="score-grid">
-    <div class="score-item">痛点<span class="score-val">5</span></div>
-    <div class="score-item">可自动化<span class="score-val">5</span></div>
-    <div class="score-item">商业化<span class="score-val">4</span></div>
-    <div class="score-item">个人可执行<span class="score-val">4</span></div>
-  </div>
-  <div class="next-step-box">Next Step → 第1周选第一个niche（App Store ASO）跑通demo → 第2周IndieHackers收10个beta → 第3-6周每月迭代一个niche。</div>
-</div>
-
-<div class="card">
-  <div class="card-num">IDEA 04</div>
-  <div class="card-title">AI截图／PDF／HTML-to-Image API</div>
-  <div class="card-pitch">面向开发者的轻量API，按调用次数计费，ScreenshotAPI已10个月到$10K MRR。</div>
-  <div class="card-text">开发者反复写Puppeteer处理截图，中文乱码、字体丢失、并发爆炸。ApiFlash、ScreenShotOne按月$49太贵。</div>
-  <div class="score-grid">
-    <div class="score-item">痛点<span class="score-val">5</span></div>
-    <div class="score-item">可自动化<span class="score-val">4</span></div>
-    <div class="score-item">商业化<span class="score-val">5</span></div>
-    <div class="score-item">个人可执行<span class="score-val">3</span></div>
-  </div>
-  <div class="next-step-box">Next Step → Railway + Puppeteer搭MVP API + Stripe → HN Show "show HN" → 按调用量计费。</div>
-</div>
-
-<div class="card">
-  <div class="card-num">IDEA 05</div>
-  <div class="card-title">垂直 CRM（健身／纹身／婚礼策划师）</div>
-  <div class="card-pitch">为一个被通用CRM忽略的小行业做"啥都帮你想到了"的客户管理工具。Lovable / Bubble 可搞定。</div>
-  <div class="card-text">通用CRM对小行业不友好；这些行业的人还在用Excel、IG私信、纸质本子。长尾小行业几乎空白。</div>
-  <div class="score-grid">
-    <div class="score-item">痛点<span class="score-val">4</span></div>
-    <div class="score-item">可自动化<span class="score-val">5</span></div>
-    <div class="score-item">商业化<span class="score-val">4</span></div>
-    <div class="score-item">个人可执行<span class="score-val">5</span></div>
-  </div>
-  <div class="next-step-box">Next Step → 选1个最熟niche → Lovable搭demo → 5个用户访谈 → MVP上线$29-49／月，收20个种子用户。</div>
-</div>
-
-<div class="card">
-  <div class="card-num">IDEA 06</div>
-  <div class="card-title">Uptime监控 + 品牌化状态页</div>
-  <div class="card-pitch">开源自部署+托管双线，uptime-kuma 8.6万stars已验证需求。</div>
-  <div class="card-text">StatusPage太贵、Datadog太复杂、开源工具对非技术用户不友好。中小公司愿意为对外状态页付费。</div>
-  <div class="score-grid">
-    <div class="score-item">痛点<span class="score-val">4</span></div>
-    <div class="score-item">可自动化<span class="score-val">5</span></div>
-    <div class="score-item">商业化<span class="score-val">4</span></div>
-    <div class="score-item">个人可执行<span class="score-val">4</span></div>
-  </div>
-  <div class="next-step-box">Next Step → fork uptime-kuma加"一键生成品牌状态页" → 双线定价（自部署免费／托管$19-99／月）。</div>
-</div>
-
-<div class="card">
-  <div class="card-num">IDEA 07</div>
-  <div class="card-title">Invoice收款自动化</div>
-  <div class="card-pitch">自动按礼貌节奏催收未付发票，集成Stripe／PayPal，回款时间从45天降18天。</div>
-  <div class="card-text">自由职业者5-10%收入因欠款流失；人工催款尴尬低效；Chaser、InvoiceSherpa面向中大企业。</div>
-  <div class="score-grid">
-    <div class="score-item">痛点<span class="score-val">4</span></div>
-    <div class="score-item">可自动化<span class="score-val">5</span></div>
-    <div class="score-item">商业化<span class="score-val">4</span></div>
-    <div class="score-item">个人可执行<span class="score-val">4</span></div>
-  </div>
-  <div class="next-step-box">Next Step → MVP（Stripe集成+邮件模板引擎）→ IndieHackers招募20个beta → 定价$29-99／月。</div>
-</div>
-
-<div class="card">
-  <div class="card-num">IDEA 08</div>
-  <div class="card-title">CLAUDE.md／Skill模板包销售</div>
-  <div class="card-pitch">把行业专属CLAUDE.md模板做成$19-49一次付费数字资产，类似当年SEO关键词库。</div>
-  <div class="card-text">所有人都在写CLAUDE.md但99%不会写、不知道最佳实践。新品类，早进场能赚钱。</div>
-  <div class="score-grid">
-    <div class="score-item">痛点<span class="score-val">3</span></div>
-    <div class="score-item">可自动化<span class="score-val">5</span></div>
-    <div class="score-item">商业化<span class="score-val">4</span></div>
-    <div class="score-item">个人可执行<span class="score-val">5</span></div>
-  </div>
-  <div class="next-step-box">Next Step → 选3个最熟垂直各写1份CLAUDE.md+5-10个Skill+演示视频 → 挂Gumroad／闲鱼／小报童。</div>
-</div>
-
-<div class="card">
-  <div class="card-num">IDEA 09</div>
-  <div class="card-title">Premium Niche Newsletter</div>
-  <div class="card-pitch">5000-20000订户的垂直Newsletter年入$60K-1.2M。大众饱和，垂直空白。</div>
-  <div class="card-text">从业者信息过载但缺高质量过滤。大众Newsletter饱和，垂直细分每周都有新机会。</div>
-  <div class="score-grid">
-    <div class="score-item">痛点<span class="score-val">3</span></div>
-    <div class="score-item">可自动化<span class="score-val">3</span></div>
-    <div class="score-item">商业化<span class="score-val">5</span></div>
-    <div class="score-item">个人可执行<span class="score-val">3</span></div>
-  </div>
-  <div class="next-step-box">Next Step → 选niche每周免费写1期连续12期 → 第3个月开放付费$7-15／月 → 第6个月达2000订户接赞助。</div>
-</div>
-
-<div class="card">
-  <div class="card-num">IDEA 10</div>
-  <div class="card-title">AI短剧／播客／音频内容工厂</div>
-  <div class="card-pitch">AI全流程（脚本→配音→剪辑→字幕），按集／按分钟卖给MCN。声音经济6110亿。</div>
-  <div class="card-text">短剧需求爆炸但产能被"编剧+配音+剪辑"卡死；AI流水线1-2小时出片，MCN愿意为稳定量产付费。</div>
-  <div class="score-grid">
-    <div class="score-item">痛点<span class="score-val">4</span></div>
-    <div class="score-item">可自动化<span class="score-val">4</span></div>
-    <div class="score-item">商业化<span class="score-val">4</span></div>
-    <div class="score-item">个人可执行<span class="score-val">3</span></div>
-  </div>
-  <div class="next-step-box">Next Step → 选1个细分（知识博主60秒口播）→ ChatGPT+ElevenLabs+CapCut跑通5个样品 → 联系10个知识博主送1条。</div>
-</div>
-
-<div class="card">
-  <div class="card-num">IDEA 11</div>
-  <div class="card-title">TrustMRR／DataFast 横向产品堆</div>
-  <div class="card-pitch">Marc Lou 4个产品月营收$80K，boilerplate共享新产品7-14天上线。</div>
-  <div class="card-text">单micro-SaaS中位数$500／月太薄；围绕"indie maker"这一用户群做3-5个互补产品形成稳定现金流。</div>
-  <div class="score-grid">
-    <div class="score-item">痛点<span class="score-val">4</span></div>
-    <div class="score-item">可自动化<span class="score-val">4</span></div>
-    <div class="score-item">商业化<span class="score-val">5</span></div>
-    <div class="score-item">个人可执行<span class="score-val">3</span></div>
-  </div>
-  <div class="next-step-box">Next Step → 第1-2月选1个用户群+共享boilerplate → 第3-6月连续ship 3个产品。</div>
-</div>
-
-<div class="card">
-  <div class="card-num">IDEA 12</div>
-  <div class="card-title">Polsia类 Agent编排平台</div>
-  <div class="card-pitch">让用户用Agent跑公司（战略+代码+客服+营销），$49／月订阅。Polsia已验证30天$1M ARR。</div>
-  <div class="card-text">大量solo创业者不会写代码、不会做营销、不会做客服。Agent角色矩阵：CEO／Marketing／Sales／Support。</div>
-  <div class="score-grid">
-    <div class="score-item">痛点<span class="score-val">5</span></div>
-    <div class="score-item">可自动化<span class="score-val">5</span></div>
-    <div class="score-item">商业化<span class="score-val">5</span></div>
-    <div class="score-item">个人可执行<span class="score-val">2</span></div>
-  </div>
-  <div class="next-step-box">Next Step → 第1-3月聚焦1个垂直（AI营销Agent编排）做小版本 → 第4-6月跑通单vertical PMF → 第7-12月横向扩展。</div>
-</div>
-
-<!-- ── TRENDS ── -->
-<div class="section-head">2026年OPC的5条趋势暗线</div>
-<div class="tldr">
-  <div class="tldr-item">1. Agent编排是新的SaaS：垂直SaaS → AI Wrapper → Agent编排平台</div>
-  <div class="tldr-item">2."卖结果"取代"卖工具"：用户付费愿意为最终交付物（截图／PDF／文章／音乐）付钱</div>
-  <div class="tldr-item">3. Niche比规模重要10倍：通用CRM输给垂直CRM，通用SEO输给垂直GEO</div>
-  <div class="tldr-item">4. 开源freemium是新GTM：自部署免费+托管增值，比纯闭源SaaS获客快2-3倍</div>
-  <div class="tldr-item">5. Boilerplate共享是Marc Lou模式的护城河：边际成本优势</div>
+  <a href="daily.html" class="archive-item">
+    <div class="item-left">
+      <div class="item-date">2026年6月9日 · Vol.001</div>
+      <div class="item-title">本地商家 GEO · 垂直 AI Agent 代搭建 · CLAUDE.md 模板包</div>
+    </div>
+    <span class="item-arrow">→</span>
+  </a>
 </div>
 
 <div class="footer">
-  OPC IDEA · 日报 ／ <a href="daily.html">今日快讯</a> ／ <a href="subscribe.html">订阅日报</a> ／ <a href="feed.xml">RSS</a> ／ <a href="newsletter-strategy.md">启动策略</a><br>
-  数据窗口 2026-04至2026-06 · 14个来源 · 报告生成 2026-06-09<br>
-  商业·认知观察者·出品
+  OPC IDEA · 日报 ／ 商业·认知观察者·出品
 </div>
 
 </div>
