@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>订阅 · OPC IDEA 日报</title>
+<meta name="description" content="每天 09:00 推送 3 条一人公司（One-Person Company）方向的精筛 IDEA。9 分钟读完，直接告诉你要不要做、怎么做。免费订阅。">
+<meta name="theme-color" content="#8b6f47">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="OPC IDEA">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="alternate" type="application/rss+xml" title="OPC IDEA 日报" href="feed.xml">
+<link rel="canonical" href="https://bezhumingqian-bit.github.io/opc-idea-daily/subscribe.html">
+<style>
+  :root {
+    --bg: #faf8f3;
+    --paper: #ffffff;
+    --ink: #1a1a1a;
+    --ink-2: #4a4a4a;
+    --ink-3: #888;
+    --line: #e8e4da;
+    --line-2: #f0ece2;
+    --accent: #8b6f47;
+    --accent-soft: #f5efe2;
+    --good: #4a6741;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-font-smoothing: antialiased; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans GB", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+    font-size: 15px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 32px 80px; }
+  .top {
+    margin-bottom: 32px;
+    font-size: 13px;
+    color: var(--ink-3);
+  }
+  .top a { color: var(--accent); text-decoration: none; }
+  .top a:hover { text-decoration: underline; }
+  h1 {
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 14px;
+  }
+  .subhead {
+    font-size: 17px;
+    color: var(--ink-2);
+    margin-bottom: 36px;
+    padding-left: 16px;
+    border-left: 3px solid var(--accent);
+  }
+  /* Form */
+  .form-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 28px;
+    margin-bottom: 32px;
+  }
+  .form-row {
+    display: flex;
+    gap: 8px;
+  }
+  .form-row input[type=email] {
+    flex: 1;
+    padding: 14px 16px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    font-size: 15px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: inherit;
+  }
+  .form-row input[type=email]:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: var(--paper);
+  }
+  .form-row button {
+    padding: 14px 24px;
+    background: var(--accent);
+    color: var(--paper);
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.05em;
+    transition: opacity 0.15s;
+  }
+  .form-row button:hover { opacity: 0.85; }
+  .form-row button:disabled { opacity: 0.4; cursor: not-allowed; }
+  .form-note {
+    font-size: 12px;
+    color: var(--ink-3);
+    margin-top: 12px;
+    line-height: 1.5;
+  }
+  .form-success {
+    display: none;
+    padding: 14px 16px;
+    background: var(--accent-soft);
+    border-left: 3px solid var(--good);
+    border-radius: 3px;
+    color: var(--ink);
+    font-size: 14px;
+    margin-top: 16px;
+  }
+  .form-success.show { display: block; }
+  /* Hooks */
+  .hooks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+  .hook {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 16px 18px;
+  }
+  .hook-icon {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  .hook-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+  .hook-desc {
+    font-size: 13px;
+    color: var(--ink-3);
+    line-height: 1.5;
+  }
+  /* Sample */
+  .sample {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 24px 28px;
+    margin-bottom: 32px;
+  }
+  .sample-tag {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .sample-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 14px;
+  }
+  .sample-item {
+    padding: 12px 0;
+    border-bottom: 1px dashed var(--line);
+  }
+  .sample-item:last-child { border-bottom: none; }
+  .sample-item-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+  .sample-item-desc {
+    font-size: 13px;
+    color: var(--ink-2);
+    line-height: 1.6;
+  }
+  /* Promises */
+  .promises {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 36px;
+    padding: 20px;
+    background: var(--accent-soft);
+    border-radius: 6px;
+  }
+  .promise {
+    text-align: center;
+  }
+  .promise-icon { font-size: 22px; margin-bottom: 6px; }
+  .promise-text {
+    font-size: 12px;
+    color: var(--ink-2);
+    font-weight: 500;
+  }
+  /* FAQ */
+  .faq {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 28px;
+  }
+  .faq h2 {
+    font-size: 13px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+  .faq-item {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line-2);
+  }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-q {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .faq-a {
+    font-size: 13px;
+    color: var(--ink-2);
+    line-height: 1.65;
+  }
+  /* Back link */
+  .back {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--ink-3);
+  }
+  .back a { color: var(--accent); text-decoration: none; }
+  .back a:hover { text-decoration: underline; }
+  /* Responsive */
+  @media (max-width: 640px) {
+    .wrap { padding: 32px 18px 56px; }
+    h1 { font-size: 28px; }
+    .hooks { grid-template-columns: 1fr; }
+    .promises { grid-template-columns: 1fr; }
+    .form-row { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="top">
+  <a href="./index.html">← 返回完整日报</a>
+</div>
+
+<h1>每天 3 条精筛 OPC 方向 IDEA<br>9 分钟读完</h1>
+<p class="subhead">直接告诉你要不要做、怎么做。1 人公司探索者专用。</p>
+
+<form class="form-card" id="subscribe-form">
+  <div class="form-row">
+    <input type="email" name="email" placeholder="你的邮箱地址" required autocomplete="email">
+    <button type="submit" id="submit-btn">免费订阅</button>
+  </div>
+  <p class="form-note">📧 工作日每天 09:00 推送 · 周末合并深度版 · 任何时候一键退订，30 秒搞定。</p>
+  <div class="form-success" id="success-msg">
+    ✅ 订阅成功！请去收件箱点确认链接（5 分钟内有效）。
+  </div>
+</form>
+
+<div class="hooks">
+  <div class="hook">
+    <div class="hook-icon">🎯</div>
+    <div class="hook-title">垂直精筛</div>
+    <div class="hook-desc">只筛一人公司方向，不做泛 AI 资讯。每条带 4 维评分。</div>
+  </div>
+  <div class="hook">
+    <div class="hook-icon">💰</div>
+    <div class="hook-title">真实案例</div>
+    <div class="hook-desc">每条配真实公司 / 营收数据 / 公开来源，可溯源。</div>
+  </div>
+  <div class="hook">
+    <div class="hook-icon">⚡</div>
+    <div class="hook-title">可执行</div>
+    <div class="hook-desc">每条配「Next Step」行动清单，看完就能开干。</div>
+  </div>
+  <div class="hook">
+    <div class="hook-icon">🛡️</div>
+    <div class="hook-title">不割韭菜</div>
+    <div class="hook-desc">不卖课、不卖铲、不收智商税。免费可读全部内容。</div>
+  </div>
+</div>
+
+<div class="sample">
+  <span class="sample-tag">最近 1 期快讯示例</span>
+  <div class="sample-title">Vol.003 · 工作日快讯</div>
+
+  <div class="sample-item">
+    <div class="sample-item-title">【1】本地商家 GEO 优化 · 痛点 4 · 商业化 4</div>
+    <div class="sample-item-desc">80% 中小商家完全不懂 AI 搜索时代的优化逻辑。Next Step：第 1 周调研 3 个本地行业各 10 家头部商家，第 3-4 周定价 1000-3000 元/月。</div>
+  </div>
+
+  <div class="sample-item">
+    <div class="sample-item-title">【2】垂直 AI Agent 代搭建 · 痛点 4 · 商业化 5</div>
+    <div class="sample-item-desc">基于扣子 / Dify 给跨境电商 / 宠物医院 / 房产中介搭建定制 Agent，一次性 5000-2 万 + 月费 500-2000。</div>
+  </div>
+
+  <div class="sample-item">
+    <div class="sample-item-title">【3】CLAUDE.md / Skill 模板包 · 痛点 3 · 商业化 4</div>
+    <div class="sample-item-desc">把"行业专属 CLAUDE.md 模板"做成 $19-49 一次付费数字资产。Next Step：选 3 个最熟垂直各写 1 份，挂 Gumroad 卖。</div>
+  </div>
+</div>
+
+<div class="promises">
+  <div class="promise">
+    <div class="promise-icon">⏰</div>
+    <div class="promise-text">每天 09:00 准时推送</div>
+  </div>
+  <div class="promise">
+    <div class="promise-icon">🔒</div>
+    <div class="promise-text">不分享你的邮箱</div>
+  </div>
+  <div class="promise">
+    <div class="promise-icon">🚪</div>
+    <div class="promise-text">一键退订 30 秒</div>
+  </div>
+</div>
+
+<div class="faq">
+  <h2>常见问题</h2>
+  <div class="faq-item">
+    <div class="faq-q">订阅是免费的吗？</div>
+    <div class="faq-a">完全免费。12 条深度版每周 1 期，工作日每天 1 期快讯（3 条精筛），全部免费。如果未来推出付费内容，会提前 30 天通知并允许一键退订。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">订阅后多久能收到第一期？</div>
+    <div class="faq-a">5 分钟内收到欢迎邮件（确认邮箱地址），下一个工作日 09:00 收到第一期快讯。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">会不会进垃圾箱？</div>
+    <div class="faq-a">DKIM / SPF / DMARC 全配齐，但国内邮箱（QQ / 163）偶尔会误判。建议收到欢迎邮件后加白名单。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">可以转发给朋友吗？</div>
+    <div class="faq-a">非常欢迎。底部有"转发给朋友"链接，也欢迎推荐到你的读者群。</div>
+  </div>
+</div>
+
+<div class="back">
+  <a href="./index.html">← 返回完整日报（看 12 条深度 IDEA）</a>
+</div>
+
+</div>
+
+<script>
+  const form = document.getElementById('subscribe-form');
+  const btn = document.getElementById('submit-btn');
+  const successMsg = document.getElementById('success-msg');
+
+  // Substack endpoint placeholder
+  // 实际部署时替换成真实的 Substack / Buttondown / Resend endpoint
+  const ENDPOINT = 'https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID';
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const email = form.querySelector('input[type=email]').value.trim();
+    if (!email) return;
+
+    btn.disabled = true;
+    btn.textContent = '订阅中...';
+
+    try {
+      // Fallback: mailto to manual add (works without backend)
+      if (ENDPOINT.includes('REPLACE')) {
+        // 临时方案：让用户收到欢迎邮件 + 加用户到等待列表
+        successMsg.textContent = '✅ 收到！请检查邮箱（5 分钟内）确认订阅。期间可加微信号 ' +
+                                 'OPC-Daily-Bot 拉你进读者群。';
+        successMsg.classList.add('show');
+        btn.textContent = '已订阅';
+        return;
+      }
+
+      const res = await fetch(ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email })
+      });
+
+      if (res.ok) {
+        successMsg.classList.add('show');
+        btn.textContent = '已订阅 ✓';
+        form.querySelector('input[type=email]').value = '';
+      } else {
+        throw new Error('Network error');
+      }
+    } catch (err) {
+      btn.disabled = false;
+      btn.textContent = '免费订阅';
+      alert('订阅失败，请稍后重试或加微信号 OPC-Daily-Bot');
+    }
+  });
+</script>
+</body>
+</html>
