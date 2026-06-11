@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <title>OPC IDEA · 2026年6月11日</title>
 <meta name="description" content="每日精选 3 条一人公司方向的精筛 IDEA · 一手源 · 今日已刷新">
+<!-- Open Graph / WeChat 分享卡片 -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="OPC IDEA · 一人公司方向每日 3 条">
+<meta property="og:description" content="今日：Agent Skills 市场爆发 · AI Agent 可视化调试 · Token 优化即服务。每日 09:00 自动刷新。">
+<meta property="og:url" content="https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html">
+<meta property="og:image" content="https://bezhumingqian-bit.github.io/opc-idea-daily/icon-512.png">
+<meta property="og:site_name" content="OPC IDEA 日报">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OPC IDEA · 一人公司方向每日 3 条">
+<meta name="twitter:description" content="今日 3 条精筛 IDEA · 一手源 · 工作日每日 09:00 刷新">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
   body {
@@ -15,7 +25,7 @@
     -webkit-font-smoothing: antialiased;
     min-height: 100vh;
   }
-  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px; }
+  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px 40px; }
   .header {
     background: #FAF7EE;
     border: 1px solid #E6E1D6;
@@ -47,15 +57,47 @@
   .hook-box { background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 16px 20px; margin-bottom: 10px; }
   .hook-label { font-size: 11px; letter-spacing: 2px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 8px; }
   .hook-text { font-size: 14px; color: #2C2A26; line-height: 1.7; letter-spacing: 0.2px; }
+
+  /* 上下期导航 */
+  .prev-next {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    margin-top: 18px; margin-bottom: 18px;
+  }
+  .pn-card {
+    background: #FFFEFC; border: 1px solid #E6E1D6; border-radius: 4px;
+    padding: 14px 18px; text-decoration: none; color: inherit; display: block;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .pn-card:hover { border-color: #C4BBA9; background: #FAF7EE; }
+  .pn-card.disabled { opacity: 0.4; pointer-events: none; }
+  .pn-label { font-size: 10.5px; letter-spacing: 1.5px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 4px; }
+  .pn-title { font-size: 13px; color: #2C2A26; line-height: 1.5; letter-spacing: 0.2px; }
+  .pn-right { text-align: right; }
+  .pn-card.next { border-color: #8A8474; }
+  .pn-card.next .pn-label { color: #8A8474; }
+
+  /* 标签条 */
+  .tag-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding-left: 42px; }
+  .tag { padding: 2px 8px; background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 2px; font-size: 10.5px; color: #7A766C; letter-spacing: 0.3px; }
+
   .footer { text-align: center; margin-top: 28px; margin-bottom: 20px; font-size: 11px; color: #B5B0A4; letter-spacing: 0.5px; line-height: 2; }
   .footer a { color: #8A8474; text-decoration: none; }
   .footer a:hover { text-decoration: underline; }
+
+  /* 打印优化 */
+  @media print {
+    body { background: white; }
+    .card, .header, .hook-box { box-shadow: none; border-color: #ccc; }
+    .prev-next, .footer, .header-meta { display: none; }
+  }
   @media (max-width: 640px) {
     .container { padding: 12px 12px 32px; }
     .header { padding: 24px 20px 22px; }
     .header-title { font-size: 22px; }
     .card { padding: 18px 16px; }
     .fact, .next-step { padding-left: 0; margin-left: 0; }
+    .tag-bar { padding-left: 0; }
+    .prev-next { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -65,13 +107,13 @@
 <div class="header">
   <div class="brand"><a href="./index.html">OPC IDEA · 日报</a></div>
   <div class="header-title">一人公司方向·每日3条</div>
-  <div class="header-date">2026年6月11日 · 星期四 · 今日刷新</div>
+  <div class="header-date">2026年6月11日 · 星期四 · Vol.003 · 今日已刷新</div>
   <div class="divider"></div>
   <div class="header-meta">
     <span class="chip">GitHub Trending · 今日</span>
     <span class="chip">Product Hunt · 今日</span>
     <span class="chip">Trendshift</span>
-    <span class="chip">已与前两日去重</span>
+    <span class="chip">已与前两期去重</span>
   </div>
   <div class="header-meta" style="margin-top:8px;">
     <a href="subscribe.html" style="font-size:13px;color:#8A8474;text-decoration:none;letter-spacing:0.3px;">📧 每天09:00自动收到 →</a>
@@ -90,6 +132,12 @@
   <div class="next-step">
     两条 OPC 路径：A）建 Agent Skills 交易市场平台——让独立开发者上传并销售专用技能包（$5-49/个），抽佣 20-30%，类似 Gumroad for Agent Skills；B）做"技能工厂"——为特定垂直行业批量生产 CLAUDE.md/Skill 模板（跨境电商选品、法律合同审查、医疗问诊预筛），按行业套件 $29-99/套定价。先选 1 个垂直跑通 10 个付费客户，再横向复制。
   </div>
+  <div class="tag-bar">
+    <span class="tag">#Agent Skills</span>
+    <span class="tag">#交易市场</span>
+    <span class="tag">#CLAUDE.md</span>
+    <span class="tag">#平台机会</span>
+  </div>
   <div class="meta">
     <span>来源 · GitHub Trending / Microsoft SkillOpt 2026-06-11</span>
   </div>
@@ -106,6 +154,12 @@
   </div>
   <div class="next-step">
     OPC 可做的细分方向：A）面向特定 Agent 框架（Claude Code/Codex/Hermes）的专用调试插件，开源起步建社区，再推托管版 $19-49/月；B）做"Agent 测试套件"——预制 100 个常见场景，在部署前自动对 Agent 做压力测试和行为回归，类似前端 E2E 测试之于 Web 开发。Agent 质量保障是一个还没人认真做的百亿级市场。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#Agent 调试</span>
+    <span class="tag">#DevTool</span>
+    <span class="tag">#E2E 测试</span>
+    <span class="tag">#基础设施</span>
   </div>
   <div class="meta">
     <span>来源 · Agentation（Product Hunt 2026-06-11）</span>
@@ -124,6 +178,12 @@
   <div class="next-step">
     当前缺口：市面上的 token 优化方案几乎全部面向英文场景。做中文内容专用的压缩优化器——中文 LLM 调用在 2026 年增速远超英文，但压缩器对中文语义的保留率远低于英文。先做一个开源的中文 token 压缩库建声誉，再推 SaaS API 按调用量收费（¥0.01-0.05/次）。ROI 极直观：客户用你的 API 花 ¥50，省 ¥500 token 费。
   </div>
+  <div class="tag-bar">
+    <span class="tag">#Token 优化</span>
+    <span class="tag">#中文市场</span>
+    <span class="tag">#降本</span>
+    <span class="tag">#API 收费</span>
+  </div>
   <div class="meta">
     <span>来源 · GitHub Trending / Trendshift 2026-06-11</span>
   </div>
@@ -133,13 +193,25 @@
 <div class="hook-box">
   <div class="hook-label">本期钩子</div>
   <div class="hook-text">
-    2026 年 6 月的一个明确信号：AI Agent 生态正在从"造 Agent"转向"给 Agent 配工具"。Agent Skills 市场、Agent 调试器、Token 优化器——这三个方向都在说同一件事：Agent 越普及，Agent 基础设施越值钱。别再卷"又一个 AI Wrapper"了，去卷"让所有 AI Wrapper 跑得更快、更省钱、更可控"的基础设施。周末深度版 12 条 IDEA 已上线 → <a href="./index.html" style="color:#5F5B53;text-decoration:underline;">打开完整报告</a>
+    2026 年 6 月的一个明确信号：AI Agent 生态正在从"造 Agent"转向"给 Agent 配工具"。Agent Skills 市场、Agent 调试器、Token 优化器——这三个方向都在说同一件事：Agent 越普及，Agent 基础设施越值钱。别再卷"又一个 AI Wrapper"了，去卷"让所有 AI Wrapper 跑得更快、更省钱、更可控"的基础设施。
   </div>
+</div>
+
+<!-- 上下期导航 -->
+<div class="prev-next">
+  <a href="2026-06-10.html" class="pn-card">
+    <div class="pn-label">← 上一期</div>
+    <div class="pn-title">Vol.002 · AI 创业计划代写</div>
+  </a>
+  <a href="2026-06-12.html" class="pn-card next pn-right">
+    <div class="pn-label">下一期 →</div>
+    <div class="pn-title">Vol.004 · 即将生成</div>
+  </a>
 </div>
 
 <div class="footer">
   OPC IDEA · 日报 ／ <a href="subscribe.html">订阅日报</a> ／ <a href="feed.xml">RSS</a> ／ <a href="./index.html">完整报告</a> ／ <a href="newsletter-strategy.md">启动策略</a><br>
-  北京 · 2026年6月11日 · 今日刷新<br>
+  北京 · 2026年6月11日 · Vol.003 · 今日刷新<br>
   商业·认知观察者·出品
 </div>
 

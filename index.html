@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <title>OPC IDEA · 日报归档</title>
 <meta name="description" content="一人公司方向每日精筛 IDEA · 工作日每天 3 条 · 周末深度版 · 全量归档">
+<meta property="og:title" content="OPC IDEA · 日报归档">
+<meta property="og:description" content="工作日每天 3 条精筛 · 周末 12 条深度版 · 全量归档">
+<meta property="og:image" content="https://bezhumingqian-bit.github.io/opc-idea-daily/icon-512.png">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
   body {
@@ -15,7 +18,7 @@
     -webkit-font-smoothing: antialiased;
     min-height: 100vh;
   }
-  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px; }
+  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px 40px; }
   .header {
     background: #FAF7EE;
     border: 1px solid #E6E1D6;
@@ -50,16 +53,28 @@
     max-width: 540px;
     letter-spacing: 0.2px;
   }
+
+  .stats-bar {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
+    margin: 16px 0 4px;
+  }
+  .stat-cell {
+    background: #FFFEFC; border: 1px solid #E6E1D6; border-radius: 4px;
+    padding: 14px 16px; text-align: center;
+  }
+  .stat-num { font-size: 22px; font-weight: 500; color: #2C2A26; line-height: 1; }
+  .stat-label { font-size: 11px; color: #7A766C; letter-spacing: 0.5px; margin-top: 6px; }
+
   .section-label {
     font-size: 11px;
     letter-spacing: 3px;
     color: #B5B0A4;
     text-transform: uppercase;
-    margin: 20px 4px 10px;
+    margin: 24px 4px 10px;
   }
   .today-link {
     background: #FFFEFC;
-    border: 1px solid #E6E1D6;
+    border: 1px solid #8A8474;
     border-radius: 4px;
     padding: 20px 24px;
     text-decoration: none;
@@ -72,7 +87,7 @@
     transition: border-color 0.15s, background 0.15s;
   }
   .today-link:hover, .today-link:active {
-    border-color: #C4BBA9;
+    border-color: #5F5B53;
     background: #FAF7EE;
   }
   .archive-list { display: flex; flex-direction: column; gap: 10px; }
@@ -99,6 +114,12 @@
     color: #8A8474;
     margin-bottom: 5px;
     letter-spacing: 0.5px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .item-vol {
+    display: inline-block; padding: 1px 7px;
+    background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 2px;
+    font-size: 10px; color: #7A766C; letter-spacing: 0.5px;
   }
   .item-title {
     font-size: 14.5px;
@@ -107,7 +128,10 @@
     color: #2C2A26;
     letter-spacing: 0.2px;
   }
+  .item-tag-row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 7px; }
+  .item-tag { font-size: 10.5px; color: #7A766C; letter-spacing: 0.3px; }
   .item-arrow { color: #8A8474; font-size: 16px; flex-shrink: 0; }
+
   .nav-links {
     display: flex;
     flex-wrap: wrap;
@@ -126,20 +150,23 @@
     transition: border-color 0.15s, color 0.15s;
   }
   .nav-link:hover { border-color: #8A8474; color: #5F5B53; }
+
   .footer {
     background: #FAF7EE;
     border: 1px solid #E6E1D6;
     border-radius: 4px;
     padding: 18px;
     text-align: center;
-    margin-top: 16px;
+    margin-top: 24px;
     font-size: 11px;
     color: #B5B0A4;
     letter-spacing: 1px;
   }
+
   @media (max-width: 480px) {
     .header { padding: 28px 20px 24px; }
     h1 { font-size: 24px; }
+    .stats-bar { grid-template-columns: 1fr 1fr; }
   }
 </style>
 </head>
@@ -154,6 +181,21 @@
   <div class="desc">
     每天 09:00 从 Product Hunt、GitHub Trending、DEV Community、Reddit、即刻等信源中精筛 3 条一人公司方向的创业 IDEA。每条带来源、分析和行动建议。周末合并 12 条深度版。不卖课、不收钱、全文可读。
   </div>
+
+  <div class="stats-bar">
+    <div class="stat-cell">
+      <div class="stat-num">3</div>
+      <div class="stat-label">总期数</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">9</div>
+      <div class="stat-label">已发 IDEA</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">9</div>
+      <div class="stat-label">百万级案例</div>
+    </div>
+  </div>
 </div>
 
 <div class="nav-links">
@@ -162,46 +204,64 @@
   <a href="subscribe.html" class="nav-link">订阅</a>
   <a href="feed.xml" class="nav-link">RSS</a>
   <a href="newsletter-strategy.md" class="nav-link">启动策略</a>
+  <a href="SOP-AI日报搭建完整指南.md" class="nav-link">搭建 SOP</a>
 </div>
 
 <div class="section-label">今日</div>
 <a href="daily.html" class="today-link">
   <div class="item-left">
-    <div class="item-date">2026年6月11日 · 星期四</div>
+    <div class="item-date">
+      <span>2026年6月11日 · 星期四</span>
+      <span class="item-vol">VOL.003</span>
+    </div>
     <div class="item-title">Agent Skills 市场爆发 · AI Agent 可视化调试 · Token 优化即服务</div>
+    <div class="item-tag-row">
+      <span class="item-tag">#Agent Skills</span>
+      <span class="item-tag">#Agent 调试</span>
+      <span class="item-tag">#Token 优化</span>
+    </div>
   </div>
   <span class="item-arrow">→</span>
 </a>
 
 <div class="section-label">往期归档</div>
 <div class="archive-list">
-  <a href="daily.html" class="archive-item">
+  <a href="2026-06-10.html" class="archive-item">
     <div class="item-left">
-      <div class="item-date">2026年6月11日 · Vol.003</div>
-      <div class="item-title">Agent Skills 市场爆发 · AI Agent 可视化调试 · Token 优化即服务</div>
-    </div>
-    <span class="item-arrow">→</span>
-  </a>
-
-  <a href="daily.html" class="archive-item">
-    <div class="item-left">
-      <div class="item-date">2026年6月10日 · Vol.002</div>
+      <div class="item-date">
+        <span>2026年6月10日 · 星期二</span>
+        <span class="item-vol">VOL.002</span>
+      </div>
       <div class="item-title">AI 创业计划代写 · $0 建 SaaS 免费栈 · Agent 生态工具新蓝海</div>
+      <div class="item-tag-row">
+        <span class="item-tag">#BP 代写</span>
+        <span class="item-tag">#$0 栈</span>
+        <span class="item-tag">#context-mode</span>
+      </div>
     </div>
     <span class="item-arrow">→</span>
   </a>
 
-  <a href="daily.html" class="archive-item">
+  <a href="2026-06-09.html" class="archive-item">
     <div class="item-left">
-      <div class="item-date">2026年6月9日 · Vol.001</div>
+      <div class="item-date">
+        <span>2026年6月9日 · 星期一</span>
+        <span class="item-vol">VOL.001 · 试刊</span>
+      </div>
       <div class="item-title">本地商家 GEO · 垂直 AI Agent 代搭建 · CLAUDE.md 模板包</div>
+      <div class="item-tag-row">
+        <span class="item-tag">#GEO</span>
+        <span class="item-tag">#Agent 搭建</span>
+        <span class="item-tag">#Skill 模板</span>
+      </div>
     </div>
     <span class="item-arrow">→</span>
   </a>
 </div>
 
 <div class="footer">
-  OPC IDEA · 日报 ／ 商业·认知观察者·出品
+  OPC IDEA · 日报 ／ 商业·认知观察者·出品<br>
+  数据窗口 2026-04 至 2026-06
 </div>
 
 </div>
