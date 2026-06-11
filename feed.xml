@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送 3 条一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Tue, 09 Jun 2026 09:34:00 +0800</lastBuildDate>
+  <lastBuildDate>Thu, 11 Jun 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 13 · Agent Skills 市场平台 · 新"App Store"品类</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-13</link>
+    <description>GitHub Trending 被 Agent Skills 仓库霸榜：agent-skills 51.8k⭐、superpowers 224k⭐、andrej-karpathy-skills 166.4k⭐。微软发布 SkillOpt。两条 OPC 路径：A）建 Agent Skills 交易市场，像 Gumroad for Agent Skills，抽佣 20-30%；B）做"技能工厂"，为垂直行业批量生产 CLAUDE.md 模板，$29-99/套。</description>
+    <pubDate>Thu, 11 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-003-01</guid>
+    <category>Agent Skills / 市场平台</category>
+  </item>
+
+  <item>
+    <title>IDEA 14 · AI Agent 可视化调试工具 · "Chrome DevTools for Agent"</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-14</link>
+    <description>Agentation（今日 Product Hunt）提供 Agent 行为可视化调试——步骤回放、决策链路追踪、token 消耗分析。OPC 方向：面向 Claude Code/Codex 等框架做专用调试插件，开源起步建社区，再推托管版 $19-49/月；或做"Agent 测试套件"预制 100 个场景自动压力测试。</description>
+    <pubDate>Thu, 11 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-003-02</guid>
+    <category>Agent 基础设施</category>
+  </item>
+
+  <item>
+    <title>IDEA 15 · Token 优化即服务 · LLM 成本压缩 95%</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-15</link>
+    <description>headroom（7.3k⭐，今日新上榜）实现 LLM 输入压缩 60-95%。codegraph（37.8k⭐）预索引代码知识图谱。OPC 缺口：做中文专用 token 压缩优化器——当前方案几乎全面向英文，中文市场巨大缺口。先开源建声誉，再推 SaaS API 按调用收费 ¥0.01-0.05/次。</description>
+    <pubDate>Thu, 11 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-003-03</guid>
+    <category>Developer Tool / 成本优化</category>
+  </item>
 
   <item>
     <title>IDEA 01 · 本地商家 GEO（AI 搜索）优化服务</title>
