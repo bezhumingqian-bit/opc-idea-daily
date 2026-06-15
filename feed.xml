@@ -3,14 +3,59 @@
 <channel>
   <title>OPC IDEA 日报</title>
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
-  <description>每天推送 3 条一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
+  <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Thu, 11 Jun 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Mon, 15 Jun 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
 
   <item>
+    <title>IDEA 16 · OPC 业务"死人开关" · AI 自动接管系统</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-16</link>
+    <description>36氪报道独立开发者圈流行"死人开关"——AI接入deadmansswitch，断联后自动接管客服、维护服务器。目前没有专门面向OPC的业务连续性工具。做"OPC业务守护者"SaaS：72小时不活跃触发AI接管，$19-49/月。冷启动：在Indie Hackers发帖"如果你突然挂了，你的SaaS还能活几天？"</description>
+    <pubDate>Mon, 15 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-004-01</guid>
+    <category>OPC 基础设施 / 业务连续性</category>
+  </item>
+
+  <item>
+    <title>IDEA 17 · AI 搜索品牌防御 · LLM Brand Defender</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-17</link>
+    <description>Vibe Coding让山寨SaaS复制成本归零。用户问ChatGPT"最好的XX工具"，LLM经常混淆正版和山寨。做LLM Brand Defender：监测10+LLM返回结果、检测山寨域名、输出品牌份额月报。手工版$97-197/份起步，验证需求后自动化SaaS $99-299/月。不是说SEO工具，是AI搜索时代的品牌战情室。</description>
+    <pubDate>Mon, 15 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-004-02</guid>
+    <category>AI 搜索 / 品牌安全</category>
+  </item>
+
+  <item>
+    <title>IDEA 18 · 初创企业合规即服务 · $299/月 GDP R/SOC2 扫描</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-18</link>
+    <description>每一家拿到enterprise deal的初创都撞墙——要SOC2/GDPR合规但买不起Vanta/Drata。做轻量合规平台：先做GDPR+AWS，4-8周MVP。GitHub CI集成自动扫描+基础设施配置检查+合规报告PDF。$99-299/月。获客钩子："你的第一个企业客户要SOC2报告，而你只有2个人。"</description>
+    <pubDate>Mon, 15 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-004-03</guid>
+    <category>RegTech / B2B SaaS</category>
+  </item>
+
+  <item>
+    <title>IDEA 19 · AI 编程 Agent 远程驾驶舱 · 手机管理数字员工</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-19</link>
+    <description>SuperTurtle/paseo/cc-switch同时在PH和GitHub Trending出现，Agent远程控制新品类正在形成。做"Agent仪表盘"：跨Claude Code/Codex/Cursor监控Agent状态，Push通知任务完成/阻塞，Agent工作日报。Freemium：免费1个Agent，$9-29/月多Agent。</description>
+    <pubDate>Mon, 15 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-004-04</guid>
+    <category>DevTool / Agent 管理</category>
+  </item>
+
+  <item>
+    <title>IDEA 20 · AI 短视频商业化分发引擎 · 跨平台一键发布</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-20</link>
+    <description>MoneyPrinterTurbo 71k⭐，AI视频生成已commoditized。新瓶颈是分发——同时发TikTok/YouTube/小红书/视频号，格式适配和跨平台数据追踪极度碎片化。做"AI视频跨平台分发引擎"："视频的Shopify"，自动格式化+定时发布+数据分析。$29-79/月。</description>
+    <pubDate>Mon, 15 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-004-05</guid>
+    <category>创作者工具 / 内容分发</category>
+  </item>
+
+  <item>
     <title>IDEA 13 · Agent Skills 市场平台 · 新"App Store"品类</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-13</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-06-11.html#idea-13</link>
     <description>GitHub Trending 被 Agent Skills 仓库霸榜：agent-skills 51.8k⭐、superpowers 224k⭐、andrej-karpathy-skills 166.4k⭐。微软发布 SkillOpt。两条 OPC 路径：A）建 Agent Skills 交易市场，像 Gumroad for Agent Skills，抽佣 20-30%；B）做"技能工厂"，为垂直行业批量生产 CLAUDE.md 模板，$29-99/套。</description>
     <pubDate>Thu, 11 Jun 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-003-01</guid>
@@ -19,7 +64,7 @@
 
   <item>
     <title>IDEA 14 · AI Agent 可视化调试工具 · "Chrome DevTools for Agent"</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-14</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-06-11.html#idea-14</link>
     <description>Agentation（今日 Product Hunt）提供 Agent 行为可视化调试——步骤回放、决策链路追踪、token 消耗分析。OPC 方向：面向 Claude Code/Codex 等框架做专用调试插件，开源起步建社区，再推托管版 $19-49/月；或做"Agent 测试套件"预制 100 个场景自动压力测试。</description>
     <pubDate>Thu, 11 Jun 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-003-02</guid>
@@ -28,7 +73,7 @@
 
   <item>
     <title>IDEA 15 · Token 优化即服务 · LLM 成本压缩 95%</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-15</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-06-11.html#idea-15</link>
     <description>headroom（7.3k⭐，今日新上榜）实现 LLM 输入压缩 60-95%。codegraph（37.8k⭐）预索引代码知识图谱。OPC 缺口：做中文专用 token 压缩优化器——当前方案几乎全面向英文，中文市场巨大缺口。先开源建声誉，再推 SaaS API 按调用收费 ¥0.01-0.05/次。</description>
     <pubDate>Thu, 11 Jun 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-003-03</guid>
