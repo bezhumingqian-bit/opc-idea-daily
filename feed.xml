@@ -5,8 +5,53 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Mon, 15 Jun 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Tue, 17 Jun 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 21 · AI Agent 零人类公司 · Felix 月入 $30 万</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-21</link>
+    <description>Nat Eliason 的 AI Agent Felix 月入 $300K——自己建站、写邮件、开发票、管理 560+ 商品页面，配备子 Agent 客服和销售。但 AI Agent 无法开设银行账户和签署法律文件。做"AI Agent 公司工具包"：虚拟银行账户 + AI 法人注册 + 经营合规仪表盘。$49-199/月。不是又一个 AI 工具——是"AI 公司的公司"。</description>
+    <pubDate>Tue, 17 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-005-01</guid>
+    <category>AI 公司化 / Fintech for AI</category>
+  </item>
+
+  <item>
+    <title>IDEA 22 · 本地 AI 数据主权 · Odysseus 65k⭐ 后的"隐私盒子"</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-22</link>
+    <description>PewDiePie 的 Odysseus 两周 65k⭐，把 ChatGPT 体验搬回本地。但部署需要 Docker+GPU 配置——90% OPC 创始人搞不定。做"OPC 隐私盒子"：图形化一键部署，预配置常用 OPC 场景。基础版免费，Pro $19/月。冷启动钩子："你的 AI 助手知道你的全部商业机密——花 10 分钟把它搬回自己家。"</description>
+    <pubDate>Tue, 17 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-005-02</guid>
+    <category>数据主权 / 本地 AI / 开源包装</category>
+  </item>
+
+  <item>
+    <title>IDEA 23 · AI 员工平台 · MakersClaw PH 第三，Agent 从工具变同事</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-23</link>
+    <description>Product Hunt 今日 #3 MakersClaw：在 Slack/Teams 里"雇佣 AI 员工"。AGIRAILS 让 Agent 互相雇佣链上结算。做"AI 员工模板商店"：AI 电商运营/SaaS 客服/内容营销，每个$29-99。先做一个爆款在 PH 和即刻同时发布。不是卖模板——是"你招的第一个 AI 员工"。</description>
+    <pubDate>Tue, 17 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-005-03</guid>
+    <category>AI 员工 / Agent 平台 / 模板经济</category>
+  </item>
+
+  <item>
+    <title>IDEA 24 · AI 编码 Agent 工具链管家 · 碎片化是新痛点</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-24</link>
+    <description>今日 PH 前 20 中 6 个是 AI 编码 Agent 配件（Edgee Turbo、GitHits、Canopy、DevCleaner、Glint、Athena），碎片化严重。做"AI Dev 管家"——统一面板集成模型切换 + 代码搜索 + 会话管理 + 磁盘清理。免费版 2 Agent，Pro $9/月。先做免费"Agent 磁盘清理器"在 GitHub 引流。</description>
+    <pubDate>Tue, 17 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-005-04</guid>
+    <category>DevTool / Agent 工具链 / 开源引流</category>
+  </item>
+
+  <item>
+    <title>IDEA 25 · 创始人 AI 晨报 · 中文 OPC 的"虚拟高管"</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-25</link>
+    <description>Every 推出 AI CFO/Bookkeeper/CHRO，Mastercard 推 Virtual C-Suite，PH #9 Dirac 做创始人晨报。全是英文、美国市场。做"OPC 创始人晨报"：每日 8:00 推送 5 分钟简报（收入支出 + 客户邮件 + GitHub 进展 + 竞品动态 + 今日 3 件决策）。接 Stripe/GitHub/Gmail/企微，用 DeepSeek 做中文 NLU。免费版 3 数据源，Pro ¥29/月。</description>
+    <pubDate>Tue, 17 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-005-05</guid>
+    <category>创始人工具 / AI 决策 / 中国本土化</category>
+  </item>
 
   <item>
     <title>IDEA 16 · OPC 业务"死人开关" · AI 自动接管系统</title>

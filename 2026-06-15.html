@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<title>OPC IDEA · 2026年6月15日</title>
+<meta name="description" content="每日精选一人公司方向的精筛 IDEA · Vol.004 · OPC 死人开关 / 品牌防御 / 合规 / Agent 驾驶舱 / 视频分发">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta property="og:description" content="今日：OPC 死人开关 · AI 搜索品牌防御 · 合规即服务 · Agent 远程驾驶舱 · AI 视频分发引擎。2026年6月15日">
+<meta property="og:url" content="https://bezhumingqian-bit.github.io/opc-idea-daily/2026-06-15.html">
+<meta property="og:image" content="https://bezhumingqian-bit.github.io/opc-idea-daily/icon-512.png">
+<meta property="og:site_name" content="OPC IDEA 日报">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Segoe UI", "Helvetica Neue", sans-serif; background: #F5F1E8; color: #2C2A26; line-height: 1.65; -webkit-font-smoothing: antialiased; min-height: 100vh; }
+  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px 40px; }
+  .header { background: #FAF7EE; border: 1px solid #E6E1D6; border-radius: 4px; padding: 32px 28px 28px; margin-bottom: 16px; }
+  .brand { font-size: 11px; letter-spacing: 4px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 14px; }
+  .brand a { color: #B5B0A4; text-decoration: none; }
+  .header-title { font-size: 26px; font-weight: 500; color: #2C2A26; letter-spacing: 1px; }
+  .header-date { font-size: 13px; color: #7A766C; margin-top: 6px; letter-spacing: 0.5px; }
+  .divider { height: 1px; background: #E6E1D6; margin: 18px 0; }
+  .header-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .chip { padding: 3px 10px; background: transparent; border: 1px solid #D8D2C5; border-radius: 2px; font-size: 11px; color: #7A766C; letter-spacing: 0.5px; }
+  .card { background: #FFFEFC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 22px 24px; margin-bottom: 10px; }
+  .card-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+  .num { width: 28px; height: 28px; border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; flex-shrink: 0; letter-spacing: 0.5px; background: #EEEAE0; color: #5A5443; }
+  .headline { font-size: 15.5px; font-weight: 500; color: #2C2A26; line-height: 1.5; flex: 1; padding-top: 3px; letter-spacing: 0.2px; }
+  .fact { font-size: 13.5px; color: #5F5B53; line-height: 1.75; margin-bottom: 12px; padding-left: 42px; }
+  .next-step { font-size: 13.5px; color: #2C2A26; line-height: 1.75; padding: 12px 16px; margin-left: 42px; background: #F7F4EC; border-left: 2px solid #8A8474; border-radius: 0 2px 2px 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; padding-left: 42px; font-size: 11.5px; color: #7A766C; }
+  .hook-box { background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 16px 20px; margin-bottom: 10px; }
+  .hook-label { font-size: 11px; letter-spacing: 2px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 8px; }
+  .hook-text { font-size: 14px; color: #2C2A26; line-height: 1.7; letter-spacing: 0.2px; }
+  .tag-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding-left: 42px; }
+  .tag { padding: 2px 8px; background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 2px; font-size: 10.5px; color: #7A766C; letter-spacing: 0.3px; }
+  .prev-next { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 18px; margin-bottom: 18px; }
+  .pn-card { background: #FFFEFC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 14px 18px; text-decoration: none; color: inherit; display: block; transition: border-color 0.15s, background 0.15s; }
+  .pn-card:hover { border-color: #C4BBA9; background: #FAF7EE; }
+  .pn-card.disabled { opacity: 0.4; pointer-events: none; }
+  .pn-label { font-size: 10.5px; letter-spacing: 1.5px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 4px; }
+  .pn-title { font-size: 13px; color: #2C2A26; line-height: 1.5; letter-spacing: 0.2px; }
+  .pn-right { text-align: right; }
+  .pn-card.next { border-color: #8A8474; }
+  .pn-card.next .pn-label { color: #8A8474; }
+  .footer { text-align: center; margin-top: 28px; margin-bottom: 20px; font-size: 11px; color: #B5B0A4; letter-spacing: 0.5px; line-height: 2; }
+  .footer a { color: #8A8474; text-decoration: none; }
+  @media (max-width: 640px) { .container { padding: 12px 12px 32px; } .header { padding: 24px 20px 22px; } .header-title { font-size: 22px; } .card { padding: 18px 16px; } .fact, .next-step { padding-left: 0; margin-left: 0; } .tag-bar { padding-left: 0; } .prev-next { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+  <div class="brand"><a href="./index.html">OPC IDEA · 日报</a></div>
+  <div class="header-title">一人公司方向·每日精选</div>
+  <div class="header-date">2026年6月15日 · 星期一 · Vol.004 · 已归档</div>
+  <div class="divider"></div>
+  <div class="header-meta">
+    <span class="chip">Product Hunt · 6/15</span>
+    <span class="chip">GitHub Trending · 6/15</span>
+    <span class="chip">36氪 / 独立开发者社区</span>
+    <span class="chip">已与前三期去重</span>
+  </div>
+</div>
+
+<!-- CARD 1 -->
+<div class="card">
+  <div class="card-header"><span class="num">01</span><span class="headline">OPC 业务"死人开关" · 独立开发者断联后的 AI 自动接管系统</span></div>
+  <div class="fact">36氪 6月12日报道：独立开发者圈正在流行给自己配"死人开关"——把 AI 接入 deadmansswitch 服务，如果连续几天没动静，AI 自动接管客服、维护服务器、甚至继续在远程平台接单。目前市场上没有专门面向 OPC/独立开发者的业务连续性工具。</div>
+  <div class="next-step">OPC 路径：做"OPC 业务守护者"SaaS——72小时不活跃触发 AI 接管客服、监控服务器、通知紧急联系人。定价 $19-49/月。冷启动：在 Indie Hackers/V2EX 发帖"如果你突然挂了，你的 SaaS 还能活几天？"</div>
+  <div class="tag-bar"><span class="tag">#OPC 基础设施</span><span class="tag">#业务连续性</span><span class="tag">#死人开关</span><span class="tag">#AI 接管</span></div>
+  <div class="meta"><span>来源 · 36氪 / deadmansswitch.com / Indie Hackers 社区 2026-06-15</span></div>
+</div>
+
+<!-- CARD 2 -->
+<div class="card">
+  <div class="card-header"><span class="num">02</span><span class="headline">AI 搜索品牌防御 · 当 ChatGPT 把用户指给了山寨网站</span></div>
+  <div class="fact">2025-2026年新痛点：Vibe Coding让山寨SaaS复制成本归零。用户问ChatGPT"最好的XX工具"，LLM经常混淆正版和山寨。LLM Brand Defender方案：监测10+LLM返回结果、检测山寨域名、生成LLM优化内容、月报品牌份额。</div>
+  <div class="next-step">冷启动：手工版《LLM品牌审计报告》，$97-197/份，在Twitter/X上卖。48小时卖出5份→搭建自动化监测SaaS（$99-299/月）。不是SEO工具，是AI搜索时代的品牌战情室。</div>
+  <div class="tag-bar"><span class="tag">#AI 搜索</span><span class="tag">#品牌防御</span><span class="tag">#LLM 监测</span><span class="tag">#新兴品类</span></div>
+  <div class="meta"><span>来源 · galadon.com / Reddit r/SaaS / LLM 搜索行为研究 2026-06-15</span></div>
+</div>
+
+<!-- CARD 3 -->
+<div class="card">
+  <div class="card-header"><span class="num">03</span><span class="headline">初创企业合规即服务 · $299/月自动 GDPR/SOC2 扫描</span></div>
+  <div class="fact">每一家拿到enterprise deal的初创都会撞墙——客户要SOC2/GDPR合规证明，但买不起Vanta/Drata（$5000+/年）。市场存在明确价格断档：企业级$5000+，$200-500区间完全空白。</div>
+  <div class="next-step">轻量合规平台：先做GDPR+AWS，4-8周MVP。GitHub CI集成自动扫描代码风险+基础设施配置检查+生成合规报告PDF。$99-299/月。获客钩子："你的第一个企业客户要SOC2报告，而你只有2个人。"</div>
+  <div class="tag-bar"><span class="tag">#合规</span><span class="tag">#RegTech</span><span class="tag">#B2B SaaS</span><span class="tag">#开发者工具</span></div>
+  <div class="meta"><span>来源 · 10100.com Micro-SaaS 研究 / Reddit r/SaaS / YC 社区 2026-06-15</span></div>
+</div>
+
+<!-- CARD 4 -->
+<div class="card">
+  <div class="card-header"><span class="num">04</span><span class="headline">AI 编程 Agent 远程驾驶舱 · 用手机管理你的数字员工</span></div>
+  <div class="fact">Product Hunt 和 GitHub Trending 同时出现新品类：Agent 远程控制工具。SuperTurtle手机操控Codex；paseo（11.3k⭐）跨设备编排多Agent；cc-switch（26.3k⭐）统一控制面板。</div>
+  <div class="next-step">"Agent 仪表盘"——Web+移动统一面板，跨Claude Code/Codex/Cursor监控Agent状态。Push通知任务完成/阻塞，Agent日报总结一天工作。Freemium：免费1个Agent，$9-29/月多Agent+团队版。</div>
+  <div class="tag-bar"><span class="tag">#Agent 管理</span><span class="tag">#移动端</span><span class="tag">#DevTool</span><span class="tag">#远程控制</span></div>
+  <div class="meta"><span>来源 · Product Hunt / GitHub Trending (SuperTurtle/paseo/cc-switch) 2026-06-15</span></div>
+</div>
+
+<!-- CARD 5 -->
+<div class="card">
+  <div class="card-header"><span class="num">05</span><span class="headline">AI 短视频商业化分发引擎 · 生成不难，难的是让对的人看到</span></div>
+  <div class="fact">MoneyPrinterTurbo 71k⭐，AI视频生成已彻底commoditized。新瓶颈：生成100条视频不难，难的是同时分发到TikTok/YouTube/小红书/视频号，针对每个平台做格式和算法优化。</div>
+  <div class="next-step">"AI视频跨平台分发引擎"——不是视频编辑器，是"视频的Shopify"。接入AI输出→自动格式化→定时发布→跨平台数据分析。$29-79/月。钩子："你用AI一天生成20条视频，然后花3小时手动发到4个平台——为什么？"</div>
+  <div class="tag-bar"><span class="tag">#AI 视频</span><span class="tag">#内容分发</span><span class="tag">#创作者工具</span><span class="tag">#跨平台</span></div>
+  <div class="meta"><span>来源 · GitHub Trending (MoneyPrinterTurbo 71k⭐) / Product Hunt (CapCut) / 创作者社区 2026-06-15</span></div>
+</div>
+
+<!-- HOOK -->
+<div class="hook-box">
+  <div class="hook-label">本期钩子</div>
+  <div class="hook-text">2026 年 6 月的一个新趋势：OPC 创业正在从"跑得更快"转向"活得更久"和"守得更稳"。死人开关解决"创始人风险"，品牌防御解决"AI 搜索时代的认知劫持"，合规扫描解决"从小作坊到企业供应商的信任断档"。这三个方向的共同逻辑是——当一个人就是一家公司时，你最稀缺的不是新点子，而是持续性和防御能力。</div>
+</div>
+
+<div class="prev-next">
+  <a href="2026-06-11.html" class="pn-card"><div class="pn-label">← 上一期</div><div class="pn-title">Vol.003 · Agent Skills 市场爆发</div></a>
+  <a href="daily.html" class="pn-card next pn-right"><div class="pn-label">下一期 →</div><div class="pn-title">Vol.005 · AI 零人类公司 / 数据主权</div></a>
+</div>
+
+<div class="footer">
+  OPC IDEA · 日报 ／ <a href="index.html">完整归档</a> ／ <a href="feed.xml">RSS</a><br>
+  北京 · 2026年6月15日 · Vol.004 · 已归档<br>
+  商业·认知观察者·出品
+</div>
+</div>
+</body>
+</html>
