@@ -5,8 +5,53 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Tue, 17 Jun 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Tue, 30 Jun 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 26 · Agent 经济支付层 · Bluerails 让 AI 找到你并付钱</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-26</link>
+    <description>PH 6月25日周榜：Bluerails Discovery（#2，621票）让 AI Agent 像独立经济主体一样发现商家并完成支付。Upstream（#1，876票）重设计邮件让人类和 Agent 协作。但 Agent 想付钱给 SaaS 仍需人类确认——缺"Agent 的 Stripe"。做"AgentPay"：Agent 虚拟账户 + API 计费网关 + 支出仪表盘。$0-1K 免费，1K+ 阶梯收费。冷启动：PH 发"We built Stripe for AI agents"。</description>
+    <pubDate>Tue, 30 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-006-01</guid>
+    <category>Agent 经济 / Fintech for AI</category>
+  </item>
+
+  <item>
+    <title>IDEA 27 · 微型 SaaS 收购市场 · 头部 $600B，尾部 $10K-$100K 没人做</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-27</link>
+    <description>SpaceX 以 $600 亿美元收购 Cursor，"50 个 Micro SaaS Ideas"文章在 indie hacker 圈疯转。中间地带 $10K-$100K 收购空白。做"MicroExit"：OPC 微型 SaaS 收购市场，AI 估值引擎 + 标准化尽调 + Escrow + 资产转移。List fee $49，成功费 6%。冷启动：手动撮合前 5 笔。</description>
+    <pubDate>Tue, 30 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-006-02</guid>
+    <category>Micro SaaS 收购 / 市场平台</category>
+  </item>
+
+  <item>
+    <title>IDEA 28 · AI 编码 Agent 安全护栏 · SkillSpector 月增 3.7K⭐</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-28</link>
+    <description>6月 GitHub Trending 第三条主线：Agent 安全治理。NVIDIA SkillSpector 月增 3.7K⭐扫描 Skills 安全漏洞，微软 MXC Rust 策略隔离。但 OPC 开发者用 Agent 零防护。做"AgentGuard"：Agent 权限扫描 + semgrep 代码审查 + 日志审计。免费版自动审查，Pro $9/月。开源核心引擎放 GitHub 引流。</description>
+    <pubDate>Tue, 30 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-006-03</guid>
+    <category>Agent 安全 / DevSecOps for AI</category>
+  </item>
+
+  <item>
+    <title>IDEA 29 · Agent 长记忆即服务 · cognee 24.2K⭐</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-29</link>
+    <description>6月 GitHub 记忆主线：cognee（24.2K⭐）知识图谱长记忆，headroom（14.2K⭐）Token 压缩，DeusData（18.1K⭐）代码记忆。但全部需自部署。做"MemBase"一键记忆 API：POST /memories（存），GET /memories?query= 查。自动路由最佳后端。Free 100MB，Pro $19/月。冷启动：DEV Community 发"Your AI Agent Has Alzheimer's"。</description>
+    <pubDate>Tue, 30 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-006-04</guid>
+    <category>Agent 记忆 / API 即服务</category>
+  </item>
+
+  <item>
+    <title>IDEA 30 · 一人公司分发操作系统 · Levels 点名"造工厂没流量"</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-30</link>
+    <description>Superframeworks 发布 Distribution Paradox：AI 砍了建造成本 80%，分发成本几乎为零。70%+ 失败 maker 归因"没客户"。Agensi 8周 15K 用户 $0 广告费。做"DistroOS"：Reddit 精确投递 + AEO 内容优化器 + PH 启动指挥台 + X 增长手册。$19/月起。冷启动：先写免费 PDF 发 r/SaaS。Slogan："你的公司不缺 AI，缺人知道它存在。"</description>
+    <pubDate>Tue, 30 Jun 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-006-05</guid>
+    <category>分发 / 增长工具 / AEO</category>
+  </item>
 
   <item>
     <title>IDEA 21 · AI Agent 零人类公司 · Felix 月入 $30 万</title>

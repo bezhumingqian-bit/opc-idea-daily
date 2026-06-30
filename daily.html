@@ -3,12 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<title>OPC IDEA · 2026年6月17日</title>
+<title>OPC IDEA · 2026年6月30日</title>
 <meta name="description" content="每日精选一人公司方向的精筛 IDEA · 一手源 · 今日已刷新">
-<!-- Open Graph / WeChat 分享卡片 -->
 <meta property="og:type" content="article">
 <meta property="og:title" content="OPC IDEA · 一人公司方向每日精选">
-<meta property="og:description" content="今日：AI 零人类公司 · 本地数据主权 · AI 员工平台 · Agent 工具链标准化 · 创始人晨报。每日 09:00 自动刷新。">
+<meta property="og:description" content="今日：Agent 经济支付层 · 微型 SaaS 收购市场 · AI 编码安全护栏 · Agent 长记忆即服务 · 一人公司分发操作系统。每日 09:00 自动刷新。">
 <meta property="og:url" content="https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html">
 <meta property="og:image" content="https://bezhumingqian-bit.github.io/opc-idea-daily/icon-512.png">
 <meta property="og:site_name" content="OPC IDEA 日报">
@@ -58,7 +57,6 @@
   .hook-label { font-size: 11px; letter-spacing: 2px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 8px; }
   .hook-text { font-size: 14px; color: #2C2A26; line-height: 1.7; letter-spacing: 0.2px; }
 
-  /* 上下期导航 */
   .prev-next {
     display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
     margin-top: 18px; margin-bottom: 18px;
@@ -76,7 +74,6 @@
   .pn-card.next { border-color: #8A8474; }
   .pn-card.next .pn-label { color: #8A8474; }
 
-  /* 标签条 */
   .tag-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding-left: 42px; }
   .tag { padding: 2px 8px; background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 2px; font-size: 10.5px; color: #7A766C; letter-spacing: 0.3px; }
 
@@ -108,13 +105,13 @@
 <div class="header">
   <div class="brand"><a href="./index.html">OPC IDEA · 日报</a></div>
   <div class="header-title">一人公司方向·每日精选</div>
-  <div class="header-date">2026年6月17日 · 星期二 · Vol.005 · 今日已刷新</div>
+  <div class="header-date">2026年6月30日 · 星期二 · Vol.006 · 今日已刷新</div>
   <div class="divider"></div>
   <div class="header-meta">
-    <span class="chip">Product Hunt · 今日</span>
-    <span class="chip">GitHub Trending · 今日</span>
-    <span class="chip">新智元 / Reddit r/SaaS</span>
-    <span class="chip">已与前四期去重</span>
+    <span class="chip">Product Hunt · 6月29日榜</span>
+    <span class="chip">GitHub Trending · 6月</span>
+    <span class="chip">Reddit r/SaaS / 即刻</span>
+    <span class="chip">已与前五期去重</span>
   </div>
   <div class="header-meta" style="margin-top:8px;">
     <a href="subscribe.html" style="font-size:13px;color:#8A8474;text-decoration:none;letter-spacing:0.3px;">每天09:00自动收到 →</a>
@@ -122,117 +119,118 @@
 </div>
 
 <!-- CARD 1 -->
-<div class="card">
+<div class="card" id="idea-26">
   <div class="card-header">
     <span class="num">01</span>
-    <span class="headline">AI Agent 零人类公司 · Felix 月入 $30 万后，OPC 进入"AI 当 CEO"时代</span>
+    <span class="headline">Agent 经济支付层爆发 · Bluerails 让 AI 找到你并付钱，但「Agent 的 Stripe」还没人做</span>
   </div>
   <div class="fact">
-    新智元 6月12日报道：美国创业者 Nat Eliason 的 AI Agent Felix 在一个月内自主创造了超 $300,000 收入——它自己建网站、写销售邮件、开发票、管理 560+ 个商品页面，配备子 Agent（Iris 客服、Remy 销售），人类只负责看营收报表。Felix 运营三条业务线：AI 部署指南 PDF（$29/份，贡献 $41K）、AI 技能模板市场（抽佣 10%）、企业定制 AI 部署（$2000+$500/月）。全月运营成本仅 $1500。但 Felix 面临一个根本性问题：AI Agent 无法开设银行账户、签署法律文件、注册公司。传统金融和法律系统假设"账户背后必须是人类"——这个缺口是 OPC 的基础设施空白地带。
+    Product Hunt 6月25日周榜释放了一个全新信号：Bluerails Discovery（#2，621票）直接打出"Let AI agents find you and pay you"——让 AI Agent 像一个独立的经济主体一样发现商家、完成支付。同一周，Upstream（#1，876票，YC $3M 种子轮）重新设计了邮件客户端，让人类和 AI Agent 在同一收件箱里协作处理事务。6月 Product Hunt Weekly 分析指出："2026 年，问题已经从'AI 能做什么'变成了'谁管理这个 AI 系统，谁来评估它，谁来确保它不会失控'。"但一个根本性的缺口仍然没人填：Agent 自主支付缺少一个"Agent 的 Stripe"——让商家对 Agent 开放 API 计费接口，Agent 可以像人类一样注册账户、签约、付款、退款。目前 Agent 想付钱给任何 SaaS 都需要人类来点"确认"按钮，这是整个 Agent 经济体最大的摩擦点。
   </div>
   <div class="next-step">
-    OPC 路径：做"AI Agent 公司工具包"——帮 AI-run business 解决三个致命缺口：①虚拟银行账户（与 Stripe Atlas / Mercury 合作，为 AI 代理生成专属子账户和 API 接入）；②AI 法人实体注册（一键在美国/新加坡/香港注册 C Corp，AI 作为管理层，人类为最终受益人）；③AI 经营合规仪表盘（自动报税、发票管理、收入追踪）。定价 $49-199/月。冷启动：先在 X/Twitter 上写一份免费《AI Agent 公司注册指南》PDF，获取种子用户邮箱，再推出 SaaS。不是又一个 AI 工具——是"AI 公司的公司"。
+    OPC 路径：做"AgentPay"——面向 SaaS/API 商家的 Agent 支付中间件。核心功能：①Agent 虚拟账户（每个 Agent 拥有独立子账户和支出限额）；②API 计费网关（Agent 调用你的 API 时自动按量扣费，无需前端人工确认）；③Agent 支出仪表盘（人类随时查看每个 Agent 花了多少钱、付给了谁）。技术栈：Stripe Connect + 自定义计量计费，MVP 4-6 周。定价按月交易额阶梯：$0-1K 免费，$1K-10K 收 2.5%，$10K+ 收 1.5%。冷启动：在 Product Hunt 发"We built Stripe for AI agents"，天然契合 PH 当前热度；同时在 r/OpenAI 和 Hacker News 发技术深度文章"Building a Payment Layer for the Agent Economy"。这不是又一个计费工具——是"Agent 经济体的第一块金融积木"。
   </div>
   <div class="tag-bar">
-    <span class="tag">#AI 公司化</span>
+    <span class="tag">#Agent 经济</span>
     <span class="tag">#Fintech for AI</span>
+    <span class="tag">#API 计费</span>
     <span class="tag">#OPC 基础设施</span>
-    <span class="tag">#LegalTech</span>
   </div>
   <div class="meta">
-    <span>来源 · 新智元 / openclaw.report / Nat Eliason X 2026-06-17</span>
+    <span>来源 · Product Hunt Weekly 2026-06-25 (Bluerails Discovery #2, Upstream #1) / shareuhack.com 深度分析</span>
   </div>
 </div>
 
 <!-- CARD 2 -->
-<div class="card">
+<div class="card" id="idea-27">
   <div class="card-header">
     <span class="num">02</span>
-    <span class="headline">本地 AI 数据主权爆发 · Odysseus 65k⭐ 之后，"一键隐私盒子"是个好生意</span>
+    <span class="headline">微型 SaaS 收购市场缺口 · 头部交易 $600B，尾部 $10K-$100K 收购没有人做</span>
   </div>
   <div class="fact">
-    PewDiePie 的开源项目 Odysseus（自托管 AI 工作台）上线两周内突破 65,000 GitHub Stars——这是 2026 年增长最快的开源 AI 项目。它把 ChatGPT 的全部体验搬到了你自己的硬件上：对话、Agent、深度研究、邮件 AI、笔记、记忆系统，全部本地运行，零数据外泄。但现实是：部署 Odysseus 需要 Docker、GPU 配置、模型选型、向量数据库——对 90% 的 OPC 创业者来说，这套技术栈本身就是一道墙。与此同时，OpenClaw（302k⭐）、Open-LLM-VTuber（12k⭐）等本地 AI 项目也在爆发式增长。信号很明确：数据主权需求正在从"极客偏好"变成"大众需求"。
+    两个极端信号：SpaceX 宣布以 $600 亿美元全股票交易收购 AI 编程工具 Cursor（Forbes 6月报道，四位25岁创始人每人身家 $27 亿），这是史上最大 AI 收购之一；而另一端，"50 个 Micro SaaS Ideas（含真实营收数据）"文章本周在 indie hacker 圈疯狂转发，累计 20 分钟阅读量、6月25日刚更新，背后是大量 OPC 创业者需要验证想法、但又缺乏系统工具。中间地带——$10K-$100K 的小型 SaaS 收购——几乎空白。Flippa 品类太杂（电商、内容站、域名混在一起），MicroAcquire 起价太高（$2K listing fee）。OPC 创始人想卖掉一个月入 $500 的 Chrome 扩展来接盘另一个月入 $1K 的工具，当前没有匹配的 marketplace。Reddit r/SaaS 上几乎每天都有"where do I sell my $500 MRR tool"的帖子。
   </div>
   <div class="next-step">
-    OPC 可做的事：做一个"OPC 隐私盒子"——不是自己造 AI，而是把 Odysseus / OpenClaw 打包成一键部署的桌面应用。核心：①图形化安装向导（选模型、选硬件、自动配置，零命令行）；②预配置常用 OPC 场景（"写周报的 Agent""回客户邮件的 Agent""竞品监测 Agent"）；③自动备份 + 远程访问（出门也能用）；④定期推送更新和一键升级。定价：基础版免费（本地运行），Pro $19/月（远程访问 + 自动备份 + 优先支持），企业版 $99/月（团队共享 + SSO）。获客钩子：在即刻/V2EX 发帖"你的 AI 助手知道你的全部商业机密——花 10 分钟把它搬回自己家"。
+    做"MicroExit"——专为 OPC/indie hacker 打造的微型 SaaS 收购市场。只做软件产品（不含电商/内容站），$5K-$100K 区间。核心：①AI 估值引擎（接入 Stripe/Paddle/Gumroad API 自动拉营收数据，给出基于 MRR 倍数 + 增长率 + 赛道热度的估值）；②标准化尽调清单（代码在 GitHub、数据在 Supabase、支付在 Stripe——OPC 产品技术栈高度趋同，尽调可以模板化）；③内置 Escrow + 资产转移向导（域名/代码/GitHub/Stripe 一站式过户）。收入模型：list fee $49（发布时付，远低于 MicroAcquire 的 $2K），成功费 6%（成交时收）。冷启动：手动撮合前 5 笔交易，不收钱，积累 testimonial 和真实估值数据后上线 platform。第一周在 r/SaaS、Indie Hackers、即刻三个渠道同时发布"我帮你卖掉你的 Micro-SaaS"帖子。信号极强：头部收购和尾部收购同时升温，中间市场就是蓝海。
   </div>
   <div class="tag-bar">
-    <span class="tag">#数据主权</span>
-    <span class="tag">#本地 AI</span>
-    <span class="tag">#隐私</span>
-    <span class="tag">#开源包装</span>
+    <span class="tag">#Micro SaaS 收购</span>
+    <span class="tag">#OPC 退出</span>
+    <span class="tag">#市场平台</span>
+    <span class="tag">#AI 估值</span>
   </div>
   <div class="meta">
-    <span>来源 · GitHub Trending (Odysseus 65k⭐) / OpenClaw 302k⭐ / 钛媒体 2026-06-17</span>
+    <span>来源 · Forbes (SpaceX 收购 Cursor $600B) / ideaproof.io (50 Micro SaaS Ideas) / Reddit r/SaaS 讨论</span>
   </div>
 </div>
 
 <!-- CARD 3 -->
-<div class="card">
+<div class="card" id="idea-28">
   <div class="card-header">
     <span class="num">03</span>
-    <span class="headline">AI 员工即服务平台化 · MakersClaw 登上 PH 第三，Agent 从"工具"变"同事"</span>
+    <span class="headline">AI 编码 Agent 安全护栏 · SkillSpector 月增 3.7K⭐，Agent 搞出安全事故只是时间问题</span>
   </div>
   <div class="fact">
-    Product Hunt 今日 #3：MakersClaw（302 票）——"在 Slack/Teams/Telegram 里雇佣 AI 员工"。这不是又一个聊天机器人，而是把 AI Agent 包装成可雇佣、可管理、可评估的"数字员工"。同期上榜的 AGIRAILS（62 票）更进一步：让 AI Agent 互相雇佣并用链上结算支付。Zoona AI（145 票）做 AI 客服员工，从文档和历史对话自学。这三个信号叠加指向同一个趋势：AI Agent 正在从"你操作的自动化工具"变成"你管理的团队成员"。但目前所有方案都是通用型——缺的是按行业/职位细分的垂直 AI 员工。
+    6月 GitHub Trending 出现第三条主线（CSDN 6月盘点）：Agent 安全治理。NVIDIA 开源的 SkillSpector 月增 3,669 Star，专门扫描 Agent Skills 包中的安全漏洞和恶意代码。微软 MXC 用 Rust 实现策略隔离容器——让 AI Agent 在受限环境里执行高风险操作。OpenClaw（376K⭐）和 Claude Code 这类编码 Agent 正在执行越来越多的自主操作：读写文件、执行 shell 命令、调 API、改数据库。但独立开发者用这些 Agent 时几乎零安全防护：Agent 能不能 rm -rf /？能不能把你的 Stripe API key 发到外网？能不能往你的 GitHub repo 里注入后门？目前 SkillSpector 只扫描 Skills 包，MXC 是底层容器方案——对 OPC 创始人来说，缺一个"一键安全检查"的轻量工具，而不是需要配一天的安全基础设施。
   </div>
   <div class="next-step">
-    做"AI 员工模板商店"——不是造 Agent 框架，而是为特定岗位提供"即插即用"的 AI 员工配置包：①AI 电商运营（接 Shopify API，自动上架、调价、回复评价、生成周报）；②AI SaaS 客服（接 Intercom/Zendesk，学习你的知识库，按你的语气回复）；③AI 内容营销（接 WordPress/Substack，自动选题、写稿、配图、发布）。每个模板 $29-99 一次性购买 + $9-19/月维护更新。先做一个爆款模板（比如"AI 电商运营"），在 Product Hunt 和即刻同时发布，验证需求后再扩品类。不只卖模板——卖"你招的第一个 AI 员工"。
+    做"AgentGuard"——面向 OPC 开发者的 Agent 安全体检工具。MVP 只做三件事：①Agent 权限扫描（检查 Claude Code / Codex / Cursor 的配置文件中授予了哪些文件/网络/Shell 权限，标记高危项）；②代码安全审查（对 Agent 产出的代码做静态分析——SQL 注入、硬编码密钥、eval 执行——用 semgrep 规则库，成本几乎为零）；③Agent 日志审计（定期汇总所有 Agent 的操作记录，标记异常行为——比如凌晨 3 点删了重要文件）。技术栈：Node.js + semgrep + 本地运行（不采集代码到云端，这是安全工具的底线信用）。定价：免费版自动审查 + 权限扫描，Pro $9/月（日志审计 + 实时告警），Team $29/月（多 Agent + 团队报告）。冷启动：开源核心扫描引擎放在 GitHub 上（README 标题："Did your AI agent just rm -rf your project? Here's how to check."），用 GitHub Trending 本身来获客。
   </div>
   <div class="tag-bar">
-    <span class="tag">#AI 员工</span>
-    <span class="tag">#Agent 平台</span>
-    <span class="tag">#模板经济</span>
-    <span class="tag">#垂直 SaaS</span>
+    <span class="tag">#Agent 安全</span>
+    <span class="tag">#DevSecOps for AI</span>
+    <span class="tag">#开源引流</span>
+    <span class="tag">#OPC 工具链</span>
   </div>
   <div class="meta">
-    <span>来源 · Product Hunt (MakersClaw #3 / AGIRAILS / Zoona AI) 2026-06-17</span>
+    <span>来源 · CSDN GitHub 6月盘点 (NVIDIA SkillSpector, Microsoft MXC) / OpenClaw 376K⭐ / GitHub Trending 2026-06</span>
   </div>
 </div>
 
 <!-- CARD 4 -->
-<div class="card">
+<div class="card" id="idea-29">
   <div class="card-header">
     <span class="num">04</span>
-    <span class="headline">AI 编码 Agent 工具链大乱斗 · 模型切换、代码搜索、磁盘清理，谁来统一？</span>
+    <span class="headline">Agent 长记忆缺口 · cognee 24.2K⭐ 之后，"记忆即服务"比"模型即服务"更赚钱</span>
   </div>
   <div class="fact">
-    今日 Product Hunt 的前 20 名里至少 6 个是 AI 编码 Agent 的"配件"：Edgee Turbo（#5，165票）让你在 Claude Code 里切换 Kimi K2.7 等模型；GitHits（#7，137票）给 Agent 接入开源代码搜索引擎；Canopy（#32，72票）让 Claude Code 并行沙盒运行；Athena Desktop（#71，60票）做 Agent 本地指挥室；Glint（#16，89票）在菜单栏显示 Claude Code 活动；DevCleaner（#12，96票）专门清理 AI 开发工具占用的磁盘。这些工具各自解决一个问题，但独立开发者需要在 6 个工具之间来回切换——配置模型、搜索代码、管理会话、监控活动、清理磁盘。碎片化已经变成了新痛点。
+    6月 GitHub Trending 的第二条主线是"Token 压缩 & 记忆"（CSDN 6月盘点）：cognee（24.2K⭐，周增 139）做开源 AI 长期记忆平台，用知识图谱给 Agent 跨会话存储上下文。同期 headroom（14.2K⭐）做 LLM Token 压缩，DeusData codebase-memory-mcp（18.1K⭐）给 Agent 做代码级毫秒索引，turbovec（4.9K⭐）做高性能向量索引。四件事叠在一起信号清晰：Agent 的"记忆力"是整个生态最紧迫的瓶颈之一——不是模型不够聪明，而是模型每次对话都像失忆。但当前方案全部分散：cognee 需要自部署 Docker + Neo4j，headroom 要配 Python 环境，DeusData 只管代码。一个 OPC 创始人想让自己的 Claude Code Agent 记住"用户上周说要蓝色不要红色"，当前没有一键方案。
   </div>
   <div class="next-step">
-    做一个"AI Dev 管家"——统一面板，集成模型切换 + 代码搜索 + 会话管理 + 磁盘清理四大功能。核心差异化：不是又一个新的 Agent 工具，而是 Agent 工具的"工具箱"。①模型路由器：根据任务自动选择最便宜的模型（写文档用 Haiku，修 bug 用 Claude，复杂架构用 Kimi K2.7）；②智能代码搜索：预索引你的 GitHub stars + 本地项目，Agent 提问时自动找到最佳参考代码；③Agent 磁盘医生：自动清理 .claude/ .codex/ node_modules/.cache 等 20+ 常见 AI 工具缓存。定价：免费版 2 个 Agent + 基础功能，Pro $9/月无限 Agent + 智能搜索。冷启动：先做一个免费小工具"Agent 磁盘清理器"放在 GitHub 上引流。
+    做"MemBase"——Agent 记忆即服务 API。对开发者来说就是一个 REST API：POST /memories（存一段上下文），GET /memories?query="用户偏好"（语义检索）。底层自动组合最佳方案：结构化事实用 cognee 知识图谱 + Neo4j，非结构化对话用向量 DB（pgvector），代码上下文用 DeusData MCP。关键差异化：不是又封装一个开源项目，而是做"自动记忆路由"——你不需要懂向量数据库还是知识图谱，你只需要告诉 MemBase 你的 Agent 需要记住什么。定价：Free 100MB 存储 + 1K 查询/月，Pro $19/月 5GB + 无限查询，Business $99/月 50GB + 多 Agent 租户。冷启动：写一篇"Your AI Agent Has Alzheimer's — Here's How to Give It a Memory"发在 DEV Community 和即刻，底部放 API 文档链接。目标是让 OPC 开发者用 3 行代码给 Agent 加上记忆——curl + API key 搞定。
   </div>
   <div class="tag-bar">
-    <span class="tag">#DevTool</span>
-    <span class="tag">#Agent 工具链</span>
-    <span class="tag">#成本优化</span>
-    <span class="tag">#开源引流</span>
+    <span class="tag">#Agent 记忆</span>
+    <span class="tag">#知识图谱</span>
+    <span class="tag">#API 即服务</span>
+    <span class="tag">#开源组合</span>
   </div>
   <div class="meta">
-    <span>来源 · Product Hunt (Edgee Turbo / GitHits / Canopy / DevCleaner / Glint / Athena) 2026-06-17</span>
+    <span>来源 · GitHub Trending 6月盘点 (cognee 24.2K⭐, headroom 14.2K⭐, DeusData 18.1K⭐, turbovec) / CSDN 深度分析</span>
   </div>
 </div>
 
 <!-- CARD 5 -->
-<div class="card">
+<div class="card" id="idea-30">
   <div class="card-header">
     <span class="num">05</span>
-    <span class="headline">创始人 AI 晨报 · 当 Every 和 Mastercard 都在做"虚拟高管"，一个人也能抄</span>
+    <span class="headline">一人公司分发操作系统 · Pieter Levels 点名"造工厂没流量"，但分发工具没人做得够好</span>
   </div>
   <div class="fact">
-    两条平行信号：Every 公司推出了 AI-native 后台全系列——AI CFO（财务分析）、AI Bookkeeper（记账）、AI CHRO（人事合规），一站式服务中小企业。Mastercard 宣布将于 2026 年底通过合作银行推出 Virtual C-Suite Agent 套件（虚拟 CFO 先行）。Product Hunt 今日 #9 Dirac（108票）做"AI 收件箱，每天早晨简报创始人"。这三个案例的共同点：AI 不只是替代执行层，而是替代决策支持层——帮助创始人更快做出判断。但目前所有产品都是英文、面向美国市场，中文 OPC 创始人完全用不上。
+    6月 indie hacker 圈最火的文章之一：Superframeworks 发布《The Indie Hacker Distribution Paradox》，引用 Pieter Levels (@levelsio) 6月8日公开批评：大量独立开发者建造了复杂的 AI Agent"工厂"，但几乎零流量、零收入。"AI 把建造成本砍了 80%，但把分发成本砍了几乎为零——瓶颈只是转移了。"数据验证：超过 70% 的失败 maker 归因为"没有足够客户"。同期，solo founder Agensi 创始人分享了自己的 Reddit + AEO（Answer Engine Optimization）增长策略，8周做到 15K 用户，$0 广告费。他的原话："AI agents citing your content is the most underrated growth channel right now."但目前市场上没有专为 indie hacker 设计的"分发操作系统"——CoSchedule/HubSpot 太重太贵，Buffer/Hootsuite 只是排期工具不懂社区文化。
   </div>
   <div class="next-step">
-    做一个"OPC 创始人晨报"——面向中文独立开发者的 AI 每日决策助手。核心功能：①早晨 8:00 推送一份 5 分钟读完的简报（昨日的收入/支出摘要、客户邮件要点、GitHub 项目进展、竞品动态）；②AI 标记"今天需要你决策的 3 件事"（退款申请、服务器续费提醒、大客户邮件回复）；③一键生成今日待办。技术栈：接 Stripe/GitHub/Gmail/企业微信 API（中国创业者常用组合），用 DeepSeek/豆包做中文 NLU。定价：免费版 3 个数据源，Pro ¥29/月无限数据源 + 竞品监测。获客：先在即刻发"你每天早上花多少时间搞清楚今天该干什么？"引出讨论，附上产品链接。
+    做"DistroOS"——一人公司分发操作系统。不跟 Buffer/Hootsuite 比泛用性，而是在 4 个对 OPC 最有效的分发渠道上做深度：①Reddit 精确投递（扫描相关 subreddit 的当日热门话题，AI 生成针对该 subreddit 语境的帖子草稿——不是交叉发帖模板，是每个 subreddit 单独写）；②AEO 内容优化器（分析你的页面/文章，告诉你 LLM 搜索会不会引用你、怎么改标题和首段能让 Claude/GPT 引用你）；③Product Hunt 启动指挥台（启动前 14 天 Checklist + 社区预热 + 当日投票引导，AI 生成符合 PH 社区口吻的 maker comment）；④X/Twitter growth playbook（基于你的产品类型推荐关注列表、互动策略、发帖频率）。定价：$19/月（单渠道），$39/月（全渠道 + AEO），不设免费版（因为工具本身解决的就是"不花钱做分发"，付费反而筛选认真的人）。冷启动：先写一份免费 PDF《Indie Hacker Distribution Playbook 2026》，在 r/SaaS 和 Indie Hackers 发帖分发，文末引导 waitlist。产品名就叫 DistroOS——"你的公司不缺 AI，缺人知道它存在"。
   </div>
   <div class="tag-bar">
-    <span class="tag">#创始人工具</span>
-    <span class="tag">#AI 决策</span>
-    <span class="tag">#每日简报</span>
-    <span class="tag">#中国本土化</span>
+    <span class="tag">#分发</span>
+    <span class="tag">#增长工具</span>
+    <span class="tag">#AEO</span>
+    <span class="tag">#Reddit 营销</span>
+    <span class="tag">#OPC 工具箱</span>
   </div>
   <div class="meta">
-    <span>来源 · Product Hunt (Dirac #9) / Every / Mastercard 公告 / Leios Blog 2026-06-17</span>
+    <span>来源 · Superframeworks (Distribution Paradox) / levels.io 6月8日公开帖 / VibeCom blog (Agensi 15K 用户案例) / Semrush AEO 2026 指南</span>
   </div>
 </div>
 
@@ -240,25 +238,25 @@
 <div class="hook-box">
   <div class="hook-label">本期钩子</div>
   <div class="hook-text">
-    2026 年 6 月中旬的一个清晰信号：OPC 的演化路径正在从"一个人 + AI 工具"走向"一个人管理一个 AI 团队"。Felix 月入 $30 万证明 AI 可以自主经营公司，Odysseus 65k⭐ 证明人们想把 AI 掌控权拿回自己手里，MakersClaw 证明"雇佣 AI 员工"正在变成一个产品品类。这三件事的共同结论是——当下的机会不在造新的 AI 模型，而在为 AI Agent 经济体铺设基础设施：金融接口、法律容器、部署工具、管理面板。别盯着模型争霸，看看模型身旁的空白地。
+    2026 年 6 月底的几条主线正在收敛：Bluerails 说"Agent 应该能花钱"，cognee 说"Agent 应该有记忆"，NVIDIA 说"Agent 应该有安全护栏"，Pieter Levels 说"Agent 造出来了但没人看见"。这四个信号共同指向一个结论——OPC 创业的黄金窗口不在造 Agent，而在给 Agent 经济体铺路：支付层、记忆层、安全层、分发层。不要跟 SpaceX 抢着收购 Cursor，去抢 Cursor 用户还缺的那块拼图。
   </div>
 </div>
 
 <!-- 上下期导航 -->
 <div class="prev-next">
-  <a href="2026-06-15.html" class="pn-card">
+  <a href="2026-06-17.html" class="pn-card">
     <div class="pn-label">← 上一期</div>
-    <div class="pn-title">Vol.004 · 死人开关 / 品牌防御 / 合规</div>
+    <div class="pn-title">Vol.005 · AI 零人类公司 / 数据主权 / AI 员工</div>
   </a>
   <div class="pn-card disabled pn-right">
     <div class="pn-label">下一期 →</div>
-    <div class="pn-title">Vol.006 · 等待明日刷新</div>
+    <div class="pn-title">Vol.007 · 等待明日刷新</div>
   </div>
 </div>
 
 <div class="footer">
   OPC IDEA · 日报 ／ <a href="subscribe.html">订阅日报</a> ／ <a href="feed.xml">RSS</a> ／ <a href="./index.html">完整报告</a> ／ <a href="newsletter-strategy.md">启动策略</a><br>
-  北京 · 2026年6月17日 · Vol.005 · 今日刷新<br>
+  北京 · 2026年6月30日 · Vol.006 · 今日刷新<br>
   商业·认知观察者·出品
 </div>
 
