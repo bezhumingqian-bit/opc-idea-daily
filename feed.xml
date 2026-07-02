@@ -5,8 +5,53 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Tue, 30 Jun 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Thu, 02 Jul 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 31 · Agent 真实浏览器基础设施 · BrowserAct 登顶 PH</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-31</link>
+    <description>7月1日 Signal：BrowserAct 于6月25日登顶 PH 当日榜首并跻身周榜前三，定位"Agent 的专属真实浏览器层"。解决 Agent 在网页执行任务时的四大痛点：登录过期、验证码、页面变化、人工审批。Vercel Drop 同日登顶 PH #1（350票）。Agent 工具链正从"能不能用"进化到"好不好用"。做"AgentBrowse"——面向 OPC 开发者的轻量 Agent 浏览器 API，curl 调用即可获取页面截图+结构化内容。Playwright + 代理 IP 池。免费 100次/月，Pro $19/月。冷启动：开源核心引擎放 GitHub。</description>
+    <pubDate>Thu, 02 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-007-01</guid>
+    <category>Agent 基础设施 / Browser API</category>
+  </item>
+
+  <item>
+    <title>IDEA 32 · 开源 AI 视频工厂 · OpenMontage 26K⭐ 7天飙升</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-32</link>
+    <description>7月 GitHub Trending 榜首：OpenMontage 26K⭐、7天+18K⭐。完整 AI 视频制作系统：脚本→素材→配音→剪辑→成片，12条流水线、52工具、500+技能。单条视频成本 $0.15-$3。但需自部署 Python+GPU——对 indie maker 门槛太高。做"IndieClip"——基于 OpenMontage 的托管视频生产服务：产品演示/发布/教程三类模板。$19/月（5条），$49/月（20条），$99/月（无限+API）。冷启动：PH 发"We turned a 26K⭐ project into your personal video studio"。</description>
+    <pubDate>Thu, 02 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-007-02</guid>
+    <category>AI 视频 / 开源托管 / Indie 工具</category>
+  </item>
+
+  <item>
+    <title>IDEA 33 · UI 到 AI 上下文桥接 · Qursor PH #2 313票</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-33</link>
+    <description>昨日 PH #2：Qursor（313票）"Point at any UI to send exact context to your AI"。今日 PH #1 Vercel Drop（350票）"Drop it. It's live."。两者解决同一问题：开发者与 AI 之间的"上下文摩擦"。做"SnapContext"——Chrome 扩展，一键截取网页 UI+DOM 生成结构化 prompt。不只是截图——提取 CSS/HTML/交互逻辑。进阶：选中元素→AI 输出改好的代码。$9/月起。冷启动：Chrome Web Store + r/webdev。</description>
+    <pubDate>Thu, 02 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-007-03</guid>
+    <category>上下文工具 / Chrome 扩展 / DevTool</category>
+  </item>
+
+  <item>
+    <title>IDEA 34 · 一人公司 AI 团队编排 · StoreClaw/SellerClaw/Tycoon 扎堆 PH</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-34</link>
+    <description>PH 月榜"AI 跑公司"品类同时爆发：StoreClaw（华人团队 633票 #1）Agent 运营电商，SellerClaw（388票 #2）多渠道 Agent 团队，Tycoon AI（111票）"Run one-person companies with AI agents"。PollyReach（529票）给 Agent 装电话。但各工具割裂，缺统一编排层。做"OPCStack"——AI 虚拟团队模板市场+编排层。选业务类型→生成角色表，每个角色调用已有最佳工具。$39/月起。冷启动：免费"OPC 团队生成器"收集 email。</description>
+    <pubDate>Thu, 02 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-007-04</guid>
+    <category>AI 团队 / Agent 编排 / OPC 操作系统</category>
+  </item>
+
+  <item>
+    <title>IDEA 35 · AI 编码 Agent 性能优化 · ECC 23K⭐ + BuilderIO 39K⭐</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-35</link>
+    <description>GitHub 7月首周：ECC（23K⭐，月增 3.5K⭐）Agent 性能优化系统；BuilderIO/skills 单日 +39K⭐飘升。pm-skills 9.6K⭐，阿里 open-code-review 8.9K⭐。Agent 工具链进入"优化"阶段——从"有没有"变成"快不快"。但对 OPC 创始人太重。做"AgentPerf"——Agent 的 DevTools Performance 面板：耗时拆解 + 效率对比 + 成本看板。Node.js CLI，本地运行。$9/月起。冷启动：开源 GitHub，标题"You're burning $200/month on slow agent prompts."</description>
+    <pubDate>Thu, 02 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-007-05</guid>
+    <category>Agent 性能 / DevTool / 成本优化</category>
+  </item>
 
   <item>
     <title>IDEA 26 · Agent 经济支付层 · Bluerails 让 AI 找到你并付钱</title>
