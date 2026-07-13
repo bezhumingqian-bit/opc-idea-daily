@@ -5,8 +5,53 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Thu, 02 Jul 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Mon, 13 Jul 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 41 · Agent 自主商务谈判 · Lyzr AI 独立完成 $100M 融资</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-41</link>
+    <description>7月9日彭博社：Lyzr 的 B 轮 $100M 融资全程由自研 AI Agent "SivaClaw" 独立主导——投资者筛选、条款谈判、尽职调查、签约。最终获 $400M 超额认购意向，估值约 $500M。Agent 的战场正从"内部提效"转向"对外经营"。做"DealAgent"——面向 OPC 创始人的 AI 商务谈判 Agent：外呼邮件触达 + 谈判辅助 + 合同生成。Free 100次邮件/月，Pro $49/月。冷启动："PitchDeck Score"免费融资PPT评估工具。</description>
+    <pubDate>Mon, 13 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-009-01</guid>
+    <category>Agent 商务 / 融资谈判 / 销售自动化</category>
+  </item>
+
+  <item>
+    <title>IDEA 42 · 本地超级模型工作站 · colibri 让 744B MoE 跑在家用机上</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-42</link>
+    <description>7月12日 GitHub：colibri（4.6K⭐首日上榜）纯C零依赖实现 GLM-5.2 744B MoE 在 25GB RAM 消费机本地运行。pony-tail（81K⭐）让 Agent "think like the laziest senior dev"。隐私和智能终于不再互斥。做"LocalMind"——Mac App 一键本地 AI 工作站，打包 colibri+Ollama+pony-tail。基础版免费，Pro $29/月。冷启动：GitHub 开源安装脚本。</description>
+    <pubDate>Mon, 13 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-009-02</guid>
+    <category>本地 AI / 隐私优先 / Mac App / OPC 生产力</category>
+  </item>
+
+  <item>
+    <title>IDEA 43 · 创作者全栈变现平台 · Fypro 711票 + OpenCut 63K⭐</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-43</link>
+    <description>7月第2周 PH：Fypro（711票）输入TikTok自动建站+选品+视频；Spira（475票）品牌Agent+AI网红。GitHub：OpenCut（63K⭐）开源版剪映。三个产品拼出完整变现流水线但各自独立。做"CreatorForge"——全栈变现平台：内容引擎+变现引擎+分析引擎。Free 1账号，Pro $19/月。冷启动："Creator Revenue Calculator"免费收入估算工具。</description>
+    <pubDate>Mon, 13 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-009-03</guid>
+    <category>创作者经济 / 变现工具 / 视频 AI / OPC 内容</category>
+  </item>
+
+  <item>
+    <title>IDEA 44 · 微型 SaaS 法律工具箱 · AI 吃掉自动化但留下合规真空</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-44</link>
+    <description>kubaik.github.io 分析：合规包装、嵌入式工作流、私有数据层、审计留痕 4 个 niche 在 AI 时代更赚钱。GitLab：85%企业认为AI治理是首要任务。Reddit 热帖："小项目不需要合同"最后变成法律纠纷。做"IndieLegal"——AI 法律文档生成+合规扫描。文档生成 $29/份或$79/年无限，合规扫描免费一次 Pro $19/月。冷启动：免费"SaaS Legal Health Check"。</description>
+    <pubDate>Mon, 13 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-009-04</guid>
+    <category>合规工具 / 法律文档 / GDPR / OPC 基础服务</category>
+  </item>
+
+  <item>
+    <title>IDEA 45 · Agent 移动指挥中心 · DesktopCommander 3倍跃升登顶 + Cursor iOS</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-45</link>
+    <description>7月12日 GitHub 最大黑马：DesktopCommanderMCP（7,775⭐）从#5跃升至#1，日增翻3倍。Cursor发布iOS App（579票）。orca（17K⭐）做多Agent并行编排。AI Agent正从"插件"变成"远程可调度的数字员工"。做"AgentPilot"——移动优先 Agent 编排平台：部署引擎+移动指挥台+成本控制台。Free 1Agent，Maker $19/月，Studio $49/月。冷启动：60秒视频"从星巴克用手机部署Agent修Bug"。</description>
+    <pubDate>Mon, 13 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-009-05</guid>
+    <category>Agent 管理 / 移动优先 / 远程部署 / OPC 工具链</category>
+  </item>
 
   <item>
     <title>IDEA 31 · Agent 真实浏览器基础设施 · BrowserAct 登顶 PH</title>

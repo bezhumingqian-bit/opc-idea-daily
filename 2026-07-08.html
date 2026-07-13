@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<title>OPC IDEA · 2026年7月8日</title>
+<meta name="description" content="每日精选一人公司方向的精筛 IDEA · 一手源 · 今日已刷新">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta property="og:description" content="今日：Agent 搜索基础设施 · Agent 原生 Office 工具层 · AI 安全渗透测试即服务 · 隐私优先 AI 协作 · Agent Skills 发现平台。每日 09:00 自动刷新。">
+<meta property="og:url" content="https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html">
+<meta property="og:image" content="https://bezhumingqian-bit.github.io/opc-idea-daily/icon-512.png">
+<meta property="og:site_name" content="OPC IDEA 日报">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta name="twitter:description" content="今日 5 条精筛 IDEA · 一手源 · 工作日每日 09:00 刷新">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+    background: #F5F1E8;
+    color: #2C2A26;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px 40px; }
+  .header {
+    background: #FAF7EE;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 32px 28px 28px;
+    margin-bottom: 16px;
+  }
+  .brand { font-size: 11px; letter-spacing: 4px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 14px; }
+  .brand a { color: #B5B0A4; text-decoration: none; }
+  .brand a:hover { color: #8A8474; }
+  .header-title { font-size: 26px; font-weight: 500; color: #2C2A26; letter-spacing: 1px; }
+  .header-date { font-size: 13px; color: #7A766C; margin-top: 6px; letter-spacing: 0.5px; }
+  .divider { height: 1px; background: #E6E1D6; margin: 18px 0; }
+  .header-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .chip { padding: 3px 10px; background: transparent; border: 1px solid #D8D2C5; border-radius: 2px; font-size: 11px; color: #7A766C; letter-spacing: 0.5px; }
+  .card {
+    background: #FFFEFC;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 22px 24px;
+    margin-bottom: 10px;
+  }
+  .card-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+  .num { width: 28px; height: 28px; border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; flex-shrink: 0; letter-spacing: 0.5px; background: #EEEAE0; color: #5A5443; }
+  .headline { font-size: 15.5px; font-weight: 500; color: #2C2A26; line-height: 1.5; flex: 1; padding-top: 3px; letter-spacing: 0.2px; }
+  .fact { font-size: 13.5px; color: #5F5B53; line-height: 1.75; margin-bottom: 12px; padding-left: 42px; }
+  .next-step { font-size: 13.5px; color: #2C2A26; line-height: 1.75; padding: 12px 16px; margin-left: 42px; background: #F7F4EC; border-left: 2px solid #8A8474; border-radius: 0 2px 2px 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; padding-left: 42px; font-size: 11.5px; color: #7A766C; }
+  .hook-box { background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 16px 20px; margin-bottom: 10px; }
+  .hook-label { font-size: 11px; letter-spacing: 2px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 8px; }
+  .hook-text { font-size: 14px; color: #2C2A26; line-height: 1.7; letter-spacing: 0.2px; }
+
+  .prev-next {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    margin-top: 18px; margin-bottom: 18px;
+  }
+  .pn-card {
+    background: #FFFEFC; border: 1px solid #E6E1D6; border-radius: 4px;
+    padding: 14px 18px; text-decoration: none; color: inherit; display: block;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .pn-card:hover { border-color: #C4BBA9; background: #FAF7EE; }
+  .pn-card.disabled { opacity: 0.4; pointer-events: none; }
+  .pn-label { font-size: 10.5px; letter-spacing: 1.5px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 4px; }
+  .pn-title { font-size: 13px; color: #2C2A26; line-height: 1.5; letter-spacing: 0.2px; }
+  .pn-right { text-align: right; }
+  .pn-card.next { border-color: #8A8474; }
+  .pn-card.next .pn-label { color: #8A8474; }
+
+  .tag-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding-left: 42px; }
+  .tag { padding: 2px 8px; background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 2px; font-size: 10.5px; color: #7A766C; letter-spacing: 0.3px; }
+
+  .footer { text-align: center; margin-top: 28px; margin-bottom: 20px; font-size: 11px; color: #B5B0A4; letter-spacing: 0.5px; line-height: 2; }
+  .footer a { color: #8A8474; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  @media print {
+    body { background: white; }
+    .card, .header, .hook-box { box-shadow: none; border-color: #ccc; }
+    .prev-next, .footer, .header-meta { display: none; }
+  }
+  @media (max-width: 640px) {
+    .container { padding: 12px 12px 32px; }
+    .header { padding: 24px 20px 22px; }
+    .header-title { font-size: 22px; }
+    .card { padding: 18px 16px; }
+    .fact, .next-step { padding-left: 0; margin-left: 0; }
+    .tag-bar { padding-left: 0; }
+    .prev-next { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<a href="./index.html" style="display:inline-block;font-size:12px;color:#8A8474;text-decoration:none;letter-spacing:0.5px;margin-bottom:18px;">&larr; 返回归档首页</a>
+
+<div class="header">
+  <div class="brand"><a href="./index.html">OPC IDEA &middot; 日报</a></div>
+  <div class="header-title">一人公司方向&middot;每日精选</div>
+  <div class="header-date">2026年7月8日 &middot; 星期三 &middot; Vol.008 &middot; 今日已刷新</div>
+  <div class="divider"></div>
+  <div class="header-meta">
+    <span class="chip">Product Hunt &middot; 7月7日榜</span>
+    <span class="chip">GitHub Trending &middot; 7月第2周</span>
+    <span class="chip">Reddit / DEV / 腾讯新闻 / 36氪</span>
+    <span class="chip">已与前七期去重</span>
+  </div>
+  <div class="header-meta" style="margin-top:8px;">
+    <a href="subscribe.html" style="font-size:13px;color:#8A8474;text-decoration:none;letter-spacing:0.3px;">每天09:00自动收到 &rarr;</a>
+  </div>
+</div>
+
+<!-- CARD 1 -->
+<div class="card" id="idea-36">
+  <div class="card-header">
+    <span class="num">01</span>
+    <span class="headline">Agent 搜索基础设施 &middot; AnySearch 登顶 PH #2，&ldquo;Agent 的搜索框不是搜索框，是结构化信息管道&rdquo;</span>
+  </div>
+  <div class="fact">
+    昨日 Product Hunt #2 AnySearch（537票）打出标语"Real-time structured search trusted by agents and developers"&mdash;&mdash;AI Agent 的好坏取决于它接收的信息质量，传统搜索框返回的原始 HTML 对 Agent 来说不可用。AnySearch 对搜索结果去重、过滤、结构化后返回给 Agent，Free to start。同日 PH #4 Octolens（390票）定位"Social listening for the agent era"&mdash;&mdash;Agent 读不了 Reddit、Hacker News、播客和新闻，需要一个 API 让 Agent 能"听到"互联网上的所有提及。两个产品从不同角度揭示同一个缺口：Agent 的信息摄取层极原始。当 Claude Code、Codex、Cursor 成为主流开发工具后，Agent 需要的不再是搜索框，而是经过清洗和可信度评分的结构化信息流。这不是 SEO 2.0&mdash;&mdash;这是 Agent 信息基础设施的空白层。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"AgentFeed"&mdash;&mdash;面向 OPC 开发者的轻量信息流 API，curl 调用返回结构化 JSON。不做通用搜索引擎，专注三个 Agent 场景：① 竞品动态（自动监测竞品的产品更新/融资/负面舆情，每日摘要）；② 市场信号（追踪目标行业的 PH 新品/GitHub 新仓库/Reddit 热门帖/HN 讨论，按热度排序）；③ 品牌监测（产品名在各平台的提及频率和情感分析，自动标记负面信号）。技术栈：Serper.dev API + Reddit/HN RSS + PH API + Claude 做内容清洗和可信度评分。定价 Free 3个关键词，Pro $19/月 20个关键词，Business $79/月 100个+自定义信源。冷启动：免费工具"竞品雷达"&mdash;&mdash;输入你的产品名和 3 个竞品名，自动生成一份最近 30 天的竞品动态报告 PDF，用于收集 email。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#Agent 基础设施</span>
+    <span class="tag">#信息管道</span>
+    <span class="tag">#搜索 API</span>
+    <span class="tag">#竞品监测</span>
+    <span class="tag">#OPC 开发者工具</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; Product Hunt 7月7日榜 (AnySearch #2 537票, Octolens #4 390票) / freeourdays.com 热榜</span>
+  </div>
+</div>
+
+<!-- CARD 2 -->
+<div class="card" id="idea-37">
+  <div class="card-header">
+    <span class="num">02</span>
+    <span class="headline">Agent 原生 Office 工具层 &middot; OfficeCLI 9.7K&#11088; + Neo $30M + Bloome，办公软件正在从&ldquo;人用&rdquo;变成&ldquo;Agent 用&rdquo;</span>
+  </div>
+  <div class="fact">
+    7月8日 GitHub Trending 出现一个新品类信号：OfficeCLI（9.7K&#11088;，单日+802）自称"首个专为 AI 智能体构建的 Office 套件工具"&mdash;&mdash;免费开源单二进制，无需安装 Office，Agent 直接读取、编辑和自动化 Word/Excel/PPT。同日腾讯 CubeSandbox（8.3K&#11088;）提供 Agent 沙箱环境，claude-video（5K&#11088;）让 Claude 能"看视频"。Industry 层同步共振：7月2日 Bhavin Turakhia 以 $30M 个人投资推出 Neo&mdash;&mdash;自称"agent-native architecture"直接挑战微软 Office 和 Google Workspace，用户通过自然语言与持久 Agent 交互建文档/做报表/发邮件，而不是手动点击。Bloome 让人类和多个 Agent 在同一对话中协作。这三件事指向同一结论：2026 年办公工具的下一波不是"给 Office 加 AI 聊天框"，而是整个办公工具栈正在从"给人用的"变成"给 Agent 用的"&mdash;&mdash;一个全新品类正在形成。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"AgentDesk"&mdash;&mdash;面向 OPC 开发者的极简文件处理 API，不是给人用的办公软件，是给 Agent 用的。三个核心能力：① PDF&rarr;结构化 Markdown（含表格提取、图表 OCR、层级标题识别，专为 RAG 和 LLM 上下文优化）；② Excel 批量读写 API（Agent 读取数据&rarr;AI 分析&rarr;写回 Excel，支持公式保留和格式继承）；③ Word 模板填充（传入 JSON&rarr;生成排版精美的 Word 文档，含目录和页码）。技术栈：OfficeCLI 云端部署 + 微软 markitdown（161K&#11088;）做 PDF 解析 + LibreOffice headless 做格式转换。定价 $9/月 500次调用，$29/月 3000次，$99/月 无限+批量。冷启动：开源核心引擎放 GitHub，README 标题"Your AI agent deserves its own office suite. No Excel required."；在 r/SaaS 发技术帖"How we built a document API that Claude Code can actually use"。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#Agent 原生</span>
+    <span class="tag">#Office API</span>
+    <span class="tag">#文档处理</span>
+    <span class="tag">#OPC 基础设施</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; GitHub Trending 7月8日 (OfficeCLI 9.7K&#11088;, CubeSandbox 8.3K&#11088;) / windowsnews.ai (Neo $30M) / bloome.im 发布</span>
+  </div>
+</div>
+
+<!-- CARD 3 -->
+<div class="card" id="idea-38">
+  <div class="card-header">
+    <span class="num">03</span>
+    <span class="headline">AI 应用安全渗透测试 &middot; T3MP3ST 爆发 + Strix 38K&#11088; + 52K 人关心提示词泄露，AI App 上线前需要&ldquo;安检&rdquo;</span>
+  </div>
+  <div class="fact">
+    7月7日 GitHub Trending 出现一条新安全工具链：T3MP3ST（2.5K&#11088;，本周爆发式增长）自称"自主红队平台和多 Agent 进攻性安全元框架"&mdash;&mdash;让 AI Agent 自动模拟攻击者测试自身系统的安全性。Strix（38K&#11088;，7天+11K&#11088;）用多 Agent 编排做开源 AI 渗透测试。最具标志性的是 system_prompts_leaks（52.8K&#11088;，单日+1,704&#11088;）&mdash;&mdash;一个 GitHub 仓库收录了 Anthropic Claude、OpenAI GPT、Google Gemini 等全部主流 AI 的系统提示词被泄露的内容，52K 人关注"AI 的底层指令是什么"。这三件事合在一起说明：2026 年每个 AI 应用上线前，都应该跑一遍安全检查&mdash;&mdash;提示词有没有被注入的风险？敏感数据会不会从 AI 输出中泄露？但现有工具要么是给大企业用的（太贵太复杂），要么是开源的（需要安全工程师才能部署和解读结果）。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"PromptScan"&mdash;&mdash;面向 indie maker 的轻量 AI 安全审计工具，三步生成一份安全报告。① Prompt 注入检测（自动模拟 50+ 种已知攻击手法测试你的 prompt 模板，标记可被越狱的风险点）；② 敏感数据暴露检测（扫描 AI 输出日志，标记意外包含的 API Key、用户 PII、内部系统逻辑等）；③ AI 供应链安全评分（分析你依赖的 LLM API/Skills/MCP 插件，交叉比对已知漏洞数据库，生成风险等级）。免费版：手动跑一次完整审计。Pro $29/月：自动每周审计 + GitHub CI 集成（每次 PR 自动跑安全扫描）+ PDF 审计报告。冷启动：做一个免费单页工具"Is your prompt leakable?"输入你的 prompt 模板，AI 扮演攻击者尝试提取敏感信息，成功提取后提示"你的 prompt 在 X 分钟内被攻破，这是修复建议"，用于收集 email。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#AI 安全</span>
+    <span class="tag">#Prompt 注入</span>
+    <span class="tag">#渗透测试</span>
+    <span class="tag">#DevSecOps</span>
+    <span class="tag">#OPC 合规工具</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; GitHub Trending 7月7-8日 (T3MP3ST 2.5K&#11088;, Strix 38K&#11088;, system_prompts_leaks 52.8K&#11088;) / gittrend.io 实时数据</span>
+  </div>
+</div>
+
+<!-- CARD 4 -->
+<div class="card" id="idea-39">
+  <div class="card-header">
+    <span class="num">04</span>
+    <span class="headline">隐私优先 AI 协作工具 &middot; meetily 20.5K&#11088; 登顶 + 本地 AI 趋势，&ldquo;数据不出本地&rdquo;从卖点变成护城河</span>
+  </div>
+  <div class="fact">
+    7月8日 GitHub Trending 增速最快的项目之一是 meetily（20.5K&#11088;，单日+1,781&#11088;）&mdash;&mdash;Rust 构建的隐私优先 AI 会议助手。核心卖点：Parakeet/Whisper 实时转录（速度快 4 倍）、说话人分离、Ollama 自动摘要、100% 本地处理无需云端，一句"Your data never leaves your machine"击中了最核心的焦虑。同期端侧推理生态加速：Cactus 提供移动端本地 LLM 框架、Meta ExecuTorch 在 Instagram/WhatsApp 服务数十亿用户、Ollama（160K&#11088;）成为本地推理的事实标准。这条线说明：AI 全面渗透工作的 2026 年，企业和一人公司都面临同一个问题&mdash;&mdash;AI 很好用，但把客户数据、财务数据、商业机密发给云端 LLM 让人睡不着觉。"数据不出本地"正在从一小撮极客的癖好变成主流市场需求。但本地部署的门槛仍然很高：meetily 需要配置 Rust 环境、下载模型、调通音频设备&mdash;&mdash;普通用户搞不定。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"LocalVault"&mdash;&mdash;本地优先的 OPC 知识管理与协作桌面工具。不是造新模型，是基于 Ollama + Whisper + meetily 等开源组件做体验包装。三个场景：① 本地会议纪要（一键录音&rarr;本地转写&rarr;AI 摘要&rarr;自动生成待办，所有数据在本地 SQLite）；② 本地文档问答（拖入 PDF/Word/网页文件夹&rarr;本地向量索引&rarr;用 Ollama 做 RAG 问答，零文件上传）；③ 本地客户洞察（导入邮件导出/聊天记录&rarr;AI 提取待办事项/客户情绪/关键信息，生成客户周报）。定价：基础版免费（单机，2个项目空间），Pro $19/月（团队共享索引+自动备份到本地 NAS+邮件摘要发送），Enterprise $79/月（多设备同步+SSO+审计日志）。冷启动：在 Hacker News 发"We built an AI knowledge base that never sends your data to a server. Here's the architecture."附带技术架构图和隐私承诺；即刻发"不想把商业机密发给 OpenAI？这个本地 AI 工具帮你管所有文档和会议"。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#隐私优先</span>
+    <span class="tag">#本地 AI</span>
+    <span class="tag">#知识管理</span>
+    <span class="tag">#会议工具</span>
+    <span class="tag">#OPC 生产力</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; GitHub Trending 7月7-8日 (meetily 20.5K&#11088; 单日+1,781) / 腾讯新闻 GitHub 日报 / wsq.be GitHub 热门分析</span>
+  </div>
+</div>
+
+<!-- CARD 5 -->
+<div class="card" id="idea-40">
+  <div class="card-header">
+    <span class="num">05</span>
+    <span class="headline">Agent Skills 发现与评测平台 &middot; 生态爆发到 72K&#11088; 但缺 &ldquo;npm for Skills&rdquo;，碎片化是独立开发者的机会</span>
+  </div>
+  <div class="fact">
+    7月第2周 GitHub Trending 的 Skills 生态数据：agent-skills（72K&#11088;，单日+1,311&#11088;）提供生产级工程技能集，mattpocock/skills（159K&#11088;）是 TypeScript 宗师的反氛围编程武器库，taste-skill（58.5K&#11088;）让 AI 输出避免无聊通用化，caveman（86K&#11088;）用极简表达削减 65% token，OpenWiki 自动为代码库编写 Agent 文档。Skills 生态以每周数万 star 的速度增长，但发现、选择和验证完全靠社交传播和 GitHub star 数&mdash;&mdash;没有搜索、没有评测、没有兼容性检查、没有质量评分、没有"这个 Skill 适不适合我的项目"的基准测试。这就像 2012 年 npm 之前的 JavaScript 生态：碎片化、不可靠、靠口碑传播。更关键的是：Skills 的 GitHub star 数越来越不能反映实际质量&mdash;&mdash;caveman 86K&#11088; 因为"骚操作"出圈，但它在你的具体代码库上到底省了多少 token？没有人能量化回答。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"SkillHub"&mdash;&mdash;Agent Skills 的发现与评测平台（GitHub + ProductHunt + npm 三合一体验）。不卖 Skills，不做托管，只做三件事：① 索引（自动抓取 GitHub 上所有 Skills 仓库，按 Agent 平台/功能分类/依赖/安装方式自动打标签，支持自然语言搜索"帮我找一个能压缩 Claude Code token 但不会影响代码质量的 Skill"）；② 评测（用户评分 + 客观 Benchmark Runner&mdash;&mdash;用标准测试任务在不同代码库上跑同一个 Skill，输出 token 消耗/准确率/误报率对比）；③ 一键安装（生成标准化安装命令，支持 Claude Code/Codex/Cursor/OpenClaw 四种主流 Agent）。商业模式：免费搜索和浏览，Pro $9/月（Benchmark 数据+Skill 对比+版本更新提醒+新 Skill 上线通知），团队 $29/月（内部 Skill 私有库+Skill 审批流程+用量统计）。冷启动：先做一个 GitHub Action "SkillScore"&mdash;&mdash;自动扫描 Skills 仓库结构并生成质量评分 badge 放在 README 里，分类标签+安装兼容性+依赖健康度三指标，做到病毒传播。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#Skills 市场</span>
+    <span class="tag">#发现平台</span>
+    <span class="tag">#Agent 工具链</span>
+    <span class="tag">#OPC DevTool</span>
+    <span class="tag">#评测引擎</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; GitHub Trending 7月7-8日 (agent-skills 72K&#11088;, mattpocock/skills 159K&#11088;, taste-skill 58.5K&#11088;, caveman 86K&#11088;) / gittrend.io / 今日头条 20 热门项目盘点</span>
+  </div>
+</div>
+
+<!-- HOOK -->
+<div class="hook-box">
+  <div class="hook-label">本期钩子</div>
+  <div class="hook-text">
+    2026 年 7 月第 2 周的三条主线：AnySearch 说"Agent 的搜索应该返回结构化信息，不是 10 个蓝色链接"，OfficeCLI 说"办公工具的未来是给 Agent 用的 API，不是给人用的 UI"，PromptScan 的方向说"每个 AI 应用上线前都需要安检。这是 2008 年的 App Store 时刻的镜像&mdash;&mdash;iPhone 引爆的不是手机本身，而是围绕手机的外设和配件生态。2026 年 Agent 经济的黄金窗口不在造第 N+1 个 Agent，而在做 Agent 的"专业外设"：信息管道、文档 API、安全审计、隐私方案、Skills 评测。就像淘金热里真正发财的是卖铲子和牛仔裤的人，Agent 经济里 OPC 的最佳位置是给 Agent 造基础设施&mdash;&mdash;不跟 OpenAI/Anthropic 比模型，而是让他们的 Agent 更好用。
+  </div>
+</div>
+
+<!-- Navigation -->
+<div class="prev-next">
+  <a href="2026-06-30.html" class="pn-card">
+    <div class="pn-label">&larr; 上一期</div>
+    <div class="pn-title">Vol.006 &middot; Agent 支付层 / 收购市场 / 安全护栏 / 记忆即服务 / 分发系统</div>
+  </a>
+  <div class="pn-card disabled pn-right">
+    <div class="pn-label">下一期 &rarr;</div>
+    <div class="pn-title">Vol.009 &middot; 等待明日刷新</div>
+  </div>
+</div>
+
+<div class="footer">
+  OPC IDEA &middot; 日报 &#65295; <a href="subscribe.html">订阅日报</a> &#65295; <a href="feed.xml">RSS</a> &#65295; <a href="./index.html">完整报告</a> &#65295; <a href="newsletter-strategy.md">启动策略</a><br>
+  北京 &middot; 2026年7月8日 &middot; Vol.008 &middot; 今日刷新<br>
+  商业&middot;认知观察者&middot;出品
+</div>
+
+</div>
+</body>
+</html>
