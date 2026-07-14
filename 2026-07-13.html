@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<title>OPC IDEA · 2026年7月13日 · Vol.009</title>
+<meta name="description" content="OPC IDEA 日报 Vol.009 · Agent 自主商务谈判 · 本地超级模型工作站 · 创作者全栈变现 · 微型SaaS法律工具箱 · Agent移动指挥中心">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OPC IDEA · 一人公司方向每日精选 · Vol.009">
+<meta property="og:description" content="2026年7月13日：Agent 自主商务谈判 · 本地超级模型工作站 · 创作者全栈变现 · 微型 SaaS 法律工具箱 · Agent 移动指挥中心。">
+<meta property="og:url" content="https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-13.html">
+<meta property="og:image" content="https://bezhumingqian-bit.github.io/opc-idea-daily/icon-512.png">
+<meta property="og:site_name" content="OPC IDEA 日报">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OPC IDEA · Vol.009">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+    background: #F5F1E8;
+    color: #2C2A26;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px 40px; }
+  .header {
+    background: #FAF7EE;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 32px 28px 28px;
+    margin-bottom: 16px;
+  }
+  .brand { font-size: 11px; letter-spacing: 4px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 14px; }
+  .brand a { color: #B5B0A4; text-decoration: none; }
+  .brand a:hover { color: #8A8474; }
+  .header-title { font-size: 26px; font-weight: 500; color: #2C2A26; letter-spacing: 1px; }
+  .header-date { font-size: 13px; color: #7A766C; margin-top: 6px; letter-spacing: 0.5px; }
+  .divider { height: 1px; background: #E6E1D6; margin: 18px 0; }
+  .header-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .chip { padding: 3px 10px; background: transparent; border: 1px solid #D8D2C5; border-radius: 2px; font-size: 11px; color: #7A766C; letter-spacing: 0.5px; }
+  .card {
+    background: #FFFEFC;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 22px 24px;
+    margin-bottom: 10px;
+  }
+  .card-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+  .num { width: 28px; height: 28px; border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; flex-shrink: 0; letter-spacing: 0.5px; background: #EEEAE0; color: #5A5443; }
+  .headline { font-size: 15.5px; font-weight: 500; color: #2C2A26; line-height: 1.5; flex: 1; padding-top: 3px; letter-spacing: 0.2px; }
+  .fact { font-size: 13.5px; color: #5F5B53; line-height: 1.75; margin-bottom: 12px; padding-left: 42px; }
+  .next-step { font-size: 13.5px; color: #2C2A26; line-height: 1.75; padding: 12px 16px; margin-left: 42px; background: #F7F4EC; border-left: 2px solid #8A8474; border-radius: 0 2px 2px 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; padding-left: 42px; font-size: 11.5px; color: #7A766C; }
+  .hook-box { background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 16px 20px; margin-bottom: 10px; }
+  .hook-label { font-size: 11px; letter-spacing: 2px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 8px; }
+  .hook-text { font-size: 14px; color: #2C2A26; line-height: 1.7; letter-spacing: 0.2px; }
+  .prev-next { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 18px; margin-bottom: 18px; }
+  .pn-card { background: #FFFEFC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 14px 18px; text-decoration: none; color: inherit; display: block; transition: border-color 0.15s, background 0.15s; }
+  .pn-card:hover { border-color: #C4BBA9; background: #FAF7EE; }
+  .pn-card.disabled { opacity: 0.4; pointer-events: none; }
+  .pn-label { font-size: 10.5px; letter-spacing: 1.5px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 4px; }
+  .pn-title { font-size: 13px; color: #2C2A26; line-height: 1.5; letter-spacing: 0.2px; }
+  .pn-right { text-align: right; }
+  .tag-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding-left: 42px; }
+  .tag { padding: 2px 8px; background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 2px; font-size: 10.5px; color: #7A766C; letter-spacing: 0.3px; }
+  .footer { text-align: center; margin-top: 28px; margin-bottom: 20px; font-size: 11px; color: #B5B0A4; letter-spacing: 0.5px; line-height: 2; }
+  .footer a { color: #8A8474; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+  @media print {
+    body { background: white; }
+    .card, .header, .hook-box { box-shadow: none; border-color: #ccc; }
+    .prev-next, .footer, .header-meta { display: none; }
+  }
+  @media (max-width: 640px) {
+    .container { padding: 12px 12px 32px; }
+    .header { padding: 24px 20px 22px; }
+    .header-title { font-size: 22px; }
+    .card { padding: 18px 16px; }
+    .fact, .next-step { padding-left: 0; margin-left: 0; }
+    .tag-bar { padding-left: 0; }
+    .prev-next { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+<a href="./index.html" style="display:inline-block;font-size:12px;color:#8A8474;text-decoration:none;letter-spacing:0.5px;margin-bottom:18px;">&larr; 返回归档首页</a>
+<div class="header">
+  <div class="brand"><a href="./index.html">OPC IDEA &middot; 日报</a></div>
+  <div class="header-title">一人公司方向&middot;每日精选</div>
+  <div class="header-date">2026年7月13日 &middot; 星期一 &middot; Vol.009</div>
+  <div class="divider"></div>
+  <div class="header-meta">
+    <span class="chip">Product Hunt &middot; 7月第2周</span>
+    <span class="chip">GitHub Trending &middot; 7月12日</span>
+    <span class="chip">Reddit / Indie Hackers / 腾讯新闻</span>
+  </div>
+</div>
+
+<div class="card" id="idea-41">
+  <div class="card-header"><span class="num">01</span><span class="headline">Agent 自主商务谈判 &middot; Lyzr AI 独立完成 $100M 融资，&ldquo;AI 不只是写代码的，还能帮你谈客户&rdquo;</span></div>
+  <div class="fact">7月9日彭博社报道：AI 初创公司 Lyzr 的 B 轮 $100M 融资全程由其自研 AI Agent "SivaClaw" 独立主导完成——包括投资者筛选、条款谈判、尽职调查协调和最终签约，创始人甚至没有亲自跑过 Sand Hill Road。最终获得 $400M 超额认购意向，估值约 $500M。同期，Open Hex 在 OPC 共创节上发布"数字合伙人"产品——让一人公司用自然语言创建具备身份、记忆和主动执行能力的 Live Agent，接入企微/飞书/邮件场景做对外经营。两件事指向同一个方向：Agent 的战场正在从"内部提效"转向"对外经营"。</div>
+  <div class="next-step">OPC 路径：做"DealAgent"——面向 OPC 创始人的 AI 商务谈判 Agent。外呼邮件触达 + 商务谈判辅助 + 合同生成。Free 100次邮件/月，Pro $49/月。冷启动："PitchDeck Score"免费融资PPT评估工具。</div>
+  <div class="tag-bar"><span class="tag">#Agent 商务</span><span class="tag">#融资谈判</span><span class="tag">#销售自动化</span><span class="tag">#合同生成</span><span class="tag">#OPC 增长工具</span></div>
+  <div class="meta"><span>来源 &middot; 彭博社 7月9日 (Lyzr $100M B轮, SivaClaw) / 腾讯新闻 7月2日 (Open Hex OPC共创节) / 南方日报</span></div>
+</div>
+
+<div class="card" id="idea-42">
+  <div class="card-header"><span class="num">02</span><span class="headline">本地超级模型工作站 &middot; colibri 让 744B MoE 跑在家用机上，&ldquo;你的 MacBook 就是数据中心&rdquo;</span></div>
+  <div class="fact">7月12日 GitHub Trending：colibri（4.6K&#11088;首日上榜）用纯 C 零依赖实现 GLM-5.2 744B MoE 在 25GB RAM 消费级机器本地运行。同日 pony-tail（81K&#11088;）"Makes your AI agent think like the laziest senior dev"。两个信号：本地推理不再限于小模型；Agent 正学会"不写代码才是最好的代码"。对 OPC 创始人：隐私和智能终于不再互斥。</div>
+  <div class="next-step">OPC 路径：做"LocalMind"——Mac App 一键本地 AI 工作站，打包 colibri+Ollama+pony-tail。基础版免费，Pro $29/月。冷启动：GitHub 开源安装脚本"Run a 744B model on your MacBook. One command."</div>
+  <div class="tag-bar"><span class="tag">#本地 AI</span><span class="tag">#隐私优先</span><span class="tag">#超级模型</span><span class="tag">#Mac App</span><span class="tag">#OPC 生产力</span></div>
+  <div class="meta"><span>来源 &middot; GitHub Trending 7月12日 (colibri 4.6K&#11088;, pony-tail 81K&#11088;) / findarepo.com</span></div>
+</div>
+
+<div class="card" id="idea-43">
+  <div class="card-header"><span class="num">03</span><span class="headline">创作者全栈变现平台 &middot; Fypro 711票 + OpenCut 63K&#11088;，从内容到收钱只差一个&ldquo;一键&rdquo;</span></div>
+  <div class="fact">7月第2周 PH：Fypro（711票）"Drop your TikTok handle and it builds the whole thing for you"；Spira（475票）品牌Agent+AI网红。GitHub 端：OpenCut（63K&#11088;）"开源版剪映"。三个产品拼出完整变现流水线：内容创作→品牌建站→营销分发——但各自独立。</div>
+  <div class="next-step">OPC 路径：做"CreatorForge"——全栈变现平台：内容引擎+变现引擎+分析引擎。Free 1账号，Pro $19/月。冷启动："Creator Revenue Calculator"免费收入估算工具。</div>
+  <div class="tag-bar"><span class="tag">#创作者经济</span><span class="tag">#变现工具</span><span class="tag">#视频 AI</span><span class="tag">#跨平台</span><span class="tag">#OPC 内容</span></div>
+  <div class="meta"><span>来源 &middot; PH 7月第2周 (Fypro 711票, Spira 475票) / GitHub (OpenCut 63K&#11088;) / venture-lab.org</span></div>
+</div>
+
+<div class="card" id="idea-44">
+  <div class="card-header"><span class="num">04</span><span class="headline">微型 SaaS 法律工具箱 &middot; AI 吃掉自动化但留下合规真空，&ldquo;你的 SaaS 欠一份能过审计的隐私协议&rdquo;</span></div>
+  <div class="fact">kubaik.github.io 分析：合规包装、嵌入式工作流、私有数据层、审计留痕 4 个 niche 在 AI 时代更赚钱。GitLab 调研：85% 企业认为 AI 治理是首要任务。Reddit 热帖："小项目不需要合同"最后变成法律纠纷。每个 indie maker 都需要隐私政策、用户协议、GDPR 合规——但法律服务太贵。</div>
+  <div class="next-step">OPC 路径：做"IndieLegal"——AI 法律文档生成+合规扫描。文档生成 $29/份或$79/年无限，合规扫描免费一次 Pro $19/月。冷启动：免费"SaaS Legal Health Check"。</div>
+  <div class="tag-bar"><span class="tag">#合规工具</span><span class="tag">#法律文档</span><span class="tag">#隐私政策</span><span class="tag">#GDPR</span><span class="tag">#OPC 基础服务</span></div>
+  <div class="meta"><span>来源 &middot; kubaik.github.io 7月2日 / GitLab调研 7月7日 / Reddit r/FoundersHub 7月热帖</span></div>
+</div>
+
+<div class="card" id="idea-45">
+  <div class="card-header"><span class="num">05</span><span class="headline">Agent 移动指挥中心 &middot; DesktopCommander 3倍跃升登顶 + Cursor iOS，&ldquo;用手机管你的 AI 员工&rdquo;</span></div>
+  <div class="fact">7月12日 GitHub 最大黑马：DesktopCommanderMCP（7,775&#11088;）从#5 跃升至#1，日增翻 3 倍。Cursor 发布 iOS App（579票）。orca（17K&#11088;）做多 Agent 并行编排。AI Agent 正从"插件"变成"远程可调度的数字员工"。但工具各自为政，缺统一指挥中心。</div>
+  <div class="next-step">OPC 路径：做"AgentPilot"——移动优先 Agent 编排平台。部署引擎+移动指挥台+成本控制台。Free 1Agent，Maker $19/月，Studio $49/月。冷启动：60秒视频"从星巴克用手机部署Agent修Bug"。</div>
+  <div class="tag-bar"><span class="tag">#Agent 管理</span><span class="tag">#移动优先</span><span class="tag">#远程部署</span><span class="tag">#DevOps</span><span class="tag">#OPC 工具链</span></div>
+  <div class="meta"><span>来源 &middot; GitHub Trending 7月12日 (DesktopCommanderMCP 7,775&#11088; #1, orca 17K&#11088;) / PH 6月30日 (Cursor iOS 579票) / CSDN</span></div>
+</div>
+
+<div class="hook-box">
+  <div class="hook-label">本期钩子</div>
+  <div class="hook-text">2026年7月第3周的三条主线：Lyzr 的 SivaClaw 说"AI 可以替代 CEO 去融资了"，colibri 说"744B 模型可以跑在 MacBook 上了"，DesktopCommander 说"Agent 可以在云端干活、手机上管了"。三件事加起来等于一个完整的"一个人的跨国公司"技术栈——但还有一个缺口没有产品填上：这些能力散落在不同工具里，没有一个面向 OPC 创始人的统一平台。这就是本周每个 IDEA 所指的机会。</div>
+</div>
+
+<div class="prev-next">
+  <a href="2026-07-08.html" class="pn-card">
+    <div class="pn-label">&larr; 上一期</div>
+    <div class="pn-title">Vol.008 &middot; Agent 搜索基础设施 / Agent 原生Office / AI安全渗透测试 / 隐私优先AI协作 / Skills发现平台</div>
+  </a>
+  <a href="daily.html" class="pn-card pn-right">
+    <div class="pn-label">下一期 &rarr;</div>
+    <div class="pn-title">Vol.010 &middot; AI通信代理 / Agent跨平台互通 / 单人SaaS运维 / AI品味审查 / Agent社交信号监听</div>
+  </a>
+</div>
+
+<div class="footer">
+  OPC IDEA &middot; 日报 &#65295; <a href="subscribe.html">订阅日报</a> &#65295; <a href="feed.xml">RSS</a> &#65295; <a href="./index.html">完整报告</a><br>
+  北京 &middot; 2026年7月13日 &middot; Vol.009<br>
+  商业&middot;认知观察者&middot;出品
+</div>
+
+</div>
+</body>
+</html>

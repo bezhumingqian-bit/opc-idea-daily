@@ -5,8 +5,53 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Mon, 13 Jul 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Mon, 14 Jul 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 46 · AI 通信代理即服务 · meetily 单日 2,494⭐ 引爆隐私优先 AI 会议代理</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-46</link>
+    <description>7月13日 GitHub：meetily（+2,494⭐）隐私优先AI会议助手——不只是转录，而是代表你参会、提问和决策。同日 PH：AirKaren"AI对抗客服"、Typeahead 2.0本地隐私AI输入、CodeMote手机驱动CLI Agent。新品类——AI通信代理（Communication Agent）正在形成。做"CommAgent"——AI通信代理平台：会议代理+客服对抗+邮件代理+多平台IM聚合。Free 1引擎，Maker $19/月。冷启动："Meeting Cost Calculator"免费工具。</description>
+    <pubDate>Mon, 14 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-010-01</guid>
+    <category>AI 通信代理 / 会议自动化 / 客服 AI / OPC 生产力</category>
+  </item>
+
+  <item>
+    <title>IDEA 47 · Agent 跨平台互通中间件 · OpenAI 亲自下场做 Codex↔Claude Code 桥接</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-47</link>
+    <description>7月13日 GitHub：openai/codex-plugin-cc（+906⭐）OpenAI官方桥接Codex和Claude Code。Mozaik（11票）TypeScript运行时自组织Agent。DeusData（22.8K⭐）持久化代码知识图谱。Agent正从"单打独斗"进入"协作互通"阶段。做"AgentBridge"——多Agent互通中间件：UCP统一上下文协议+Agent路由器+Skills市场桥接。开源核心+托管云，Free 1000次/月。冷启动：GitHub开源"Like USB-C for AI agents"。</description>
+    <pubDate>Mon, 14 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-010-02</guid>
+    <category>Agent 互通 / 开放协议 / 多 Agent 协作 / OPC 基础设施</category>
+  </item>
+
+  <item>
+    <title>IDEA 48 · 单人 SaaS 的 AI 运维与成本指挥塔 · Indie Hackers 报告：单人 SaaS 暴涨 10 倍</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-48</link>
+    <description>Indie Hackers 2026上半年报告：月收入>$10K的单人SaaS从200个飙升至2000+个，但平均churn rate从4.1%升至7.2%——首要原因"运维崩了"。GitHub：system_prompts_leaks（+1,378⭐）收集AI提示泄露案例。PH：Edgee Compressor V2（50%成本削减）、TryCase（Agent隔离测试）。做"SoloOps"——单人SaaS AI运维指挥塔：成本控制+安全扫描+健康监控+发布管理。Free 1项目，Pro $49/月。冷启动："SaaS Security Snapshot"免费安全扫描。</description>
+    <pubDate>Mon, 14 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-010-03</guid>
+    <category>运维自动化 / 成本管理 / 安全扫描 / OPC 基础设施</category>
+  </item>
+
+  <item>
+    <title>IDEA 49 · AI 品味审查即服务 · taste-skill 日增 1,458⭐，"你的 AI 写的代码能跑但不美"</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-49</link>
+    <description>7月13日 GitHub：taste-skill（+1,458⭐，59K总星）在agent-skills生态中增长最快——让AI写出有品味的代码。VisionBoardAI（PH预告）身份驱动AI规划。AI正从"能做事"进化到"做得好"。做"TasteCheck"——AI设计品味审查平台：UI/UX审查（基于500+SaaS模式分析）+文案品味审查（6维度+3风格改写）+代码品味审查。Free 每月1次，Pro $49/月+CI集成。冷启动：免费"Design Roast"——AI毒舌点评你的设计然后帮你修。</description>
+    <pubDate>Mon, 14 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-010-04</guid>
+    <category>AI 品味 / 设计审查 / 代码质量 / OPC 品质工具</category>
+  </item>
+
+  <item>
+    <title>IDEA 50 · Agent 时代的社交信号监听 · Octolens + AnySearch 登顶 PH，"Agent 也需要耳朵"</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-50</link>
+    <description>7月14日 PH：Octolens（19票#3 DevTool）"Social listening for the agent era"——专门为AI Agent设计的信号监听。AnySearch（32票#1）实时结构化搜索API。GitHub月榜：Agent-Reach（47K⭐）连接外部服务，last30days-skill（48K⭐）查询"过去30天"。Agent正在长出"耳朵"和"眼睛"。做"AgentEar"——AI市场情报代理：竞品雷达+赛道监听+机会发现引擎。Free 1竞品+周报，Pro $49/月无限+自定义规则。冷启动：免费"Competitor Pulse"。</description>
+    <pubDate>Mon, 14 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-010-05</guid>
+    <category>市场监听 / 竞品分析 / Agent 工具 / OPC 情报</category>
+  </item>
 
   <item>
     <title>IDEA 41 · Agent 自主商务谈判 · Lyzr AI 独立完成 $100M 融资</title>
@@ -51,6 +96,51 @@
     <pubDate>Mon, 13 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-009-05</guid>
     <category>Agent 管理 / 移动优先 / 远程部署 / OPC 工具链</category>
+  </item>
+
+  <item>
+    <title>IDEA 36 · Agent 搜索基础设施 · AnySearch PH #3 结构化搜索 + OfficeCLI 28K⭐</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-08.html#idea-36</link>
+    <description>7月7日 PH #3：AnySearch（353票），Agent 的搜索不该返回链接而是结构化的实时答案。同日 GitHub：OfficeCLI 28K⭐，Agent 的办公工具应该是 API 而不是 UI。做"AgentSearch"和"AgentOffice"两条 OPC 路径——给现有垂直 SaaS 加一层 Agent API，不用做新 Agent，而是做 Agent 的信息管道。</description>
+    <pubDate>Wed, 08 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-008-01</guid>
+    <category>Agent 基础设施 / 搜索 API</category>
+  </item>
+
+  <item>
+    <title>IDEA 37 · Agent 原生 Office 工具层 · OfficeCLI 28K⭐ 重新定义办公软件</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-08.html#idea-37</link>
+    <description>OfficeCLI 28K⭐ 在 GitHub Trending 霸榜。被 AI 生成的第一代文档、PPT、表格越来越多——但没有工具能批量处理它们。做"AgentOffice"：给现有垂直 SaaS 加一层 Agent API，让 AI 能像人一样操作文档、生成报告、批量格式化。按 API 调用计费。冷启动：围绕 OfficeCLI 做一个 CLI 封装+可视化 Dashboard 开源。</description>
+    <pubDate>Wed, 08 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-008-02</guid>
+    <category>Agent Office / Agent 工具 / API 层</category>
+  </item>
+
+  <item>
+    <title>IDEA 38 · AI 安全渗透测试 · PromptScan 200+票 安全漏洞扫描</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-08.html#idea-38</link>
+    <description>今日 PH #2 PromptScan（204票）、#4 Guardrails（516票）AI 安全自动渗透测试。做"Agent 应用安检平台"——为 OPC 开发者的 AI 应用提供一键式安全审计：Prompt 注入检测、数据泄露扫描、越狱测试。Freemium $0/月 3 项检查，Pro $29/月。先对 100 个 OPC 应用做免费审计写研究报告引流。</description>
+    <pubDate>Wed, 08 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-008-03</guid>
+    <category>AI 安全 / 渗透测试 / Agent 安全</category>
+  </item>
+
+  <item>
+    <title>IDEA 39 · 隐私优先 AI 协作 · meetily 2.4K⭐ 安全笔记</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-08.html#idea-39</link>
+    <description>GitHub Trending 上 meetily（2.4K⭐）端到端加密 AI 会议记录工具。RunSync（1.7K⭐）本地 Agent 操作沙箱。用户行为上：开始愿意为隐私付费——不是因为"在乎"，而是因为"出过事"。做"OPC Vault"——一人公司的 AI 隐私工具箱：加密笔记+AI 摘要、安全本地 Agent、GDPR 一键合规。Pro $19/月，内置安全仪表盘。</description>
+    <pubDate>Wed, 08 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-008-04</guid>
+    <category>隐私 / Agent 安全 / 加密协作</category>
+  </item>
+
+  <item>
+    <title>IDEA 40 · Agent Skills 发现与评测平台 · agentx 日增 1.3K⭐</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-08.html#idea-40</link>
+    <description>GitHub Trending 上 agentx（7.8K⭐ 日增 1.3K）Agent Skills 聚合+评测平台。目前社区靠 GitHub README 当评测页。做"SkillHunt"——App Store for Agent Skills：上传→自动测试→分数→用户评论。抽佣 20%。先做 20 个手选 skills 评测帖子放 Reddit/Discord 引流。</description>
+    <pubDate>Wed, 08 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-008-05</guid>
+    <category>Skills 市场 / Agent 评测 / 开发者工具</category>
   </item>
 
   <item>
