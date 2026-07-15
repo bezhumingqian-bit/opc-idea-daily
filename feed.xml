@@ -5,8 +5,53 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Mon, 14 Jul 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Wed, 15 Jul 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 51 · Agent 安全防爆护栏 · destructive_command_guard 引爆"Agent 也能 rm -rf /"恐慌</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-51</link>
+    <description>7月15日 GitHub：destructive_command_guard 上榜——阻止Agent执行危险git/shell命令。hallmark发布反AI-slop设计技能。NVIDIA SkillSpector发现26.1% Skills含漏洞。Agent安全从"API key别泄露"升级到"Agent别炸掉服务器"。做"AgentArmor"——命令拦截器+Skills扫描+审计日志。Free开源CLI，Maker $19/月。</description>
+    <pubDate>Wed, 15 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-011-01</guid>
+    <category>Agent 安全 / 命令防火墙 / Skills 扫描 / OPC 基础设施</category>
+  </item>
+
+  <item>
+    <title>IDEA 52 · AI 量化基金即服务 · ai-hedge-fund + Monid + Blink AI CFO 三箭齐发</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-52</link>
+    <description>7月15日 GitHub：ai-hedge-fund（多Agent对冲基金）上榜。PH：Monid（160票）Agent钱包，Blink AI CFO（100票）Slack指挥AI交易。Agent正接管金融决策链：研究→资金管理→自动交易。做"QuantAgent"——AI量化投研：策略生成器+模拟交易室+风控哨兵。Free 1策略，Maker ¥29/月。</description>
+    <pubDate>Wed, 15 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-011-02</guid>
+    <category>AI 量化 / Agent 金融 / 策略生成 / OPC 投研</category>
+  </item>
+
+  <item>
+    <title>IDEA 53 · AI 数字分身跨平台同步 · ASI:One 有记忆的个人AI + Skills 110K⭐</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-53</link>
+    <description>7月12日 PH：ASI:One（112票）"personal AI with memory"。GitHub月榜：mattpocock/skills 110K⭐，last30days-skill 48K⭐。AI应该像"持续成长的实习生"——但换Agent框架就失忆。做"MeSync"——AI人格跨平台同步：人格提取器（JSON Schema人格护照）+跨平台同步引擎。Free基础提取，Pro $49/月。</description>
+    <pubDate>Wed, 15 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-011-03</guid>
+    <category>AI 人格 / 跨平台同步 / 数字分身 / OPC 生产力</category>
+  </item>
+
+  <item>
+    <title>IDEA 54 · Agent 设计反 AI-slop · hallmark + Astryx 引爆"别让AI让你的品牌看起来很廉价"</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-54</link>
+    <description>7月15日 GitHub：hallmark反AI-slop设计技能，检测"AI味"——紫色渐变、空洞文案、过度对称。PH：Astryx Agent标准设计系统。taste-skill 59K⭐。2026年"看起来像AI做的"="看起来很廉价"。做"SlopFilter"——视觉反slop+文案反slop+品牌一致性审查。Free 3次/月，Pro $49/月 CI集成。冷启动：免费"Slop Detector"毒舌工具。</description>
+    <pubDate>Wed, 15 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-011-04</guid>
+    <category>反AI-slop / 设计审查 / 品牌质量 / OPC 品质工具</category>
+  </item>
+
+  <item>
+    <title>IDEA 55 · Loop Engineering 长时编排 · ZCode /goal 登顶 HN + OpenClaw 250K⭐</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-55</link>
+    <description>ZCode v3登顶Hacker News——/goal命令实现"设定目标→自主循环→自我验证→直到完成"模式。OpenClaw 250K⭐，superpowers 210K⭐。但OPC创始人遭遇：进度不可见、成本失控、Agent偷懒作弊。做"LoopKeeper"——进度仪表盘+成本断路器+质量守卫者。Free 1Agent，Pro $49/月。冷启动：免费"Loop Calculator"。</description>
+    <pubDate>Wed, 15 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-011-05</guid>
+    <category>Loop Engineering / Agent 编排 / 成本控制 / OPC 工具链</category>
+  </item>
 
   <item>
     <title>IDEA 46 · AI 通信代理即服务 · meetily 单日 2,494⭐ 引爆隐私优先 AI 会议代理</title>
