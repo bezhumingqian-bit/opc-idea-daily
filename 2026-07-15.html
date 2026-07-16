@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<title>OPC IDEA · 2026年7月15日（归档）</title>
+<meta name="description" content="OPC IDEA 日报 Vol.011 归档 · Agent 安全防爆护栏 / AI 量化基金即服务 / AI 数字分身 / 反AI-slop / Loop Engineering">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+    background: #F5F1E8;
+    color: #2C2A26;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px 40px; }
+  .header {
+    background: #FAF7EE;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 32px 28px 28px;
+    margin-bottom: 16px;
+  }
+  .brand { font-size: 11px; letter-spacing: 4px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 14px; }
+  .brand a { color: #B5B0A4; text-decoration: none; }
+  .brand a:hover { color: #8A8474; }
+  .header-title { font-size: 26px; font-weight: 500; color: #2C2A26; letter-spacing: 1px; }
+  .header-date { font-size: 13px; color: #7A766C; margin-top: 6px; letter-spacing: 0.5px; }
+  .divider { height: 1px; background: #E6E1D6; margin: 18px 0; }
+  .header-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .chip { padding: 3px 10px; background: transparent; border: 1px solid #D8D2C5; border-radius: 2px; font-size: 11px; color: #7A766C; letter-spacing: 0.5px; }
+  .card {
+    background: #FFFEFC;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 22px 24px;
+    margin-bottom: 10px;
+  }
+  .card-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+  .num { width: 28px; height: 28px; border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; flex-shrink: 0; letter-spacing: 0.5px; background: #EEEAE0; color: #5A5443; }
+  .headline { font-size: 15.5px; font-weight: 500; color: #2C2A26; line-height: 1.5; flex: 1; padding-top: 3px; letter-spacing: 0.2px; }
+  .fact { font-size: 13.5px; color: #5F5B53; line-height: 1.75; margin-bottom: 12px; padding-left: 42px; }
+  .next-step { font-size: 13.5px; color: #2C2A26; line-height: 1.75; padding: 12px 16px; margin-left: 42px; background: #F7F4EC; border-left: 2px solid #8A8474; border-radius: 0 2px 2px 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; padding-left: 42px; font-size: 11.5px; color: #7A766C; }
+  .hook-box { background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 16px 20px; margin-bottom: 10px; }
+  .hook-label { font-size: 11px; letter-spacing: 2px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 8px; }
+  .hook-text { font-size: 14px; color: #2C2A26; line-height: 1.7; letter-spacing: 0.2px; }
+  .prev-next { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 18px; margin-bottom: 18px; }
+  .pn-card { background: #FFFEFC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 14px 18px; text-decoration: none; color: inherit; display: block; transition: border-color 0.15s, background 0.15s; }
+  .pn-card:hover { border-color: #C4BBA9; background: #FAF7EE; }
+  .pn-label { font-size: 10.5px; letter-spacing: 1.5px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 4px; }
+  .pn-title { font-size: 13px; color: #2C2A26; line-height: 1.5; letter-spacing: 0.2px; }
+  .pn-right { text-align: right; }
+  .tag-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding-left: 42px; }
+  .tag { padding: 2px 8px; background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 2px; font-size: 10.5px; color: #7A766C; letter-spacing: 0.3px; }
+  .footer { text-align: center; margin-top: 28px; margin-bottom: 20px; font-size: 11px; color: #B5B0A4; letter-spacing: 0.5px; line-height: 2; }
+  .footer a { color: #8A8474; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+  @media (max-width: 640px) {
+    .container { padding: 12px 12px 32px; }
+    .header { padding: 24px 20px 22px; }
+    .header-title { font-size: 22px; }
+    .card { padding: 18px 16px; }
+    .fact, .next-step { padding-left: 0; margin-left: 0; }
+    .tag-bar { padding-left: 0; }
+    .prev-next { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+<a href="./index.html" style="display:inline-block;font-size:12px;color:#8A8474;text-decoration:none;letter-spacing:0.5px;margin-bottom:18px;">&larr; 返回归档首页</a>
+<div class="header">
+  <div class="brand"><a href="./index.html">OPC IDEA &middot; 日报</a></div>
+  <div class="header-title">一人公司方向&middot;每日精选</div>
+  <div class="header-date">2026年7月15日 &middot; 星期三 &middot; Vol.011 &middot; 归档</div>
+  <div class="divider"></div>
+  <div class="header-meta">
+    <span class="chip">Product Hunt &middot; 7月15日</span>
+    <span class="chip">GitHub Trending &middot; 7月15日</span>
+    <span class="chip">Hacker News / Reddit / 头条</span>
+  </div>
+</div>
+
+<div class="card" id="idea-51">
+  <div class="card-header"><span class="num">01</span><span class="headline">Agent 安全防爆护栏 &middot; destructive_command_guard 引爆"Agent 也能 rm -rf /"恐慌，26.1% Skills 含可利用漏洞</span></div>
+  <div class="fact">7月15日 GitHub Trending 最值得关注的信号：destructive_command_guard 上榜——专门阻止 AI Agent 执行危险 git/shell 命令。hallmark 发布反AI-slop设计技能。NVIDIA SkillSpector 发现 26.1% 的社区 Agent Skills 包含可利用漏洞。Agent 安全正从"API key 别泄露"升级到"Agent 别炸掉你的生产服务器"。OPC 创始人用 AI 编码工具拥有最高权限——一次幻觉就可能导致生产事故。</div>
+  <div class="next-step">OPC 路径：做"AgentArmor"——Agent 安全防爆平台。三个引擎：命令拦截器（拦截50+危险模式+风险评估）、Skills 安全扫描（26个安全维度）、审计日志（Agent 操作时间线+异常标注）。Free 开源 CLI，Maker $19/月 Skills扫描+审计日志，Pro $49/月 CI集成+SSO。冷启动：开源增强版 destructive_command_guard 在 GitHub 发布。</div>
+  <div class="tag-bar"><span class="tag">#Agent 安全</span><span class="tag">#命令防火墙</span><span class="tag">#Skills 扫描</span><span class="tag">#审计日志</span><span class="tag">#OPC 基础设施</span></div>
+  <div class="meta"><span>来源 &middot; GitHub Trending 7月15日 (destructive_command_guard, hallmark) / NVIDIA SkillSpector 研究 / Smartotics AI Daily / Hacker News 7月第2周</span></div>
+</div>
+
+<div class="card" id="idea-52">
+  <div class="card-header"><span class="num">02</span><span class="headline">AI 量化基金即服务 &middot; ai-hedge-fund 上榜 GitHub + Monid + Blink AI CFO 三箭齐发，Agent 正在接管金融决策链</span></div>
+  <div class="fact">7月15日 GitHub Trending：ai-hedge-fund 多 Agent 模拟对冲基金（分析师+交易员+风控官）上榜。PH 同周：Monid（160票）Agent 钱包，Blink AI CFO（100票）Slack 指挥 AI 自动交易。三个产品拼出完整 Agent 金融决策链：研究→资金管理→自动交易。但工具各自独立，缺少面向普通投资者的"一键 AI 量化策略助手"。</div>
+  <div class="next-step">OPC 路径：做"QuantAgent"——AI 量化投研工具。三个模块：策略生成器（基于偏好自动生成+2年回测）、模拟交易室（30天虚拟资金验证）、Agent 风控哨兵（7x24持仓监控+微信预警，不执行自动交易）。Free 1个策略，Maker ¥29/月 3个策略+模拟，Pro ¥99/月 无限+实时信号。冷启动：免费"AI Stock Screener"在雪球和即刻发布。</div>
+  <div class="tag-bar"><span class="tag">#AI 量化</span><span class="tag">#Agent 金融</span><span class="tag">#策略生成</span><span class="tag">#风控</span><span class="tag">#OPC 投研</span></div>
+  <div class="meta"><span>来源 &middot; GitHub Trending 7月15日 (ai-hedge-fund) / PH 7月12日 (Monid 160票, Blink AI CFO 100票) / TrendHunt Daily / Smartotics</span></div>
+</div>
+
+<div class="card" id="idea-53">
+  <div class="card-header"><span class="num">03</span><span class="headline">AI 数字分身跨平台同步 &middot; ASI:One 有记忆的个人 AI + Skills 110K⭐ 引爆"AI 人格移植"需求</span></div>
+  <div class="fact">7月12日 PH：ASI:One（112票）"personal AI with memory"——记住你的偏好和习惯的数字分身。GitHub 月榜：mattpocock/skills（110K⭐）把编码风格封装为可移植 Skills，last30days-skill（48K⭐）补齐 Agent 时间感知。AI 应该像"持续成长的实习生"——但 OPC 创始人每换一次 Agent 框架，数字分身就丢失。</div>
+  <div class="next-step">OPC 路径：做"MeSync"——AI 人格跨平台同步。两个模块：人格提取器（分析对话历史→JSON Schema"人格护照"）+跨平台同步引擎（自动学习+一键注入+版本管理）。Free 基础提取，Maker $19/月 完整+1平台同步，Pro $49/月 无限+团队模板。冷启动：免费"AI Personality Report"生成工具。</div>
+  <div class="tag-bar"><span class="tag">#AI 人格</span><span class="tag">#跨平台同步</span><span class="tag">#数字分身</span><span class="tag">#记忆管理</span><span class="tag">#OPC 生产力</span></div>
+  <div class="meta"><span>来源 &middot; PH 7月12日 (ASI:One 112票) / GitHub月榜 (mattpocock 110K⭐, last30days 48K⭐) / TrendHunt Daily</span></div>
+</div>
+
+<div class="card" id="idea-54">
+  <div class="card-header"><span class="num">04</span><span class="headline">Agent 设计反 AI-slop &middot; hallmark + Astryx 引爆"别让 AI 让你的品牌看起来很廉价"，2026 年新付费痛点</span></div>
+  <div class="fact">7月15日 GitHub：hallmark 反AI-slop设计技能——检测 AI 生成代码/设计中的"AI味"（紫色渐变按钮、空洞文案、过度对称）。PH：Astryx 让 Agent 按设计师标准组件库出图。taste-skill（59K⭐）从代码品味扩展到视觉文案层。2026年"看起来像 AI 做的" = "看起来很廉价"。OPC 创始人最容易掉进"做了个 AI-slop 产品自己看不出来"的陷阱。</div>
+  <div class="next-step">OPC 路径：做"SlopFilter"——AI 内容反廉价化过滤器。三个引擎：视觉反slop（检测紫色渐变/过度对称/默认字体）+文案反slop（检测"Revolutionize"等 AI 高频词→替换为具体表达）+品牌一致性审查。Free 3次/月，Maker $19/月全站，Pro $49/月 CI集成。冷启动：免费"Slop Detector"毒舌点评工具。</div>
+  <div class="tag-bar"><span class="tag">#反AI-slop</span><span class="tag">#设计审查</span><span class="tag">#品牌质量</span><span class="tag">#文案检测</span><span class="tag">#OPC 品质工具</span></div>
+  <div class="meta"><span>来源 &middot; GitHub Trending 7月15日 (hallmark) / PH 7月15日 (Astryx) / taste-skill 59K⭐ / Smartotics</span></div>
+</div>
+
+<div class="card" id="idea-55">
+  <div class="card-header"><span class="num">05</span><span class="headline">Loop Engineering 长时编排 &middot; ZCode /goal 登顶 HN + OpenClaw 250K⭐ 引爆 Agent 自主循环新模式</span></div>
+  <div class="fact">ZCode v3 在 Hacker News 登顶——/goal 命令让 Agent 进入"设定目标→自主循环→自我验证→直到完成"模式（Loop Engineering）。OpenClaw（250K+⭐）和 superpowers（210K+⭐）原生支持类似工作流。但 OPC 创始人实际使用时遭遇：进度不可见（Agent 跑了3小时不知道在干嘛）、成本失控（深夜烧掉$50）、质量退化（Agent 开始偷懒作弊）。</div>
+  <div class="next-step">OPC 路径：做"LoopKeeper"——Agent 长时循环编排平台。三个模块：进度仪表盘（手机实时推送循环状态）+成本断路器（预算上限+智能暂停）+质量守卫者（检测 Agent 作弊/代码退化/自动回滚）。Free 1Agent，Maker $19/月 3Agent+断路器，Pro $49/月 无限+历史回放。冷启动：免费"Loop Calculator"成本估算工具。</div>
+  <div class="tag-bar"><span class="tag">#Loop Engineering</span><span class="tag">#Agent 编排</span><span class="tag">#成本控制</span><span class="tag">#质量守卫</span><span class="tag">#OPC 工具链</span></div>
+  <div class="meta"><span>来源 &middot; Hacker News 7月第3周 (ZCode /goal) / GitHub月榜 (OpenClaw 250K⭐, superpowers 210K⭐) / 头条 ZCode分析</span></div>
+</div>
+
+<div class="hook-box">
+  <div class="hook-label">本期钩子</div>
+  <div class="hook-text">2026年下半年的 OPC 暗线不再是"AI 还能做什么"——这个问题已经被回答了几千遍。新的暗线是：当 AI Agent 越来越像"一个真正的同事/实习生"，你需要的不再是"更多 Agent"——而是"管住 Agent"。destructive_command_guard 提醒你 Agent 在凌晨 3 点可能 rm -rf 你的生产服务器；ai-hedge-fund 展示 Agent 已经可以独立做出投资决策——但谁来审查它的"投资逻辑"；ASI:One 证明 Agent 可以记住你的偏好并持续成长——但你换一个框架这些记忆就全丢了；hallmark 揭示 Agent 生成的设计和文案有一种"廉价感"——而你作为唯一的创始人未必能看出来；ZCode 的 /goal 让你看到了 Agent 自主工作 20 个小时的可能——但谁来确保它第 15 个小时没有在"偷懒作弊"？这五条 IDEA 共同指向一个更大的机会：2026 年下半年的 OPC 赛道，赢家不是那个"造 AI 工具的人"——赢家是那个"给造 AI 工具的人提供基础设施和护栏的人"。如果 2024-2025 是"AI 普及期"（人人都会用 AI 做产品），那 2026 下半年就是"AI 治理期"——安全、质量、记忆、成本、监管，这五个词才是 OPC 基础设施的真正蓝海。就像 AWS 不帮你写代码但它让你的服务器不崩——你需要做的是那个帮 OPC 创始人"别让 Agent 把他辛苦攒的 $10K MRR 一夜之间烧光"的平台。</div>
+</div>
+
+<div class="prev-next">
+  <a href="2026-07-14.html" class="pn-card">
+    <div class="pn-label">&larr; 上一期</div>
+    <div class="pn-title">Vol.010 &middot; AI 通信代理即服务 / Agent 跨平台互通 / 单人SaaS运维 / AI品味审查 / Agent社交信号</div>
+  </a>
+  <a href="daily.html" class="pn-card pn-right">
+    <div class="pn-label">下一期 &rarr;</div>
+    <div class="pn-title">Vol.012 &middot; Agent 硬件化 / 多Agent协调 / 配置管理中台 / AI入华合规 / AI UI组件库</div>
+  </a>
+</div>
+
+<div class="footer">
+  OPC IDEA &middot; 日报 &#65295; <a href="subscribe.html">订阅日报</a> &#65295; <a href="feed.xml">RSS</a> &#65295; <a href="./index.html">完整报告</a><br>
+  北京 &middot; 2026年7月15日 &middot; Vol.011 &middot; 归档<br>
+  商业&middot;认知观察者&middot;出品
+</div>
+</div>
+</body>
+</html>

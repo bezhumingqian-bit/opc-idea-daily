@@ -5,12 +5,57 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Wed, 15 Jul 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Thu, 16 Jul 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
 
   <item>
+    <title>IDEA 56 · Agent 硬件化物理接口层 · OpenAI 发布 Codex Micro $230 键盘 + SpaceXAI 开源 Grok Build</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-56</link>
+    <description>7月15日 OpenAI 发布首款 AI Agent 硬件 Codex Micro（$230）——13个机械开关+背光键实时显示 Agent 状态。同日 SpaceXAI 开源 Grok Build。Agent 交互正从"纯打字"进入"物理触控"时代。做"AgentDeck"——兼容消费级宏键盘的 Agent 物理控制层+桌面 Widget。Free 1Agent，Pro $49/月 API触发器+团队配置。冷启动：60秒视频"I replaced my enter key with a physical button for my AI agent."</description>
+    <pubDate>Thu, 16 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-012-01</guid>
+    <category>Agent 硬件 / 物理接口 / 桌面Widget / OPC 效率工具</category>
+  </item>
+
+  <item>
+    <title>IDEA 57 · 多 Agent 可编程协调编排 · H5i Python SDK + Grok Build 子Agent系统</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-57</link>
+    <description>7月16日 GitHub：h5i-python 新开源——可编程多 Agent 协调 SDK，让多个 Agent 像微服务一样协同工作。SpaceXAI Grok Build 暴露子Agent扩展系统。OPC 创始人需要的是"让5个Agent像一支团队一样协调运转"。做"OrchStack"——可视化流水线设计器+Agent状态监控面板+10+预制模板市场。Free 1流水线，Pro $79/月无限+Webhook+SSO。冷启动：开源"Agent Team Status" CLI工具。</description>
+    <pubDate>Thu, 16 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-012-02</guid>
+    <category>多Agent协调 / 流水线编排 / Agent团队 / OPC 基础设施</category>
+  </item>
+
+  <item>
+    <title>IDEA 58 · 跨工具 Agent 配置管理中台 · eHubs 解决"换一次工具就要重写一次配置"</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-58</link>
+    <description>V2EX 7月16日分享 eHubs——统一管理 Codex/Claude/Cursor 的 skills/rules/commands 配置。每个工具有自己的格式（CLAUDE.md/.cursorrules/codex.yaml），OPC 开发者花在调配置上的时间超过写业务代码。做"ConfigHub"——智能配置翻译器+模板市场+团队配置同步。Free 1项目，Pro $49/月团队同步+审计。冷启动：免费"Config Snapshot"诊断工具。</description>
+    <pubDate>Thu, 16 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-012-03</guid>
+    <category>Agent 配置 / 跨工具管理 / 配置翻译 / OPC 效率</category>
+  </item>
+
+  <item>
+    <title>IDEA 59 · AI 入华合规桥梁 · Apple Intelligence 获批搭载 Qwen，"海外 AI 入华"成百亿级新赛道</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-59</link>
+    <description>7月15日 TechCrunch：Apple Intelligence 获批，搭载阿里 Qwen 进入中国——国际科技巨头 AI 服务入华的第一个可复制路径。大量海外 AI SaaS 面临合规壁垒但无处找服务。做"ChinaBridge"——AI模型合规自检工具（50+参数自动对照中国法规+英文输出）+本地化部署加速器+备案导航器。Free 自检报告，Growth $199/月，Enterprise $999/月定制方案。冷启动：免费英文"China AI Compliance Score"工具。</description>
+    <pubDate>Thu, 16 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-012-04</guid>
+    <category>AI 合规 / 海外入华 / 模型备案 / OPC 全球市场</category>
+  </item>
+
+  <item>
+    <title>IDEA 60 · AI IDE 风格 UI 组件库 · Brainless 登 HN，"所有新 SaaS 都想看起来像 AI 工具"</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-60</link>
+    <description>7月16日 HN 热议 Brainless（77 points）——基于 Shadcn 模仿 AI IDE 界面的组件库。AI 工具正在形成自己的"终端+对话+流式"混合 UI 范式。但现有 UI 库全为传统 Web App 设计。做"AIDevKit"——开源 React 组件库（30+组件：AgentChatPanel/DiffViewer/StreamOutput）+5套页面模板+Figma 设计系统。核心开源 MIT，Pro $19/月模板+设计系统，Teams $49/月定制主题。冷启动：GitHub开源+GIF对比演示。</description>
+    <pubDate>Thu, 16 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-012-05</guid>
+    <category>AI UI组件 / 设计系统 / 开源前端 / OPC 开发工具</category>
+  </item>
+
+  <item>
     <title>IDEA 51 · Agent 安全防爆护栏 · destructive_command_guard 引爆"Agent 也能 rm -rf /"恐慌</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-51</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-15.html#idea-51</link>
     <description>7月15日 GitHub：destructive_command_guard 上榜——阻止Agent执行危险git/shell命令。hallmark发布反AI-slop设计技能。NVIDIA SkillSpector发现26.1% Skills含漏洞。Agent安全从"API key别泄露"升级到"Agent别炸掉服务器"。做"AgentArmor"——命令拦截器+Skills扫描+审计日志。Free开源CLI，Maker $19/月。</description>
     <pubDate>Wed, 15 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-011-01</guid>
@@ -19,7 +64,7 @@
 
   <item>
     <title>IDEA 52 · AI 量化基金即服务 · ai-hedge-fund + Monid + Blink AI CFO 三箭齐发</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-52</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-15.html#idea-52</link>
     <description>7月15日 GitHub：ai-hedge-fund（多Agent对冲基金）上榜。PH：Monid（160票）Agent钱包，Blink AI CFO（100票）Slack指挥AI交易。Agent正接管金融决策链：研究→资金管理→自动交易。做"QuantAgent"——AI量化投研：策略生成器+模拟交易室+风控哨兵。Free 1策略，Maker ¥29/月。</description>
     <pubDate>Wed, 15 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-011-02</guid>
@@ -28,7 +73,7 @@
 
   <item>
     <title>IDEA 53 · AI 数字分身跨平台同步 · ASI:One 有记忆的个人AI + Skills 110K⭐</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-53</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-15.html#idea-53</link>
     <description>7月12日 PH：ASI:One（112票）"personal AI with memory"。GitHub月榜：mattpocock/skills 110K⭐，last30days-skill 48K⭐。AI应该像"持续成长的实习生"——但换Agent框架就失忆。做"MeSync"——AI人格跨平台同步：人格提取器（JSON Schema人格护照）+跨平台同步引擎。Free基础提取，Pro $49/月。</description>
     <pubDate>Wed, 15 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-011-03</guid>
@@ -37,7 +82,7 @@
 
   <item>
     <title>IDEA 54 · Agent 设计反 AI-slop · hallmark + Astryx 引爆"别让AI让你的品牌看起来很廉价"</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-54</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-15.html#idea-54</link>
     <description>7月15日 GitHub：hallmark反AI-slop设计技能，检测"AI味"——紫色渐变、空洞文案、过度对称。PH：Astryx Agent标准设计系统。taste-skill 59K⭐。2026年"看起来像AI做的"="看起来很廉价"。做"SlopFilter"——视觉反slop+文案反slop+品牌一致性审查。Free 3次/月，Pro $49/月 CI集成。冷启动：免费"Slop Detector"毒舌工具。</description>
     <pubDate>Wed, 15 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-011-04</guid>
@@ -46,7 +91,7 @@
 
   <item>
     <title>IDEA 55 · Loop Engineering 长时编排 · ZCode /goal 登顶 HN + OpenClaw 250K⭐</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-55</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-15.html#idea-55</link>
     <description>ZCode v3登顶Hacker News——/goal命令实现"设定目标→自主循环→自我验证→直到完成"模式。OpenClaw 250K⭐，superpowers 210K⭐。但OPC创始人遭遇：进度不可见、成本失控、Agent偷懒作弊。做"LoopKeeper"——进度仪表盘+成本断路器+质量守卫者。Free 1Agent，Pro $49/月。冷启动：免费"Loop Calculator"。</description>
     <pubDate>Wed, 15 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-011-05</guid>
@@ -55,7 +100,7 @@
 
   <item>
     <title>IDEA 46 · AI 通信代理即服务 · meetily 单日 2,494⭐ 引爆隐私优先 AI 会议代理</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-46</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-14.html#idea-46</link>
     <description>7月13日 GitHub：meetily（+2,494⭐）隐私优先AI会议助手——不只是转录，而是代表你参会、提问和决策。同日 PH：AirKaren"AI对抗客服"、Typeahead 2.0本地隐私AI输入、CodeMote手机驱动CLI Agent。新品类——AI通信代理（Communication Agent）正在形成。做"CommAgent"——AI通信代理平台：会议代理+客服对抗+邮件代理+多平台IM聚合。Free 1引擎，Maker $19/月。冷启动："Meeting Cost Calculator"免费工具。</description>
     <pubDate>Mon, 14 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-010-01</guid>
@@ -64,7 +109,7 @@
 
   <item>
     <title>IDEA 47 · Agent 跨平台互通中间件 · OpenAI 亲自下场做 Codex↔Claude Code 桥接</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-47</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-14.html#idea-47</link>
     <description>7月13日 GitHub：openai/codex-plugin-cc（+906⭐）OpenAI官方桥接Codex和Claude Code。Mozaik（11票）TypeScript运行时自组织Agent。DeusData（22.8K⭐）持久化代码知识图谱。Agent正从"单打独斗"进入"协作互通"阶段。做"AgentBridge"——多Agent互通中间件：UCP统一上下文协议+Agent路由器+Skills市场桥接。开源核心+托管云，Free 1000次/月。冷启动：GitHub开源"Like USB-C for AI agents"。</description>
     <pubDate>Mon, 14 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-010-02</guid>
@@ -73,7 +118,7 @@
 
   <item>
     <title>IDEA 48 · 单人 SaaS 的 AI 运维与成本指挥塔 · Indie Hackers 报告：单人 SaaS 暴涨 10 倍</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-48</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-14.html#idea-48</link>
     <description>Indie Hackers 2026上半年报告：月收入>$10K的单人SaaS从200个飙升至2000+个，但平均churn rate从4.1%升至7.2%——首要原因"运维崩了"。GitHub：system_prompts_leaks（+1,378⭐）收集AI提示泄露案例。PH：Edgee Compressor V2（50%成本削减）、TryCase（Agent隔离测试）。做"SoloOps"——单人SaaS AI运维指挥塔：成本控制+安全扫描+健康监控+发布管理。Free 1项目，Pro $49/月。冷启动："SaaS Security Snapshot"免费安全扫描。</description>
     <pubDate>Mon, 14 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-010-03</guid>
@@ -82,7 +127,7 @@
 
   <item>
     <title>IDEA 49 · AI 品味审查即服务 · taste-skill 日增 1,458⭐，"你的 AI 写的代码能跑但不美"</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-49</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-14.html#idea-49</link>
     <description>7月13日 GitHub：taste-skill（+1,458⭐，59K总星）在agent-skills生态中增长最快——让AI写出有品味的代码。VisionBoardAI（PH预告）身份驱动AI规划。AI正从"能做事"进化到"做得好"。做"TasteCheck"——AI设计品味审查平台：UI/UX审查（基于500+SaaS模式分析）+文案品味审查（6维度+3风格改写）+代码品味审查。Free 每月1次，Pro $49/月+CI集成。冷启动：免费"Design Roast"——AI毒舌点评你的设计然后帮你修。</description>
     <pubDate>Mon, 14 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-010-04</guid>
@@ -91,7 +136,7 @@
 
   <item>
     <title>IDEA 50 · Agent 时代的社交信号监听 · Octolens + AnySearch 登顶 PH，"Agent 也需要耳朵"</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-50</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-14.html#idea-50</link>
     <description>7月14日 PH：Octolens（19票#3 DevTool）"Social listening for the agent era"——专门为AI Agent设计的信号监听。AnySearch（32票#1）实时结构化搜索API。GitHub月榜：Agent-Reach（47K⭐）连接外部服务，last30days-skill（48K⭐）查询"过去30天"。Agent正在长出"耳朵"和"眼睛"。做"AgentEar"——AI市场情报代理：竞品雷达+赛道监听+机会发现引擎。Free 1竞品+周报，Pro $49/月无限+自定义规则。冷启动：免费"Competitor Pulse"。</description>
     <pubDate>Mon, 14 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-010-05</guid>
@@ -100,7 +145,7 @@
 
   <item>
     <title>IDEA 41 · Agent 自主商务谈判 · Lyzr AI 独立完成 $100M 融资</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-41</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-13.html#idea-41</link>
     <description>7月9日彭博社：Lyzr 的 B 轮 $100M 融资全程由自研 AI Agent "SivaClaw" 独立主导——投资者筛选、条款谈判、尽职调查、签约。最终获 $400M 超额认购意向，估值约 $500M。Agent 的战场正从"内部提效"转向"对外经营"。做"DealAgent"——面向 OPC 创始人的 AI 商务谈判 Agent：外呼邮件触达 + 谈判辅助 + 合同生成。Free 100次邮件/月，Pro $49/月。冷启动："PitchDeck Score"免费融资PPT评估工具。</description>
     <pubDate>Mon, 13 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-009-01</guid>
@@ -109,7 +154,7 @@
 
   <item>
     <title>IDEA 42 · 本地超级模型工作站 · colibri 让 744B MoE 跑在家用机上</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-42</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-13.html#idea-42</link>
     <description>7月12日 GitHub：colibri（4.6K⭐首日上榜）纯C零依赖实现 GLM-5.2 744B MoE 在 25GB RAM 消费机本地运行。pony-tail（81K⭐）让 Agent "think like the laziest senior dev"。隐私和智能终于不再互斥。做"LocalMind"——Mac App 一键本地 AI 工作站，打包 colibri+Ollama+pony-tail。基础版免费，Pro $29/月。冷启动：GitHub 开源安装脚本。</description>
     <pubDate>Mon, 13 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-009-02</guid>
@@ -118,7 +163,7 @@
 
   <item>
     <title>IDEA 43 · 创作者全栈变现平台 · Fypro 711票 + OpenCut 63K⭐</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-43</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-13.html#idea-43</link>
     <description>7月第2周 PH：Fypro（711票）输入TikTok自动建站+选品+视频；Spira（475票）品牌Agent+AI网红。GitHub：OpenCut（63K⭐）开源版剪映。三个产品拼出完整变现流水线但各自独立。做"CreatorForge"——全栈变现平台：内容引擎+变现引擎+分析引擎。Free 1账号，Pro $19/月。冷启动："Creator Revenue Calculator"免费收入估算工具。</description>
     <pubDate>Mon, 13 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-009-03</guid>
@@ -127,7 +172,7 @@
 
   <item>
     <title>IDEA 44 · 微型 SaaS 法律工具箱 · AI 吃掉自动化但留下合规真空</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-44</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-13.html#idea-44</link>
     <description>kubaik.github.io 分析：合规包装、嵌入式工作流、私有数据层、审计留痕 4 个 niche 在 AI 时代更赚钱。GitLab：85%企业认为AI治理是首要任务。Reddit 热帖："小项目不需要合同"最后变成法律纠纷。做"IndieLegal"——AI 法律文档生成+合规扫描。文档生成 $29/份或$79/年无限，合规扫描免费一次 Pro $19/月。冷启动：免费"SaaS Legal Health Check"。</description>
     <pubDate>Mon, 13 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-009-04</guid>
@@ -136,7 +181,7 @@
 
   <item>
     <title>IDEA 45 · Agent 移动指挥中心 · DesktopCommander 3倍跃升登顶 + Cursor iOS</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-45</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-13.html#idea-45</link>
     <description>7月12日 GitHub 最大黑马：DesktopCommanderMCP（7,775⭐）从#5跃升至#1，日增翻3倍。Cursor发布iOS App（579票）。orca（17K⭐）做多Agent并行编排。AI Agent正从"插件"变成"远程可调度的数字员工"。做"AgentPilot"——移动优先 Agent 编排平台：部署引擎+移动指挥台+成本控制台。Free 1Agent，Maker $19/月，Studio $49/月。冷启动：60秒视频"从星巴克用手机部署Agent修Bug"。</description>
     <pubDate>Mon, 13 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-009-05</guid>
@@ -190,7 +235,7 @@
 
   <item>
     <title>IDEA 31 · Agent 真实浏览器基础设施 · BrowserAct 登顶 PH</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-31</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-02.html#idea-31</link>
     <description>7月1日 Signal：BrowserAct 于6月25日登顶 PH 当日榜首并跻身周榜前三，定位"Agent 的专属真实浏览器层"。解决 Agent 在网页执行任务时的四大痛点：登录过期、验证码、页面变化、人工审批。Vercel Drop 同日登顶 PH #1（350票）。Agent 工具链正从"能不能用"进化到"好不好用"。做"AgentBrowse"——面向 OPC 开发者的轻量 Agent 浏览器 API，curl 调用即可获取页面截图+结构化内容。Playwright + 代理 IP 池。免费 100次/月，Pro $19/月。冷启动：开源核心引擎放 GitHub。</description>
     <pubDate>Thu, 02 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-007-01</guid>
@@ -199,7 +244,7 @@
 
   <item>
     <title>IDEA 32 · 开源 AI 视频工厂 · OpenMontage 26K⭐ 7天飙升</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-32</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-02.html#idea-32</link>
     <description>7月 GitHub Trending 榜首：OpenMontage 26K⭐、7天+18K⭐。完整 AI 视频制作系统：脚本→素材→配音→剪辑→成片，12条流水线、52工具、500+技能。单条视频成本 $0.15-$3。但需自部署 Python+GPU——对 indie maker 门槛太高。做"IndieClip"——基于 OpenMontage 的托管视频生产服务：产品演示/发布/教程三类模板。$19/月（5条），$49/月（20条），$99/月（无限+API）。冷启动：PH 发"We turned a 26K⭐ project into your personal video studio"。</description>
     <pubDate>Thu, 02 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-007-02</guid>
@@ -208,7 +253,7 @@
 
   <item>
     <title>IDEA 33 · UI 到 AI 上下文桥接 · Qursor PH #2 313票</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-33</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-02.html#idea-33</link>
     <description>昨日 PH #2：Qursor（313票）"Point at any UI to send exact context to your AI"。今日 PH #1 Vercel Drop（350票）"Drop it. It's live."。两者解决同一问题：开发者与 AI 之间的"上下文摩擦"。做"SnapContext"——Chrome 扩展，一键截取网页 UI+DOM 生成结构化 prompt。不只是截图——提取 CSS/HTML/交互逻辑。进阶：选中元素→AI 输出改好的代码。$9/月起。冷启动：Chrome Web Store + r/webdev。</description>
     <pubDate>Thu, 02 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-007-03</guid>
@@ -217,7 +262,7 @@
 
   <item>
     <title>IDEA 34 · 一人公司 AI 团队编排 · StoreClaw/SellerClaw/Tycoon 扎堆 PH</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-34</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-02.html#idea-34</link>
     <description>PH 月榜"AI 跑公司"品类同时爆发：StoreClaw（华人团队 633票 #1）Agent 运营电商，SellerClaw（388票 #2）多渠道 Agent 团队，Tycoon AI（111票）"Run one-person companies with AI agents"。PollyReach（529票）给 Agent 装电话。但各工具割裂，缺统一编排层。做"OPCStack"——AI 虚拟团队模板市场+编排层。选业务类型→生成角色表，每个角色调用已有最佳工具。$39/月起。冷启动：免费"OPC 团队生成器"收集 email。</description>
     <pubDate>Thu, 02 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-007-04</guid>
@@ -226,7 +271,7 @@
 
   <item>
     <title>IDEA 35 · AI 编码 Agent 性能优化 · ECC 23K⭐ + BuilderIO 39K⭐</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-35</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-02.html#idea-35</link>
     <description>GitHub 7月首周：ECC（23K⭐，月增 3.5K⭐）Agent 性能优化系统；BuilderIO/skills 单日 +39K⭐飘升。pm-skills 9.6K⭐，阿里 open-code-review 8.9K⭐。Agent 工具链进入"优化"阶段——从"有没有"变成"快不快"。但对 OPC 创始人太重。做"AgentPerf"——Agent 的 DevTools Performance 面板：耗时拆解 + 效率对比 + 成本看板。Node.js CLI，本地运行。$9/月起。冷启动：开源 GitHub，标题"You're burning $200/month on slow agent prompts."</description>
     <pubDate>Thu, 02 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-007-05</guid>
@@ -235,7 +280,7 @@
 
   <item>
     <title>IDEA 26 · Agent 经济支付层 · Bluerails 让 AI 找到你并付钱</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-26</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-06-30.html#idea-26</link>
     <description>PH 6月25日周榜：Bluerails Discovery（#2，621票）让 AI Agent 像独立经济主体一样发现商家并完成支付。Upstream（#1，876票）重设计邮件让人类和 Agent 协作。但 Agent 想付钱给 SaaS 仍需人类确认——缺"Agent 的 Stripe"。做"AgentPay"：Agent 虚拟账户 + API 计费网关 + 支出仪表盘。$0-1K 免费，1K+ 阶梯收费。冷启动：PH 发"We built Stripe for AI agents"。</description>
     <pubDate>Tue, 30 Jun 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-006-01</guid>
@@ -244,7 +289,7 @@
 
   <item>
     <title>IDEA 27 · 微型 SaaS 收购市场 · 头部 $600B，尾部 $10K-$100K 没人做</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-27</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-06-30.html#idea-27</link>
     <description>SpaceX 以 $600 亿美元收购 Cursor，"50 个 Micro SaaS Ideas"文章在 indie hacker 圈疯转。中间地带 $10K-$100K 收购空白。做"MicroExit"：OPC 微型 SaaS 收购市场，AI 估值引擎 + 标准化尽调 + Escrow + 资产转移。List fee $49，成功费 6%。冷启动：手动撮合前 5 笔。</description>
     <pubDate>Tue, 30 Jun 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-006-02</guid>
@@ -253,7 +298,7 @@
 
   <item>
     <title>IDEA 28 · AI 编码 Agent 安全护栏 · SkillSpector 月增 3.7K⭐</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-28</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-06-30.html#idea-28</link>
     <description>6月 GitHub Trending 第三条主线：Agent 安全治理。NVIDIA SkillSpector 月增 3.7K⭐扫描 Skills 安全漏洞，微软 MXC Rust 策略隔离。但 OPC 开发者用 Agent 零防护。做"AgentGuard"：Agent 权限扫描 + semgrep 代码审查 + 日志审计。免费版自动审查，Pro $9/月。开源核心引擎放 GitHub 引流。</description>
     <pubDate>Tue, 30 Jun 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-006-03</guid>
@@ -262,7 +307,7 @@
 
   <item>
     <title>IDEA 29 · Agent 长记忆即服务 · cognee 24.2K⭐</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-29</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-06-30.html#idea-29</link>
     <description>6月 GitHub 记忆主线：cognee（24.2K⭐）知识图谱长记忆，headroom（14.2K⭐）Token 压缩，DeusData（18.1K⭐）代码记忆。但全部需自部署。做"MemBase"一键记忆 API：POST /memories（存），GET /memories?query= 查。自动路由最佳后端。Free 100MB，Pro $19/月。冷启动：DEV Community 发"Your AI Agent Has Alzheimer's"。</description>
     <pubDate>Tue, 30 Jun 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-006-04</guid>
@@ -271,7 +316,7 @@
 
   <item>
     <title>IDEA 30 · 一人公司分发操作系统 · Levels 点名"造工厂没流量"</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-30</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-06-30.html#idea-30</link>
     <description>Superframeworks 发布 Distribution Paradox：AI 砍了建造成本 80%，分发成本几乎为零。70%+ 失败 maker 归因"没客户"。Agensi 8周 15K 用户 $0 广告费。做"DistroOS"：Reddit 精确投递 + AEO 内容优化器 + PH 启动指挥台 + X 增长手册。$19/月起。冷启动：先写免费 PDF 发 r/SaaS。Slogan："你的公司不缺 AI，缺人知道它存在。"</description>
     <pubDate>Tue, 30 Jun 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-006-05</guid>
@@ -280,7 +325,7 @@
 
   <item>
     <title>IDEA 21 · AI Agent 零人类公司 · Felix 月入 $30 万</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-21</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-06-17.html#idea-21</link>
     <description>Nat Eliason 的 AI Agent Felix 月入 $300K——自己建站、写邮件、开发票、管理 560+ 商品页面，配备子 Agent 客服和销售。但 AI Agent 无法开设银行账户和签署法律文件。做"AI Agent 公司工具包"：虚拟银行账户 + AI 法人注册 + 经营合规仪表盘。$49-199/月。不是又一个 AI 工具——是"AI 公司的公司"。</description>
     <pubDate>Tue, 17 Jun 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-005-01</guid>
@@ -289,7 +334,7 @@
 
   <item>
     <title>IDEA 22 · 本地 AI 数据主权 · Odysseus 65k⭐ 后的"隐私盒子"</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-22</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-06-17.html#idea-22</link>
     <description>PewDiePie 的 Odysseus 两周 65k⭐，把 ChatGPT 体验搬回本地。但部署需要 Docker+GPU 配置——90% OPC 创始人搞不定。做"OPC 隐私盒子"：图形化一键部署，预配置常用 OPC 场景。基础版免费，Pro $19/月。冷启动钩子："你的 AI 助手知道你的全部商业机密——花 10 分钟把它搬回自己家。"</description>
     <pubDate>Tue, 17 Jun 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-005-02</guid>
@@ -298,7 +343,7 @@
 
   <item>
     <title>IDEA 23 · AI 员工平台 · MakersClaw PH 第三，Agent 从工具变同事</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-23</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-06-17.html#idea-23</link>
     <description>Product Hunt 今日 #3 MakersClaw：在 Slack/Teams 里"雇佣 AI 员工"。AGIRAILS 让 Agent 互相雇佣链上结算。做"AI 员工模板商店"：AI 电商运营/SaaS 客服/内容营销，每个$29-99。先做一个爆款在 PH 和即刻同时发布。不是卖模板——是"你招的第一个 AI 员工"。</description>
     <pubDate>Tue, 17 Jun 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-005-03</guid>
@@ -307,7 +352,7 @@
 
   <item>
     <title>IDEA 24 · AI 编码 Agent 工具链管家 · 碎片化是新痛点</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-24</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-06-17.html#idea-24</link>
     <description>今日 PH 前 20 中 6 个是 AI 编码 Agent 配件（Edgee Turbo、GitHits、Canopy、DevCleaner、Glint、Athena），碎片化严重。做"AI Dev 管家"——统一面板集成模型切换 + 代码搜索 + 会话管理 + 磁盘清理。免费版 2 Agent，Pro $9/月。先做免费"Agent 磁盘清理器"在 GitHub 引流。</description>
     <pubDate>Tue, 17 Jun 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-005-04</guid>
@@ -316,7 +361,7 @@
 
   <item>
     <title>IDEA 25 · 创始人 AI 晨报 · 中文 OPC 的"虚拟高管"</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-25</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-06-17.html#idea-25</link>
     <description>Every 推出 AI CFO/Bookkeeper/CHRO，Mastercard 推 Virtual C-Suite，PH #9 Dirac 做创始人晨报。全是英文、美国市场。做"OPC 创始人晨报"：每日 8:00 推送 5 分钟简报（收入支出 + 客户邮件 + GitHub 进展 + 竞品动态 + 今日 3 件决策）。接 Stripe/GitHub/Gmail/企微，用 DeepSeek 做中文 NLU。免费版 3 数据源，Pro ¥29/月。</description>
     <pubDate>Tue, 17 Jun 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-005-05</guid>
@@ -325,7 +370,7 @@
 
   <item>
     <title>IDEA 16 · OPC 业务"死人开关" · AI 自动接管系统</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-16</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-06-15.html#idea-16</link>
     <description>36氪报道独立开发者圈流行"死人开关"——AI接入deadmansswitch，断联后自动接管客服、维护服务器。目前没有专门面向OPC的业务连续性工具。做"OPC业务守护者"SaaS：72小时不活跃触发AI接管，$19-49/月。冷启动：在Indie Hackers发帖"如果你突然挂了，你的SaaS还能活几天？"</description>
     <pubDate>Mon, 15 Jun 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-004-01</guid>
@@ -334,7 +379,7 @@
 
   <item>
     <title>IDEA 17 · AI 搜索品牌防御 · LLM Brand Defender</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-17</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-06-15.html#idea-17</link>
     <description>Vibe Coding让山寨SaaS复制成本归零。用户问ChatGPT"最好的XX工具"，LLM经常混淆正版和山寨。做LLM Brand Defender：监测10+LLM返回结果、检测山寨域名、输出品牌份额月报。手工版$97-197/份起步，验证需求后自动化SaaS $99-299/月。不是说SEO工具，是AI搜索时代的品牌战情室。</description>
     <pubDate>Mon, 15 Jun 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-004-02</guid>
@@ -343,7 +388,7 @@
 
   <item>
     <title>IDEA 18 · 初创企业合规即服务 · $299/月 GDP R/SOC2 扫描</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-18</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-06-15.html#idea-18</link>
     <description>每一家拿到enterprise deal的初创都撞墙——要SOC2/GDPR合规但买不起Vanta/Drata。做轻量合规平台：先做GDPR+AWS，4-8周MVP。GitHub CI集成自动扫描+基础设施配置检查+合规报告PDF。$99-299/月。获客钩子："你的第一个企业客户要SOC2报告，而你只有2个人。"</description>
     <pubDate>Mon, 15 Jun 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-004-03</guid>
@@ -352,7 +397,7 @@
 
   <item>
     <title>IDEA 19 · AI 编程 Agent 远程驾驶舱 · 手机管理数字员工</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-19</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-06-15.html#idea-19</link>
     <description>SuperTurtle/paseo/cc-switch同时在PH和GitHub Trending出现，Agent远程控制新品类正在形成。做"Agent仪表盘"：跨Claude Code/Codex/Cursor监控Agent状态，Push通知任务完成/阻塞，Agent工作日报。Freemium：免费1个Agent，$9-29/月多Agent。</description>
     <pubDate>Mon, 15 Jun 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-004-04</guid>
@@ -361,7 +406,7 @@
 
   <item>
     <title>IDEA 20 · AI 短视频商业化分发引擎 · 跨平台一键发布</title>
-    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-20</link>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-06-15.html#idea-20</link>
     <description>MoneyPrinterTurbo 71k⭐，AI视频生成已commoditized。新瓶颈是分发——同时发TikTok/YouTube/小红书/视频号，格式适配和跨平台数据追踪极度碎片化。做"AI视频跨平台分发引擎"："视频的Shopify"，自动格式化+定时发布+数据分析。$29-79/月。</description>
     <pubDate>Mon, 15 Jun 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-004-05</guid>
