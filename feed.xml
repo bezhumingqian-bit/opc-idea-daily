@@ -5,8 +5,53 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Thu, 16 Jul 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Fri, 17 Jul 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 61 · Agent 安全沙箱基础设施 · 腾讯开源 CubeSandbox 8,437⭐ + ReasonGate 登 HN</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-61</link>
+    <description>7月17日 GitHub Trending：腾讯云开源 CubeSandbox（8,437⭐）——专为 AI Agent 设计的轻量级安全沙箱，支持即时启动、高并发、安全隔离。同日 HN Show：ReasonGate 可解释 LLM prompt 注入拦截器。Agent 安全正从"规则层"向"隔离层"跃迁。做"SandboxOps"——Agent 安全运行环境即服务：一键沙箱（&lt;3秒启动+文件隔离+网络白名单+快照回滚）+安全策略模板市场+监控审计面板。Free 1沙箱，Pro $49/月 无限+团队。冷启动：开源"Agent Sandbox CLI"。</description>
+    <pubDate>Fri, 17 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-013-01</guid>
+    <category>Agent 安全 / 沙箱隔离 / 腾讯开源 / OPC 基础设施</category>
+  </item>
+
+  <item>
+    <title>IDEA 62 · WiFi 无感空间智能 · RuView π 78K⭐ 登顶 GitHub，WiFi 变"无摄像头空间感知层"</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-62</link>
+    <description>7月17日 GitHub 全站榜首：RuView π（78,466⭐）——用现成 WiFi 信号实现空间感知+人体检测+呼吸心率监测，零摄像头。"无感空间智能"新品类正形成。做"AmbientSense"——路线A零售客流分析（$29-79/月/店），路线B办公空间管理（$49-149/月/层），路线C老人安全守护（$9.99/月）。冷启动：找咖啡馆免费试用→出客流报告→小红书传播。</description>
+    <pubDate>Fri, 17 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-013-02</guid>
+    <category>WiFi 空间智能 / 隐私优先 / 零售 SaaS / OPC 新赛道</category>
+  </item>
+
+  <item>
+    <title>IDEA 63 · AI 视频理解即服务 · claude-video 日增 953⭐，"让 AI 看视频"成新 API 品类</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-63</link>
+    <description>7月17日 GitHub：claude-video（5,118⭐）——给 Claude 装上"能看视频的眼睛"。AI 视频理解 API 品类空白被胶水工具填补。做"ClipIntel"——①竞品视频情报 API（YouTube→功能清单+定价+情绪+时间线），②用户研究视频分析（访谈录像→转录+痛点聚类+人物画像），③产品演示自动解说。Free 3次/月，Pro $79/月 100次+批量。冷启动：免费"Competitor Video Brief"工具。</description>
+    <pubDate>Fri, 17 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-013-03</guid>
+    <category>视频理解 API / 竞品情报 / 多模态 AI / OPC 工具链</category>
+  </item>
+
+  <item>
+    <title>IDEA 64 · Prompt IP 保护与防盗 · system_prompts_leaks 52K⭐ 登顶日榜</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-64</link>
+    <description>7月17日 GitHub 日榜榜首：system_prompts_leaks（52,926⭐ 日增1,704⭐）收集全部主流模型泄露 Prompt。Prompt 正变成核心 IP 资产，但 OPC 产品毫无保护——硬编码在代码/日志/环境变量中。做"PromptVault"——加密存储+版本管理+A/B测试+隐形水印溯源+互联网泄露监控+CI/CD 安全审计。Free 3个Prompt，Pro $49/月无限+监控。冷启动：免费"Prompt Leak Scanner"。</description>
+    <pubDate>Fri, 17 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-013-04</guid>
+    <category>Prompt 安全 / IP 保护 / 水印溯源 / OPC 知识产权</category>
+  </item>
+
+  <item>
+    <title>IDEA 65 · 边缘 AI 一键部署工具包 · pocket-tts CPU 跑 TTS，"本地 AI 大脑"成 OPC 新标配</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-65</link>
+    <description>7月17日 GitHub：pocket-tts（6,132⭐）纯 CPU TTS 引擎。结合前两周本地 AI 趋势，AI 正从"必须上云"变成"可本地运行"。但拼齐 pocket-tts+Whisper+Ollama+ChromaDB 需全栈 AI 工程师 2-3 周。做"EdgeKit"——本地 AI 一键部署工具包：npm install →内置 TTS/STT/LLM/RAG，一行代码调用+5套场景模板+Inspector 监控面板。核心开源 MIT，Pro $19/月模板。冷启动：60秒视频"3 lines of code = voice AI in your desktop app."</description>
+    <pubDate>Fri, 17 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-013-05</guid>
+    <category>边缘 AI / 本地推理 / 桌面 SDK / OPC 工具链</category>
+  </item>
 
   <item>
     <title>IDEA 56 · Agent 硬件化物理接口层 · OpenAI 发布 Codex Micro $230 键盘 + SpaceXAI 开源 Grok Build</title>
