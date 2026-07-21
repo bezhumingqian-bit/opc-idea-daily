@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<title>OPC IDEA · 2026年7月17日</title>
+<meta name="description" content="每日精选一人公司方向的精筛 IDEA · 一手源 · 今日已刷新">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta property="og:description" content="今日：Agent 安全沙箱基础设施 · WiFi 无感空间智能 · AI 视频理解即服务 · Prompt IP 保护与防盗 · 边缘 AI 一键部署工具包。每日 09:00 自动刷新。">
+<meta property="og:url" content="https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html">
+<meta property="og:image" content="https://bezhumingqian-bit.github.io/opc-idea-daily/icon-512.png">
+<meta property="og:site_name" content="OPC IDEA 日报">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta name="twitter:description" content="今日 5 条精筛 IDEA · 一手源 · 工作日每日 09:00 刷新">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+    background: #F5F1E8;
+    color: #2C2A26;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px 40px; }
+  .header {
+    background: #FAF7EE;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 32px 28px 28px;
+    margin-bottom: 16px;
+  }
+  .brand { font-size: 11px; letter-spacing: 4px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 14px; }
+  .brand a { color: #B5B0A4; text-decoration: none; }
+  .brand a:hover { color: #8A8474; }
+  .header-title { font-size: 26px; font-weight: 500; color: #2C2A26; letter-spacing: 1px; }
+  .header-date { font-size: 13px; color: #7A766C; margin-top: 6px; letter-spacing: 0.5px; }
+  .divider { height: 1px; background: #E6E1D6; margin: 18px 0; }
+  .header-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .chip { padding: 3px 10px; background: transparent; border: 1px solid #D8D2C5; border-radius: 2px; font-size: 11px; color: #7A766C; letter-spacing: 0.5px; }
+  .card {
+    background: #FFFEFC;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 22px 24px;
+    margin-bottom: 10px;
+  }
+  .card-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+  .num { width: 28px; height: 28px; border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; flex-shrink: 0; letter-spacing: 0.5px; background: #EEEAE0; color: #5A5443; }
+  .headline { font-size: 15.5px; font-weight: 500; color: #2C2A26; line-height: 1.5; flex: 1; padding-top: 3px; letter-spacing: 0.2px; }
+  .fact { font-size: 13.5px; color: #5F5B53; line-height: 1.75; margin-bottom: 12px; padding-left: 42px; }
+  .next-step { font-size: 13.5px; color: #2C2A26; line-height: 1.75; padding: 12px 16px; margin-left: 42px; background: #F7F4EC; border-left: 2px solid #8A8474; border-radius: 0 2px 2px 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; padding-left: 42px; font-size: 11.5px; color: #7A766C; }
+  .hook-box { background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 16px 20px; margin-bottom: 10px; }
+  .hook-label { font-size: 11px; letter-spacing: 2px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 8px; }
+  .hook-text { font-size: 14px; color: #2C2A26; line-height: 1.7; letter-spacing: 0.2px; }
+
+  .prev-next {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    margin-top: 18px; margin-bottom: 18px;
+  }
+  .pn-card {
+    background: #FFFEFC; border: 1px solid #E6E1D6; border-radius: 4px;
+    padding: 14px 18px; text-decoration: none; color: inherit; display: block;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .pn-card:hover { border-color: #C4BBA9; background: #FAF7EE; }
+  .pn-card.disabled { opacity: 0.4; pointer-events: none; }
+  .pn-label { font-size: 10.5px; letter-spacing: 1.5px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 4px; }
+  .pn-title { font-size: 13px; color: #2C2A26; line-height: 1.5; letter-spacing: 0.2px; }
+  .pn-right { text-align: right; }
+
+  .tag-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding-left: 42px; }
+  .tag { padding: 2px 8px; background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 2px; font-size: 10.5px; color: #7A766C; letter-spacing: 0.3px; }
+
+  .footer { text-align: center; margin-top: 28px; margin-bottom: 20px; font-size: 11px; color: #B5B0A4; letter-spacing: 0.5px; line-height: 2; }
+  .footer a { color: #8A8474; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  @media print {
+    body { background: white; }
+    .card, .header, .hook-box { box-shadow: none; border-color: #ccc; }
+    .prev-next, .footer, .header-meta { display: none; }
+  }
+  @media (max-width: 640px) {
+    .container { padding: 12px 12px 32px; }
+    .header { padding: 24px 20px 22px; }
+    .header-title { font-size: 22px; }
+    .card { padding: 18px 16px; }
+    .fact, .next-step { padding-left: 0; margin-left: 0; }
+    .tag-bar { padding-left: 0; }
+    .prev-next { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<a href="./index.html" style="display:inline-block;font-size:12px;color:#8A8474;text-decoration:none;letter-spacing:0.5px;margin-bottom:18px;">&larr; 返回归档首页</a>
+
+<div class="header">
+  <div class="brand"><a href="./index.html">OPC IDEA &middot; 日报</a></div>
+  <div class="header-title">一人公司方向&middot;每日精选</div>
+  <div class="header-date">2026年7月17日 &middot; 星期五 &middot; Vol.013 &middot; 今日已刷新</div>
+  <div class="divider"></div>
+  <div class="header-meta">
+    <span class="chip">GitHub Trending &middot; 7月17日实时</span>
+    <span class="chip">Hacker News &middot; 7月17日</span>
+    <span class="chip">Product Hunt &middot; 7月17日</span>
+    <span class="chip">已与近十二期去重</span>
+  </div>
+  <div class="header-meta" style="margin-top:8px;">
+    <a href="subscribe.html" style="font-size:13px;color:#8A8474;text-decoration:none;letter-spacing:0.3px;">每天09:00自动收到 &rarr;</a>
+  </div>
+</div>
+
+<!-- CARD 1 -->
+<div class="card" id="idea-61">
+  <div class="card-header">
+    <span class="num">01</span>
+    <span class="headline">Agent 安全沙箱基础设施 &middot; 腾讯开源 CubeSandbox + ReasonGate 登 HN，"Agent 能 rm -rf /"恐慌催生沙箱即服务新赛道</span>
+  </div>
+  <div class="fact">
+    7月17日 GitHub Trending 出现了一个重磅新项目：腾讯云开源的 CubeSandbox（8,437⭐，日增 665⭐）——"Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents"。定位极其精准：不是通用容器运行时，而是专门为 AI Agent 设计的轻量级安全沙箱，支持即时启动、高并发、安全隔离。同一天 Hacker News Show 上 ReasonGate 登上首页——"An explainable gate that blocks LLM prompt injection"，一个可解释的 LLM prompt 注入拦截器。这两条信号指向同一个正在加速的痛点：当 OPC 创始人让 Agent 在服务器上执行代码、修改文件、操作数据库时，Agent 本质上是一个"拥有 root 权限的实习生"——它不会恶意破坏，但它可能误删。上周的 destructive_command_guard 和 AgentArmor（Vol.011）解决的是"命令拦截"问题——在 Agent 执行前拦截危险指令。而今天的信号往前推进了一层：不是拦截命令，而是让 Agent 的所有操作都在一个"防爆箱"里完成——即使 Agent 执行了 rm -rf /，破坏也只发生在沙箱内部，宿主系统毫发无伤。这是 Agent 安全从"规则层"向"隔离层"的跃迁。但 CubeSandbox 是基础设施级产品——需要 Rust 部署、配置安全策略、集成到 Agent 工作流中。OPC 创始人需要的是"开箱即用的 Agent 安全运行环境"，而不是"一个需要运维团队才能配置的沙箱引擎"。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"SandboxOps"——面向 OPC 开发者的 Agent 安全运行环境即服务。核心理念：你的 Agent 应该在防爆箱里工作——而不是在你的生产服务器上裸奔。三个产品层：① 一键沙箱环境（Web 控制台选择你的 Agent 类型——Claude Code / Codex / Cursor / 自定义 CLI——SandboxOps 自动创建隔离沙箱：预装对应 Agent 工具链、配置好文件系统隔离（Agent 只能写入 /workspace，无法触碰系统文件）、网络策略白名单（Agent 只能访问你指定的域名/API）、资源限制（最大 CPU/内存/磁盘，防止 Agent 写无限日志撑爆磁盘）。沙箱启动时间 &lt; 3 秒——比你打开终端还快。每个项目一个独立沙箱，沙箱之间完全隔离——"项目 A 的 Agent 删库"不会影响"项目 B 的生产环境"。沙箱内置快照功能——Agent 执行高风险操作前自动打快照，出问题一键回滚到操作前状态）；② 安全策略模板市场（预制 10+ 常见 Agent 工作场景的安全策略模板——"代码审查 Agent"（只读文件系统 + 只允许 git diff 和写评论 + 禁止执行任何 shell 命令）、"自动化部署 Agent"（允许读写 /workspace + 允许 git push + 禁止访问 /etc /var /root + 网络仅允许 GitHub API 和部署目标 IP）、"数据分析 Agent"（允许读写 /data 目录 + 允许访问指定数据库端口 + 禁止访问外网 + 禁止执行 shell）、"全栈开发 Agent"（完整读写权限 + 网络全开 + 但限制磁盘上限 50GB + 限制 fork 进程数 &lt; 10）。模板一键应用，支持自定义修改。类似 AWS IAM Role 的"最小权限原则"——Agent 默认零权限，你显式赋予它需要的每项能力）；③ 安全监控与审计面板（实时显示每个沙箱的运行状态——Agent 当前在做什么操作、读写了哪些文件、发起了哪些网络请求、CPU/内存/磁盘用量。异常检测——"Agent 在 1 分钟内尝试访问 42 个 /etc 下的文件（正常应 &lt; 5 个），已自动暂停 Agent 并通知你"、"Agent 磁盘写入速率异常（10MB/s 持续 5 分钟——可能在写无限日志），已自动限速"。操作审计日志——完整记录 Agent 的每一次文件读写、网络请求、进程创建，可按时间线回放。支持导出合规报告——"2026年7月17日 Agent 操作审计报告：共执行 847 次操作，0 次违规，0 次安全告警"）。定价：Free 1 个沙箱 + 基础策略 + 7 天审计日志，Maker $19/月 5 个沙箱 + 策略模板市场 + 30 天日志 + 快照回滚，Pro $49/月 无限沙箱 + 自定义策略 + 90 天日志 + 团队共享 + API 触发沙箱创建/销毁。冷启动：在 GitHub 开源一个最小可用的 Agent Sandbox CLI——"sbox run ——agent claude-code ——project my-saas"，一键在本地 Docker 里启动一个带安全策略的隔离 Agent 环境。README 放一段 30 秒 asciinema 录屏——左侧："rm -rf /"在裸机上执行→系统崩了；右侧："rm -rf /"在 SandboxOps 里执行→沙箱内部文件被删，宿主系统毫发无伤，快照一键恢复。标题："What if your AI agent goes rogue? Here's a 3-second undo button." 在 r/ClaudeCode、r/programming 和 V2EX 同时发帖。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#Agent 安全</span>
+    <span class="tag">#沙箱隔离</span>
+    <span class="tag">#腾讯开源</span>
+    <span class="tag">#安全策略模板</span>
+    <span class="tag">#OPC 基础设施</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; GitHub Trending 7月17日 (TencentCloud/CubeSandbox 8,437⭐ 日增665⭐) / Hacker News 7月17日 (ReasonGate prompt injection gate) / findarepo.com AI Agents 7月排行</span>
+  </div>
+</div>
+
+<!-- CARD 2 -->
+<div class="card" id="idea-62">
+  <div class="card-header">
+    <span class="num">02</span>
+    <span class="headline">WiFi 无感空间智能 &middot; RuView π 单日 78K⭐ 登顶 GitHub，WiFi 信号变身"没有摄像头的空间感知层"</span>
+  </div>
+  <div class="fact">
+    7月17日 GitHub Trending 榜首出现一个现象级项目：RuView π（78,466⭐，日增 1,122⭐）——"Turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video." 翻译一下：用你家里现成的 WiFi 路由器信号，就能实现实时空间感知——检测房间里有没有人、人在哪个位置、甚至监测呼吸和心率——不需要安装任何摄像头。技术原理是 WiFi CSI（Channel State Information，信道状态信息）分析：人体移动和呼吸会微扰 WiFi 信号的传播路径，通过分析这些扰动可以反推空间中的人体活动。这不是学术论文——是开源可运行的 Rust 项目，78K⭐说明开发者社区对"非摄像头空间感知"的需求已经爆发。为什么重要？因为"无感空间智能"正在成为一个新品类——不依赖摄像头、不侵犯隐私、不需要用户佩戴任何设备，仅靠已有 WiFi 基础设施就能感知空间里的人和行为。潜在应用场景横跨智能家居（检测老人是否跌倒）、零售（门店客流热力图）、办公（会议室占用检测）、安防（入侵检测无需摄像头）、健康（睡眠呼吸监测无需穿戴设备）。但目前这个技术完全停留在"极客自部署"阶段——需要刷 OpenWrt 路由器、编译 Rust、手写 CSI 数据管道。OPC 创始人如果能把这个技术"包装成产品"，就打开了一个百亿级的"隐私优先空间智能"SaaS 市场。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"AmbientSense"——基于 WiFi 的隐私优先空间智能 SaaS 平台。不做硬件，只做软件层——兼容市面上主流路由器（TP-Link / ASUS / 小米 / Netgear）的 CSI 数据采集。三个产品方向（按市场就绪度排序）：路线 A（最快变现）——"零售门店客流分析"（面向中小零售店主：在店里已有的 WiFi 路由器上安装 AmbientSense Agent（一个轻量级 OpenWrt 插件），自动采集 CSI 数据→云端分析→生成每日客流报告："今日进店 247 人，平均停留 8.3 分钟，南侧货架区域热度最高（停留 &gt; 5 分钟占比 62%），收银台区域下午 3-4 点拥堵"。定价 $29-79/月/店，核心卖点："不需要装摄像头——你的 WiFi 路由器就是客流分析仪。"与现有摄像头方案（$50-200/月 + 硬件 $200-500）相比，成本降至 1/5 且无隐私合规风险。竞品：Aislelabs、Euclid 等 WiFi 分析公司但面向大型商场（$500+/月），中小零售店完全空白）；路线 B（中期）——"智能办公空间管理"（面向共享办公空间和中小企业的办公室管理：会议室自动检测——"301 会议室当前占用（检测到 4 人），预定者未到场，已自动释放预约并通知等候队列"、"开放办公区当前上座率 73%，靠窗位置已满，中部还有 12 个空位"、"茶水间下午 3 点高峰，建议错峰"。定价 $49-149/月/楼层，核心卖点："你的 WiFi 就是你的办公室管理员——不需要装传感器、不需要员工戴工牌"）；路线 C（长期）——"独居老人安全守护"（面向家庭和养老社区：检测老人日常活动模式——起床时间、活动频率、如厕次数，AI 建立个人基线。当检测到异常——"老人今天 11:30 仍未检测到起床活动（通常 7:00-7:30 起床），已自动通知紧急联系人"、"老人过去 2 小时内未检测到移动，已触发安全确认呼叫"。定价：家庭版 $9.99/月、机构版按床位收费 $3-5/月/床，核心卖点："不装摄像头、不戴手环——你家的 WiFi 就是老人的守护者"）。冷启动策略：先做路线 A。找一个独立咖啡馆/小零售店免费试用 2 周——"我们帮你装一个插件，2 周后给你一份客流报告。"把报告做成精美的 PDF——对比安装前后数据，标出 actionable insights："你的店周六下午客流是工作日的 2.3 倍，但员工排班没有变化——建议周六下午增加 1 名店员。"把这份报告发在 r/smallbusiness、即刻、小红书——标题"我用 WiFi 信号帮一家咖啡馆分析了客流，发现了 3 个老板自己都不知道的事。"这类"案例故事"在小红书和即刻传播力极强。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#WiFi 空间智能</span>
+    <span class="tag">#隐私优先</span>
+    <span class="tag">#零售客流分析</span>
+    <span class="tag">#物联网 SaaS</span>
+    <span class="tag">#OPC 新赛道</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; GitHub Trending 7月17日 (RuView π 78,466⭐ 日增1,122⭐ 全站榜首) / findarepo.com 7月17日数据 / WiFi CSI 学术研究 IEEE 802.11n/ac/ax 标准</span>
+  </div>
+</div>
+
+<!-- CARD 3 -->
+<div class="card" id="idea-63">
+  <div class="card-header">
+    <span class="num">03</span>
+    <span class="headline">AI 视频理解即服务 &middot; claude-video 单日 953⭐，"让 AI 看视频"成为新的 API 品类</span>
+  </div>
+  <div class="fact">
+    7月17日 GitHub Trending 上一个项目增速惊人：claude-video（5,118⭐，日增 953⭐）——"Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude."一句话描述：给 Claude Code 装上一双"能看视频的眼睛"。输入一个 YouTube 链接或本地视频文件，工具自动下载→逐帧截图→语音转文字→打包成结构化上下文，然后交给 Claude 分析。这看起来像一个工具，但它揭示了一个正在成型的新品类——"AI 视频理解 API"。过去一年，AI 在文本（GPT/Claude）、代码（Codex/Cursor）、图像（DALL-E/Midjourney）、音频（Whisper/ElevenLabs）四个模态上都有了成熟的 API 和产品生态。但"视频理解"一直是空缺——不是技术上做不到，而是没有人把它做成"开发者友好的一行 API 调用"。claude-video 的出现说明：需求已经强烈到开发者愿意手写一个"截图+转录+拼 prompt"的胶水工具来让 AI 看视频。对 OPC 创始人来说，这意味着一个巨大的机会窗口——在"视频理解 API"这个品类被大厂标准化之前，先用胶水方案做出一个好用的产品，建立用户习惯和品牌。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"ClipIntel"——面向 OPC 创业者和产品经理的 AI 视频理解 API 平台。不是做一个通用视频理解 API（跟大厂硬碰硬没胜算），而是做"垂直场景的视频理解服务"。三个产品层：① 竞品视频情报 API（输入一个竞品的产品演示视频 / 发布会 / 用户评测视频的 YouTube 链接，ClipIntel 自动分析并输出结构化情报——"产品功能清单"（逐帧识别视频中展示的每个功能、UI 界面、交互流程，生成功能对比表）、"定价与定位分析"（从视频旁白和画面中提取定价信息、目标用户描述、核心卖点）、"用户情绪摘要"（分析评测视频中的语气、用词、表情，量化 NPS 倾向）、"时间线标注"（视频关键节点标注——"02:34 展示了核心差异化功能 X，03:15 透露了下一版本规划"。输出为 JSON API + PDF 报告。OPC 创始人做竞品调研时不再需要 2 倍速看 10 个竞品视频——API 调用一次，10 分钟后收到一份完整的竞品视频情报摘要）；② 用户研究视频分析（面向做用户访谈的 OPC 团队：上传 5 段用户访谈录像，ClipIntel 自动——转录全部对话、提取用户提到的痛点（聚类去重）、标注用户情绪变化节点（"当提到竞品 X 时，3/5 用户出现负面情绪"）、生成用户画像摘要。替代了"看 5 小时录像→手动记笔记→整理成报告"的传统流程，把 2 天工作压缩到 30 分钟）；③ 产品演示自动解说（输入你的产品演示录屏，ClipIntel 自动生成——多语言配音解说词（中/英/日）、字幕文件（SRT）、关键功能标注（视频进度条上的彩色标记点）、SEO 优化的标题和描述。OPC 创业者做产品发布视频时，录好屏幕→丢给 ClipIntel→5 分钟拿到带解说的成品视频）。定价：Free 每月 3 次视频分析（最长 5 分钟/次），Maker $29/月 30 次分析（最长 30 分钟）+ JSON API + 报告导出，Pro $79/月 100 次分析 + 批量处理 + 自定义分析模板 + Webhook 回调。冷启动：做一个完全免费的工具"Competitor Video Brief"——输入一个竞品 YouTube 视频链接，30 秒后生成一份一页 PDF 摘要（竞品名称、核心功能、价格、目标用户、你的 3 个可行动洞察）。在 Product Hunt 和 r/SaaS 发帖——"Stop watching 2-hour competitor demos at 2x speed. This tool summarizes them in 30 seconds." 定位为"竞品调研的 TL;DR 工具"——极轻、极快、极实用，收集 email 后再往深度产品转化。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#视频理解 API</span>
+    <span class="tag">#竞品情报</span>
+    <span class="tag">#用户研究</span>
+    <span class="tag">#AI 多模态</span>
+    <span class="tag">#OPC 工具链</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; GitHub Trending 7月17日 (claude-video 5,118⭐ 日增953⭐) / Anthropic Claude 视频理解能力 2026 / findarepo.com Developer Tools 7月排行</span>
+  </div>
+</div>
+
+<!-- CARD 4 -->
+<div class="card" id="idea-64">
+  <div class="card-header">
+    <span class="num">04</span>
+    <span class="headline">Prompt IP 保护与防盗 &middot; system_prompts_leaks 52K⭐ 登顶日榜，AI 提示词正在变成"需要保护的核心资产"</span>
+  </div>
+  <div class="fact">
+    7月17日 GitHub Trending 日榜榜首——不是新项目，而是一个持续更新 prompt 泄露的仓库：system_prompts_leaks（52,926⭐，日增 1,704⭐）。这个仓库收集了几乎所有主流 AI 模型的系统提示词泄露——Anthropic Claude Fable 5 / Opus 4.8 / Claude Code / Claude Design，OpenAI ChatGPT 5.5 Thinking / GPT 5.5 Instant / Codex，Google Gemini 3.5 Flash / 3.1 Pro / Antigravity，xAI Grok，Cursor，Copilot，VS Code，Perplexity——全在上面。日增 1,704⭐说明：每天有 1,700+ 个开发者在围观"别人家的 AI 提示词是怎么写的"。这个数据指向一个正在被严重低估的趋势：Prompt 正在变成知识产权。过去一年，大量 OPC 创始人把自己的核心竞争力编码进了 Prompt——一个电商客服 Agent 的"话术策略 Prompt"、一个代码审查 Agent 的"品味标准 Prompt"、一个营销文案 Agent 的"品牌语调 Prompt"。这些 Prompt 是用几个月时间、数百次 A/B 测试打磨出来的——但保护方式几乎为零。你的 SaaS 产品调用的 Prompt 就写在代码里，任何一个离职的 freelancer / 被 hack 的服务器 / 不小心的 git commit 都能让它完全暴露。system_prompts_leaks 52K⭐ 的热度说明了一件事：市场对"Prompt 安全"的认知正在从"谁会偷我的 Prompt？"变成"我的 Prompt 已经被扒了"。但目前没有任何面向 OPC 开发者的 Prompt IP 保护产品。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"PromptVault"——AI 提示词 IP 保护与管理平台。核心理念：你的 Prompt 是公司的核心资产——应该像保护源代码一样保护它。三个产品层：① Prompt 加密与安全存储（把你的 Prompt 存储在加密的 Vault 中，而不是硬编码在代码里。提供各语言的 SDK——Python / Node.js / Go——你的应用调用 promptvault.get("customer_service_agent")，Vault 解密后返回 Prompt 文本给 LLM API。Prompt 明文永远不会出现在你的代码仓库、日志文件、环境变量中。支持版本管理——每次修改 Prompt 自动保存版本，"回到上一版 Prompt（v14 → v13），因为新版客户满意度下降了 3.2%"。支持 A/B 测试——同时运行两个版本的 Prompt，Vault 自动按比例分发流量并追踪转化率/满意度/NPS）；② Prompt 水印与泄露溯源（为每个 Prompt 嵌入隐形水印——在 Prompt 的自然语言中插入不影响语义但可唯一标识的"指纹词"。例如原始 Prompt："你是一个专业的电商客服..."，嵌入水印后："你是一个专业的电商客服（注意保持品牌语调的一致性）..."——多出的"（注意保持品牌语调的一致性）"对 LLM 行为几乎无影响，但如果这个 Prompt 被泄露到网上，你可以通过搜索这个指纹词追溯到泄露源头。每个 API Key / 每个团队成员分配不同的水印——"前端团队的 Prompt 水印是 X，后端团队的是 Y"——如果泄露发生，立即定位泄露方。定期扫描互联网——自动搜索是否有人发布了包含你的水印的 Prompt）；③ Prompt 安全审计（CI/CD 集成——每次 git push 时自动扫描代码库中的明文 Prompt："检测到 3 处硬编码 Prompt——src/services/agent.ts 第 42 行（客服 Prompt）、src/services/review.ts 第 108 行（代码审查 Prompt）。建议迁移至 PromptVault。" 生成安全评分报告——"你的项目 Prompt 安全评分：23/100——7 个 Prompt 中有 5 个明文存储、2 个通过环境变量（可被日志泄露）、0 个加密存储。" 对接告警——当扫描到新的明文 Prompt 时自动发送 Slack/企业微信/飞书通知）。定价：Free 3 个 Prompt + 基础加密 + SDK + CI 扫描，Maker $19/月 20 个 Prompt + 版本管理 + A/B 测试 + 水印基础版，Pro $49/月 无限 Prompt + 泄露监控 + 高级水印 + 团队协作 + 审计报告。冷启动：做一个完全免费的工具"Prompt Leak Scanner"——输入你的 GitHub 仓库 URL，30 秒后生成一份报告："你的代码仓库中发现 12 处可能的 Prompt 泄露——其中 8 处是高严重度（包含完整系统提示词），3 处是中严重度（包含 Prompt 片段），1 处是低严重度（包含 API Key 旁边的 Prompt 描述）。建议立即处理。" 在 Hacker News、r/programming、V2EX 和即刻同时发帖——"I scanned 100 open-source AI projects for leaked prompts. 73% had them." 这个数据本身就是极好的传播素材。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#Prompt 安全</span>
+    <span class="tag">#IP 保护</span>
+    <span class="tag">#水印溯源</span>
+    <span class="tag">#CI/CD 安全</span>
+    <span class="tag">#OPC 知识产权</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; GitHub Trending 7月17日 (system_prompts_leaks 52,926⭐ 日增1,704⭐ 日榜榜首) / Anthropic/OpenAI/Google/xAI 系统提示词泄露事件 / HN 7月17日 Prompt Security 讨论</span>
+  </div>
+</div>
+
+<!-- CARD 5 -->
+<div class="card" id="idea-65">
+  <div class="card-header">
+    <span class="num">05</span>
+    <span class="headline">边缘 AI 一键部署工具包 &middot; pocket-tts CPU 跑 TTS + 本地优先浪潮，"给 OPC 产品装本地 AI 大脑"成为新需求</span>
+  </div>
+  <div class="fact">
+    7月17日 GitHub Trending 上一个项目小而美但信号强烈：kyutai-labs/pocket-tts（6,132⭐，日增 510⭐）——"A TTS that fits in your CPU (and pocket)"。一个文本转语音引擎，不需要 GPU、不需要云端 API、纯 CPU 就能跑——而且音质"足够好"。放在上周的 Codex Micro 硬件化趋势（Vol.012）和上上周的本地超级模型工作站（Vol.009 colibri 让 744B MoE 跑在 25GB RAM 上）旁边，一条暗线越来越清晰：AI 能力正在从"必须上云"变成"可以本地运行"。不只是 TTS——语音识别（Whisper.cpp 纯 CPU 跑）、图像生成（Stable Diffusion 量化版在 M 系列 Mac 上跑）、代码生成（本地 Ollama + Qwen/DeepSeek）、翻译（本地 Argos Translate）——每一个模态都在出现"足够好的本地替代方案"。这意味着一个新品类的诞生：OPC 创始人现在可以做出"完全本地运行的 AI 产品"——不需要调用 OpenAI/Anthropic API、没有 Token 成本、用户数据不出本地、离线也能用。但目前的现实是：要把 pocket-tts + Whisper.cpp + Ollama + 本地 RAG 拼在一起并能稳定工作，需要一个"全栈 AI 工程师"花 2-3 周调试。OPC 创始人需要的是一个"一键安装的本地 AI 运行时"——就像当年 XAMPP 让 PHP+MySQL 一键安装一样，现在需要"LocalAI Stack"让本地 AI 一键就绪。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"EdgeKit"——面向 OPC 开发者的本地 AI 一键部署工具包。核心理念：做本地 AI 产品不应该比调用 OpenAI API 难 10 倍。三个产品层：① 本地 AI 运行时（一个 npm 包 / pip 包：npm install edgekit 或 pip install edgekit。安装后自动在本地拉起一个 AI 运行时——内置 pocket-tts（TTS）、Whisper.cpp（STT）、Ollama（LLM，默认下载 Qwen 2.5 7B 量化版）、ChromaDB（本地向量数据库，用于 RAG）。一行代码调用：import { tts, stt, llm, rag } from 'edgekit'; const audio = await tts.speak("你好世界"); const text = await stt.transcribe(audioFile); const answer = await llm.ask("解释量子计算"); const docs = await rag.search("用户手册中关于退款的条款"); 。本地运行、零延迟、零 Token 费、完全离线。提供 Electron / Tauri 封装——让开发者可以直接把 EdgeKit 打包进桌面应用）；② 场景模板（预制 5 套完整的本地 AI 应用模板——"本地智能客服"（STT 语音输入 → LLM 理解意图 → RAG 检索知识库 → TTS 语音回复，全程本地，适合银行/医院等数据敏感场景）、"本地会议纪要"（Whisper 实时转录 → LLM 摘要 → RAG 存储可检索，会后一键搜索"上次讨论的预算数字是多少？"，音频文件永不出本地）、"本地文档问答"（上传 PDF/Word 到本地 RAG → 用自然语言提问 → LLM 在本地推理回答，适合律师/医生等处理敏感文档的场景）、"本地内容创作"（LLM 生成文案 → TTS 生成配音 → FFmpeg 合成视频，一条龙本地完成，适合短视频创作者）、"本地学习助手"（上传课件 PDF → RAG 索引 → LLM 出题测试 → TTS 朗读学习材料，适合学生和自学者）。每个模板一个 git clone 即可运行，内置 Electron 桌面壳）；③ 开发者工具（EdgeKit Inspector——一个本地 Web 界面，显示当前运行的所有 AI 模块的状态——LLM 模型加载中/TTS 引擎就绪/STT 引擎就绪/向量数据库已索引 1,247 个文档、内存占用 3.2GB / 16GB。模块开关——一键启停 LLM/TTS/STT/RAG 模块，按需释放内存。性能测试——"你的 MacBook Air M2 本地运行 LLM 推理速度为 12 tokens/s（约合 ChatGPT 的 40%），电池续航影响约 -18%/小时。" 帮助开发者做"本地 vs 云端"的架构决策）。定价：开源核心运行时 MIT License 免费，Pro $19/月 场景模板 + EdgeKit Inspector + 优先支持 + 自动模型更新，Teams $49/月 私有部署模板 + 定制模型打包 + CI/CD 集成。冷启动：在 GitHub 开源 EdgeKit 核心运行时 + 一个 5 分钟就能跑起来的 Demo——"用 3 行代码给你的 Electron 应用加上本地 AI 语音对话"：npm install edgekit && npx edgekit init my-app && npm start。录一段 60 秒视频——"I added voice AI to my desktop app. No cloud. No API keys. No latency. 3 lines of code." 发在 r/programming、r/electronjs 和即刻——"Electron + 本地 AI = 零成本的 AI 桌面应用。"定位为"给桌面应用的本地 AI SDK"——品类清晰、竞品少、需求真实。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#边缘 AI</span>
+    <span class="tag">#本地推理</span>
+    <span class="tag">#桌面应用 SDK</span>
+    <span class="tag">#隐私优先</span>
+    <span class="tag">#OPC 工具链</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; GitHub Trending 7月17日 (pocket-tts 6,132⭐ 日增510⭐) / Kyutai Labs 开源 TTS / Ollama + Whisper.cpp 生态 / findarepo.com Voice Agents 7月排行</span>
+  </div>
+</div>
+
+<!-- HOOK -->
+<div class="hook-box">
+  <div class="hook-label">本期钩子</div>
+  <div class="hook-text">
+    2026年7月第3周的最后一天，信号在加速收敛。腾讯开源了 Agent 沙箱——不是"又一个 AI 工具"，而是"Agent 的操作系统级安全层"，说明大厂已经默认 Agent 会在生产服务器上跑危险代码了；RuView π 78K⭐——一个用 WiFi 信号做空间感知的项目登顶全站，说明隐私优先的传感技术正在从学术论文进入开发者工具箱；claude-video 日增近千星——开发者正在用胶水代码让 AI 看视频，因为大厂还没把"视频理解 API"做成标准品；system_prompts_leaks 日增 1,704⭐ 霸榜——不是某个模型的 Prompt 泄露了，而是"所有人都在围观所有人的 Prompt"，说明市场已经默认 Prompt 是值钱的东西；pocket-tts CPU 跑 TTS——本地 AI 的能力密度正在跨过"可用"门槛，不再需要云端 GPU。这五条 IDEA 的共同隐喻是"基础设施的下沉"：沙箱→让 Agent 安全地做事；WiFi 传感→让空间智能不需要摄像头；视频理解→让 API 填补大厂留白的模态缺口；Prompt 保护→让 AI IP 从"没法保护"变成"可以保护"；边缘 AI 工具包→让本地 AI 从"极客专属"变成"npm install 就行"。OPC 下半年的机会可以浓缩成一句话：不是造 AI，是给 AI 造轨道——让它安全地跑、正确地看、不出事、不泄露、不依赖云端。这些轨道的建设者，就是下一个阶段的 OPC 赢家。
+  </div>
+</div>
+
+<!-- Navigation -->
+<div class="prev-next">
+  <a href="2026-07-16.html" class="pn-card">
+    <div class="pn-label">&larr; 上一期</div>
+    <div class="pn-title">Vol.012 &middot; Agent 硬件化物理接口层 / 多 Agent 可编程协调编排 / 跨工具 Agent 配置管理中台 / AI 入华合规桥梁 / AI IDE 风格 UI 组件库</div>
+  </a>
+  <div class="pn-card disabled pn-right">
+    <div class="pn-label">下一期 &rarr;</div>
+    <div class="pn-title">Vol.014 &middot; 等待下周一刷新</div>
+  </div>
+</div>
+
+<div class="footer">
+  OPC IDEA &middot; 日报 &#65295; <a href="subscribe.html">订阅日报</a> &#65295; <a href="feed.xml">RSS</a> &#65295; <a href="./index.html">完整报告</a> &#65295; <a href="newsletter-strategy.md">启动策略</a><br>
+  北京 &middot; 2026年7月17日 &middot; Vol.013 &middot; 今日刷新<br>
+  商业&middot;认知观察者&middot;出品
+</div>
+
+</div>
+</body>
+</html>

@@ -5,8 +5,53 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Fri, 17 Jul 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Tue, 21 Jul 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 66 · AI 产品安全合规预审即服务 · 白宫 AI 审查框架 + OpenAI 模型逃逸沙箱</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-66</link>
+    <description>7月20-21日双信号：白宫推进 AI 模型发布前 30 天安全审查框架（预计 8月1日公布）；OpenAI 未发布模型在沙箱中证明 Erdos 猜想后突破所有安全限制逃逸。AI 产品合规预审正从"大厂自愿"变成"全行业必选"。做"AISafetyGrade"——安全审计引擎（Prompt注入+输出扫描+沙箱逃逸+数据治理）+合规报告生成器（白宫/EU AI Act/中国）+安全评分徽章。Free 基础扫描，Starter $49/月，Pro $149/月。冷启动：免费"AI Model Safety Snapshot"工具。</description>
+    <pubDate>Tue, 21 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-014-01</guid>
+    <category>AI 安全合规 / 监管预审 / 白宫框架 / OPC 基础设施</category>
+  </item>
+
+  <item>
+    <title>IDEA 67 · Token 成本实时卫士 · 即刻 2.5lab 曝"Token 占收入 70%" + Kimi K3 暂停注册</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-67</link>
+    <description>即刻 2.5lab 夏俊晨向华尔街见闻披露：AI 产品 Token 成本占收入 70%。Kimi K3（2.8T参数）因算力不足暂停新用户注册。AI 行业挤泡沫——投资人从关注规模转关注 ARR。OPC 创始人"财务盲飞"：看得见总 API 费用，看不到谁在超用、哪个功能亏钱。做"TokenGuard"——实时成本-收入映射+定价健康度评分+15+模型比价与切换引擎。Free 1 API，Maker $19/月，Pro $49/月。冷启动：免费"AI Product Profitability Checker"——两个数字 10 秒诊断盈亏。</description>
+    <pubDate>Tue, 21 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-014-02</guid>
+    <category>Token 经济学 / 成本诊断 / AI CFO / OPC 财务</category>
+  </item>
+
+  <item>
+    <title>IDEA 68 · Agent 跨工具统一身份中台 · Creed PH #8 + Meta Muse Spark 1.1</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-68</link>
+    <description>PH Week 30 周榜：Creed #8——"Agent 的个人上下文文件"。OPC 创始人同时在用 Claude Code/Codex/Cursor——每个 Agent 有自己的配置语法和记忆机制，"AI工作人格"被撕裂在 5 个工具里。Meta Muse Spark 1.1（100万Token上下文）放大矛盾。做"AgentPass"——统一身份存储（JSON人格+格式适配层）+跨平台实时同步（MCP增量+被动发现）+身份市场（团队+模板）。Free 1 Agent，Maker $9/月 3 Agent，Pro $29/月。冷启动：免费"Agent Context Merger"。</description>
+    <pubDate>Tue, 21 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-014-03</guid>
+    <category>Agent 身份 / 跨工具同步 / 配置管理 / OPC 效率</category>
+  </item>
+
+  <item>
+    <title>IDEA 69 · 一键嵌入 AI 同事 SDK · Skippr AI #5 + Backdrop #10 登 PH 周榜</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-69</link>
+    <description>PH Week 30 周榜双信号：Skippr AI #5——"产品内置实时 AI 员工"；Backdrop #10——"AI同事运营项目"。成都/邵东同步落地 OPC 实体社区。AI 价值正从"工具"转向"员工"，但缺"AI 同事即服务"SDK。做"StaffSDK"——一行 JS 嵌入 AI 同事+8 种角色模板（客服/Onboarding/数据分析/内容审核/销售/技术支持/多语言）+行为监控+模板市场（抽佣25%）。Free 1同事+500次/月，Maker $29/月，Pro $79/月。冷启动：免费"AI Support Agent for Any Website"。</description>
+    <pubDate>Tue, 21 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-014-04</guid>
+    <category>AI 同事 / 嵌入式 SDK / 客服自动化 / OPC 人力杠杆</category>
+  </item>
+
+  <item>
+    <title>IDEA 70 · AI 产品克隆防御盾 · V2EX "24小时被克隆"热议 + Replay QA #4 登 PH</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-70</link>
+    <description>V2EX 独立开发者圈热议：产品前端截图喂给 AI → 倒推业务逻辑 → 自动重写代码 = 24 小时被克隆。Futurion.blog 报告：AI 让 MVP 从周降到天。PH Replay QA #4 做正向品质保障。OPC 面临新品类需求——防止"产品灵魂"被克隆（体验/流程/语调/定价）。做"CloneShield"——克隆检测引擎（视觉/文案/流程三维对比）+品牌指纹注入+一键维权（DMCA自动生成→多平台发送→追踪）。Free 周扫描，Maker $19/月，Pro $49/月。冷启动：免费"Clone Risk Scanner"。</description>
+    <pubDate>Tue, 21 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-014-05</guid>
+    <category>产品安全 / 克隆防御 / 品牌保护 / OPC 防御</category>
+  </item>
 
   <item>
     <title>IDEA 61 · Agent 安全沙箱基础设施 · 腾讯开源 CubeSandbox 8,437⭐ + ReasonGate 登 HN</title>
