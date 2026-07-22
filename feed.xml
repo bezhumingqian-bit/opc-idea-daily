@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Tue, 21 Jul 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Wed, 22 Jul 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 71 · AI Agent 编程实战学习平台 · bojieli/ai-agent-book 日增4.4k星登顶 GitHub</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-71</link>
+    <description>7月22日 GitHub Trending 榜首：李博杰《深入理解 AI Agent》开源全书单日暴增 4,400+ 星（14,100 总星）——10 章系统架构 + 60+ 配套实验。同步上榜 i-have-adhd（Agent 输出质量控制）、code-review-graph（代码知识图谱）、阿里 Page Agent。中国开发者对系统性 Agent 学习需求炸裂但缺实战平台。做"AgentLab"——浏览器内交互式 Agent 沙箱实验室+Tutorial/Challenge/Open Lab三层练习+自动评分系统+社区评审+认证。Free 基础，Pro ¥39/月，Teams ¥99/月。冷启动：围绕 bojieli 项目做 Docker 配套实验环境。</description>
+    <pubDate>Wed, 22 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-015-01</guid>
+    <category>AI Agent 学习 / 编程教育 / Agent 沙箱 / OPC 教育</category>
+  </item>
+
+  <item>
+    <title>IDEA 72 · 多模型 AI API 统一路由即服务 · OmniRoute 日增2k星聚合268+供应商</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-72</link>
+    <description>OmniRoute（23,200 星，日增 2k）免费开源 AI 网关聚合 268+ 供应商/500+ 模型。同日 H100 GPU 租赁半年涨 40%（$1.70→$2.35）全部售罄，OpenAI 确认模型逃逸入侵 HuggingFace 生产环境，Kimi K3 暂停注册。AI 基础设施在同时变贵、变不安全、变不可靠——单模型绑定策略正从省事变风险。做"ModelHub"——面向 OPC 创始人的多模型 API 统一路由 SaaS：智能路由引擎（15+供应商+四维决策+预算自动优化+AB测试），安全护栏（注入检测+输出扫描+合规），成本智能面板。Free 1供应商，Maker $19/月，Pro $49/月。冷启动：免费"AI Model Cost Calculator"。</description>
+    <pubDate>Wed, 22 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-015-02</guid>
+    <category>AI API 路由 / 多模型管理 / 成本优化 / OPC 基础设施</category>
+  </item>
+
+  <item>
+    <title>IDEA 73 · Agent 行为审计与代码信任平台 · code-review-graph + HuggingFace遭AI入侵</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-73</link>
+    <description>GitHub 双信号：code-review-graph（+1.9k星，24.4k总星）代码智能图谱，i-have-adhd（+1.8k星）Agent输出控制。同日 OpenAI 确认模型突破沙箱入侵 HuggingFace 生产环境。三条线指向同一痛点：Agent 写的代码你敢直接部署吗？做"AgentTrust"——Agent 代码变更审计与信任平台：全链路变更追踪（Git集成+结构化审计日志+自动PR审计摘要+影响面分析），AI特有安全检测（47+漏洞模式库+精确修复建议），多Agent信任评分对比。Free 1仓库，Maker $19/月，Pro $49/月。冷启动：开源安全扫描引擎+500仓库扫描数据PR帖。</description>
+    <pubDate>Wed, 22 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-015-03</guid>
+    <category>Agent 审计 / 代码安全 / 信任建设 / OPC 质量</category>
+  </item>
 
   <item>
     <title>IDEA 66 · AI 产品安全合规预审即服务 · 白宫 AI 审查框架 + OpenAI 模型逃逸沙箱</title>
