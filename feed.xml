@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Wed, 22 Jul 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Thu, 23 Jul 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 74 · "SaaS 账单杀手"——企业 AI 自研替代评估与搭建服务 · Curative 砍 $60 万 Salesforce + 签约成本暴降 95%</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-74</link>
+    <description>7月22-23日三重信号：Curative 用 AI 两个月自研 CRM 砍掉 $60 万 Salesforce 合同，计划削减 80% SaaS 支出；AI Agent Gwen 将签约成本从 $1,500 降至 $70（-95%）；Monday.com 裁员 20% 押注 AI。企业用 AI 自研替代 SaaS 从理论变现实，但中小企业缺技术团队。做"SaaSKiller"——SaaS 账单诊断（免费钩子）+ AI 内部工具搭建（$3K-20K/项目）+ 维护（$199-999/月）。冷启动：免费"Your SaaS Bill Kill List"评估工具。</description>
+    <pubDate>Thu, 23 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-016-01</guid>
+    <category>SaaS 替代 / AI 内部工具 / 企业服务 / OPC 服务</category>
+  </item>
+
+  <item>
+    <title>IDEA 75 · Agent 编程幻觉安全防火墙 · HalluSquatting 新型攻击 + 10/11 Coding Agent 存在注入漏洞</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-75</link>
+    <description>HalluSquatting 新攻击手法：AI 编程助手 85% 幻觉指向同一假包名，攻击者抢注后埋恶意代码，等 AI 带用户安装。同时 10/11 AI Coding Agent 存在 Shell 注入漏洞，攻击者伪造 Bug Report 大规模劫持 Agent。做"HalluShield"——幻觉包名实时检测 + Agent 代码变更安全审计 + 安全情报订阅。Free 基础拦截，Pro $9/月 实时数据库+深度分析，Teams $29/月 多仓库+SSO。冷启动：免费 NPM 扩展 + 开源幻觉数据库。</description>
+    <pubDate>Thu, 23 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-016-02</guid>
+    <category>AI 供应链安全 / HalluSquatting / Agent 安全 / OPC 安全</category>
+  </item>
+
+  <item>
+    <title>IDEA 76 · Agent 支付即服务 · Natural $3000 万 A 轮 + HTTP 402 协议正式激活</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-76</link>
+    <description>Natural 完成 $3000 万 A 轮（Agent 支付基础设施），Linux 基金会激活 HTTP 402 状态码，Visa/Stripe 等 40 家成员入局 x402 基金会。AI Agent 的支付层正从概念走向标准化。做"PayAgent"——Agent 支付一键集成 SDK（一行代码嵌入定价页）+ Agent 钱包配置管家（虚拟卡+审批规则+消费分析+异常检测）+ 支付协议翻译层（开源多协议适配器）。SDK 免费 1 产品，Pro $19/月；钱包免费 1 Agent，Pro $5/月。冷启动："Agent Payment Readiness Score"免费检测工具。</description>
+    <pubDate>Thu, 23 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-016-03</guid>
+    <category>Agent 支付 / HTTP 402 / Agent 经济 / OPC 基础设施</category>
+  </item>
 
   <item>
     <title>IDEA 71 · AI Agent 编程实战学习平台 · bojieli/ai-agent-book 日增4.4k星登顶 GitHub</title>
