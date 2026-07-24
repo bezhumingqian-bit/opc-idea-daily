@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Thu, 23 Jul 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Thu, 24 Jul 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 77 · OPC 政策红利导航——中国一人公司政策资源聚合平台 · 7部委联合发文 + WAIC 设 OPC 赛道</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-77</link>
+    <description>7月23日今日头条报道中国 OPC 日增 1.57 万家，618 个社区覆盖 24 省 75 城，7部委联合发文培育"人工智能一人公司"。WAIC 首届 OPC 挑战赛 711 选 22。上海"三个一百万"补贴、深圳最高 5000 万股权投资、成都 500 万算力券、香港数码港 OPC Hub。各城市政策军备竞赛——但信息极度碎片化，无一站式聚合平台。做"OPC 政策红利导航"：城市政策数据库（75+城市结构化聚合，免费 SEO 获客）+AI 政策匹配引擎（3分钟问卷→Top5政策+通过率预估）+政策申请代办（按结果收费）+社区黄页。冷启动：免费"2026 中国 OPC 政策白皮书"PDF 收集 Email。</description>
+    <pubDate>Thu, 24 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-017-01</guid>
+    <category>OPC 政策 / 创业补贴 / 城市红利 / OPC 基础设施</category>
+  </item>
+
+  <item>
+    <title>IDEA 78 · Vibe-Invest——个人 AI 量化投资 Agent 配置与安全监控平台 · HKUDS Vibe-Trading 15K⭐</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-78</link>
+    <description>7月24日 GitHub Trending：HKUDS Vibe-Trading 15K+星——18 数据源/460+因子/9 券商/30 组智能体/11 道安全护栏，MIT 开源可商用。自然语言→策略→回测→报告全自动。但中国 2 亿股民中绝大多数被命令行挡在门外。做"Vibe-Invest"——基于 Vibe-Trading 引擎的个人 AI 投资平台：一键部署+引导式配置（5个信息自动部署），实盘安全护栏（下单确认+熔断+透明度面板），策略市场（排行榜+一键克隆+创作者抽佣20%），B2B白标 ¥5-20万。Free 1模拟盘，Pro ¥29/月 3实盘，Premium ¥99/月。冷启动：真实账单帖+免费投资人格测试。</description>
+    <pubDate>Thu, 24 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-017-02</guid>
+    <category>AI 量化投资 / Vibe-Trading / 个人理财 / OPC 金融</category>
+  </item>
+
+  <item>
+    <title>IDEA 79 · Micro-DD——Micro-SaaS 收购尽调即服务 · Indie Hackers 报告 2000+单人SaaS月入过万</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-79</link>
+    <description>Indie Hackers 报告单人 SaaS 月入>$10K 从 200→2000+，churn 升至 7.2%。大量产品卡在 $1-3K MRR——"想卖"需求累积。传统 M&A 尽调起步 $10K-50K——$50K 收购案花 $10K 尽调不经济。做"Micro-DD"——AI 自动化六维度尽调（代码/收入/流量/AI风险/法律/运营→A-F评分卡），Single $499/3-Pack $999/Pro $199/月。标的匹配引擎+交易支持（估值+$199/合同+$99/转移清单+$49）。冷启动："I bought a $30K SaaS——what due diligence missed"故事帖+免费快速扫描工具。</description>
+    <pubDate>Thu, 24 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-017-03</guid>
+    <category>Micro-SaaS 收购 / 尽调即服务 / AI 审计 / OPC 基础设施</category>
+  </item>
 
   <item>
     <title>IDEA 74 · "SaaS 账单杀手"——企业 AI 自研替代评估与搭建服务 · Curative 砍 $60 万 Salesforce + 签约成本暴降 95%</title>

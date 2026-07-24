@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<title>OPC IDEA · 2026年7月23日</title>
+<meta name="description" content="每日精选一人公司方向的精筛 IDEA · 往期归档">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta property="og:description" content="往期：SaaS 账单杀手 · Agent 编程幻觉安全防火墙 · Agent 支付即服务。">
+<meta property="og:url" content="https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-23.html">
+<meta property="og:image" content="https://bezhumingqian-bit.github.io/opc-idea-daily/icon-512.png">
+<meta property="og:site_name" content="OPC IDEA 日报">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+    background: #F5F1E8;
+    color: #2C2A26;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px 40px; }
+  .header {
+    background: #FAF7EE;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 32px 28px 28px;
+    margin-bottom: 16px;
+  }
+  .brand { font-size: 11px; letter-spacing: 4px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 14px; }
+  .brand a { color: #B5B0A4; text-decoration: none; }
+  .brand a:hover { color: #8A8474; }
+  .header-title { font-size: 26px; font-weight: 500; color: #2C2A26; letter-spacing: 1px; }
+  .header-date { font-size: 13px; color: #7A766C; margin-top: 6px; letter-spacing: 0.5px; }
+  .divider { height: 1px; background: #E6E1D6; margin: 18px 0; }
+  .header-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .chip { padding: 3px 10px; background: transparent; border: 1px solid #D8D2C5; border-radius: 2px; font-size: 11px; color: #7A766C; letter-spacing: 0.5px; }
+  .card {
+    background: #FFFEFC;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 22px 24px;
+    margin-bottom: 10px;
+  }
+  .card-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+  .num { width: 28px; height: 28px; border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; flex-shrink: 0; letter-spacing: 0.5px; background: #EEEAE0; color: #5A5443; }
+  .headline { font-size: 15.5px; font-weight: 500; color: #2C2A26; line-height: 1.5; flex: 1; padding-top: 3px; letter-spacing: 0.2px; }
+  .fact { font-size: 13.5px; color: #5F5B53; line-height: 1.75; margin-bottom: 12px; padding-left: 42px; }
+  .next-step { font-size: 13.5px; color: #2C2A26; line-height: 1.75; padding: 12px 16px; margin-left: 42px; background: #F7F4EC; border-left: 2px solid #8A8474; border-radius: 0 2px 2px 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; padding-left: 42px; font-size: 11.5px; color: #7A766C; }
+  .hook-box { background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 16px 20px; margin-bottom: 10px; }
+  .hook-label { font-size: 11px; letter-spacing: 2px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 8px; }
+  .hook-text { font-size: 14px; color: #2C2A26; line-height: 1.7; letter-spacing: 0.2px; }
+
+  .prev-next {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    margin-top: 18px; margin-bottom: 18px;
+  }
+  .pn-card {
+    background: #FFFEFC; border: 1px solid #E6E1D6; border-radius: 4px;
+    padding: 14px 18px; text-decoration: none; color: inherit; display: block;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .pn-card:hover { border-color: #C4BBA9; background: #FAF7EE; }
+  .pn-label { font-size: 10.5px; letter-spacing: 1.5px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 4px; }
+  .pn-title { font-size: 13px; color: #2C2A26; line-height: 1.5; letter-spacing: 0.2px; }
+  .pn-right { text-align: right; }
+
+  .tag-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding-left: 42px; }
+  .tag { padding: 2px 8px; background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 2px; font-size: 10.5px; color: #7A766C; letter-spacing: 0.3px; }
+
+  .footer { text-align: center; margin-top: 28px; margin-bottom: 20px; font-size: 11px; color: #B5B0A4; letter-spacing: 0.5px; line-height: 2; }
+  .footer a { color: #8A8474; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  @media print {
+    body { background: white; }
+    .card, .header, .hook-box { box-shadow: none; border-color: #ccc; }
+    .prev-next, .footer, .header-meta { display: none; }
+  }
+  @media (max-width: 640px) {
+    .container { padding: 12px 12px 32px; }
+    .header { padding: 24px 20px 22px; }
+    .header-title { font-size: 22px; }
+    .card { padding: 18px 16px; }
+    .fact, .next-step { padding-left: 0; margin-left: 0; }
+    .tag-bar { padding-left: 0; }
+    .prev-next { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<a href="./index.html" style="display:inline-block;font-size:12px;color:#8A8474;text-decoration:none;letter-spacing:0.5px;margin-bottom:18px;">&larr; 返回归档首页</a>
+
+<div class="header">
+  <div class="brand"><a href="./index.html">OPC IDEA &middot; 日报</a></div>
+  <div class="header-title">一人公司方向&middot;每日精选</div>
+  <div class="header-date">2026年7月23日 &middot; 星期三 &middot; Vol.016 &middot; 往期归档</div>
+  <div class="divider"></div>
+  <div class="header-meta">
+    <span class="chip">GitHub Trending &middot; 7月23日</span>
+    <span class="chip">AI 日报 &middot; 7月23日</span>
+    <span class="chip">HN / DEV &middot; 7月23日</span>
+    <span class="chip">已与近十五期去重</span>
+  </div>
+</div>
+
+<!-- CARD 1 -->
+<div class="card" id="idea-74">
+  <div class="card-header">
+    <span class="num">01</span>
+    <span class="headline">"SaaS 账单杀手"——企业 AI 自研替代评估与搭建服务 &middot; Curative 砍 $60 万 Salesforce + 签约成本暴降 95%，"你的 SaaS 产品，你的客户正在 AI 自研替代你"</span>
+  </div>
+  <div class="fact">
+    7月22-23日发生了三件互相关联的事件，拼出一个正在加速的趋势。第一件：美国健康保险公司 Curative 创始人在 20VC 播客中宣布，公司用 AI vibecoding 两个月自研了一套 CRM 系统，砍掉了每年 $60 万（约 ¥406 万）的 Salesforce 合同，计划今年削减 80% 的 SaaS 支出，将预算转向 Anthropic 和内部 AI Agent 系统。第二件：Curative 还开发了名为 Gwen 的 AI Agent 处理医疗服务商合同谈判——过去一份合同平均成本 $1,500-2,000，AI Agent 介入后降至约 $70，降幅高达 95-96.5%。第三件：同一天 Monday.com 宣布裁员 20%（630 人），集中资源投向 AI Work Platform——这家成熟 SaaS 公司主动削减传统业务，押注 AI。华尔街和里昂证券爆发"AI 是否会让 SaaS 消亡"的辩论——Salesforce CEO 反驳称 AI 让 SaaS 更强，但 Curative 的数据是实打实的。这三件事不是孤立事件——这是 AI 编程工具（Claude Code / Codex / Cursor）让"企业自研替代第三方 SaaS"从理论变成现实的信号。但关键洞察是：Curative 有技术团队来做这件事——而年收入 $50万-$500万的中小企业没有。它们同样想砍掉昂贵的 SaaS 账单，但缺人、缺方法论、缺 AI 工具使用能力。这是一个金字塔底部巨大的 OPC 服务市场——帮他们做"SaaS 账单体检"→"AI 替代可行性评估"→"内部工具搭建"。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"SaaSKiller"——面向中小企业的 AI 内部工具替代评估与搭建服务。核心理念：你不是卖一个新的 SaaS 替代 Salesforce——你是帮中小企业发现"哪些 SaaS 可以用 AI 自研替代"，然后帮他们搭出来。三个产品层：① SaaS 账单健康度诊断（免费钩子产品——企业注册后接入 QuickBooks/Xero/银行账单，AI 自动识别所有 SaaS 订阅支出。输出一份报告含替代可行性+ROI）；② AI 内部工具搭建服务（标准工具替代 $3,000-8,000/项目，中度复杂 $8,000-20,000/项目，维护 $199-999/月）；③ SaaS 替代知识库与社区（公开维护 AISaaS Alternative DB，社区贡献模式，免费公开 SEO 资产）。冷启动：写一篇万字长文"We Replaced $200K/Year in SaaS With AI Agents"发 Indie Hackers/HN/V2EX/即刻；免费"Your SaaS Bill Kill List"在线评估工具。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#SaaS替代</span>
+    <span class="tag">#AI内部工具</span>
+    <span class="tag">#企业服务</span>
+    <span class="tag">#成本优化</span>
+    <span class="tag">#OPC服务</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; Curative CEO 20VC 播客 7/21 / Monday.com裁员20% 7/22 / 里昂证券"SaaS末日"辩论 7/21 / AI软件业日报 7/22</span>
+  </div>
+</div>
+
+<!-- CARD 2 -->
+<div class="card" id="idea-75">
+  <div class="card-header">
+    <span class="num">02</span>
+    <span class="headline">Agent 编程幻觉安全防火墙 &middot; HalluSquatting 新型攻击 + 10/11 Coding Agent 存在注入漏洞，"你的 AI 帮你 npm install 的那个包，可能是个后门"</span>
+  </div>
+  <div class="fact">
+    7月15日 The Hacker News 披露了一种名为 HalluSquatting（对抗性幻觉抢注）的新型攻击手法，由特拉维夫大学联合 Intuit 和 Technion 发布。AI 编程助手的"幻觉"不是随机的——当多个用户在相似语境下提出库安装请求时，AI 助手在 85% 的代码仓库请求和 100% 的 skill 安装请求中会指向同一个幻觉名称。攻击者的玩法：先找出这些高频幻觉包名→抢在用户之前注册→在里面埋恶意代码→等。等 AI 把用户引过来。你不需要点任何可疑链接——你只需要正常使用 AI 编程工具，让它帮你装一个"别人都在用"的包。同时 Tech Jacks Solutions 报告 11 个主流 AI Coding Agent 中有 10 个存在 Shell 注入漏洞，Dark Reading 报告攻击者伪造 Bug Report 大规模劫持 AI Agent。三条攻击链指向一个 AI 编程时代��新安全品类。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"HalluShield"——AI 编程时代的供应链安全防火墙。三个产品层：① 幻觉包名实时检测引擎（维护高频幻觉数据库+npm/PyPI pre-install hook拦截+1-3秒静态分析，Free 基础拦截 Pro $9/月）；② Agent 代码变更安全审计（追踪变更来源→检测伪造Issue劫持→行为模式异常告警→自动回滚，Teams $29/月 多仓库+SSO）；③ 幻觉安全情报订阅（免费周报+公开Dashboard获客）。冷启动："我用AI写代码一年，发现它23次想让我装恶意包"发HN/r/programming；免费Chrome扩展；开源幻觉数据库。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#AI供应链安全</span>
+    <span class="tag">#HalluSquatting</span>
+    <span class="tag">#Agent安全</span>
+    <span class="tag">#DevSecOps</span>
+    <span class="tag">#OPC安全</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; The Hacker News 7/15 (HalluSquatting) / Tech Jacks Solutions (10/11 Agent Shell注入) / Dark Reading 7/1 (伪造Bug Report劫持) / GitHub 7/23</span>
+  </div>
+</div>
+
+<!-- CARD 3 -->
+<div class="card" id="idea-76">
+  <div class="card-header">
+    <span class="num">03</span>
+    <span class="headline">Agent 支付即服务 &middot; Natural $3000万 A轮 + HTTP 402 协议正式激活，"你的 AI Agent 需要一个钱包——但这个基础设施不用你自己造"</span>
+  </div>
+  <div class="fact">
+    7月22日极客公园报道：AI 支付基础设施公司 Natural 完成 $3000 万 A 轮融资（累计 $4000 万），定位"AI Agent 的编排层"——提供 Agent 钱包、收付转账、全链路金融模块。同期 Linux 基金会激活 HTTP 402 "Payment Required"状态码，成立 x402 基金会，Visa、Stripe 等 40 家成员正式入局 Agent 支付结算。这不是两个孤立事件——这是 AI Agent 经济的"支付层"正在从概念验证走向标准化。对 OPC 创始人来说，机会不在做 Natural 的竞争对手——机会在做"Agent 支付能力"的最后一公里集成服务。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"PayAgent"——帮助 SaaS 产品快速接入 Agent 支付能力。三个产品层：① Agent 支付一键集成 SDK（一行代码嵌定价页→自动生成HTTP 402端点+对接Natural/Stripe/x402+Agent收入仪表盘，Free 1产品 Pro $19/月）；② Agent 钱包配置管家（虚拟Agent卡+审批规则引擎+消费分析+异常检测+自动冻结，Free 1Agent $50/月 Pro $5/月）；③ 支付协议翻译层（开源REST→多协议适配器+Agent Payable API Directory）。冷启动："Our API got its first AI agent customer"故事帖+免费"Agent Payment Readiness Score"检测工具。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#Agent支付</span>
+    <span class="tag">#HTTP402</span>
+    <span class="tag">#Agent经济</span>
+    <span class="tag">#API变现</span>
+    <span class="tag">#OPC基础设施</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; 极客公园 7/22 (Natural $3000万A轮) / Linux基金会 HTTP 402 + x402基金会 7/22 / AI Agent动态日报 7/23 / DEV AI Daily Digest 7/23</span>
+  </div>
+</div>
+
+<!-- HOOK -->
+<div class="hook-box">
+  <div class="hook-label">本期钩子</div>
+  <div class="hook-text">
+    7月22-23日出现了三条看似无关、实则指向同一个方向的信号。信号一：一家公司用 AI 两个月自研了 CRM，砍掉 $60 万年费，AI Agent 把签约成本从 $1,500 降到 $70。"企业用 AI 替代 SaaS"不再是理论。信号二：AI 编程助手的幻觉正在被武器化——攻击者抢注 AI 高频幻觉包名，在里面埋后门，等 AI 替他们"投递"给开发者。信号三：Agent 支付基础设施融资 $3000 万 + HTTP 402 协议标准化——AI Agent 正长出"钱包"和"支付能力"。对 OPC 创始人：如果你的 SaaS 是记录型工具，AI 自研替代的威胁是真实的，需要建立护城河；同时 AI 重塑价值链的过程本身创造了巨大的 OPC 机会——帮企业评估和搭建 AI 替代方案、帮开发者防御新型供应链攻击、帮 API 提供商接入 Agent 支付能力。OPC 最赚钱的位置永远不是"创造趋势"——而是"让正在发生的趋势对普通人变得可用"。
+  </div>
+</div>
+
+<!-- Navigation -->
+<div class="prev-next">
+  <a href="2026-07-22.html" class="pn-card">
+    <div class="pn-label">&larr; 上一期</div>
+    <div class="pn-title">Vol.015 &middot; AI Agent 编程实战学习平台 · 多模型 API 统一路由即服务 · Agent 行为审计与代码信任平台</div>
+  </a>
+  <a href="daily.html" class="pn-card pn-right">
+    <div class="pn-label">下一期 &rarr;</div>
+    <div class="pn-title">Vol.017 &middot; OPC 政策红利导航 · 个人 AI 量化投资 Agent · Micro-SaaS 收购尽调即服务</div>
+  </a>
+</div>
+
+<div class="footer">
+  OPC IDEA &middot; 日报 &#65295; <a href="subscribe.html">订阅日报</a> &#65295; <a href="feed.xml">RSS</a> &#65295; <a href="./index.html">完整报告</a><br>
+  北京 &middot; 2026年7月23日 &middot; Vol.016 &middot; 往期归档<br>
+  商业&middot;认知观察者&middot;出品
+</div>
+
+</div>
+</body>
+</html>
