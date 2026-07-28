@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Thu, 24 Jul 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Tue, 28 Jul 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 80 · VibeGuard——Vibe Coding 应用安全护航平台 · Perfai Security 测试 11/12 AI生成应用存在实时漏洞</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-80</link>
+    <description>Perfai Security（PH 318票）测试12个vibe-coded应用——11个存在实时可被利用的BOLA/IDOR漏洞，支持70+AI原生威胁类别，自动生成修复PR推送到Cursor/Claude Code。Gartner报告40%企业应用将嵌入Agent但88%未发挥价值。vibe coding普及速度远超安全工具跟进速度——OPC创始人用AI写代码3小时上线但零安全测试。做"VibeGuard"——一键安全扫描（输入URL→自动爬取+攻击测试+5指标A-F评分，Free/Maker ¥29/Pro ¥79），安全修复工作台（漏洞修复卡片+攻击复现步骤+3种修复方案+一键生成修复代码片段），安全最佳实践知识库（按应用类型分类清单+附Claude Code Prompt，免费获客）。冷启动：数据帖"扫描50个vibe应用92%存在IDOR漏洞"+免费自检清单工具收集Email。</description>
+    <pubDate>Tue, 28 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-018-01</guid>
+    <category>Vibe Coding 安全 / 应用安全测试 / OPC 防御 / 独立开发者工具</category>
+  </item>
+
+  <item>
+    <title>IDEA 81 · AgentMart——MCP 工具 Agent 变现市场平台 · Loomal 331票 + Sequence Agentic 238票引爆"卖东西给 AI Agent"赛道</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-81</link>
+    <description>Loomal（PH 331票）5分钟变现任何MCP服务器零抽成USDC结算，Sequence Agentic（238票）Agent支付层。PH月榜Context.dev/AnySearch/Tabstack——API已经不卖给人类了，卖给AI Agent。一个新的变现维度正在打开：OPC创始人不需要1000个付费用户，每天50个Agent调用×$0.05=稳定被动收入。做"AgentMart"——面向AI Agent的MCP工具市场与变现平台。工具上架与标准化（自动生成Agent友好JSON schema+兼容性标注+4种定价模式，集成Loomal结算），Agent信任评分与质量认证（六维度自动评测→AgentTrust评分1-10分）。Free上架抽佣10%，Pro ¥49/月。冷启动："我做了一个实验让3个AI Agent付费使用我的API"真实账单帖。</description>
+    <pubDate>Tue, 28 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-018-02</guid>
+    <category>Agent 经济 / MCP 变现 / 工具市场 / Agent Commerce / OPC 新渠道</category>
+  </item>
+
+  <item>
+    <title>IDEA 82 · CodePulse——独立开发者代码质量自动化管线 · 阿里 Open Code Review 14.5K⭐ 验证"确定性+AI混合审查"范式</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-82</link>
+    <description>阿里 Open Code Review 14,500+⭐ Apache 2.0开源——内部验证2年/数万开发者/数百万缺陷。核心创新：确定性工程×Agent混合架构——Token消耗仅为通用Agent(Claude Code)的约1/9，Precision和F1全面优于通用Agent。HN讨论揭示通用Agent做代码审查三大痛点：覆盖不全/位置漂移/质量不稳。但OCR是CLI工具，OPC创始人需要零配置SaaS版本。做"CodePulse"——零配置代码质量门禁（连接GitHub→自动识别语言→每次PR自动审查→生成OPC友好报告+修复按钮，Free 1仓库 Maker ¥19/Pro ¥59），AI编码辅助质量训练（分析bug共性→自动生成CLAUDE.md规则→闭环反馈），多Agent编码质量对比（数据驱动AI Agent排行榜）。冷启动：开源CodePulse CLI → "AI Code Review, but for solo founders"。</description>
+    <pubDate>Tue, 28 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-018-03</guid>
+    <category>代码审查自动化 / AI 编码质量 / DevTool / OPC 工具链 / 开源驱动</category>
+  </item>
 
   <item>
     <title>IDEA 77 · OPC 政策红利导航——中国一人公司政策资源聚合平台 · 7部委联合发文 + WAIC 设 OPC 赛道</title>
