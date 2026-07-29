@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Tue, 28 Jul 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Wed, 29 Jul 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 83 · GovOps——AI 治理沙盒 · 1,132名AI研究员联名要求政府监管，"当造AI的人自己喊刹车，合规就不再是可选项"</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-83</link>
+    <description>7月29日史无前例：来自12家头部AI企业的1,132名员工联名签署《Pacing the Frontier》——签名者包括Anthropic CEO Dario Amodei及四位联合创始人、OpenAI首席科学家、Google AI安全VP等。公开信判断顶级AI实验室可能已接近"自动化AI研究"（RSI），联合要求政府建立国际治理机制。对OPC创始人：AI产品监管将从"大厂自愿"变成"全行业强制"——市场上零面向独立开发者的治理工具。做"GovOps"——AI产品合规自检工具（免费获客钩子）+治理文档自动生成（Model Card+Impact Assessment+Safety Evaluation，Free/Maker ¥39/Pro ¥99）+全球AI监管动态追踪（¥29/月）。冷启动："The 1,132 AI researchers who just asked the government to regulate them——what does this mean for your AI startup?"科普帖+免费合规清单。</description>
+    <pubDate>Wed, 29 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-019-01</guid>
+    <category>AI 治理 / 合规自动化 / 监管追踪 / OPC 基础设施</category>
+  </item>
+
+  <item>
+    <title>IDEA 84 · SoloMate——OPC AI 同事工作流模板平台 · 吴恩达开源 OpenWorker 9.6K⭐，"帮你把活干完的AI同事"</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-84</link>
+    <description>7月23日吴恩达开源OpenWorker（MIT协议）——不是聊天机器人，是集成25+工具的AI同事。9天9,638⭐验证需求。但部署需要Python+Node+Rust+25工具配置。做"SoloMate"——基于OpenWorker的OPC AI同事工作流模板平台：一键部署+预配置工作流模板（选业务类型→自动装好+5-8个核心工作流，Free/Maker ¥29/Pro ¥79），工作流模板市场（社区创建/抽佣30%），AI同事日报仪表盘。冷启动："I replaced my VA with Andrew Ng's AI coworker——here's my real hourly log"+免费OPC AI Readiness Quiz。</description>
+    <pubDate>Wed, 29 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-019-02</guid>
+    <category>AI 同事 / OpenWorker / 工作流自动化 / OPC 生产力</category>
+  </item>
+
+  <item>
+    <title>IDEA 85 · Prod3D——商品级3D内容即服务 · img2threejs 7.3K⭐引爆"图片→交互3D模型"，转化率+94%退货率-25%</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-85</link>
+    <description>GitHub Trending：img2threejs（7,346⭐）图片重建为交互式3D。+百度OCR（19,800⭐）+WebGL=电商3D化技术栈成熟。Shopify数据：3D展示提升转化率94%降低退货率25%。做"Prod3D"——电商商品3D自动生成平台：AI引擎（上传照片→自动生成3D+多格式导出，Free/Maker ¥49/Pro ¥149/Enterprise ¥499），场景模板工作室（行业分类场景+交互预设+设计师分佣60%），转化分析面板（3D查看率/加购对比/退货率/AB报告）。冷启动：50店铺免费试点→发布转化率AB报告+Shopify App/Taobao小程序嵌入。</description>
+    <pubDate>Wed, 29 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-019-03</guid>
+    <category>3D 电商 / 商品视觉 / 内容即服务 / OPC 新赛道</category>
+  </item>
 
   <item>
     <title>IDEA 80 · VibeGuard——Vibe Coding 应用安全护航平台 · Perfai Security 测试 11/12 AI生成应用存在实时漏洞</title>

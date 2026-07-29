@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<title>OPC IDEA · 2026年7月28日 · Vol.018</title>
+<meta name="description" content="每日精选一人公司方向的精筛 IDEA · Vol.018 · Vibe Coding 安全护航 · MCP 工具 Agent 变现市场 · 代码质量自动化">
+<meta property="og:title" content="OPC IDEA · 一人公司方向每日精选 · Vol.018">
+<meta property="og:description" content="Vibe Coding 应用安全护航平台 · MCP 工具 Agent 变现市场 · 独立开发者代码质量自动化管线">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+    background: #F5F1E8;
+    color: #2C2A26;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px 40px; }
+  .header {
+    background: #FAF7EE;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 32px 28px 28px;
+    margin-bottom: 16px;
+  }
+  .brand { font-size: 11px; letter-spacing: 4px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 14px; }
+  .brand a { color: #B5B0A4; text-decoration: none; }
+  .brand a:hover { color: #8A8474; }
+  .header-title { font-size: 26px; font-weight: 500; color: #2C2A26; letter-spacing: 1px; }
+  .header-date { font-size: 13px; color: #7A766C; margin-top: 6px; letter-spacing: 0.5px; }
+  .divider { height: 1px; background: #E6E1D6; margin: 18px 0; }
+  .header-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .chip { padding: 3px 10px; background: transparent; border: 1px solid #D8D2C5; border-radius: 2px; font-size: 11px; color: #7A766C; letter-spacing: 0.5px; }
+  .card {
+    background: #FFFEFC;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 22px 24px;
+    margin-bottom: 10px;
+  }
+  .card-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+  .num { width: 28px; height: 28px; border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; flex-shrink: 0; letter-spacing: 0.5px; background: #EEEAE0; color: #5A5443; }
+  .headline { font-size: 15.5px; font-weight: 500; color: #2C2A26; line-height: 1.5; flex: 1; padding-top: 3px; letter-spacing: 0.2px; }
+  .fact { font-size: 13.5px; color: #5F5B53; line-height: 1.75; margin-bottom: 12px; padding-left: 42px; }
+  .next-step { font-size: 13.5px; color: #2C2A26; line-height: 1.75; padding: 12px 16px; margin-left: 42px; background: #F7F4EC; border-left: 2px solid #8A8474; border-radius: 0 2px 2px 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; padding-left: 42px; font-size: 11.5px; color: #7A766C; }
+  .hook-box { background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 16px 20px; margin-bottom: 10px; }
+  .hook-label { font-size: 11px; letter-spacing: 2px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 8px; }
+  .hook-text { font-size: 14px; color: #2C2A26; line-height: 1.7; letter-spacing: 0.2px; }
+  .prev-next {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    margin-top: 18px; margin-bottom: 18px;
+  }
+  .pn-card {
+    background: #FFFEFC; border: 1px solid #E6E1D6; border-radius: 4px;
+    padding: 14px 18px; text-decoration: none; color: inherit; display: block;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .pn-card:hover { border-color: #C4BBA9; background: #FAF7EE; }
+  .pn-card.disabled { opacity: 0.4; pointer-events: none; }
+  .pn-label { font-size: 10.5px; letter-spacing: 1.5px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 4px; }
+  .pn-title { font-size: 13px; color: #2C2A26; line-height: 1.5; letter-spacing: 0.2px; }
+  .pn-right { text-align: right; }
+  .tag-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding-left: 42px; }
+  .tag { padding: 2px 8px; background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 2px; font-size: 10.5px; color: #7A766C; letter-spacing: 0.3px; }
+  .footer { text-align: center; margin-top: 28px; margin-bottom: 20px; font-size: 11px; color: #B5B0A4; letter-spacing: 0.5px; line-height: 2; }
+  .footer a { color: #8A8474; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+  @media (max-width: 640px) {
+    .container { padding: 12px 12px 32px; }
+    .header { padding: 24px 20px 22px; }
+    .header-title { font-size: 22px; }
+    .card { padding: 18px 16px; }
+    .fact, .next-step { padding-left: 0; margin-left: 0; }
+    .tag-bar { padding-left: 0; }
+    .prev-next { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+<a href="./index.html" style="display:inline-block;font-size:12px;color:#8A8474;text-decoration:none;letter-spacing:0.5px;margin-bottom:18px;">&larr; 返回归档首页</a>
+<div class="header">
+  <div class="brand"><a href="./index.html">OPC IDEA &middot; 日报</a></div>
+  <div class="header-title">一人公司方向&middot;每日精选</div>
+  <div class="header-date">2026年7月28日 &middot; 星期二 &middot; Vol.018 &middot; 已归档</div>
+  <div class="divider"></div>
+  <div class="header-meta">
+    <span class="chip">Product Hunt &middot; Perfai Security 318票 / Loomal 331票</span>
+    <span class="chip">GitHub Trending &middot; 阿里 Open Code Review 14.5K⭐</span>
+    <span class="chip">Agent Commerce / MCP 变现 &middot; 7月下旬</span>
+  </div>
+</div>
+<div class="card" id="idea-80">
+  <div class="card-header">
+    <span class="num">01</span>
+    <span class="headline">VibeGuard——Vibe Coding 应用安全护航平台 &middot; Perfai Security 测试 11/12 个 AI 生成应用存在实时可被利用漏洞</span>
+  </div>
+  <div class="fact">Perfai Security（PH 318票）自主AppSec平台测试12个vibe-coded应用——11个存在实时可被利用的BOLA/IDOR漏洞。支持70+AI原生威胁类别，自动生成修复PR推送到Cursor/Claude Code。Gartner报告40%企业应用将嵌入Agent但88%未发挥价值。vibe coding普及速度远超安全工具跟进速度——OPC创始人用AI写代码3小时上线但零安全测试。</div>
+  <div class="next-step">OPC 路径：做"VibeGuard"——面向OPC/indie maker的轻量级vibe coding应用安全护航平台。一键安全扫描（输入URL→自动爬取+攻击测试+5指标A-F评分，Free每月1次/Maker ¥29/月/Pro ¥79/月），安全修复工作台（每个漏洞附带修复卡片+攻击复现步骤+3种修复方案+一键生成修复代码片段），安全最佳实践知识库（按应用类型分类清单+附Claude Code Prompt，免费获客）。冷启动数据帖"扫描50个vibe应用92%存在IDOR漏洞"+免费自检清单工具。</div>
+  <div class="tag-bar">
+    <span class="tag">#VibeCoding安全</span>
+    <span class="tag">#应用安全测试</span>
+    <span class="tag">#OPC防御</span>
+    <span class="tag">#自动化安全</span>
+  </div>
+  <div class="meta"><span>来源 &middot; Perfai Security PH 7/9 318票 / dailyaiworld.com 7月测评 / Gartner 2026 AI Agent报告</span></div>
+</div>
+<div class="card" id="idea-81">
+  <div class="card-header">
+    <span class="num">02</span>
+    <span class="headline">AgentMart——MCP 工具 Agent 变现市场平台 &middot; Loomal 331票 + Sequence Agentic 238票引爆"卖东西给 AI Agent"新赛道</span>
+  </div>
+  <div class="fact">Loomal（PH 331票）5分钟变现任何MCP服务器零抽成USDC结算。Sequence Agentic（238票）AI Agent支付层。PH月榜Context.dev/AnySearch/Tabstack——API已经不卖给人类了，卖给AI Agent。一个新的变现维度正在打开：OPC创始人不需要1000个付费用户，每天50个Agent调用×$0.05=稳定被动收入流。</div>
+  <div class="next-step">OPC 路径：做"AgentMart"——面向AI Agent的MCP工具市场与变现平台。工具上架与标准化（自动生成Agent友好JSON schema+兼容性标注+4种定价模式，集成Loomal结算），Agent信任评分与质量认证（六维度自动评测→AgentTrust评分1-10分），Agent开发者社区与排行榜。Free上架抽佣10%，Pro ¥49/月。</div>
+  <div class="tag-bar">
+    <span class="tag">#Agent经济</span>
+    <span class="tag">#MCP变现</span>
+    <span class="tag">#工具市场</span>
+    <span class="tag">#Agent Commerce</span>
+  </div>
+  <div class="meta"><span>来源 &middot; Loomal PH 7/15 331票 / Sequence Agentic PH 238票 / Context.dev/AnySearch/Tabstack PH 7月月榜 / Gartner 2030全球Agent数量预测22.16亿</span></div>
+</div>
+<div class="card" id="idea-83">
+  <div class="card-header">
+    <span class="num">03</span>
+    <span class="headline">CodePulse——独立开发者代码质量自动化管线 &middot; 阿里 Open Code Review 14.5K⭐ 验证"确���性+AI混合审查"范式</span>
+  </div>
+  <div class="fact">阿里 Open Code Review 14,500+⭐ Apache 2.0开源——内部验证2年/数万开发者/数百万缺陷。核心创新：确定性工程×Agent混合架构——Token消耗仅为通用Agent(Claude Code)的约1/9，Precision和F1全面优于通用Agent。HN讨论揭示通用Agent做代码审查三大痛点：覆盖不全/位置漂移/质量不稳。但OCR是CLI工具，OPC创始人需要零配置SaaS版本。</div>
+  <div class="next-step">OPC 路径：做"CodePulse"——基于OCR引擎的零配置代码质量自动化管线。零配置代码质量门禁（连接GitHub→自动识别语言→每次PR自动审查→生成OPC友好报告+修复按钮，Free 1仓库 Maker ¥19/月 Pro ¥59/月），AI编码辅助质量训练（分析bug共性→自动生成CLAUDE.md规则→闭环反馈），多Agent编码质量对比。冷启动：开源CodePulse CLI → "AI Code Review, but for solo founders"。</div>
+  <div class="tag-bar">
+    <span class="tag">#代码审查自动化</span>
+    <span class="tag">#AI编码质量</span>
+    <span class="tag">#DevTool</span>
+    <span class="tag">#OPC工具链</span>
+  </div>
+  <div class="meta"><span>来源 &middot; 阿里 Open Code Review GitHub 14,500+⭐ 7/28 (Apache 2.0/内部2年验证/确定性工程×Agent混合架构/Token消耗1/9) / 腾讯云开发者 7月拆解 / cnblogs 7/28第38期</span></div>
+</div>
+<div class="hook-box">
+  <div class="hook-label">本期钩子</div>
+  <div class="hook-text">7月最后一周的三个信号指向AICoding生态的"基础设施升级"——不是发明新东西，而是让已经存在的东西"能放心用"。VibeGuard把Perfai验证过的自主安全测试封装成OPC创始人用得起的工具。AgentMart在Loomal/x402支付层之上建发现层和信任层。CodePulse把阿里OCR的确定性+Agent混合架构从CLI变成SaaS。共同逻辑：不靠发明新技术，靠降低现有优质能力的获取门槛。</div>
+</div>
+<div class="prev-next">
+  <a href="2026-07-24.html" class="pn-card">
+    <div class="pn-label">&larr; 上一期</div>
+    <div class="pn-title">Vol.017 &middot; OPC 政策红利导航 · 个人 AI 量化投资 Agent 平台 · Micro-SaaS 收购尽调即服务</div>
+  </a>
+  <a href="daily.html" class="pn-card pn-right">
+    <div class="pn-label">下一期 &rarr;</div>
+    <div class="pn-title">Vol.019 &middot; AI 治理沙盒 · OPC AI 同事即服务 · 商品级 3D 内容即服务</div>
+  </a>
+</div>
+<div class="footer">
+  OPC IDEA &middot; 日报 &#65295; <a href="subscribe.html">订阅日报</a> &#65295; <a href="feed.xml">RSS</a> &#65295; <a href="./index.html">完整报告</a><br>
+  北京 &middot; 2026年7月28日 &middot; Vol.018 &middot; 已归档<br>
+  商业&middot;认知观察者&middot;出品
+</div>
+</div>
+</body>
+</html>
