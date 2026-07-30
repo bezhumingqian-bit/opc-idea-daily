@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Wed, 29 Jul 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Thu, 30 Jul 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 86 · MoatForge——OPC产品非代码护城河构建平台 · Wispr Flow/Granola/WHOOP同日被逆向开源，"护城河不能再是代码"</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-86</link>
+    <description>7月30日，Wispr Flow/Granola/WHOOP三款不同赛道的付费产品同一天被逆向工程出现免费社区版本。AI编程工具让克隆成本趋近于零——纯SaaS代码壁垒正在消失。真正的问题不是"如何防克隆"——而是"如果被克隆，用户还会留下吗？"做"MoatForge"——非代码护城河评估与构建平台：护城河健康度诊断（六维度自动分析+MoatScore+30天改进建议，免费钩子），护城河建设工具包（品牌/社区/信任/切换成本四类工具，Maker ¥29/Pro ¥79），护城河情报与案例库（MoatWatch周报+MoatLeaderboard排行榜）。冷启动："三款付费产品同一天被��源——你的产品如果明天免费了，用户为什么还要付费？"科普帖+免费MoatScore Quick Check。</description>
+    <pubDate>Thu, 30 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-020-01</guid>
+    <category>产品护城河 / 非代码壁垒 / 社区建设 / 品牌资产 / 反克隆战略</category>
+  </item>
+
+  <item>
+    <title>IDEA 87 · AgentQA——AI Agent 质量保障即服务 · AgentSnap+TryCase+strix 42K⭐ 引爆Agent测试新品类</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-87</link>
+    <description>7月30日三个信号拼出完整Agent QA栈：AgentSnap（快照测试记录Agent完整行为），TryCase（一次性隔离测试环境），strix（42K+⭐ AI渗透测试）。Agent从实验玩具进入生产工具——但OPC创始人零测试。做"AgentQA"——Agent行为测试工作台（三层自动测试：行为一致性+工具调用安全+Prompt鲁棒性，Free 1 Agent/Maker ¥39/Pro ¥99），Agent质量仪表盘（Health Score+Model Switch Impact Report——切换模型前自动跑全量测试），Agent漏洞赏金社区（公开测试挑战→病毒式传播）。冷启动：开源AgentQA CLI+"Agent Reliability Quick Check"免费在线工具。</description>
+    <pubDate>Thu, 30 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-020-02</guid>
+    <category>Agent测试 / 质量保障 / 行为一致性 / CI/CD集成 / OPC基础设施</category>
+  </item>
+
+  <item>
+    <title>IDEA 88 · DocFlow——中小企业AI文档工作流自动化平台 · OfficeCLI 18K⭐ 让AI Agent免装Office读写Word/Excel/PPT</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-88</link>
+    <description>OfficeCLI（18K+⭐）免费开源单二进制免装Office套件专为AI Agent设计——Agent可直接读写信件/操作表格/生成PPT。文档正从"人读"变成"AI读+人读"——但中小企业创始人每周花15-20小时在合同/报价单/发票/报告上。做"DocFlow"——AI��档工作流引擎（6个核心模板：合同智能处理/发票采集/报价单生成/周月报/合同模板库/文档合规检查，Free/Maker ¥49/Pro ¥149），文档AI知识库（历史文档提取模式→发现人类未注意的洞察，¥29/月），行业模板市场（抽佣60%/SEO长尾关键词）。冷启动：先打设计/创意工作室垂直市场+OfficeCLI社区贡献回馈。Founding Member ¥29/月终身。</description>
+    <pubDate>Thu, 30 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-020-03</guid>
+    <category>文档自动化 / 中小企业 / AI文档秘书 / 工作流 / OfficeCLI</category>
+  </item>
 
   <item>
     <title>IDEA 83 · GovOps——AI 治理沙盒 · 1,132名AI研究员联名要求政府监管，"当造AI的人自己喊刹车，合规就不再是可选项"</title>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<title>OPC IDEA · 2026年7月29日</title>
+<meta name="description" content="每日精选一人公司方向的精筛 IDEA · 一手源 · 已归档">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+    background: #F5F1E8;
+    color: #2C2A26;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px 40px; }
+  .header {
+    background: #FAF7EE;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 32px 28px 28px;
+    margin-bottom: 16px;
+  }
+  .brand { font-size: 11px; letter-spacing: 4px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 14px; }
+  .brand a { color: #B5B0A4; text-decoration: none; }
+  .brand a:hover { color: #8A8474; }
+  .header-title { font-size: 26px; font-weight: 500; color: #2C2A26; letter-spacing: 1px; }
+  .header-date { font-size: 13px; color: #7A766C; margin-top: 6px; letter-spacing: 0.5px; }
+  .divider { height: 1px; background: #E6E1D6; margin: 18px 0; }
+  .header-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .chip { padding: 3px 10px; background: transparent; border: 1px solid #D8D2C5; border-radius: 2px; font-size: 11px; color: #7A766C; letter-spacing: 0.5px; }
+  .card {
+    background: #FFFEFC;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 22px 24px;
+    margin-bottom: 10px;
+  }
+  .card-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+  .num { width: 28px; height: 28px; border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; flex-shrink: 0; letter-spacing: 0.5px; background: #EEEAE0; color: #5A5443; }
+  .headline { font-size: 15.5px; font-weight: 500; color: #2C2A26; line-height: 1.5; flex: 1; padding-top: 3px; letter-spacing: 0.2px; }
+  .fact { font-size: 13.5px; color: #5F5B53; line-height: 1.75; margin-bottom: 12px; padding-left: 42px; }
+  .next-step { font-size: 13.5px; color: #2C2A26; line-height: 1.75; padding: 12px 16px; margin-left: 42px; background: #F7F4EC; border-left: 2px solid #8A8474; border-radius: 0 2px 2px 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; padding-left: 42px; font-size: 11.5px; color: #7A766C; }
+  .hook-box { background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 16px 20px; margin-bottom: 10px; }
+  .hook-label { font-size: 11px; letter-spacing: 2px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 8px; }
+  .hook-text { font-size: 14px; color: #2C2A26; line-height: 1.7; letter-spacing: 0.2px; }
+  .prev-next {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    margin-top: 18px; margin-bottom: 18px;
+  }
+  .pn-card {
+    background: #FFFEFC; border: 1px solid #E6E1D6; border-radius: 4px;
+    padding: 14px 18px; text-decoration: none; color: inherit; display: block;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .pn-card:hover { border-color: #C4BBA9; background: #FAF7EE; }
+  .pn-label { font-size: 10.5px; letter-spacing: 1.5px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 4px; }
+  .pn-title { font-size: 13px; color: #2C2A26; line-height: 1.5; letter-spacing: 0.2px; }
+  .pn-right { text-align: right; }
+  .tag-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding-left: 42px; }
+  .tag { padding: 2px 8px; background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 2px; font-size: 10.5px; color: #7A766C; letter-spacing: 0.3px; }
+  .footer { text-align: center; margin-top: 28px; margin-bottom: 20px; font-size: 11px; color: #B5B0A4; letter-spacing: 0.5px; line-height: 2; }
+  .footer a { color: #8A8474; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+  @media (max-width: 640px) {
+    .container { padding: 12px 12px 32px; }
+    .header { padding: 24px 20px 22px; }
+    .header-title { font-size: 22px; }
+    .card { padding: 18px 16px; }
+    .fact, .next-step { padding-left: 0; margin-left: 0; }
+    .tag-bar { padding-left: 0; }
+    .prev-next { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<a href="./index.html" style="display:inline-block;font-size:12px;color:#8A8474;text-decoration:none;letter-spacing:0.5px;margin-bottom:18px;">&larr; 返回归档首页</a>
+
+<div class="header">
+  <div class="brand"><a href="./index.html">OPC IDEA &middot; 日报</a></div>
+  <div class="header-title">一人公司方向&middot;每日精选</div>
+  <div class="header-date">2026年7月29日 &middot; 星期三 &middot; Vol.019 &middot; 已归档</div>
+  <div class="divider"></div>
+  <div class="header-meta">
+    <span class="chip">Pacing the Frontier &middot; 1,132名AI研究员联名</span>
+    <span class="chip">Andrew Ng OpenWorker &middot; 9.6K⭐ MIT开源</span>
+    <span class="chip">img2threejs &middot; 7.3K⭐ 图片转3D</span>
+  </div>
+</div>
+
+<!-- CARD 1 -->
+<div class="card" id="idea-83">
+  <div class="card-header">
+    <span class="num">01</span>
+    <span class="headline">GovOps——AI 治理沙盒 &middot; 1,132名OpenAI/Anthropic/Google研究员联名要求政府监管AI，"当造AI的人自己喊刹车，合规就不再是可选项——而是入场券"</span>
+  </div>
+  <div class="fact">
+    7月29日，一场史无前例的事件震动了AI行业：来自OpenAI、Anthropic、Google DeepMind、Meta等12家头部AI企业的1,132名员工联名签署公开信《Pacing the Frontier》，呼吁美国政府推动国际合作，"有意放缓前沿自动化AI研发的节奏"。这不是外围抗议——签名者中46.2%来自Anthropic，包括CEO Dario Amodei和四位联合创始人；OpenAI首席科学家Jakub Pachocki和首席研究官Mark Chen在列；Google AI安全与对齐副总裁Anca Dragan也签了名。公开信的核心判断：顶尖AI实验室可能已经接近实现"自动化AI研究"（递归自我改进，RSI）——让模型参与研发下一代模型。一旦这个循环加速，能力增长可能超过人类理解和控制的速度。没有一个公司愿意单方面减速，所以他们联合要求政府建立国际治理机制。对OPC创始人来说，这意味着AI产品的监管门槛将从"大厂自愿"变成"全行业强制"——而市场上没有任何面向独立开发者的AI治理工具。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"GovOps"——面向OPC/独立开发者的AI治理自动化平台。AI产���合规自检工具（免费获客钩子，输入产品类型→自动生成三个市场治理要求清单+就绪度三色灯+合规评分），治理文档自动生成（选产品类型→回答20-30问题→自动生成Model Card+Impact Assessment+Safety Evaluation三份专业文档，Free/Maker ¥39/Pro ¥99），全球AI监管动态追踪（¥29/月定制化周报）。冷启动：利用Pacing the Frontier事件热度窗口——"1,132名AI研究员刚要求政府监管他们——这对你的AI创业意味着什么？"科普帖+免费AI产品合规清单Google Sheets模板。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#AI治理</span>
+    <span class="tag">#合规自动化</span>
+    <span class="tag">#监管追踪</span>
+    <span class="tag">#OPC基础设施</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; Pacing the Frontier 公开信 (1,132人联名/46.2%来自Anthropic/含Dario Amodei等CEO) / 新智元 7/29 / AGI Hunt 7/29</span>
+  </div>
+</div>
+
+<!-- CARD 2 -->
+<div class="card" id="idea-84">
+  <div class="card-header">
+    <span class="num">02</span>
+    <span class="headline">SoloMate——OPC AI 同事工作流模板平台 &middot; 吴恩达开源 OpenWorker 9.6K⭐验证"AI 不只要聊天——要把活干完"范式</span>
+  </div>
+  <div class="fact">
+    7月23日吴恩达在GitHub上开源OpenWorker（MIT协议）——"AI that gets your everyday tasks done."集成25+工具（GitHub/Slack/Jira/Notion/Linear/Gmail/Calendar等），本地运行、模型无关。9天9,638⭐验证巨大需求。但部署门槛把最需要它的人挡在门外——需要Python 3.10+/Node 20+/Rust toolchain/配置API Key和25+工具连接。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"SoloMate"——基于OpenWorker的OPC AI同事工作流模板平台。一键部署+预配置工作流模板（选业务类型→自动装好+5-8个核心工作流，Free 1模板/Maker ¥29/Pro ¥79），工作流模板市场（社区创建分享/抽佣30%/SEO长尾关键词），AI同事工作日报仪表盘（每日摘要+待批准清单+省时统计）。冷启动："I replaced my virtual assistant with Andrew Ng's AI coworker for a week——here's my real hourly log"真实日志帖+免费OPC AI Readiness Quiz。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#AI同事</span>
+    <span class="tag">#OpenWorker</span>
+    <span class="tag">#工作流自动化</span>
+    <span class="tag">#OPC生产力</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; Andrew Ng OpenWorker GitHub 9,638⭐ MIT开源 (25+工具集成/本地优先/模型无关) / 量子位 7/25 / usecarly.com 7/23</span>
+  </div>
+</div>
+
+<!-- CARD 3 -->
+<div class="card" id="idea-85">
+  <div class="card-header">
+    <span class="num">03</span>
+    <span class="headline">Prod3D——商品级3D内容即服务 &middot; img2threejs 7.3K⭐引爆"图片→交互式3D模型"新范式，"电商的下一个转化率杠杆不是更好的文案——是顾客能在网页上把产品拿起来转一圈"</span>
+  </div>
+  <div class="fact">
+    GitHub Trending上img2threejs（7,346⭐）将参考图片直接重建为代码化、可交互的3D模型。加上百度Unlimited-OCR（19,800⭐）的物体轮廓提取能力，以及WebGL/Three.js的近零成本浏览器渲染——"电商商品3D化"正从"需要3D设计师团队+$500-2000/个"变成"上传照片→AI自动生成→30秒可交互"。Shopify数据：3D展示将转化率平均提升94%、退货率降低25%。但Amazon覆盖不到5%，淘宝/天猫几乎为零——巨大空白市场。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"Prod3D"——电商商品3D内容自动生成与托管平台。AI 3D模型生成引擎（上传2-5张产品照片→自动生成3D+多格式导出，Free 3个/月水印版/Maker ¥49/Pro ¥149/Enterprise ¥499），3D场景模板工作室（行业分类场景+��互预设+设计师分佣60%），3D转化分析面板（3D查看率/加购对比/退货率/AB报告）。冷启动：50个店铺免费3D化试点→发布转化率AB报告+Shopify App/淘宝小程序嵌入。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#3D电商</span>
+    <span class="tag">#商品视觉</span>
+    <span class="tag">#内容即服务</span>
+    <span class="tag">#OPC新赛道</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; img2threejs GitHub 7,346⭐ / baidu Unlimited-OCR 19,800⭐ / Shopify 3D展示数据 (转化率+94%/退货率-25%) / Amazon 3D覆盖率<5%</span>
+  </div>
+</div>
+
+<!-- HOOK -->
+<div class="hook-box">
+  <div class="hook-label">本期钩子</div>
+  <div class="hook-text">
+    7月最后一个周三的三个信号，指向AI创业生态的三个"基础设施缺口"。GovOps把AI合规从$5,000+/年的专业服务变成OPC创始人看得懂的自助工具。SoloMate把OpenWorker的5个命令行部署变成"选业务类型→下载App→AI同事就位"。Prod3D把"图片转3D"技术变成电商卖家的转化率杠杆。共同逻辑：不靠发明新技术，靠降低现有能力的获取门槛——把大厂专属的能力拆解、封装、定价成OPC创始人也买得起的SaaS。
+  </div>
+</div>
+
+<!-- Navigation -->
+<div class="prev-next">
+  <a href="2026-07-28.html" class="pn-card">
+    <div class="pn-label">&larr; 上一期</div>
+    <div class="pn-title">Vol.018 &middot; Vibe Coding 安全护航 · MCP 工具 Agent 变现市场 �� 独立开发者代码质量自动化</div>
+  </a>
+  <a href="daily.html" class="pn-card pn-right">
+    <div class="pn-label">下一期 &rarr;</div>
+    <div class="pn-title">Vol.020 &middot; 非代码护城河构建平台 · Agent 质量保障即服务 · AI 文档工作流自动化</div>
+  </a>
+</div>
+
+<div class="footer">
+  OPC IDEA &middot; 日报 &#65295; <a href="subscribe.html">订阅日报</a> &#65295; <a href="feed.xml">RSS</a> &#65295; <a href="./index.html">完整报告</a><br>
+  北京 &middot; 2026年7月29日 &middot; Vol.019 &middot; 已归档<br>
+  商业&middot;认知观察者&middot;出品
+</div>
+
+</div>
+</body>
+</html>
