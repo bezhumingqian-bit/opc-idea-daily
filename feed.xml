@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Thu, 30 Jul 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Fri, 31 Jul 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 89 · RedTeamX——AI自主红队攻击与防御演练平台 · T3MP3ST+strix 42K⭐+Anthropic Cybersecurity Skills 23K⭐引爆自主安全测试新品类</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-89</link>
+    <description>7月31日 GitHub Trending：elder-plinius/T3MP3ST——多Agent攻击性安全元框架，AI自主规划执行渗透测试；strix 42K+⭐——开源AI黑客工具；Anthropic Cybersecurity Skills 23K+⭐——754结构化网络安全技能覆盖六大框架。安全测试正从"人类专家手动渗透"变成"AI Agent自主攻击"。独立开发者产品安全真空期零防护。做"RedTeamX"——一键自主红队扫描（OWASP+API+AI攻击面+业务逻辑四层，Free 1次/月/Maker ¥49/5次/Pro ¥149/20次+CI/CD），持续安全监控+红队社区与漏洞赏金。冷启动：开源CLI+数据帖"43/50独立开发者SaaS存在高危漏洞"+安全科普内容。Founding Member ¥29/月终身。</description>
+    <pubDate>Fri, 31 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-021-01</guid>
+    <category>自主红队 / 安全测试 / AI攻击 / 漏洞发现 / OPC安全</category>
+  </item>
+
+  <item>
+    <title>IDEA 90 · MemGraph——Agent代码知识图谱即服务 · codebase-memory-mcp 22.8K⭐"158语言+亚毫秒查询+Token节省99%"</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-90</link>
+    <description>codebase-memory-mcp 22.8K+⭐（7月全GitHub月增幅第二+19,612⭐）——158语言、亚毫秒查询、Token减少99%、零依赖。加MemoryCustodian（PH 7/30持久化Agent记忆）和Unabyss for Claude（PH #1 589票共享记忆）。AI Agent每次从零理解代码库——月Token浪费$200-500。做"MemGraph"——一键代码索引（连接GitHub→知识图谱→MCP接口，Free 1仓库/Maker ¥19/3仓库/Pro ¥49/10仓库），代码变更记忆（决策记录+项目上下文+跨项目模式识别），知识图谱可视化（3D依赖图+热点分析+Bus Factor）。ROI：月省$198-495。冷启动：开源CLI+数据帖"68% Token花在理解代码上"+Agent社区教程。Founding Member ¥14/月终身。</description>
+    <pubDate>Fri, 31 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-021-02</guid>
+    <category>代码知识图谱 / Agent记忆 / Token节省 / MCP基础设施 / OPC效率</category>
+  </item>
+
+  <item>
+    <title>IDEA 91 · SkillBench——AI Agent Skills质量评测与认证平台 · Anthropic Cybersecurity Skills 23K⭐引爆Skills标准化需求</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-91</link>
+    <description>Skills生态7月爆炸增长：Anthropic Cybersecurity Skills 23K+⭐（月增10,688⭐）、taste-skill 53.8K⭐（月增24,412⭐）、last30days-skill 47.9K⭐（月增21,268⭐）、pm-skills 21.8K⭐。但NVIDIA发现26.1% Skills含漏洞——正经历NPM式的质量失控。做"SkillBench"——五维自动评测引擎（功能正确性/安全性/性能/兼容性/可维护性→SkillBench Score 0-100+同类排名，Free 1 Skill/Maker ¥29/5 Skills/Pro ¥99/20 Skills），Skills排行榜（分类排行+SEO资产），认证徽章系统（Verified 80+/Recommended 90+→嵌入GitHub README→品牌曝光，首次免费/年续¥99）。冷启动：评测50个最热Skills→发布报告+Quick Check工具+横向对比。Founding Member ¥19/月终身。</description>
+    <pubDate>Fri, 31 Jul 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-021-03</guid>
+    <category>Skills评测 / 质量认证 / Agent生态 / 可信基础设施 / 开发者工具</category>
+  </item>
 
   <item>
     <title>IDEA 86 · MoatForge——OPC产品非代码护城河构建平台 · Wispr Flow/Granola/WHOOP同日被逆向开源，"护城河不能再是代码"</title>
