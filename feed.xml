@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Tue, 04 Aug 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Wed, 05 Aug 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 95 · CostShift——"Token 免费后什么更贵？" · DeepSeek V4-Flash 全球调用量第一 + 成本结构迁移导航</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-95</link>
+    <description>8月4日 DeepSeek V4-Flash 引发全球价格战：MIT开源、$0.14/百万token、周调用量7.22万亿全球第一。Claude Opus贵85倍仅领先2%性能，OpenAI被迫降价80%仍贵60%。海外初创迁移后月推理成本降60-85%。但不是"AI更便宜了"——Token成本从占OPC 30-60%变成忽略不计时，成本结构会重塑：数据采集、合规认证、私有部署、工作流设计——这些不会降价。做"CostShift"——成本迁移导航与智能定价平台：Token释放测算+成本重塑地图+定价模型重组（Free/Maker ¥29/Pro ¥99）+智能路由中间件+CostShift Index公开榜单。Founding Member ¥19/月终身。</description>
+    <pubDate>Wed, 05 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-023-01</guid>
+    <category>成本结构迁移 / 智能定价 / 模型路由 / OPC财务健康 / Post-Free-Intelligence</category>
+  </item>
+
+  <item>
+    <title>IDEA 96 · FleetMINI——面向 OPC 的全栈 AI 软件工程团队即服务 · 贾扬清 Fleet 同款轻量版</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-96</link>
+    <description>贾扬清Intent Lab Fleet——六环节全链路：理解→设计→协调→构建→验证→演进。GLM-5.2自主优化提速6.3倍（102→647 tokens/s）+一键数据库创建+形式化验证文件系统。李彦宏宣告"超级个体"时代，Miaoda单人99%AI代码开发者赚千万。但Fleet面向企业（数千美元/月），OPC需要$49轻量版。做"FleetMINI"——意图→系统设计引擎（五轮对话生成PRD+架构图+路线图，Free/Maker ¥19/Pro ¥49）+全栈开发执行引擎（自动编码+测试+部署+持续维护，Pro ¥149)+模板市场（电商/AI SaaS/内容订阅+Fork+变现抽15%）。Founding Member Pro ¥99/月终身。</description>
+    <pubDate>Wed, 05 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-023-02</guid>
+    <category>全栈AI开发 / 系统设计引擎 / 无代码创业 / AI工程团队 / OPC开发工具</category>
+  </item>
+
+  <item>
+    <title>IDEA 97 · TrustLabel——EU AI Act 合规标签与水印即服务 · 8月2日法案生效罚款最高1500万欧元</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-97</link>
+    <description>8月2日EU AI Act透明度条款生效：(1)聊天机器人须告知AI身份；(2)深度伪造须强制标识+水印；(3)罚款最高1500万欧元或全球营收3%。全球数百万面向欧盟的AI产品全部处于不合规状态。Micro-SaaS Trends Aug 2026：合规品类$200-$2000/月最高溢价。但中小开发者自动化方案空白。做"TrustLabel"——一行代码搞定合规：AI身份标识横幅+AI内容C2PA标准水印引擎+合规仪表盘+法规变更追踪（Free/Maker ¥29/Pro ¥99/Enterprise ¥299）+TrustLabel Certified认证徽章（转化率+18.7%）+全球AI合规法规地图（免费SEO资产）。Founding Member Pro ¥69/月终身。</description>
+    <pubDate>Wed, 05 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-023-03</guid>
+    <category>EU AI Act合规 / AI内容水印 / 透明度标签 / 法规自动化 / OPC出海合规</category>
+  </item>
 
   <item>
     <title>IDEA 92 · AgentState——Agent 状态管理即服务 · MCP 无状态重构 + Agent 协议层"Kubernetes 时刻"</title>
