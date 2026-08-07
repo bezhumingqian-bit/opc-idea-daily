@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Wed, 05 Aug 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Fri, 07 Aug 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 98 · OneKey Market——OPC 工具市场的"App Store 时刻" · 阿里云 One Key MCP 14 家伙伴入驻 + Agent 工具分发新平台</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-98</link>
+    <description>8月5日阿里云上线One Key MCP——统一API Key调用14家生态伙伴MCP服务，覆盖电商/时空/金融/法律/产业/物流六大领域，兼容Codex/Claude Code/Qoder/Cursor等主流Agent。本质：Agent工具有了"App Store"——但分发不等于发现，消费决策层空白。做"OneKey Market"——Agent工具发现、评价与分发平台：智能搜索引擎（自然语言→语义匹配+场景推荐+兼容性检查+使用分析，Free/Maker ¥9/Pro ¥29）+评价排行体系（五星评分+分类排行+编辑精选）+工具变现渠道（免费上架/Pro ¥49月/企业 ¥199月，不抽佣广告变现）。冷启动：开源OneKey Scout CLI(MIT)+数据帖+搭阿里云顺风车。Founding Member ¥19/月终身。</description>
+    <pubDate>Fri, 07 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-024-01</guid>
+    <category>Agent工具市场 / MCP工具分发 / 工具发现与评价 / Agent SEO / OPC工具生态</category>
+  </item>
+
+  <item>
+    <title>IDEA 99 · LandingBridge——OPC 产品市场落地与场景对接平台 · 痛点从"做不出"转为"卖不掉" + 426 社区场景撮合新基建</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-99</link>
+    <description>8月6日中国质量报揭示拐点：OPC最大痛点从降低创业门槛转为市场落地难。全国426个社区（28省65城市），1600万+OPC，但场景需求碎片化分散。各地政府正开放场景：合肥30个微场景清单、南京对接社区卫生服务中心、北京"先创新再授权"。但信息撮合层空白。做"LandingBridge"——场景机会智能撮合引擎（聚合全国场景清单→AI语义匹配→一键对接+进度追踪，Free月3次/Maker ¥19/Pro ¥49）+产品展厅与信任背书（场景验证标签）+426社区连接器（聚合入口+对比+入驻助手）。冷启动：数据帖"426社区完整地图"+案例驱动+政府BD。Founding Member ¥29/月终身。</description>
+    <pubDate>Fri, 07 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-024-02</guid>
+    <category>场景对接 / 市场落地 / OPC社区导航 / 政府场景撮合 / 产品验证</category>
+  </item>
+
+  <item>
+    <title>IDEA 100 · SoloCredit——OPC 智能信用评估与融资匹配平台 · 单人公司年入千万但贷不到款 + 数字资产信用新模型</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-100</link>
+    <description>8月5-6日揭示结构性矛盾：Ben Broca单人年收有望$1000万获$3000万融资，Stripe数千人年收百万三年翻倍——但中国1600万OPC以智力/数据/算法为核心资产，无固定资产抵押，传统银行无法评估。"银行的评分卡没有GitHub Stars这一栏。"做"SoloCredit"——OPC信用画像引擎（连接GitHub/Stripe/GA/PH/Token消耗→AI评分SoloScore 0-1000——收入30%+增长25%+技术资产20%+市场15%+运营10%→银行可读报告，Free/Maker ¥29/Pro ¥99）+融资产品智能匹配（银行+VC+政府补贴+供应链金融）+SoloScore公开榜单。冷启动：开源CLI(MIT)+"500个OPC信用白皮书"+银行BD。Founding Member ¥59/月终身。</description>
+    <pubDate>Fri, 07 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-024-03</guid>
+    <category>OPC信用评分 / 数字资产评估 / 融资匹配 / 替代信用模型 / OPC金融基础设施</category>
+  </item>
 
   <item>
     <title>IDEA 95 · CostShift——"Token 免费后什么更贵？" · DeepSeek V4-Flash 全球调用量第一 + 成本结构迁移导航</title>
