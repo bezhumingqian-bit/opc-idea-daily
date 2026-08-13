@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Fri, 07 Aug 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Thu, 13 Aug 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 101 · TokenVault——OPC 数字资产确权与质押估值平台 · 安徽 Token 贷全国第二省 + 数据知识产权可质押</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-101</link>
+    <description>8月13日安徽印发OPC三年行动方案，成为继广东后全国第二个省级OPC专项方案。最重磅创新：鼓励银行推出"Token贷""模型贷"，支持以数据知识产权、算法模型著作权作质押——OPC的数据和算法第一次有了金融价值。配套：个人最高50万/小微500万贷款+50%贴息、算力20%补贴、科研人员离岗创业保留人事关系3年、100名陪跑导师、场景合伙人+政府采购预付款40%。但政策与落地之间有鸿沟：银行风控只有"房车厂房"估值模型，看不懂"GitHub仓库+API账单"值多少钱。做"TokenVault"——数字资产确权与质押估值平台（SoloCredit做信用评分，这里做更底层的资产凭证层）：数字资产确权引擎（连接GitHub/模型平台/数据集/产品数据→可追溯《权属凭证》）+AI资产估值引擎（TokenVault Score 0-1000，资产价值分→建议质押价值区间）+质押登记与融资对接（银行可读报告+对接Token贷/模型贷+质押物全周期管理）。Free/Maker ¥29/Pro ¥99。冷启动：开源TokenVault Lite CLI(MIT)+数据帖+政策顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Thu, 13 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-025-01</guid>
+    <category>数字资产质押 / Token贷 / 数据知识产权 / 资产确权 / OPC金融基础设施</category>
+  </item>
+
+  <item>
+    <title>IDEA 102 · SecondBrain——OPC 一人公司"第二大脑"即服务 · Agent 基建三层爆发 + 个人知识资产化</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-102</link>
+    <description>2026年8月GitHub Trending前十6个是Agent主题，主线从"训练更强模型"切换到"让模型真正干活"。三层爆发：记忆层（腾讯TencentDB-Agent-Memory，Token降61%/成功率+51%）、技能层（superpowers 26.8万星/agent-skills 8.3万星）、运行环境层（Cloudflare computer）。但三层都是"给Agent"的，真正的机会在"给人"——一人公司最值钱的"这一个人的知识"散落在各Agent会话/文档/代码里，每次换工具就失忆。做"SecondBrain"——个人知识资产化平台：知识采集与资产化（连接Claude/ChatGPT/Codex/GitHub/CRM→蒸馏成决策记录/方法论/客户画像/代码模式）+跨Agent记忆中枢（换工具不换脑）+知识资产变现与传承（打包Skill包/课程+可转让数字遗产）。Free/Maker ¥19/Pro ¥49。冷启动：开源SecondBrain Core(MIT)+数据帖+搭记忆基建顺风车。Founding Member ¥29/月终身。</description>
+    <pubDate>Thu, 13 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-025-02</guid>
+    <category>个人第二大脑 / 知识资产化 / Agent记忆 / 跨工具复用 / OPC护城河</category>
+  </item>
+
+  <item>
+    <title>IDEA 103 · AnswerRank——OPC 产品 AI 推荐可见性管理平台（GEO） · 冷邮件已死 + AI 推荐成新渠道</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-103</link>
+    <description>独立开发者获客渠道重构：一个独立开发者复盘"从Reddit获得175个付费客户"，结论"冷邮件已死"。新渠道：Reddit真实经验帖、Product Hunt、免费微工具、工具导航站，以及最关键的"ChatGPT/Claude推荐"。FirstPageSage 2026 ROI：SEO 748% vs SEM 36%。Reddit DAU 1.268亿（同比+17%）。范式转移：用户问"最好的X工具"，答案里没你就永远没客户——传统SEO正被GEO（AI答案里的可见性）取代。做"AnswerRank"——AI推荐可见性管理平台：AI可见性监测（定期向ChatGPT/Claude/DeepSeek/豆包/文心提问→监测提及/排名/引用/情绪）+AI可见性优化（诊断"为什么AI不提你"→补齐结构化数据/评测/收录/社区讨论）+AI推荐归因分析。Free/Maker ¥19/Pro ¥49。冷启动：免费工具"你的产品在AI眼里值几分"+数据帖+搭"冷邮件已死"顺风车。Founding Member ¥29/月终身。</description>
+    <pubDate>Thu, 13 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-025-03</guid>
+    <category>GEO / AI可见性 / LLM推荐 / 获客渠道重构 / OPC获客</category>
+  </item>
 
   <item>
     <title>IDEA 98 · OneKey Market——OPC 工具市场的"App Store 时刻" · 阿里云 One Key MCP 14 家伙伴入驻 + Agent 工具分发新平台</title>
@@ -218,7 +245,7 @@
   <item>
     <title>IDEA 79 · Micro-DD——Micro-SaaS 收购尽调即服务 · Indie Hackers 报告 2000+单人SaaS月入过万</title>
     <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-79</link>
-    <description>Indie Hackers 报告单人 SaaS 月入>$10K 从 200→2000+，churn 升至 7.2%。大量产品卡在 $1-3K MRR——"想卖"需求累积。传统 M&A 尽调起步 $10K-50K——$50K 收购案花 $10K 尽调不经济。做"Micro-DD"——AI 自动化六维度尽调（代码/收入/流量/AI风险/法律/运营→A-F评分卡），Single $499/3-Pack $999/Pro $199/月。标的匹配引擎+交易支持（估值+$199/合同+$99/转移清单+$49）。冷启动："I bought a $30K SaaS——what due diligence missed"故事帖+免费快速扫描工具。</description>
+    <description>Indie Hackers 报告单人 SaaS 月入&gt;$10K 从 200→2000+，churn 升至 7.2%。大量产品卡在 $1-3K MRR——"想卖"需求累积。传统 M&amp;A 尽调起步 $10K-50K——$50K 收购案花 $10K 尽调不经济。做"Micro-DD"——AI 自动化六维度尽调（代码/收入/流量/AI风险/法律/运营→A-F评分卡），Single $499/3-Pack $999/Pro $199/月。标的匹配引擎+交易支持（估值+$199/合同+$99/转移清单+$49）。冷启动："I bought a $30K SaaS——what due diligence missed"故事帖+免费快速扫描工具。</description>
     <pubDate>Thu, 24 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-017-03</guid>
     <category>Micro-SaaS 收购 / 尽调即服务 / AI 审计 / OPC 基础设施</category>
@@ -479,7 +506,7 @@
   <item>
     <title>IDEA 48 · 单人 SaaS 的 AI 运维与成本指挥塔 · Indie Hackers 报告：单人 SaaS 暴涨 10 倍</title>
     <link>https://bezhumingqian-bit.github.io/opc-idea-daily/2026-07-14.html#idea-48</link>
-    <description>Indie Hackers 2026上半年报告：月收入>$10K的单人SaaS从200个飙升至2000+个，但平均churn rate从4.1%升至7.2%——首要原因"运维崩了"。GitHub：system_prompts_leaks（+1,378⭐）收集AI提示泄露案例。PH：Edgee Compressor V2（50%成本削减）、TryCase（Agent隔离测试）。做"SoloOps"——单人SaaS AI运维指挥塔：成本控制+安全扫描+健康监控+发布管理。Free 1项目，Pro $49/月。冷启动："SaaS Security Snapshot"免费安全扫描。</description>
+    <description>Indie Hackers 2026上半年报告：月收入&gt;$10K的单人SaaS从200个飙升至2000+个，但平均churn rate从4.1%升至7.2%——首要原因"运维崩了"。GitHub：system_prompts_leaks（+1,378⭐）收集AI提示泄露案例。PH：Edgee Compressor V2（50%成本削减）、TryCase（Agent隔离测试）。做"SoloOps"——单人SaaS AI运维指挥塔：成本控制+安全扫描+健康监控+发布管理。Free 1项目，Pro $49/月。冷启动："SaaS Security Snapshot"免费安全扫描。</description>
     <pubDate>Mon, 14 Jul 2026 09:00:00 +0800</pubDate>
     <guid isPermaLink="false">opc-idea-010-03</guid>
     <category>运维自动化 / 成本管理 / 安全扫描 / OPC 基础设施</category>
