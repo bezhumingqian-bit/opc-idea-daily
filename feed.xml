@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Thu, 13 Aug 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Fri, 14 Aug 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 104 · SurviveBoard——OPC 创业生命体征监测与死亡预警平台 · 行业死亡率 90% + 五种死法可被数据提前喊停</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-104</link>
+    <description>8月13日杭州首届"AI+OPC"大会，新华社《全国OPC发展观察报告(2026)》给出数据：OPC行业"死亡率"达90%，存活率不到10%，超六成创业者认知偏差。梁桂归纳五种"死法"：完美主义陷阱、工具瘾、伪需求自嗨、定价恐惧症、现金流断裂；政策端"重硬件轻软件、重资源投放轻需求匹配"。关键洞察：政策给钱给算力，但死亡率90%说明资源不是瓶颈、生存能力才是，OPC没有CFO和对赌协议，没人喊停。做"SurviveBoard"——创业生命体征监测与死亡预警平台：生命体征看板（接入Stripe/支付宝/GitHub/产品分析→现金流跑道/验证速度/定价健康度/时间杠杆四指标+阈值预警）+五种死法预警引擎（0-100风险分+干预checklist）+生存教练与干预（现金流告急→停订阅清单、伪需求→5个用户访谈）。Free/Maker ¥29/Pro ¥99。冷启动：开源SurviveBoard Lite现金流计算器+数据帖"100个OPC死因"+搭"死亡率90%"顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Fri, 14 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-026-01</guid>
+    <category>OPC生存 / 死亡预警 / 现金流 / 创业生命体征 / 反伪需求</category>
+  </item>
+
+  <item>
+    <title>IDEA 105 · HarnessHub——OPC 的 Agent 运行时选型与迁移平台 · DeepSeek 开源"跑 Agent 的壳" + harness 独立成品类</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-105</link>
+    <description>8月13日DeepSeek开源deepseek-harness（dsh），单期暴涨1.6万星登顶GitHub Trending，信条"万物皆插件"（models/tools/skills/sessions全可插拔，建在cordis时空可组合元框架上）。做模型的DeepSeek这次放出的不是模型，是"跑agent的壳"。同期harness反复冒头：vercel-labs/deepsec安全harness、macro-inc/macro、spec-kit；Skill工程化爆发（Matt Pocock skills一夜3万星、scientific-agent-skills 2.5万星）。本质是"Agent运行时标准化战争"开打。对有技术团队是选型红利，对OPC是新碎片化灾难——换壳重学。做"HarnessHub"——Agent运行时选型与迁移平台（类比多云管理）：Harness选型引擎（维护dsh/Anthropic skills/deepsec/spec-kit能力矩阵→输出推荐组合）+迁移与适配层（Prompt/skill/MCP工具跨harness转换）+运行时可观测（跨harness统一成本/成功率/延迟/安全看板）。Free/Maker ¥19/Pro ¥49。冷启动：开源HarnessHub CLI+数据帖"实测7个harness"+搭dsh顺风车。Founding Member ¥29/月终身。</description>
+    <pubDate>Fri, 14 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-026-02</guid>
+    <category>Agent运行时 / harness / 选型迁移 / 万物皆插件 / OPC基础设施</category>
+  </item>
+
+  <item>
+    <title>IDEA 106 · ComplianceAPI——OPC 全球收款与合规自动化基础设施（发票/合同/税务） · 出海即撞合规墙 + 收款合规 API 化</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-106</link>
+    <description>8月12日Product Hunt指向同一趋势：OPC"经营合规"正被API化和Agent化。BeeL做西班牙Verifactu发票合规（"每张发票必须防篡改并实时报税，自己做吃掉1/4工程时间"，一个API搞定，Claude Code/AI agent可直接开票）；Defellix帮印度自由职业者2分钟生成法院可采信合同（时间戳+区块链锚定+Section 65B）；Guardrail本地代理监控AI spend。同期广州南沙开设"数据出境服务专窗"、把跨境合规出海列为OPC全生命周期服务。国内OPC批量出海但撞合规墙——各国发票/税务/合同/收款规则各异且频变（西班牙Verifactu、英国Making Tax Digital、印度Section 65B）。做"ComplianceAPI"——全球收款与合规自动化平台：全球发票合规引擎（覆盖Verifactu/MTD/数电票，对接Stripe/Paddle/支付宝自动报税）+智能合同生成与存证+收款与税务看板（AI合规助手）。Free/Maker ¥29/Pro ¥99。冷启动：开源ComplianceAPI Lite+数据帖"200个出海OPC 73%踩过收款合规坑"+搭Verifactu/MTD顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Fri, 14 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-026-03</guid>
+    <category>跨境合规 / 发票自动化 / 全球收款 / 出海OPC / 合规即服务</category>
+  </item>
 
   <item>
     <title>IDEA 101 · TokenVault——OPC 数字资产确权与质押估值平台 · 安徽 Token 贷全国第二省 + 数据知识产权可质押</title>
