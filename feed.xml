@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Fri, 14 Aug 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Mon, 17 Aug 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 107 · ReguLens——OPC 合规翻译与合规体检平台 · 政策从"给资源"转向"立规矩" + 青岛合规指引/济南团体标准密集出台</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-107</link>
+    <description>8月17日前后，OPC政策出现清晰拐点——从"给资源"转向"立规矩"。青岛发布全国首个《人工智能OPC合规指引》，覆盖市场准入/公司治理/财税/合同/用工/广告/知识产权/数据与网络安全八大领域，配套"大众普及版"+"创业大礼包"；济南发布全国首份《数智生态OPC社区建设指南》团体标准（T/JNBDA0005—2026，7/29实施）七大维度立标；北京注册提速到10分钟+15个主题套餐+175条高频经营范围；成都集中登记地；广州番禺最高500万补贴。科技日报点出OPC困境：个人/公司财产界限模糊、AI生成内容IP归属不明、轻资产贷不到款、普惠算力不足。青岛指引直言"答案长期来自碎片化经验帖，踩线与否等出问题才知道"。关键洞察：规矩立了一堆，OPC却"不知道哪条线在哪"。缺的不是政策，是"合规翻译层"。做"ReguLens"——国内经营合规翻译层（不是找钱的红利导航，也不是出海收款合规）：合规翻译引擎（把八大领域/团体标准翻译成"人话版"行动清单+AI合规问答带出处）+合规体检（八大领域扫描→体检报告+整改清单，对接青岛"合规体检大礼包"）+政策与补贴导航（以合规为入口的一站式导航）。Free/Maker ¥29/Pro ¥99。冷启动：开源ReguLens Lite合规checklist+数据帖"OPC最容易踩的10条合规红线"+搭"立规矩"顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Mon, 17 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-027-01</guid>
+    <category>OPC合规 / 合规翻译 / 政策立规矩 / 合规体检 / 一人公司注册</category>
+  </item>
+
+  <item>
+    <title>IDEA 108 · CostAudit——OPC 的 AI 账单独立审计与追偿平台 · LLM 账单"多付"成普遍现象 + Inferock 登顶 PH 榜首</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-108</link>
+    <description>8月16日Product Hunt日榜榜首Inferock Bench（284票#1）标语"每笔LLM API调用的独立收据"：本地代理逐笔抓token用量/失败/重试，把"供应商收了多少"和"实际多付多少"分开列，揭示失败调用照样扣钱、静默重试重复计费、token不符等隐性损失。DEV社区同类井喷：SpendGuard抓到"缓存token按未缓存全价计费，一个月多收6.9%"；burn0发现"onboarding每新用户14次LLM调用，一次重构省60%"；CostGoat 50+集成+配额倒计时+续费提醒。关键洞察：OPC用多个模型API+一堆SaaS订阅，成本失控不止"用得多"，还有"被多收/被重复计费/订阅忘关自动续费"。现有工具全是给开发者的本地CLI/代理，OPC缺"面向非技术创业者的成本管家"。做"CostAudit"——独立第三方审计对账（不是实时监控TokenGuard，是"找多付并追回"）：账单对账引擎（比对失败扣钱/缓存token按全价计费/静默重试重复计费/token不符→《AI账单审计报告》列疑似多付+证据+可追偿性）+浪费识别与降本（降本清单+订阅审计扫忘关的续费）+追偿与账单管理（《多收证据包》一键发争议/工单+续费日历预警）。Free/Maker ¥29/Pro ¥99。冷启动：开源CostAudit Lite对账脚本+数据帖"50个OPC平均每月多付¥370"+搭Inferock登顶顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Mon, 17 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-027-02</guid>
+    <category>AI成本审计 / 账单对账 / LLM多付 / 订阅管理 / OPC降本</category>
+  </item>
+
+  <item>
+    <title>IDEA 109 · IntelStaff——OPC 的决策情报幕僚 · Zetik"口袋里的幕僚长" + last30days-skill 真实金钱信号排序</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-109</link>
+    <description>8月15-16日两个信号指向同一方向——"情报"成为OPC刚需。Product Hunt上Zetik（176票#4）定位"你口袋里的幕僚长"：AI agent团队7×24跑完整情报循环（collect/filter/analyze/brief），横跨播客/论文/代码/推文/新闻。GitHub Trending周冠军last30days-skill（41k星周+12k）给技术新答案：AI Agent搜索引擎聚合Reddit/X/YouTube/TikTok/Polymarket的投票、点赞和"真实金钱信号"排序——不是靠编辑推荐，而是看"大家真的投票/下注/付费支持了什么"。传统搜索靠编辑和流量排序，新情报靠"真实信号"；给大公司CEO的幕僚长已AI化，给一人公司创始人的决策情报幕僚还是空白。OPC一个人要做产品/盯竞品/看市场/追政策/读反馈，但没人做情报。做"IntelStaff"——对内决策情报（不是社交监听/GEO曝光，是"给创始人的情报参谋"）：情报采集与信号排序（真实金钱信号排序→每日《决策情报简报》）+竞品与市场监听（3-5个竞品+关键词，异常主动预警）+决策支持（情报转决策建议+行动清单，历史沉淀成决策日志）。Free/Maker ¥29/Pro ¥99。冷启动：开源IntelStaff Lite+数据帖"100个micro-SaaS 30%热门其实没人买单"+搭Zetik顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Mon, 17 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-027-03</guid>
+    <category>决策情报 / 竞品监听 / 真实信号 / OPC情报幕僚 / 市场监听</category>
+  </item>
 
   <item>
     <title>IDEA 104 · SurviveBoard——OPC 创业生命体征监测与死亡预警平台 · 行业死亡率 90% + 五种死法可被数据提前喊停</title>
