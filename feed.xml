@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Mon, 17 Aug 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Tue, 18 Aug 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 110 · OwnChannel——OPC 自有分发资产构建平台 · Relay 关闭 CEO 回 Google + "不拥有分发就被分发吸收"</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-110</link>
+    <description>8月17日TechCrunch报道：AI工作流自动化创业公司Relay关闭。它2021年成立做"AI版Zapier"，拿a16z/Khosla 810万美元，CEO Jacob Bank是前Google Gmail/日历负责人。结局不是收购，而是"acqui-hire without acquisition"——只收团队不收产品：Bank回Google当Chrome产品VP，团队并入Chrome，投资者零回报，付费用户9/14失去访问。媒体一句话点破本质："模型和用户之间的层正被不断挤压，你不拥有分发，最终就被分发吸收"。Chrome已内置Gemini（10亿用户）。同期DEV两篇数据共振：一篇《两周上线7个产品》卡在traffic，结论"Building is the easy part, Distribution is the job"；一篇《$2650/月副业栈》列5条收入流真实数字——freelance $100/时但不compound（请假两周收入归零）、SaaS $950/月才compound（度假也收钱）、AI API affiliate $590/月靠"推荐你真用的东西"。关键洞察：AI把构建成本打穿到趋近于零，OPC生死线从"做得出"变成"卖得出、留得住"。Relay是反面教材——做"模型和用户之间的薄层"会被巨头免费吸收。做"OwnChannel"——自有分发资产构建（不是"帮你在平台发内容"的寄生，是"帮你拥有自己的分发资产"）：分发资产构建引擎（把一次性流量变成可复利的自有资产——订阅名单/私域社区/推荐网络/直接触达，分清自有vs借来）+反吸收指数（评估产品离"被平台吸收"有多近，输出0-100分+加固清单）+推荐与变现网络（affiliate收入+OPC互相推荐换量联盟）。Free/Maker ¥29/Pro ¥99。冷启动：开源OwnChannel Lite分发审计清单+数据帖"拆解Relay之死——90% OPC离被吸收只差一层薄皮"+搭Relay关闭顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Tue, 18 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-028-01</guid>
+    <category>自有分发 / 反吸收 / 分发资产 / 护城河 / OPC生存线</category>
+  </item>
+
+  <item>
+    <title>IDEA 111 · FlexLayer——让 OPC 产品变成"用户可扩展的平台" · Vendo 被 Garry Tan 押注，软件从刚性变动态</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-111</link>
+    <description>8月17日Product Hunt日榜#4被开源产品Vendo拿下（206票、23评论，被知名投资人Garry Tan hunt），标语"让用户在你的产品里构建自己的功能"。它是一个开源定制层：每个客户用自然语言描述想要什么，就能在你的产品里长出自己需要的功能/微应用，基于你自己的API、在你设定的护栏内运行。它的理念戳中正在发生的产品形态变迁："过去软件是刚性的，每个客户都得去适配它；Vendo让软件变动态，产品围绕每个客户塑形"。关键洞察：软件从"客户适配软件"变成"软件围绕客户塑形"，OPC从"卖功能"升级为"卖平台"。但Vendo是给有技术团队的产品用的，OPC版机会是"零代码接入的自定义层"——让$29的小SaaS/小程序也能拥有"用户自己长功能"的能力。做"FlexLayer"——给OPC产品加自定义能力的中间层：自定义层SDK（一行接入，让产品拥有"用户描述需求→自动生成微应用"能力，带权限/计费/数据边界/审批护栏）+微应用市场（用户自定义功能沉淀成模板一键复用，形成产品自己的应用商店）+平台化转型顾问（判断哪些产品适合平台化，把卖功能升级为订阅+微应用分成）。Free/Maker ¥29/Pro ¥99。冷启动：开源FlexLayer Core(MIT)+数据帖"我们让$29的SaaS长出40个用户自建功能"+搭Vendo/Garry Tan顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Tue, 18 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-028-02</guid>
+    <category>用户自定义 / 平台化 / 微应用 / 产品形态 / OPC卖平台</category>
+  </item>
+
+  <item>
+    <title>IDEA 112 · OrderBridge——OPC 场景订单撮合与交付能力平台 · 桂城/济宁/石景山政策密集"给订单"，OPC 一个人却接不住政企单</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-112</link>
+    <description>8月17-18日OPC政策密集释放，信号出现第三次转向——从"给补贴"转向"给订单"。桂城（8/18羊城晚报）发布"超级智能体·OPC社区"入孵招募令：2000平空间、3年租金减免、算力最高40%补贴、1亿AI直投基金（最高500万）+1亿风险补偿基金（最高2000万贷款），最关键的是"定期发布政府侧/公用事业侧真实应用场景订单，每年优选10个示范案例每个50万"。济宁（8/17）首批OPC支持清单14项：供需对接平台全年15场、释放配套订单200个以上、支持承接AI质检/数据标注外包、创贷+商贷最高1000万。石景山（8/17）首次商业化最高100万、算力券每年200万。陕西（8/13）十四条：一址多照/首违不罚。关键洞察：OPC政策进入第三阶段——从"给钱给算力"到"立规矩"（上期ReguLens）再到"给订单给场景给市场"。但OPC一个人接得住政企订单吗？缺口在"从补贴到营收"的转化——订单怎么翻译成能接的单、怎么投标、怎么交付验收回款。做"OrderBridge"——场景订单撮合与交付能力（不是红利导航/合规翻译，是"把政企真实订单翻译成OPC接得住、交付得了的单"）：订单翻译与匹配（把AI质检/数据标注/内容生成/智能客服等订单翻译成"接单说明"+AI匹配适配度）+交付能力补齐（招投标/合同/验收/开票工具包+AI陪跑）+政企订单日历与投标（聚合订单/示范案例/赛事+主动推送+一键生成投标初稿）。Free/Maker ¥29/Pro ¥99（可选成交佣金）。冷启动：开源OrderBridge Lite匹配清单+数据帖"盘点桂城/济宁/石景山最容易接的10类政企单"+搭"给订单"政策顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Tue, 18 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-028-03</guid>
+    <category>场景订单 / 政企订单 / 订单撮合 / OPC交付 / 政策给订单</category>
+  </item>
 
   <item>
     <title>IDEA 107 · ReguLens——OPC 合规翻译与合规体检平台 · 政策从"给资源"转向"立规矩" + 青岛合规指引/济南团体标准密集出台</title>
