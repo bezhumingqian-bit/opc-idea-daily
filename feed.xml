@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Tue, 18 Aug 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Wed, 19 Aug 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 113 · ShipGrade——Vibe Coder 的企业级交付能力分级与补齐平台 · 靠 AI 做出爆款 App，1 亿美元大公司找上门却"接不住"</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-113</link>
+    <description>8月18日Reddit r/vibecoding用户Book320发帖《一家大公司想让我开发门户和App，但我是Vibe Coder》：他在小众行业多年比谁都懂业务流程，用AI几乎零手写代码做出一个App，靠懂业务逻辑而非代码漂亮，口口相传成了行业常用产品；年营收超1亿美元的大公司主动找上门（对方就是他的用户）希望开发门户+App，他却慌了——"能做出一个App，和能负责一个企业级软件，是完全不同的两回事"。AI把"做出App"门槛打穿到趋近于零，第一次让不懂代码的人也有机会被大公司看上；但门槛打穿后，断层从"做不出"平移到"交付不了、接不住"。做"ShipGrade"——企业级交付能力分级与补齐（不是"帮你接单"的OrderBridge，是"把个人作品升级成企业级可交付+判断这单能不能接"）：交付能力体检（扫描App离企业级可交付差多少——安全/性能/合规/可维护性/文档/灾备，输出分级报告+缺口清单）+企业级工程化补齐（一键接入CI/CD/监控告警/日志审计/SSO/数据备份，把个人作品加固成企业能签收的形态）+接单决策与交付保险（判断能不能接/缺什么/要多久，接不了的转介绍/分包，交付失败保险兜底）。Free/Maker ¥29/Pro ¥99。冷启动：开源ShipGrade Lite体检清单+数据帖"Vibe Coder接到1亿美元大单却不敢接"+搭Reddit热帖顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Wed, 19 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-029-01</guid>
+    <category>企业级交付 / VibeCoder / 工程化补齐 / 个人作品企业化 / 接单决策</category>
+  </item>
+
+  <item>
+    <title>IDEA 114 · PortableStack——OPC 技术栈可移植与防单点依赖平台 · GitHub 全球宕机 3h19m + Cursor 同日发布 Origin</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-114</link>
+    <description>8月17-18日三件事同天叠加：GitHub全球宕机（8/17 13:40 UTC开始、16:59缓解，持续3h19m，约20% web/API、约50% archive/raw下载失败）；Cursor同日发布Origin（in-editor的GitHub替代品，专为AI编码agent打造）；生成视频公司Higgsfield Series B融4亿美元@54亿（DST领投，年化收入2000万→7亿35倍）。媒体一句话串起三件事："assume every platform under you is temporary"——镜像仓库、保持git历史可移植、在分发上竞争而非功能护城河。对OPC尤其致命：一个人的公司把业务架在GitHub+云+Stripe+AI平台上，任一平台的宕机/涨价/封号/被收购都可能让业务停摆——不是功能护城河问题（MoatScore），是平台可移植性问题，护城河不该建在别人地基上。做"PortableStack"——技术栈可移植与防单点依赖（不是"分发资产"的OwnChannel，是"基础设施资产"）：单点依赖审计（扫描业务依赖的平台/服务，输出《单点依赖地图》+风险分级）+可移植性加固（一键镜像仓库到多平台、git历史导出、CI跨平台迁移、支付/AI API多供应商切换预案）+应急切换手册（每个关键依赖配Plan B：宕机10分钟切备胎的逐步手册+演练）。Free/Maker ¥29/Pro ¥99。冷启动：开源PortableStack Lite依赖审计脚本+数据帖"GitHub宕机3小时你的OPC停摆了吗"+搭宕机顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Wed, 19 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-029-02</guid>
+    <category>可移植性 / 防单点依赖 / 平台风险 / 镜像与迁移 / OPC基础设施</category>
+  </item>
+
+  <item>
+    <title>IDEA 115 · AgentCloud——本地 AI 工作流一键上云的常驻化部署平台 · "别再看管你的 AI agent"</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-115</link>
+    <description>8月17日Product Hunt日榜#2被Omni by xpander拿下（374票），标语"Stop babysitting your AI agents"：你最好的AI工作流现在活在Claude里、跑在自己机器上——盖子一合就停，只为一个人跑。Omni把agent从笔记本搬到云端：scheduled/long-running/shareable，还能keep agents healthy（持续改进system prompt、对比模型、debug修复失败run）。同期Clears（355票）"从AI coding到Agentic Software Delivery"、TinyFish（97票）"AI agent的web操作层"，主线一致：Agent从"电脑里的玩具"走向"云端生产服务"。关键洞察：OPC最值钱的资产是"已经调通的AI工作流"（写日报/盯竞品/回邮件/发内容），但它们锁在本地Claude里，不可调度、不可常驻、不可分享、不能变现——缺"本地agent→云端生产化部署"这一层。做"AgentCloud"——本地工作流一键上云的常驻化部署（不是"运行时选型"的HarnessHub，是"部署生产化"）：一键上云（把Claude/Codex里调好的工作流部署成云端常驻服务：定时跑/长任务跑/7×24不睡，用自己API key不锁供应商）+健康运维（自动debug修复失败run、优化system prompt、对比模型、可视化看板）+分享与变现（分享给团队/客户/社群，甚至打包成订阅产品——从"我电脑里的agent"变成"别人能用的服务"）。Free/Maker ¥29/Pro ¥99。冷启动：开源AgentCloud Core本地调度器+数据帖"你最好的AI工作流还在陪你一起下班"+搭Omni顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Wed, 19 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-029-03</guid>
+    <category>Agent上云 / 常驻部署 / 工作流产品化 / 生产化 / OPC自动化</category>
+  </item>
 
   <item>
     <title>IDEA 110 · OwnChannel——OPC 自有分发资产构建平台 · Relay 关闭 CEO 回 Google + "不拥有分发就被分发吸收"</title>

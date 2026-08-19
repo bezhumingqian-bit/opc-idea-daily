@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<title>OPC IDEA · 2026年8月18日</title>
+<meta name="description" content="每日精选一人公司方向的精筛 IDEA · 一手源 · 今日已刷新">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta property="og:description" content="今日："不拥有分发，就被分发吸收"——Relay 关闭 CEO 回 Google + DEV"分发才是工作" · "让用户在你的产品里构建自己的功能"——Vendo 被 Garry Tan 押注，软件从刚性变动态 · "政策从给补贴转向给订单"——桂城/济宁释放真实场景订单，OPC 缺"接得住"。每日 09:00 自动刷新。">
+<meta property="og:url" content="https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html">
+<meta property="og:image" content="https://bezhumingqian-bit.github.io/opc-idea-daily/icon-512.png">
+<meta property="og:site_name" content="OPC IDEA 日报">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta name="twitter:description" content="今日 3 条精筛 IDEA · 一手源 · 工作日每日 09:00 刷新">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+    background: #F5F1E8;
+    color: #2C2A26;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px 40px; }
+  .header {
+    background: #FAF7EE;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 32px 28px 28px;
+    margin-bottom: 16px;
+  }
+  .brand { font-size: 11px; letter-spacing: 4px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 14px; }
+  .brand a { color: #B5B0A4; text-decoration: none; }
+  .brand a:hover { color: #8A8474; }
+  .header-title { font-size: 26px; font-weight: 500; color: #2C2A26; letter-spacing: 1px; }
+  .header-date { font-size: 13px; color: #7A766C; margin-top: 6px; letter-spacing: 0.5px; }
+  .divider { height: 1px; background: #E6E1D6; margin: 18px 0; }
+  .header-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .chip { padding: 3px 10px; background: transparent; border: 1px solid #D8D2C5; border-radius: 2px; font-size: 11px; color: #7A766C; letter-spacing: 0.5px; }
+  .card {
+    background: #FFFEFC;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 22px 24px;
+    margin-bottom: 10px;
+  }
+  .card-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+  .num { width: 28px; height: 28px; border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; flex-shrink: 0; letter-spacing: 0.5px; background: #EEEAE0; color: #5A5443; }
+  .headline { font-size: 15.5px; font-weight: 500; color: #2C2A26; line-height: 1.5; flex: 1; padding-top: 3px; letter-spacing: 0.2px; }
+  .fact { font-size: 13.5px; color: #5F5B53; line-height: 1.75; margin-bottom: 12px; padding-left: 42px; }
+  .next-step { font-size: 13.5px; color: #2C2A26; line-height: 1.75; padding: 12px 16px; margin-left: 42px; background: #F7F4EC; border-left: 2px solid #8A8474; border-radius: 0 2px 2px 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; padding-left: 42px; font-size: 11.5px; color: #7A766C; }
+  .hook-box { background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 16px 20px; margin-bottom: 10px; }
+  .hook-label { font-size: 11px; letter-spacing: 2px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 8px; }
+  .hook-text { font-size: 14px; color: #2C2A26; line-height: 1.7; letter-spacing: 0.2px; }
+
+  .prev-next {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    margin-top: 18px; margin-bottom: 18px;
+  }
+  .pn-card {
+    background: #FFFEFC; border: 1px solid #E6E1D6; border-radius: 4px;
+    padding: 14px 18px; text-decoration: none; color: inherit; display: block;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .pn-card:hover { border-color: #C4BBA9; background: #FAF7EE; }
+  .pn-card.disabled { opacity: 0.4; pointer-events: none; }
+  .pn-label { font-size: 10.5px; letter-spacing: 1.5px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 4px; }
+  .pn-title { font-size: 13px; color: #2C2A26; line-height: 1.5; letter-spacing: 0.2px; }
+  .pn-right { text-align: right; }
+
+  .tag-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding-left: 42px; }
+  .tag { padding: 2px 8px; background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 2px; font-size: 10.5px; color: #7A766C; letter-spacing: 0.3px; }
+
+  .footer { text-align: center; margin-top: 28px; margin-bottom: 20px; font-size: 11px; color: #B5B0A4; letter-spacing: 0.5px; line-height: 2; }
+  .footer a { color: #8A8474; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  @media print {
+    body { background: white; }
+    .card, .header, .hook-box { box-shadow: none; border-color: #ccc; }
+    .prev-next, .footer, .header-meta { display: none; }
+  }
+  @media (max-width: 640px) {
+    .container { padding: 12px 12px 32px; }
+    .header { padding: 24px 20px 22px; }
+    .header-title { font-size: 22px; }
+    .card { padding: 18px 16px; }
+    .fact, .next-step { padding-left: 0; margin-left: 0; }
+    .tag-bar { padding-left: 0; }
+    .prev-next { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<a href="./index.html" style="display:inline-block;font-size:12px;color:#8A8474;text-decoration:none;letter-spacing:0.5px;margin-bottom:18px;">&larr; 返回归档首页</a>
+
+<div class="header">
+  <div class="brand"><a href="./index.html">OPC IDEA &middot; 日报</a></div>
+  <div class="header-title">一人公司方向&middot;每日精选</div>
+  <div class="header-date">2026年8月18日 &middot; 星期二 &middot; Vol.028 &middot; 今日已刷新</div>
+  <div class="divider"></div>
+  <div class="header-meta">
+    <span class="chip">"不拥有分发，就被分发吸收"——Relay 关闭 CEO 回 Google + DEV"分发才是工作"，构建被打穿后生死线是"卖得出"</span>
+    <span class="chip">软件从刚性变动态——Vendo"让用户在你的产品里构建自己的功能" + Garry Tan 押注，OPC 从卖功能到卖平台</span>
+    <span class="chip">政策从"给补贴"转向"给订单"——桂城/济宁释放真实场景订单 + AI 质检/数据标注外包，OPC 缺"接得住"</span>
+    <span class="chip">已与近七期去重</span>
+  </div>
+  <div class="header-meta" style="margin-top:8px;">
+    <a href="subscribe.html" style="font-size:13px;color:#8A8474;text-decoration:none;letter-spacing:0.3px;">每天09:00自动收到 &rarr;</a>
+  </div>
+</div>
+
+<!-- CARD 1 -->
+<div class="card" id="idea-110">
+  <div class="card-header">
+    <span class="num">01</span>
+    <span class="headline">OwnChannel——OPC 自有分发资产构建平台 &middot; Relay 关闭 CEO 回 Google + "不拥有分发就被分发吸收"，构建被打穿后生死线变成"卖得出"</span>
+  </div>
+  <div class="fact">
+    8 月 17 日，TechCrunch 报道了一个意味深长的结局：AI 工作流自动化创业公司 Relay 关闭。Relay 2021 年成立，目标是做"AI 版 Zapier"（自动化文档起草、文案编辑、项目管理），拿了 a16z、Khosla 的 810 万美元融资，创始人 Jacob Bank 是前 Google Gmail/日历产品负责人。结局不是"收购"，而是"acqui-hire without acquisition"——只收团队、不收产品：Bank 回 Google 当 Chrome 产品副总裁，团队并入 Chrome，投资者零回报；付费用户 9 月 14 日失去访问，免费用户 8 月 15 日已失去。媒体用一句话点破了本质："模型和用户之间的层正被不断挤压，如果你不拥有分发，最终就会被分发吸收"（the layer between models and users keeps getting squeezed, and if you do not own distribution, you eventually join it）。Chrome 已经内置 Gemini（用户突破 10 亿），Google 等于零成本吸收了一批"最懂为什么独立自动化创业公司会停滞"的人。同期 DEV Community 两篇真实数据共振同一个词——distribution。一篇《我两周上线了 7 个产品》里，一个 AI agent 两周建了 7 个数字产品（cold email skill pack、AI Agent Operating Manual 等），却卡在"traffic"上，结论是"Building is the easy part. Distribution is the job"（构建最简单，分发才是工作）；另一篇《我的 $2650/月副业栈》列了 5 条收入流真实数字：freelance 单价 $100/时最高，但请假两周收入归零、不 compound；SaaS 每月 $950 才真正 compound（度假也能收钱）；AI API affiliate 每月 $590，靠的是"推荐你真正在用的东西"。关键洞察：AI 把"构建"成本打穿到趋近于零，OPC 的生死线彻底从"做得出"变成"卖得出、留得住"。Relay 是反面教材——做一个"模型和用户之间的薄层"，巨头浏览器/OS 免费就能吸收你。OPC 的活路不是做得更薄，而是拥有自己的分发资产：订阅名单、私域社区、推荐关系、直接触达用户的渠道——这些才是巨头吸收不走的护城河。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"OwnChannel"——OPC 自有分发资产构建平台。定位：不是"帮你在平台发内容"（寄生，最终被平台吸收，Relay 就是前车之鉴），而是"帮你拥有属于自己的分发资产"（自有）。① 分发资产构建引擎（核心产品。把一次性流量变成可复利的自有资产——订阅邮件名单、私域社区、推荐/affiliate 网络、直接触达渠道。参照 DEV 那篇的 7 渠道（SEO/Dev.to/X/Reddit/PH/Etsy/Cold Email），但重心是分清"哪些自有、哪些是借来的"：借来的流量会随着平台改规则而消失，自有的名单和社区才 compound。输出《分发资产盘点 + 构建路线图》——我现在有哪些自有资产、哪些是借来的、怎么一步步把借来的转成自己的）。② 反吸收指数（Relay 教训的量化。评估你的产品离"被平台吸收"有多近——分发依赖度、自有 vs 寄生渠道占比、用户可迁移性、是否只是"模型 + 一层皮"，输出 0-100 分 + 加固清单。灵魂一问："如果明天 Google/微信/平台免费做一个你，还有多少人留下？"）。③ 推荐与变现网络（把"你真正在用的工具"变成 affiliate 收入——参照 $590/月的洞察，推荐自己真实使用的东西才持久；同时搭建 OPC 之间互相推荐/换量网络，让独立产品之间互相导流，形成自有分发联盟）。定价：Free——反吸收指数 1 次 + 基础盘点。Maker——¥29/月，完整分发路线 + 3 个自有渠道运营。Pro——¥99/月，无限渠道 + affiliate 网络 + 换量联盟。冷启动：渠道 A——开源"OwnChannel Lite"分发审计清单（MIT，本地可用）。渠道 B——数据帖"我们拆解了 Relay 之死——90% 的 OPC 离'被吸收'只差一层薄皮"。渠道 C——搭 Relay 关闭 + "distribution is the job"顺风车（PH/DEV/HN 正热议）。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#自有分发</span>
+    <span class="tag">#反吸收</span>
+    <span class="tag">#分发资产</span>
+    <span class="tag">#护城河</span>
+    <span class="tag">#OPC生存线</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; TechCrunch 8/17（Relay 关闭，a16z/Khosla 810 万美元，CEO Jacob Bank 回 Google 任 Chrome 产品 VP，acqui-hire without acquisition，Gemini 10 亿用户） / DEV Community 8 月（"7 产品但卡在 traffic——Building is the easy part, Distribution is the job" / "$2650/月副业栈：freelance 不 compound、SaaS 才 compound、AI API affiliate $590 靠推荐真用的东西"）</span>
+  </div>
+</div>
+
+<!-- CARD 2 -->
+<div class="card" id="idea-111">
+  <div class="card-header">
+    <span class="num">02</span>
+    <span class="headline">FlexLayer——让 OPC 产品变成"用户可扩展的平台" &middot; Vendo 被 Garry Tan 押注"让用户在你产品里构建自己的功能"，软件从刚性变动态</span>
+  </div>
+  <div class="fact">
+    8 月 17 日，Product Hunt 日榜 #4 被一个开源产品 Vendo 拿下（206 票、23 条评论，被知名投资人 Garry Tan hunt）——标语是"Let your users build their own features inside your product"（让用户在你的产品里构建自己的功能）。它是一个开源定制层：每个客户用自然语言描述想要什么，就能在你的产品里长出自己需要的功能/微应用，基于你自己的 API、在你设定的护栏内运行。它的理念戳中了一个正在发生的产品形态变迁："Until now software has been rigid, and every customer had to adapt to it. Vendo makes it dynamic, so your product shapes itself around each customer."（过去软件是刚性的，每个客户都得去适配它；Vendo 让软件变动态，产品围绕每个客户塑形）。关键洞察：软件正在从"刚性"变"动态"——过去是"客户适配软件"，未来是"软件围绕每个客户塑形"。这对 OPC 意味着一次产品形态的跃迁：从"卖功能"升级为"卖平台"。但 Vendo 是给有技术团队的产品用的，OPC 版的机会是"零代码接入的自定义层"——让一个 $29 的小 SaaS、小程序也能拥有"用户自己长功能"的能力。粘性和差异化不再来自你一个人能写多少功能，而来自"用户能在你产品里长出他需要的东西"——长尾需求被用户自己覆盖，你从"唯一的生产者"变成"平台的运营者"。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"FlexLayer"——让 OPC 产品变成"用户可扩展的平台"。定位：不是做一个独立 SaaS，而是做"给 OPC 产品加自定义能力的中间层"——一行接入，让你的产品拥有 Vendo 那样的"用户自然语言自定义"能力。① 自定义层 SDK（核心产品。一行接入，让你的 SaaS/小程序/Web 产品拥有"用户描述需求 → 自动生成微应用/功能"的能力，跑在你自己的 API 上，带护栏——权限、计费、数据边界、审批流，避免用户把产品玩坏。解决 OPC 一个人做不了 Vendo 那种复杂集成的问题）。② 微应用市场（用户自定义的功能可沉淀成模板，其他用户一键复用，形成产品自己的"应用商店"——产品从"你一个人造功能"变成"所有用户一起造功能"，长尾需求被用户自己覆盖，你的角色从生产者变成平台运营者）。③ 平台化转型顾问（帮 OPC 判断"哪些产品适合平台化"——有 API、有高频场景、有长尾需求的产品最合适；把"卖功能"的定价升级为"订阅 + 微应用分成"，从一次性收入变成平台抽成，参照 Vendo 的护栏与分成逻辑）。定价：Free——单个产品接入 + 5 个用户自定义。Maker——¥29/月，微应用市场 + 模板复用。Pro——¥99/月，无限微应用 + 平台分成 + 白标。冷启动：渠道 A——开源 FlexLayer Core（MIT）。渠道 B——数据帖"我们让一个 $29 的 SaaS 长出了 40 个用户自建功能"。渠道 C——搭 Vendo/Garry Tan 顺风车（PH #4 正刷屏）。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#用户自定义</span>
+    <span class="tag">#平台化</span>
+    <span class="tag">#微应用</span>
+    <span class="tag">#产品形态</span>
+    <span class="tag">#OPC卖平台</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; Product Hunt 8/17（Vendo #4 206 票 23 评论，Garry Tan hunt，"让用户在你的产品里构建自己的功能"，开源定制层，自然语言生成微应用，跑在你自己的 API + 护栏内）</span>
+  </div>
+</div>
+
+<!-- CARD 3 -->
+<div class="card" id="idea-112">
+  <div class="card-header">
+    <span class="num">03</span>
+    <span class="headline">OrderBridge——OPC 场景订单撮合与交付能力平台 &middot; 桂城/济宁/石景山政策密集"给订单"，OPC 一个人却"接不住"政企单</span>
+  </div>
+  <div class="fact">
+    8 月 17-18 日，OPC 政策密集释放，且信号出现了第三次转向——从"给补贴"转向"给订单"。桂城（8 月 18 日羊城晚报）发布"超级智能体·OPC 社区"入孵招募令：2000 平空间、近 30 个工位、最长 3 年租金减免，算力/语料/智能技术最高 40% 补贴（单家最高 20 万/年，细分模型训练最高 200 万），设立总规模 1 亿元 AI 直投基金（最高 500 万股权投资）+ 1 亿元风险补偿基金（撬动银行信贷，单家最高 2000 万贷款）——最关键的信号是"定期发布政府侧和公用事业侧真实应用场景订单，每年优选 10 个示范案例每个 50 万元"。济宁（8 月 17 日闪电新闻）发布首批 OPC 创业支持清单 14 项：搭建产业链供需对接平台全年不少于 15 场、释放配套订单 200 个以上、支持 OPC 主体承接 AI 质检、数据标注等外包业务，创业担保贷"创贷+商贷"最高可到 1000 万。石景山（8 月 17 日）出台 OPC 创业生态措施：首次商业化突破一次性最高 100 万、赛事成果转化最高 50 万、词元/算力券每年最高 200 万。陕西（8 月 13 日）出指导意见十四条：一址多照、工位注册、首违不罚、柔性执法。关键洞察：OPC 政策进入第三阶段——从"给钱给算力"（第一阶段）到"立规矩"（第二阶段，上期 ReguLens），现在到"给订单、给场景、给市场"（第三阶段）。桂城/济宁都在"释放真实订单"：政府侧应用场景、产业链配套订单、AI 质检/数据标注外包、示范案例评选。但 OPC 一个人"接得住"政企订单吗？缺口在"从补贴到营收"的转化能力——订单怎么翻译成我能接的单、怎么投标、怎么交付、怎么验收回款。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"OrderBridge"——OPC 场景订单撮合与交付能力平台。定位：不是"政策红利导航"（Vol.017 找补贴），也不是"合规翻译"（Vol.027 ReguLens 立规矩），而是"把政府/龙头企业的真实订单翻译成 OPC 接得住、交付得了的单"。① 订单翻译与匹配（核心产品。把政企发布的场景订单——AI 质检、数据标注、内容生成、智能客服、小程序开发等——翻译成 OPC 能看懂、能报价的"接单说明"：工作量、交付物、验收标准、回款周期、竞标门槛。AI 匹配"我的技能 × 这个订单"适配度，标出"你能接"和"差什么"）。② 交付能力补齐（OPC 接单后缺的环节——招投标文件、合同、验收、开票、团队协作，提供标准化工具包 + AI 陪跑；对接济宁"创贷之家"、桂城"全周期陪跑"等政府服务）。③ 政企订单日历与投标（聚合各地 OPC 订单/示范案例评选/赛事，主动推送 + 截止提醒，一键生成投标材料初稿——把"听说有订单"变成"知道去哪接、怎么接、什么时候截止"）。定价：Free——订单日历 + 3 个匹配。Maker——¥29/月，完整匹配 + 交付工具包。Pro——¥99/月，投标材料生成 + 陪跑（可选成交佣金）。冷启动：渠道 A——开源"OrderBridge Lite"订单匹配清单（MIT）。渠道 B——数据帖"我们盘点了桂城/济宁/石景山的 OPC 订单——最容易接的 10 类政企单"。渠道 C——搭"政策从给补贴转向给订单"顺风车（桂城/济宁 8/17-18 密集报道）。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#场景订单</span>
+    <span class="tag">#政企订单</span>
+    <span class="tag">#订单撮合</span>
+    <span class="tag">#OPC交付</span>
+    <span class="tag">#政策给订单</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; 桂城 8/18 羊城晚报（"超级智能体·OPC社区"入孵招募令：1 亿 AI 直投基金 + 1 亿风险补偿基金，定期发布政府侧/公用事业侧真实应用场景订单，每年优选 10 个示范案例每个 50 万） / 济宁 8/17 闪电新闻（首批 OPC 创业支持清单 14 项：供需对接 15 场 + 释放配套订单 200 个 + 承接 AI 质检/数据标注外包 + 创贷商贷最高 1000 万） / 石景山 8/17（首次商业化最高 100 万 + 算力券每年 200 万） / 陕西 8/13 指导意见十四条（一址多照/首违不罚）</span>
+  </div>
+</div>
+
+<!-- HOOK -->
+<div class="hook-box">
+  <div class="hook-label">本期钩子</div>
+  <div class="hook-text">
+    8 月 18 日三条信号，指向同一个判断：OPC 的下一场仗，从"怎么开起来"打到了"怎么活下来、怎么卖出去"。信号一：Relay 关闭、CEO 回 Google——"模型和用户之间的层正被挤压，不拥有分发就被分发吸收"，AI 把构建成本打穿之后，OPC 的生死线变成"卖得出、留得住"，这就是 OwnChannel（自有分发）。信号二：Vendo 被 Garry Tan 押注——"让用户在你的产品里构建自己的功能"，软件从刚性变动态，OPC 从"卖功能"升级为"卖平台"，这就是 FlexLayer（用户自定义层）。信号三：桂城/济宁/石景山政策密集转向"给订单"——政府侧场景订单、产业链配套订单、AI 质检/数据标注外包，但 OPC 一个人接不住政企单，这就是 OrderBridge（场景订单撮合）。三条 IDEA 的共同主线：上一期补的是"法务（合规）、财务（审计）、情报（参谋）"三样职能岗，这一期补的是"分发、产品形态、订单"三样生存线——一个是"不被平台吸收"，一个是"让产品自己长"，一个是"把政策订单变成营收"。谁能让一个人的公司"守得住渠道、长得出平台、接得住订单"，谁就抓住了 OPC 从"能开起来"走向"能开下去"的第三波机会。
+  </div>
+</div>
+
+<!-- Navigation -->
+<div class="prev-next">
+  <a href="2026-08-17.html" class="pn-card">
+    <div class="pn-label">&larr; 上一期</div>
+    <div class="pn-title">Vol.027 &middot; ReguLens 合规翻译 · CostAudit 账单审计 · IntelStaff 情报幕僚</div>
+  </a>
+  <a href="daily.html" class="pn-card pn-right">
+    <div class="pn-label">下一期 &rarr;</div>
+    <div class="pn-title">Vol.029 &middot; ShipGrade 企业级交付 · PortableStack 防单点依赖 · AgentCloud 常驻部署</div>
+  </a>
+</div>
+
+<div class="footer">
+  OPC IDEA &middot; 日报 &#65295; <a href="subscribe.html">订阅日报</a> &#65295; <a href="feed.xml">RSS</a> &#65295; <a href="./index.html">完整报告</a> &#65295; <a href="newsletter-strategy.md">启动策略</a><br>
+  北京 &middot; 2026年8月18日 &middot; Vol.028 &middot; 今日刷新<br>
+  商业&middot;认知观察者&middot;出品
+</div>
+
+</div>
+</body>
+</html>
