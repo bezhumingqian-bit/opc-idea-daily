@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Wed, 19 Aug 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Thu, 20 Aug 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 116 · SoloPipe——OPC 的 AI 入站销售转化引擎 · Clara 登顶 PH，把网站访客实时变成销售管线</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-116</link>
+    <description>8月19日Product Hunt日榜#1被Clara AI SDR拿下（412票），标语"Turn website visitors into qualified pipeline"：TruGen AI打造的AI销售开发代表，实时互动/按意向筛选/演示/处理异议/自动约会议，无表单无等待无额外人力，全天候50+语言、与CRM集成。但第三方测评点破真相：桌面识别71%、移动仅43%，配置筛选逻辑要15-20小时，$149-$299/月起——本质是给有销售团队、客单价高的B2B公司做的。关键洞察：AI把"做产品"成本打穿了，但OPC最痛的一环始终悬空——"做出来了卖给谁、怎么把已有流量变成收入"。Clara登顶证明需求真实巨大，却把独立开发者排除在外：一个人、客单价几十美元、没CRM、没15小时配置预算的人反而最需要却最用不起。做"SoloPipe"——OPC的AI入站销售转化引擎（不是给销售团队的企业AI SDR，是给一个人公司的入站转化引擎）：一键入站转化（一行script接入独立站，AI实时接待/筛选/演示/处理异议/约会议，50+语言，无需CRM无需15小时配置，预置OPC模板5分钟上线）+线索分级与复利（访客对话沉淀成线索库，按意向打分、自动跟进未成交高意向访客，一个人也不丢单）+转化率诊断（给"为什么访客来了没下单"可归因看板）。Free/Maker ¥29/Pro ¥99。冷启动：开源SoloPipe Lite入站脚本+数据帖"Clara登顶PH，独立开发者的24/7销售代表在哪"+搭Clara顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Thu, 20 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-030-01</guid>
+    <category>入站转化 / AI销售代表 / 线索分级 / 流量变现 / OPC获客</category>
+  </item>
+
+  <item>
+    <title>IDEA 117 · CopyStack——AI 配置的一键复制与变现市场 · Taku 登上 PH #2，跳过 GitHub 和 setup</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-117</link>
+    <description>8月19日Product Hunt日榜#2被Taku AI拿下（378票），标语"Borrow the best AI setups and make them yours"：创始人Austin曾任Sapient Intelligence联合创始人（$2200万种子轮，团队来自Anthropic/DeepMind/DeepSeek）。他自述痛点："装Codex、找工具、写prompt、配API、反复迭代，还得全程盯着"——AI越来越强却越来越难用。Taku把最后一公里补齐：把最好的skills/agents/workflows变成真正的桌面应用，任何人都能运行、remix、据为己有——从高手那里复制配置、跳过GitHub和setup。对创作者而言，好技能被看见难变现更难，Taku把作品变成用户友好的AI应用并在需要时推荐，形成双边网络。关键洞察：AI能力从"自己造"转向"复制别人验证过的最佳配置"，一条"技能/工作流交易与复用市场"正在成形——与SecondBrain（个人知识资产化）、AgentCloud（把自己的工作流上云）都不同。做"CopyStack"——AI配置的一键复制与变现市场：一键复制市场（创作者验证过的skills/agents/workflows打包成即点即用的桌面应用，跳过GitHub和配置、5分钟用上）+remix与二次创作（复制来的配置可改可再发布，形成"借鉴→改造→再发布"飞轮，带来源标注和授权追踪）+创作者变现（按下载/订阅/打赏分成，让调prompt、写skill也成为收入流）。Free/Maker ¥29/Pro ¥99+创作者分成。冷启动：开源CopyStack Core打包器+数据帖"AI越强越难用，Taku靠复制高手配置拿下PH榜眼"+搭Taku顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Thu, 20 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-030-02</guid>
+    <category>配置复制 / 模板商店 / 能力复用 / 创作者变现 / OPC能力市场</category>
+  </item>
+
+  <item>
+    <title>IDEA 118 · LaunchQA——上线前 AI 质检智能体 · Superflow 把 QA 清单编译成智能体团队</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-118</link>
+    <description>8月19日Product Hunt日榜#3被Superflow AI拿下（253票），标语"AI agents that QA your website before launch"：切入点是代理商创始人的自白——"我们永远不会改QA流程，它很严密"，严密到400项检查清单、10人QA团队。Superflow洞察精准：AI让"创建"快速且几乎零成本，但"检查"的成本和从前一模一样——创建成本被压穿，检查成了新瓶颈。它把已有QA清单（表格/文档/PDF）编译成智能体团队，每个都知道找什么：失效链接/写错的电话/过期的价格/法务不喜欢的表述/违反品牌规范的页面；桌面+移动并行跑，把发现钉在页面上附截图，十来个智能体跑几十个页面、几分钟完成几百项检查；关键是"人机协作"——驳回一个发现就不再出现，没人确认前什么都不会发布，捕获约90%手工问题。关键洞察：OPC一个人既当开发又当测试，最容易在上线前最后一公里翻车——坏链/写错电话/过期价格/错别字，这些低级错误恰恰最伤转化。与AgentQA（测Agent）、SandboxOps（安全沙箱）都不同。做"LaunchQA"——上线前AI质检智能体（给独立开发者/OPC的上线前质检）：一键上线体检（贴URL即扫失效链接/错误电话/过期价格/错别字/移动适配/表单提交/SEO基础，输出必改清单+页面截图）+清单模板库（内置独立站/Landing Page/定价页/结算页高频检查项，支持导入自己的清单）+驳回学习（误报驳回不再出现，漏报自动加入下次检查，越用越准）。Free/Maker ¥29/Pro ¥99。冷启动：开源LaunchQA Lite链接检查脚本+数据帖"AI把创建压到零，检查没变便宜"+搭Superflow顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Thu, 20 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-030-03</guid>
+    <category>上线质检 / 网站QA / 清单编译 / 人机协作 / OPC收尾</category>
+  </item>
 
   <item>
     <title>IDEA 113 · ShipGrade——Vibe Coder 的企业级交付能力分级与补齐平台 · 靠 AI 做出爆款 App，1 亿美元大公司找上门却"接不住"</title>
