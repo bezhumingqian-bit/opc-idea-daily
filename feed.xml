@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Thu, 20 Aug 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Fri, 21 Aug 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 119 · CreatorLoop——OPC 的新媒介创作者营销引擎 · Astute 登顶 PH，把 B2B 品牌交给"买家信任的创作者"</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-119</link>
+    <description>8月19日Product Hunt日榜#1被Astute拿下（496票），标语"Automate your B2B brand going viral, with new media creators"：第一个B2B"新媒介"平台，从创作者合作切入——监控你在新媒介（播客/Newsletter/YouTube）中的存在、围绕"买家信任的创作者"建数据驱动策略、自动运营合作，几分钟搞定。同期两个独立开发者故事共振：罗马尼亚开发者Eusebiu的loggd.life——€1,400投Meta/Google广告只换2个付费客户，停广告、每天在Threads公开发布进展，6周1,600+用户、广告支出为零、6个月月入从€14涨到€940+；前Google工程师Kevin Naughton Jr做Ferryman（把内容自动分发到LinkedIn/X/YouTube/Threads），3个月做到$600 MRR。关键洞察：分发逻辑从"打广告"转向"公开构建+新媒介创作者背书"。OPC一个人没营销团队、没广告预算，但"买家信任的创作者"是可自动化撬动的杠杆。往期OwnChannel讲"拥有分发资产（反吸收）"，这条讲获取动作层。做"CreatorLoop"——OPC的新媒介创作者营销引擎（给一个人公司的创作者合作+公开构建自动化）：创作者匹配与自动合作（输入产品，AI扫描买家信任的播客/Newsletter/YouTube创作者，数据化评估匹配度，自动跑outreach与合作）+公开构建引擎（把loggd.life方法论产品化：自动把每天进展/数字/教训写成帖子分发到Threads/X/Reddit）+内容一键多平台分发（Ferryman那层：一次创作自动适配分发到4平台）。Free/Maker ¥29/Pro ¥99。冷启动：开源CreatorLoop Lite扫描脚本+数据帖"€1,400广告换2客户，每天发帖换1,600用户"+搭Astute顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Fri, 21 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-031-01</guid>
+    <category>创作者营销 / 新媒介分发 / 公开构建 / influencer / OPC获客</category>
+  </item>
+
+  <item>
+    <title>IDEA 120 · ContextBase——Agent 上下文统一数据库 · OpenViking 把记忆、知识、技能三合一，自我进化</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-120</link>
+    <description>8月20日GitHub Trending榜单头题就是"Agent上下文数据库接棒"：字节火山引擎开源的volcengine/OpenViking（30,307⭐，日增804）打出"Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills"——把Agent的记忆、知识RAG、技能三套系统统一到一个自我进化的上下文数据库。同期mattpocock/skills（223,962⭐）、obra/superpowers（274,343⭐）、Anthropic-Cybersecurity-Skills（817项安全技能）清一色"技能/方法"主题。掘金综述点破转向：开发者讨论焦点从"怎么接入模型"转向"怎么让Agent按规范完成具体任务"——但记忆、知识、技能三套系统仍各自为政、互相不认识。关键洞察：一个人跑多个Agent，每个的记忆/知识/技能割裂，Agent之间互相不认识、上下文在工具间断裂——Agent A学会的B不知道，改一个技能别处还停在旧版。往期SecondBrain讲"把Agent记忆落地到给人用"，这条讲反向的——给多个Agent共享一个自我进化的大脑。做"ContextBase"——OPC的Agent上下文统一层：上下文统一存储（把memory+RAG+skills合并到一个self-evolving上下文数据库，所有Agent读同一个大脑，改一次处处生效，用自己API key不锁供应商）+跨Agent记忆同步（Agent A学到的B直接可用，按项目/客户隔离避免串味）+自我进化与溯源审计（每次运行沉淀新知识、淘汰过期信息，附"来自哪里/何时更新"溯源链，避免把旧知识当事实）。Free/Maker ¥29/Pro ¥99。冷启动：开源ContextBase Core存储层+数据帖"跑5个Agent就有5个互相不认识的大脑"+搭OpenViking顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Fri, 21 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-031-02</guid>
+    <category>Agent记忆 / 上下文统一 / 知识RAG / 自我进化 / OPC基础设施</category>
+  </item>
+
+  <item>
+    <title>IDEA 121 · SignalAudit——OPC 需求信号审计与 Go/No-Go 验证 · "高搜索量 ≠ 绿灯"，伪需求陷阱拆解</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-121</link>
+    <description>8月20日DEV Community《Why Green Light Signals Lie》拆穿"绿灯错觉"：只看搜索量会掉进伪需求陷阱——"LinkedIn AI/LinkedIn agency"这类词月搜4,400次，表面是绿灯，实际CPC超$11（红海战场）、头部工具41%的差评都在抱怨"内容太泛"、过去一年没有一个agency工具挤进PH社交AI前30、三款泛市场工具反而拿融资烧钱抢赛道。结论一针见血："市场不缺供给，是不满足于泛化方案；高搜索量≠开放大门。"同期反例印证：19岁少年Zach的Cal AI（拍照算卡路里）做到月毛利$140万，方法论是"营销优先、功能极简、标准化网红增长模型"。关键洞察：OPC最大的坑不是"做不出"，是"被伪需求骗"——高搜索量掩盖红海战场，等做出来才发现CPC高到买不起、差评全是"太泛"、赛道一堆尸体。往期MoatScore（存活度/护城河）、IntelStaff（决策情报）都不同，这条是"开干之前的信号审计"。做"SignalAudit"——OPC需求信号审计与Go/No-Go验证：需求信号扫描（输入想法/关键词，拉搜索量/CPC/竞品/PH排名/差评主题，输出"搜索量-获客成本比"+风险分级）+差评缺口挖掘（抓头部竞品2-3星差评，聚类"太泛/价格/客服"主题，找可差异化真实缺口）+竞品墓地审计（追踪目标词12-24个月上线下线域名，识别"有需求但留存不可持续"坟场，给Go/No-Go决策+验证清单）。Free/Maker ¥29/Pro ¥99。冷启动：开源SignalAudit Lite扫描脚本+数据帖"$11 CPC、41%差评、零上榜"+搭DEV热帖顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Fri, 21 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-031-03</guid>
+    <category>需求验证 / 信号审计 / 差评挖掘 / GoNoGo / OPC立项</category>
+  </item>
 
   <item>
     <title>IDEA 116 · SoloPipe——OPC 的 AI 入站销售转化引擎 · Clara 登顶 PH，把网站访客实时变成销售管线</title>
