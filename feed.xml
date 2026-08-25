@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Fri, 21 Aug 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Tue, 25 Aug 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 122 · DataBridge——OPC 的业务数据接入 AI 问答中枢 · Supernova 登 PH #2，把初创公司实时数据接进 Claude/Codex</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-122</link>
+    <description>8月21日Product Hunt日榜#2被Supernova拿下（306票），标语"Your entire startup's data in Claude and Codex"：连接Stripe、HubSpot、PostgreSQL等30多个应用，让任何人在日常使用的AI工具里直接提问、分析业绩、跑复杂分析——查收入、看销售管线、算客户留存、挖产品使用数据，不用等工程师、不用迁移到传统BI。关键洞察：一个人公司最痛的不是"没有数据"，是"数据散落各处、做经营判断得手动导出拼接"——收入在Stripe、订阅在后台、客户在表格、产品数据在数据库，每次想看"哪个渠道最赚钱"都得花半天拉数据。Supernova证明"把业务数据喂给AI助手直接问答"是真实需求，但面向有数据团队的初创公司，一个人用不起。往期ContextBase讲"Agent的记忆/知识/技能上下文统一"，这条讲反向的——把业务系统的实时数据接入AI问答。做"DataBridge"——OPC的业务数据接入AI问答中枢（不是"决策情报"的IntelStaff，是"业务系统实时数据接入层"）：数据接入中枢（30+业务系统一键接入：Stripe/支付宝/微信支付/订阅后台/飞书表格/数据库，实时同步，用自己的API key不锁供应商）+自然语言经营问答（接进Claude/ChatGPT/Codex/企微，问"上月毛利多少/哪个渠道CAC最高/续费为什么降"，AI实时算附来源可追溯）+经营预警与周报（盯关键指标，收入骤降/流失飙升/异常退款即时推送，每周自动生成经营周报）。Free/Maker ¥29/Pro ¥99。冷启动：开源DataBridge Lite接入脚本+数据帖"收入在Stripe、客户在表格、数据库在云端"+搭Supernova顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Tue, 25 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-032-01</guid>
+    <category>数据接入 / 经营问答 / AI数据层 / 数据孤岛 / OPC经营</category>
+  </item>
+
+  <item>
+    <title>IDEA 123 · RevenueShift——OPC 变现结构诊断与迁移引擎 · Marc Lou 账本拆解，最赚钱的不是最出名的那个</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-123</link>
+    <description>8月20日机会雷达拆了独立开发者Marc Lou的账本：他一个人（加AI）经营着ShipFast、CodeFast、DataFast、TrustMRR等15个微型SaaS，2026年5月月收入$87,507。反直觉的地方在于——让他赚钱的早已不是最出名的ShipFast（一次性卖模板），而是DataFast（订阅制分析工具，收入已反超），而TrustMRR用一个3%成交抽成模型，成了他单一最大的收入来源。三年里变现方式换了三次（模板→课程→订阅→抽成），收入不降反升，且每次迁移都没重新获客、用的是同一批观众。两个关键洞察：第一"变现模型会过期，观众不会"——真正的资产是那批信任你的窄人群，不是任何一款产品；第二"3%成交抽成是被严重低估的变现结构"——按成交额抽成，收入随客户成功放大，不需要客户每月主动决定续费。往期CreatorLoop（获客）、OwnChannel（分发资产）都不同，这条讲变现结构层。做"RevenueShift"——OPC变现结构诊断与迁移引擎：变现结构诊断（输入产品/观众/客单价/流失率，AI诊断该用一次性/订阅/抽成/混合哪种，输出迁移路线图+收入预测）+抽成与混合变现接入（一键接入3%成交抽成、订阅+抽成混合、usage-based计费，把"卖模板/卖课"升级成"持续抽成"）+观众资产迁移（把同一批观众从旧结构平滑导向新结构，附"下一个产品的第一批用户提前攒好"建议——先建可复用窄人群信任再换变现皮肤）。Free/Maker ¥29/Pro ¥99。冷启动：开源RevenueShift Lite诊断脚本+数据帖"Marc Lou月入$8.7万，最赚钱的不是ShipFast"+搭Marc Lou账本热帖顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Tue, 25 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-032-02</guid>
+    <category>变现结构 / 抽成模型 / 收入迁移 / 观众资产 / OPC变现</category>
+  </item>
+
+  <item>
+    <title>IDEA 124 · AgentAnalytics——给一人公司的 AI 原生无 Cookie 分析层 · Open Analytics 登 PH #2</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-124</link>
+    <description>8月22日Product Hunt日榜#2被Open Analytics拿下（234票），标语"AI-native Google Analytics alternative for the modern web"：开源、隐私优先、无Cookie的分析平台，同时服务人类和AI Agent——实时访客、漏斗、收入追踪，2KB轻量脚本，无需Cookie、无需同意弹窗，还能通过MCP直接连到AI工具。同期榜单同向印证：PH #1 Toplify（336票）是"App Store榜单监控"（175国榜单、无需API key的排名跃升预警）；PH #6 Zero是Vercel给AI Agent的编程语言——分析/监控工具正在从"给人看的仪表盘"转向"给人和AI Agent都能读的数据层"。关键洞察：一个人做独立站/SaaS用不了GA（被广告拦截器屏蔽、隐私合规麻烦、要工程师配置），而新一代工具要求"AI Agent也能直接读数据"（MCP接入）。往期SignalAudit（开干前信号审计）、CostAudit（账单审计）都不同，这条是"上线后的用户行为/转化分析层"，且强调AI Agent成为分析的一等公民。做"AgentAnalytics"——给一人公司的AI原生无Cookie分析层：无Cookie分析核心（2KB脚本、无Cookie无同意弹窗、隐私合规、可自托管开源，实时访客/漏斗/收入/留存一个面板看全）+AI原生接入（MCP直连Claude/Codex/ChatGPT，让AI Agent直接读转化/漏斗/收入数据做归因、回答"这渠道访客为什么没下单"）+转化归因与预警（渠道归因、漏斗流失点定位、异常流量/收入骤降预警，一个人也看懂"钱从哪来/卡在哪/下一步优化哪"）。Free/Maker ¥29/Pro ¥99。冷启动：开源AgentAnalytics Core无Cookie脚本+数据帖"GA被广告拦截屏蔽、AI Agent也读不了"+搭Open Analytics顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Tue, 25 Aug 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-032-03</guid>
+    <category>无Cookie分析 / AI原生 / MCP / 转化归因 / OPC增长</category>
+  </item>
 
   <item>
     <title>IDEA 119 · CreatorLoop——OPC 的新媒介创作者营销引擎 · Astute 登顶 PH，把 B2B 品牌交给"买家信任的创作者"</title>
