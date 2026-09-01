@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Tue, 25 Aug 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Tue, 01 Sep 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 125 · WebSecond——OPC 的 AI 原生网页数据接入与变更监控层 · Olostep 登 PH #3，网页的"第二用户"已经是 AI</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-125</link>
+    <description>8月30日Product Hunt日榜#3被Olostep拿下（237票、20条评论），标语"Turn the Web into Clean Data for AI"：提供可扩展网页数据API，把任意URL转成LLM-ready的Markdown/JSON/结构化数据，还带agentic search工作流和页面监控，明确面向"网页的第二用户AI"。评论区最尖锐的追问点破难点："diff一个页面很容易，决定什么才算'变化'才是真问题"——导航标记、时间戳一动就触发告警，很多人一周内就静音；监控能否活过六个月，取决于"被监控页面的身份单元"怎么定义、抽取schema是否版本化（字段消失时是站点变了还是你的schema变了，多数工具把两者塌成null）。关键洞察：一个人做独立站/SaaS/内容，最缺的不是"再做一个爬虫"，是"让AI替我盯着外部世界在变什么"——竞品改版、价格变动、榜单跃升、政策更新，而这些"变化"的定义恰恰是传统爬虫不会做的。往期DataBridge（内部数据接入问答）、SignalAudit（开干前信号审计）都不同，这条是"外部网页数据的AI原生接入+变更监控层"。做"WebSecond"——OPC的AI原生网页数据接入与变更监控层：网页数据接入核心（任意URL一键转LLM-ready数据，自带agentic search，专为AI Agent设计，用自己的key不锁供应商）+智能变更监控（壁垒所在：不是字节diff是语义diff，定义页面身份单元，页面改版/换路由/字段消失时判断"站点变了还是schema变了"，schema版本化减少误报）+场景化监控面板（竞品改版/价格变动/榜单跃升/政策更新，一个人也看懂"外部世界哪里变了该不该行动"）。Free/Maker ¥29/Pro ¥99。冷启动：开源WebSecond Core抓取脚本+数据帖"你的爬虫diff不了变化，你的AI也盯不了外部世界"+搭Olostep顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Tue, 01 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-033-01</guid>
+    <category>网页数据 / 变更监控 / AI原生 / 语义diff / OPC情报</category>
+  </item>
+
+  <item>
+    <title>IDEA 126 · WarmAct——OPC 从"提醒"到"替行动"的机会抓取引擎 · Groups Watcher 月入 $29,800 订阅反跌</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-126</link>
+    <description>8月30日DirectoryGems拆解微型SaaS Groups Watcher的账本，一组反直觉数字特别扎眼：8月日历收入$29,800（比7月+53.9%），但MRR只从$23,454涨到$24,113（+2.8%），活跃订阅还从145掉到135（-6.9%）。收入暴增、订阅却跌，因为它把产品"卖的东西"换了：最初是Chrome插件通知你Facebook群里有人发了匹配关键词，后来把监控搬上自家服务器，再到今天——不仅找群/盯对话/识别本地服务需求，还"代表客户去评论"。"软件以前说的是'机会在这，去行动'；新服务说的是'机会还热着的时候，我们已经替你出手了'。"这正是它能在订阅费之外从本地服务撮合里收到$1,500单子的原因。关键洞察：一个人做工具最容易停在"提醒"层（通知/告警/日报），而真正值钱的是下一层——"在机会窗口内替用户完成行动"，把产品从"卖工具"升级成"卖结果"。往期OrderBridge（政企大单撮合）不同，这条是"零散本地服务需求+代客自动行动"，以及"从工具到结果"的定价迁移。做"WarmAct"——OPC从"提醒"到"替行动"的机会抓取引擎：需求监听核心（盯多个社群/平台关键词，识别"谁今天能修我的空调"这类高意向本地服务需求，按紧急度/意向打分）+代客自动行动（识别到匹配需求后AI起草并代表客户回复/私信/报价，在机会窗口内完成第一步触达，客户只审不写）+从工具到结果的定价（接入"按成功撮合/按结果"抽成，Groups Watcher正是靠这层把收入做起来）。Free/Maker ¥29/Pro ¥99+结果抽成。冷启动：开源WarmAct Core监听脚本+数据帖"月入$29,800的工具订阅却跌了，因为值钱的不是提醒是替你出手"+搭Groups Watcher案例顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Tue, 01 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-033-02</guid>
+    <category>代客行动 / 机会抓取 / 从工具到结果 / 本地服务 / OPC变现</category>
+  </item>
+
+  <item>
+    <title>IDEA 127 · SkillTrust——Agent 技能/插件的安全认证与可信分发市场 · Claude 官方目录 2,282 个安全扫描插件</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-127</link>
+    <description>8月末Anthropic官方Claude插件目录登上GitHub Trending焦点：anthropics/claude-plugins-official收录2,282个安全扫描过的扩展（35,722⭐），每个插件上架前都要经过恶意代码、过度权限、数据处理方式的审查；同期Zapier的SDK把AI Agent接到8,000+应用/服务。两条信号指向同一件事：Agent工具生态正从"谁都能发、靠嘴吹"的野蛮期，进入"官方安全扫描后收录"的信任期——工具可信度成了硬门槛。关键洞察：一个人公司现在大量产出skill/插件/MCP工具，但"怎么让别人敢装我的工具"成了新瓶颈——没有官方目录背书，独立开发者的skill混在来路不明的插件里，用户不敢装、企业更不敢用。往期HarnessHub（运行时选型）、AgentMart（变现市场）都不同，这条是"Agent供应链的安全认证与可信分发层"，把"安全扫描"从大厂特权变成独立开发者也能买的服务。做"SkillTrust"——Agent技能/插件的安全认证与可信分发市场：安全扫描即服务（skill/插件/MCP工具一键提交，AI+规则扫描恶意代码/过度权限/数据外发/依赖投毒，输出可展示的安全报告+认证徽章）+可信分发目录（认证通过的skill进中立目录，标注扫描结果与权限清单，用户"只看认证过的"，形成Trustpilot-for-AI-skills信任网络）+权限与数据流审计（把每个skill"读什么/写什么/往哪发数据"可视化，装前先看清，靠认证费/订阅+目录分发抽成变现）。Free/Maker ¥29/Pro ¥99。冷启动：开源SkillTrust Scanner扫描脚本+数据帖"2,282个插件进了官方安全目录，你的skill却混在来路不明的插件里"+搭Claude插件目录热点顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Tue, 01 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-033-03</guid>
+    <category>技能安全 / 可信分发 / 供应链 / Agent工具 / OPC信任</category>
+  </item>
 
   <item>
     <title>IDEA 122 · DataBridge——OPC 的业务数据接入 AI 问答中枢 · Supernova 登 PH #2，把初创公司实时数据接进 Claude/Codex</title>

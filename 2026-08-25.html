@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<title>OPC IDEA · 2026年8月25日</title>
+<meta name="description" content="每日精选一人公司方向的精筛 IDEA · 一手源 · 今日已刷新">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta property="og:description" content="今日："把初创公司的实时数据接进 Claude/Codex"——Supernova 登 PH，OPC 缺一个业务数据接入 AI 问答中枢 · "最赚钱的不是最出名的"——Marc Lou 变现结构三次迁移，OPC 缺一个变现结构诊断 · "分析给人和 AI 都能读"——Open Analytics 无 Cookie 原生分析，OPC 缺一个 AI 原生分析层。每日 09:00 自动刷新。">
+<meta property="og:url" content="https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html">
+<meta property="og:image" content="https://bezhumingqian-bit.github.io/opc-idea-daily/icon-512.png">
+<meta property="og:site_name" content="OPC IDEA 日报">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta name="twitter:description" content="今日 3 条精筛 IDEA · 一手源 · 工作日每日 09:00 刷新">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+    background: #F5F1E8;
+    color: #2C2A26;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px 40px; }
+  .header {
+    background: #FAF7EE;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 32px 28px 28px;
+    margin-bottom: 16px;
+  }
+  .brand { font-size: 11px; letter-spacing: 4px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 14px; }
+  .brand a { color: #B5B0A4; text-decoration: none; }
+  .brand a:hover { color: #8A8474; }
+  .header-title { font-size: 26px; font-weight: 500; color: #2C2A26; letter-spacing: 1px; }
+  .header-date { font-size: 13px; color: #7A766C; margin-top: 6px; letter-spacing: 0.5px; }
+  .divider { height: 1px; background: #E6E1D6; margin: 18px 0; }
+  .header-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .chip { padding: 3px 10px; background: transparent; border: 1px solid #D8D2C5; border-radius: 2px; font-size: 11px; color: #7A766C; letter-spacing: 0.5px; }
+  .card {
+    background: #FFFEFC;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 22px 24px;
+    margin-bottom: 10px;
+  }
+  .card-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+  .num { width: 28px; height: 28px; border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; flex-shrink: 0; letter-spacing: 0.5px; background: #EEEAE0; color: #5A5443; }
+  .headline { font-size: 15.5px; font-weight: 500; color: #2C2A26; line-height: 1.5; flex: 1; padding-top: 3px; letter-spacing: 0.2px; }
+  .fact { font-size: 13.5px; color: #5F5B53; line-height: 1.75; margin-bottom: 12px; padding-left: 42px; }
+  .next-step { font-size: 13.5px; color: #2C2A26; line-height: 1.75; padding: 12px 16px; margin-left: 42px; background: #F7F4EC; border-left: 2px solid #8A8474; border-radius: 0 2px 2px 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; padding-left: 42px; font-size: 11.5px; color: #7A766C; }
+  .hook-box { background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 16px 20px; margin-bottom: 10px; }
+  .hook-label { font-size: 11px; letter-spacing: 2px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 8px; }
+  .hook-text { font-size: 14px; color: #2C2A26; line-height: 1.7; letter-spacing: 0.2px; }
+
+  .prev-next {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    margin-top: 18px; margin-bottom: 18px;
+  }
+  .pn-card {
+    background: #FFFEFC; border: 1px solid #E6E1D6; border-radius: 4px;
+    padding: 14px 18px; text-decoration: none; color: inherit; display: block;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .pn-card:hover { border-color: #C4BBA9; background: #FAF7EE; }
+  .pn-card.disabled { opacity: 0.4; pointer-events: none; }
+  .pn-label { font-size: 10.5px; letter-spacing: 1.5px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 4px; }
+  .pn-title { font-size: 13px; color: #2C2A26; line-height: 1.5; letter-spacing: 0.2px; }
+  .pn-right { text-align: right; }
+
+  .tag-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding-left: 42px; }
+  .tag { padding: 2px 8px; background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 2px; font-size: 10.5px; color: #7A766C; letter-spacing: 0.3px; }
+
+  .footer { text-align: center; margin-top: 28px; margin-bottom: 20px; font-size: 11px; color: #B5B0A4; letter-spacing: 0.5px; line-height: 2; }
+  .footer a { color: #8A8474; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  @media print {
+    body { background: white; }
+    .card, .header, .hook-box { box-shadow: none; border-color: #ccc; }
+    .prev-next, .footer, .header-meta { display: none; }
+  }
+  @media (max-width: 640px) {
+    .container { padding: 12px 12px 32px; }
+    .header { padding: 24px 20px 22px; }
+    .header-title { font-size: 22px; }
+    .card { padding: 18px 16px; }
+    .fact, .next-step { padding-left: 0; margin-left: 0; }
+    .tag-bar { padding-left: 0; }
+    .prev-next { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<a href="./index.html" style="display:inline-block;font-size:12px;color:#8A8474;text-decoration:none;letter-spacing:0.5px;margin-bottom:18px;">&larr; 返回归档首页</a>
+
+<div class="header">
+  <div class="brand"><a href="./index.html">OPC IDEA &middot; 日报</a></div>
+  <div class="header-title">一人公司方向&middot;每日精选</div>
+  <div class="header-date">2026年8月25日 &middot; 星期二 &middot; Vol.032 &middot; 今日已刷新</div>
+  <div class="divider"></div>
+  <div class="header-meta">
+    <span class="chip">"把初创公司的实时数据接进 Claude/Codex"——Supernova 登 PH，OPC 缺一个业务数据接入 AI 问答中枢</span>
+    <span class="chip">"最赚钱的不是最出名的"——Marc Lou 变现结构三次迁移，OPC 缺一个变现结构诊断</span>
+    <span class="chip">"分析给人和 AI 都能读"——Open Analytics 无 Cookie 原生分析，OPC 缺一个 AI 原生分析层</span>
+    <span class="chip">已与近七期去重</span>
+  </div>
+  <div class="header-meta" style="margin-top:8px;">
+    <a href="subscribe.html" style="font-size:13px;color:#8A8474;text-decoration:none;letter-spacing:0.3px;">每天09:00自动收到 &rarr;</a>
+  </div>
+</div>
+
+<!-- CARD 1 -->
+<div class="card" id="idea-122">
+  <div class="card-header">
+    <span class="num">01</span>
+    <span class="headline">DataBridge——OPC 的业务数据接入 AI 问答中枢 &middot; Supernova 登 PH #2，把初创公司实时数据接进 Claude/Codex</span>
+  </div>
+  <div class="fact">
+    8 月 21 日，Product Hunt 日榜 #2 被 Supernova 拿下（306 票），标语 "Your entire startup's data in Claude and Codex"（把初创公司的全部数据放进 Claude 和 Codex）：连接 Stripe、HubSpot、PostgreSQL 等 30 多个应用，让任何人在日常使用的 AI 工具里直接提问、分析业绩、跑复杂分析——查收入、看销售管线、算客户留存、挖产品使用数据，不用等工程师、不用迁移到传统 BI。关键洞察：一个人公司最痛的不是"没有数据"，是"数据散落各处、做经营判断得手动导出拼接"——收入在 Stripe、订阅在后台、客户在表格、产品数据在数据库，每次想看"这个月哪个渠道最赚钱"都得花半天拉数据。Supernova 证明"把业务数据喂给 AI 助手直接问答"是真实需求，但它面向有数据团队的初创公司，一个人用不起。往期 ContextBase 讲"Agent 的记忆/知识/技能上下文统一"，这条讲的是反向的——把业务系统的实时数据接入 AI 问答，让一个人也能随时做经营判断。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"DataBridge"——OPC 的业务数据接入 AI 问答中枢。定位：不是"决策情报幕僚"的 IntelStaff，也不是"Agent 上下文统一"的 ContextBase，是"业务系统实时数据接入层"。① 数据接入中枢（核心产品。30+ 业务系统一键接入：Stripe/支付宝/微信支付/订阅后台/飞书表格/数据库/网盘，实时同步，用自己的 API key、不锁供应商）。② 自然语言经营问答（接进 Claude/ChatGPT/Codex/企微，直接问"上月毛利多少""哪个渠道 CAC 最高""续费率为什么降了"，AI 实时算并附数据来源，可追溯）。③ 经营预警与周报（自动盯关键指标，收入骤降/流失飙升/异常退款即时推送，每周自动生成经营周报发到邮箱/企微群）。定价：Free——1 个数据源 + 基础问答。Maker——¥29/月，5 个数据源 + 周报。Pro——¥99/月，不限数据源 + 预警 + 自定义指标。冷启动：渠道 A——开源"DataBridge Lite"数据接入脚本（MIT）。渠道 B——数据帖"你的收入在 Stripe、客户在表格、数据库在云端——一个人做经营判断，数据却散在五个地方"。渠道 C——搭 Supernova 登顶顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#数据接入</span>
+    <span class="tag">#经营问答</span>
+    <span class="tag">#AI数据层</span>
+    <span class="tag">#数据孤岛</span>
+    <span class="tag">#OPC经营</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; Product Hunt 8/21（Supernova #2 306 票："Your entire startup's data in Claude and Codex"——接 Stripe/HubSpot/PostgreSQL 等 30+ 应用，在 Claude/Codex 里直接问业绩/跑分析，无需工程师、无需迁移到 BI）</span>
+  </div>
+</div>
+
+<!-- CARD 2 -->
+<div class="card" id="idea-123">
+  <div class="card-header">
+    <span class="num">02</span>
+    <span class="headline">RevenueShift——OPC 变现结构诊断与迁移引擎 &middot; Marc Lou 账本拆解，最赚钱的不是最出名的那个</span>
+  </div>
+  <div class="fact">
+    8 月 20 日，机会雷达拆了独立开发者 Marc Lou 的账本：他一个人（加 AI）经营着 ShipFast、CodeFast、DataFast、TrustMRR 等 15 个微型 SaaS，2026 年 5 月月收入 $87,507。反直觉的地方在于——让他赚钱的早已不是最出名的 ShipFast（一次性卖模板），而是 DataFast（订阅制分析工具，收入已反超），而 TrustMRR 用一个 3% 成交抽成模型，成了他单一最大的收入来源。三年里他把变现方式换了三次（模板→课程→订阅→抽成），收入不降反升，而且每一次迁移都没有重新获客、用的是同一批观众。两个关键洞察：第一，"变现模型会过期，观众不会"——他真正的资产不是任何一款产品，是那批在 X 上跟了他多年、买过一个就会买下一个的人；第二，"3% 成交抽成是被严重低估的变现结构"——按成交额抽成，收入随客户的成功放大，且不需要客户每月主动决定要不要续费。关键洞察：OPC 一个人最容易犯的错，是死守一种变现结构（一次性 or 订阅），既不知道什么时候该换，也不知道怎么换。缺一个把"产品/观众/客单价"翻译成"该用哪种变现结构"的诊断工具。往期 CreatorLoop（获客）、OwnChannel（分发资产）都不同，这条讲的是变现结构层。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"RevenueShift"——OPC 变现结构诊断与迁移引擎。定位：不是"获客"的 CreatorLoop，也不是"分发资产"的 OwnChannel，是"变现结构诊断与迁移"。① 变现结构诊断（核心产品。输入你的产品/观众/客单价/流失率，AI 诊断该用一次性/订阅/抽成/混合哪种结构，输出迁移路线图 + 收入预测）。② 抽成与混合变现接入（一键接入 3% 成交抽成、订阅+抽成混合、usage-based 计费，把"卖模板/卖课"升级成"持续抽成"——Marc Lou 靠这一手让 TrustMRR 成了 #1）。③ 观众资产迁移（把同一批观众从旧变现结构平滑导向新结构，附"下一个产品的第一批用户提前攒好"的积累建议——先建可复用的窄人群信任，再换变现皮肤）。定价：Free——1 次变现结构诊断。Maker——¥29/月，诊断 + 迁移路线图。Pro——¥99/月，抽成/混合计费接入 + 观众迁移。冷启动：渠道 A——开源"RevenueShift Lite"变现结构诊断脚本（MIT）。渠道 B——数据帖"Marc Lou 月入 $8.7 万，最赚钱的不是 ShipFast——独立开发者的变现结构迁移引擎在哪"。渠道 C——搭 Marc Lou 账本热帖顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#变现结构</span>
+    <span class="tag">#抽成模型</span>
+    <span class="tag">#收入迁移</span>
+    <span class="tag">#观众资产</span>
+    <span class="tag">#OPC变现</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; 机会雷达 8/20（拆解 Marc Lou 账本：一人 15 个产品月入 $87,507，ShipFast 模板→DataFast 订阅→TrustMRR 3% 抽成，#1 收入来源是抽成，三年三次变现迁移未重新获客）+ IndieAI / BuilderKit 数据</span>
+  </div>
+</div>
+
+<!-- CARD 3 -->
+<div class="card" id="idea-124">
+  <div class="card-header">
+    <span class="num">03</span>
+    <span class="headline">AgentAnalytics——给一人公司的 AI 原生无 Cookie 分析层 &middot; Open Analytics 登 PH #2，分析从"给人看"转向"给人和 AI 都能读"</span>
+  </div>
+  <div class="fact">
+    8 月 22 日，Product Hunt 日榜 #2 被 Open Analytics 拿下（234 票），标语 "AI-native Google Analytics alternative for the modern web"（现代 Web 的 AI 原生 Google Analytics 替代品）：开源、隐私优先、无 Cookie 的分析平台，同时服务人类和 AI Agent——实时访客、漏斗、收入追踪，2KB 轻量脚本，无需 Cookie、无需同意弹窗，还能通过 MCP 直接连到 AI 工具。同期榜单两条信号同向印证：PH #1 Toplify（336 票）是"App Store 榜单监控"（175 国榜单、无需 API key 的排名跃升预警）；PH #6 Zero 是 Vercel 给 AI Agent 的编程语言——分析/监控工具正在从"给人看的仪表盘"转向"给人和 AI Agent 都能读的数据层"。关键洞察：一个人做独立站/SaaS，用不了 GA（被广告拦截器屏蔽、隐私合规麻烦、要工程师配置），而新一代工具要求"AI Agent 也能直接读数据"（MCP 接入）。往期 SignalAudit（开干前需求信号审计）、CostAudit（AI 账单审计）都不同，这条是"上线后的用户行为/转化分析层"，且强调 AI Agent 成为分析的一等公民。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"AgentAnalytics"——给一人公司的 AI 原生无 Cookie 分析层。定位：不是"开干前信号审计"的 SignalAudit，也不是"账单审计"的 CostAudit，是"上线后的用户行为/转化分析 + AI 原生"。① 无 Cookie 分析核心（核心产品。2KB 脚本、无 Cookie 无同意弹窗、隐私合规、可自托管开源，实时访客/漏斗/收入/留存一个面板看全）。② AI 原生接入（MCP 直连 Claude/Codex/ChatGPT，让 AI Agent 直接读你的转化/漏斗/收入数据，做归因分析、回答"这个渠道的访客为什么没下单"）。③ 转化归因与预警（渠道归因、漏斗流失点定位、异常流量/收入骤降预警，一个人也能看懂"钱从哪来、卡在哪、下一步优化哪"）。定价：Free——每月 2 万次事件。Maker——¥29/月，10 万事件 + 漏斗。Pro——¥99/月，无限事件 + MCP 接入 + 归因预警。冷启动：渠道 A——开源"AgentAnalytics Core"无 Cookie 分析脚本（MIT）。渠道 B——数据帖"你的 GA 被广告拦截器屏蔽了，你的 AI Agent 也读不了它——无 Cookie 的 AI 原生分析层在哪"。渠道 C——搭 Open Analytics 登顶顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#无Cookie分析</span>
+    <span class="tag">#AI原生</span>
+    <span class="tag">#MCP</span>
+    <span class="tag">#转化归因</span>
+    <span class="tag">#OPC增长</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; Product Hunt 8/22（Open Analytics #2 234 票："AI-native Google Analytics alternative"——开源/隐私优先/无 Cookie/2KB 脚本/经 MCP 连 AI）+ 同期榜单（Toplify #1 336 票 App Store 榜单监控、Zero #6 Vercel 给 AI Agent 的编程语言）</span>
+  </div>
+</div>
+
+<!-- HOOK -->
+<div class="hook-box">
+  <div class="hook-label">本期钩子</div>
+  <div class="hook-text">
+    8 月 25 日三条信号指向同一层判断：上一期补"起跑线"（选得对、记得住、传得开），这一期补"经营线"（看得见、收得巧、查得清）。信号一：Supernova 登 Product Hunt #2——"把初创公司的实时数据接进 Claude/Codex"，一个人公司的数据却散在 Stripe/表格/数据库里、做经营判断靠手动拼接，这就是 DataBridge（业务数据接入 AI 问答中枢）。信号二：Marc Lou 账本拆解——"最赚钱的不是最出名的那个"，一个人月入 $8.7 万、变现结构三年换了三次、3% 抽成成了 #1，OPC 缺一个"该用哪种变现结构"的诊断，这就是 RevenueShift（变现结构诊断与迁移引擎）。信号三：Open Analytics 登 PH #2——"AI 原生、无 Cookie、MCP 可读"，分析从"给人看"转向"给人和 AI 都能读"，一个人却用不了 GA、AI Agent 也读不了数据，这就是 AgentAnalytics（AI 原生无 Cookie 分析层）。三条 IDEA 的共同主线：一个人公司最难的不是"做出来"，是"经营起来"——数据要看得见、钱要收得巧、增长要查得清。谁补齐一个人公司的"经营三件套"，谁就抓住 OPC 从"跑得快"走向"经营得久"的第七波机会。
+  </div>
+</div>
+
+<!-- Navigation -->
+<div class="prev-next">
+  <a href="2026-08-21.html" class="pn-card">
+    <div class="pn-label">&larr; 上一期</div>
+    <div class="pn-title">Vol.031 &middot; CreatorLoop 创作者营销 · ContextBase 上下文统一 · SignalAudit 信号审计</div>
+  </a>
+  <a href="daily.html" class="pn-card pn-right">
+    <div class="pn-label">下一期 &rarr;</div>
+    <div class="pn-title">Vol.033 &middot; WebSecond 网页数据接入 · WarmAct 代客行动 · SkillTrust 技能认证</div>
+  </a>
+</div>
+
+<div class="footer">
+  OPC IDEA &middot; 日报 &#65295; <a href="subscribe.html">订阅日报</a> &#65295; <a href="feed.xml">RSS</a> &#65295; <a href="./index.html">完整报告</a> &#65295; <a href="newsletter-strategy.md">启动策略</a><br>
+  北京 &middot; 2026年8月25日 &middot; Vol.032 &middot; 今日刷新<br>
+  商业&middot;认知观察者&middot;出品
+</div>
+
+</div>
+</body>
+</html>
