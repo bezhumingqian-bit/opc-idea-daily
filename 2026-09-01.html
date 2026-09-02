@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<title>OPC IDEA · 2026年9月1日</title>
+<meta name="description" content="每日精选一人公司方向的精筛 IDEA · 一手源 · 今日已刷新">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta property="og:description" content="今日："网页的'第二用户'已经是 AI"——Olostep 登 PH #3，OPC 缺一个 AI 原生网页数据接入与变更监控 · "值钱的不是提醒，是替你出手"——Groups Watcher 月入 $29,800 订阅反跌，OPC 缺一个代客行动引擎 · "2,282 个插件进官方安全目录"——Agent 工具进入信任时代，OPC 缺一个技能安全认证与可信分发。每日 09:00 自动刷新。">
+<meta property="og:url" content="https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html">
+<meta property="og:image" content="https://bezhumingqian-bit.github.io/opc-idea-daily/icon-512.png">
+<meta property="og:site_name" content="OPC IDEA 日报">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta name="twitter:description" content="今日 3 条精筛 IDEA · 一手源 · 工作日每日 09:00 刷新">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+    background: #F5F1E8;
+    color: #2C2A26;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px 40px; }
+  .header {
+    background: #FAF7EE;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 32px 28px 28px;
+    margin-bottom: 16px;
+  }
+  .brand { font-size: 11px; letter-spacing: 4px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 14px; }
+  .brand a { color: #B5B0A4; text-decoration: none; }
+  .brand a:hover { color: #8A8474; }
+  .header-title { font-size: 26px; font-weight: 500; color: #2C2A26; letter-spacing: 1px; }
+  .header-date { font-size: 13px; color: #7A766C; margin-top: 6px; letter-spacing: 0.5px; }
+  .divider { height: 1px; background: #E6E1D6; margin: 18px 0; }
+  .header-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .chip { padding: 3px 10px; background: transparent; border: 1px solid #D8D2C5; border-radius: 2px; font-size: 11px; color: #7A766C; letter-spacing: 0.5px; }
+  .card {
+    background: #FFFEFC;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 22px 24px;
+    margin-bottom: 10px;
+  }
+  .card-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+  .num { width: 28px; height: 28px; border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; flex-shrink: 0; letter-spacing: 0.5px; background: #EEEAE0; color: #5A5443; }
+  .headline { font-size: 15.5px; font-weight: 500; color: #2C2A26; line-height: 1.5; flex: 1; padding-top: 3px; letter-spacing: 0.2px; }
+  .fact { font-size: 13.5px; color: #5F5B53; line-height: 1.75; margin-bottom: 12px; padding-left: 42px; }
+  .next-step { font-size: 13.5px; color: #2C2A26; line-height: 1.75; padding: 12px 16px; margin-left: 42px; background: #F7F4EC; border-left: 2px solid #8A8474; border-radius: 0 2px 2px 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; padding-left: 42px; font-size: 11.5px; color: #7A766C; }
+  .hook-box { background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 16px 20px; margin-bottom: 10px; }
+  .hook-label { font-size: 11px; letter-spacing: 2px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 8px; }
+  .hook-text { font-size: 14px; color: #2C2A26; line-height: 1.7; letter-spacing: 0.2px; }
+
+  .prev-next {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    margin-top: 18px; margin-bottom: 18px;
+  }
+  .pn-card {
+    background: #FFFEFC; border: 1px solid #E6E1D6; border-radius: 4px;
+    padding: 14px 18px; text-decoration: none; color: inherit; display: block;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .pn-card:hover { border-color: #C4BBA9; background: #FAF7EE; }
+  .pn-card.disabled { opacity: 0.4; pointer-events: none; }
+  .pn-label { font-size: 10.5px; letter-spacing: 1.5px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 4px; }
+  .pn-title { font-size: 13px; color: #2C2A26; line-height: 1.5; letter-spacing: 0.2px; }
+  .pn-right { text-align: right; }
+
+  .tag-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding-left: 42px; }
+  .tag { padding: 2px 8px; background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 2px; font-size: 10.5px; color: #7A766C; letter-spacing: 0.3px; }
+
+  .footer { text-align: center; margin-top: 28px; margin-bottom: 20px; font-size: 11px; color: #B5B0A4; letter-spacing: 0.5px; line-height: 2; }
+  .footer a { color: #8A8474; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  @media print {
+    body { background: white; }
+    .card, .header, .hook-box { box-shadow: none; border-color: #ccc; }
+    .prev-next, .footer, .header-meta { display: none; }
+  }
+  @media (max-width: 640px) {
+    .container { padding: 12px 12px 32px; }
+    .header { padding: 24px 20px 22px; }
+    .header-title { font-size: 22px; }
+    .card { padding: 18px 16px; }
+    .fact, .next-step { padding-left: 0; margin-left: 0; }
+    .tag-bar { padding-left: 0; }
+    .prev-next { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<a href="./index.html" style="display:inline-block;font-size:12px;color:#8A8474;text-decoration:none;letter-spacing:0.5px;margin-bottom:18px;">&larr; 返回归档首页</a>
+
+<div class="header">
+  <div class="brand"><a href="./index.html">OPC IDEA &middot; 日报</a></div>
+  <div class="header-title">一人公司方向&middot;每日精选</div>
+  <div class="header-date">2026年9月1日 &middot; 星期二 &middot; Vol.033 &middot; 今日已刷新</div>
+  <div class="divider"></div>
+  <div class="header-meta">
+    <span class="chip">"网页的'第二用户'已经是 AI"——Olostep 登 PH #3，OPC 缺一个 AI 原生网页数据接入与变更监控层</span>
+    <span class="chip">"值钱的不是提醒，是替你出手"——Groups Watcher 月入 $29,800 订阅反跌，OPC 缺一个代客行动引擎</span>
+    <span class="chip">"2,282 个插件进官方安全目录"——Agent 工具进入信任时代，OPC 缺一个技能安全认证与可信分发</span>
+    <span class="chip">已与近七期去重</span>
+  </div>
+  <div class="header-meta" style="margin-top:8px;">
+    <a href="subscribe.html" style="font-size:13px;color:#8A8474;text-decoration:none;letter-spacing:0.3px;">每天09:00自动收到 &rarr;</a>
+  </div>
+</div>
+
+<!-- CARD 1 -->
+<div class="card" id="idea-125">
+  <div class="card-header">
+    <span class="num">01</span>
+    <span class="headline">WebSecond——OPC 的 AI 原生网页数据接入与变更监控层 &middot; Olostep 登 PH #3，网页的"第二用户"已经是 AI</span>
+  </div>
+  <div class="fact">
+    8 月 30 日，Product Hunt 日榜 #3 被 Olostep 拿下（237 票、20 条评论），标语 "Turn the Web into Clean Data for AI"（把网页变成 AI 能用的干净数据）：提供可扩展的网页数据 API，把任意 URL 转成 LLM-ready 的 Markdown/JSON/结构化数据，还带 agentic search 工作流和页面监控——明确面向"网页的第二用户：AI"。评论区最尖锐的一条追问点破了真正的难点："diff 一个页面很容易，决定什么才算'变化'才是真问题"——导航标记、时间戳一动就触发告警，很多人一周内就把它静音了；监控能不能活过六个月，取决于"被监控页面的身份单元"怎么定义、抽取 schema 是否版本化（字段消失时，是站点变了还是你的 schema 变了，多数工具把两者一起塌成 null）。关键洞察：一个人做独立站/SaaS/内容，最缺的不是"再做一个爬虫"，是"让 AI 替我盯着外部世界在变什么"——竞品改版、价格变动、榜单跃升、政策更新，而这些"变化"的定义恰恰是传统爬虫不会做的。往期 DataBridge（把内部业务数据接入 AI 问答）、SignalAudit（开干前需求信号审计）都不同，这条是"外部网页数据的 AI 原生接入 + 变更监控层"。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"WebSecond"——OPC 的 AI 原生网页数据接入与变更监控层。定位：不是"内部数据接入问答"的 DataBridge，是"外部网页数据的 AI 原生接入 + 变更监控"。① 网页数据接入核心（核心产品。任意 URL 一键转 LLM-ready Markdown/JSON/结构化数据，自带 agentic search 工作流，专为 AI Agent 设计，用自己的 key、不锁供应商）。② 智能变更监控（这才是壁垒。不是"字节 diff"，是"语义 diff"——定义监控页面的身份单元，页面改版/换路由/字段消失时能判断是"站点变了"还是"我的 schema 变了"，抽取 schema 版本化，减少误报）。③ 场景化监控面板（竞品改版监控、价格变动监控、榜单跃升预警、政策更新追踪，一个人也能看懂"外部世界哪里变了、该不该行动"）。定价：Free——1 个监控源 + 基础抓取。Maker——¥29/月，10 个监控源 + 语义 diff。Pro——¥99/月，不限监控源 + 预警 + 自定义 schema。冷启动：渠道 A——开源"WebSecond Core"抓取脚本（MIT）。渠道 B——数据帖"你的爬虫 diff 不了'变化'，你的 AI 也盯不了外部世界"。渠道 C——搭 Olostep 登榜顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#网页数据</span>
+    <span class="tag">#变更监控</span>
+    <span class="tag">#AI原生</span>
+    <span class="tag">#语义diff</span>
+    <span class="tag">#OPC情报</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; Product Hunt 8/30（Olostep #3 237 票："Turn the Web into Clean Data for AI"——任意 URL 转 LLM-ready 数据，agentic search + 页面监控；评论区"diff 页面容易，决定什么算变化才是真问题"）</span>
+  </div>
+</div>
+
+<!-- CARD 2 -->
+<div class="card" id="idea-126">
+  <div class="card-header">
+    <span class="num">02</span>
+    <span class="headline">WarmAct——OPC 从"提醒你机会来了"到"替你抓住机会"的自动行动引擎 &middot; Groups Watcher 月入 $29,800，订阅却反跌</span>
+  </div>
+  <div class="fact">
+    8 月 30 日，DirectoryGems 拆解了微型 SaaS Groups Watcher 的账本，一组反直觉的数字特别扎眼：8 月日历收入 $29,800（比 7 月 +53.9%），但 MRR 只从 $23,454 涨到 $24,113（+2.8%），活跃订阅还从 145 掉到 135（-6.9%）。收入暴增、订阅却跌，因为它把产品"卖的东西"换了：Groups Watcher 最初是一个 Chrome 插件，通知你 Facebook 群里有人发了匹配的关键词；后来它把监控搬上自家服务器；再到今天——不仅帮你找群、盯对话、识别本地服务需求，还"代表客户去评论"。"软件以前说的是'机会在这，去行动'；新服务说的是'机会还热着的时候，我们已经替你出手了'。"这正是它能在订阅费之外，从本地服务撮合里收到 $1,500 单子的原因。关键洞察：一个人做工具最容易停在"提醒"这一层（通知、告警、日报），而真正值钱的是下一层——"在机会窗口内替用户完成行动"，把产品从"卖工具"升级成"卖结果"。往期 OrderBridge（政企大单撮合）不同，这条是"零散本地服务需求 + 代客自动行动"，以及"从工具到结果"的定价迁移。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"WarmAct"——OPC 从"提醒"到"替行动"的机会抓取引擎。定位：不是"政企大单撮合"的 OrderBridge，是"社群/本地高意向需求监听 + 代客自动行动"。① 需求监听核心（核心产品。盯多个社群/平台的关键词，识别"谁今天能修我的空调"这类高意向本地服务需求，按紧急度/意向打分）。② 代客自动行动（把"提醒"升级成"结果"——识别到匹配需求后，AI 起草并代表客户回复/私信/报价，在机会窗口内完成第一步触达，客户只审不写）。③ 从工具到结果的定价（不只收订阅，接入"按成功撮合/按结果"抽成——Groups Watcher 正是靠这层把收入做起来的）。定价：Free——1 个社群监控 + 提醒。Maker——¥29/月，10 个社群 + 自动起草回复。Pro——¥99/月，不限社群 + 代客自动响应 + 结果抽成。冷启动：渠道 A——开源"WarmAct Core"监听脚本（MIT）。渠道 B——数据帖"月入 $29,800 的工具订阅却跌了——因为值钱的不是提醒，是替你出手"。渠道 C——搭 Groups Watcher 案例顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#代客行动</span>
+    <span class="tag">#机会抓取</span>
+    <span class="tag">#从工具到结果</span>
+    <span class="tag">#本地服务</span>
+    <span class="tag">#OPC变现</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; DirectoryGems 8/30（Groups Watcher 案例：8 月收入 $29,800（+53.9%），MRR $24,113（+2.8%）、订阅 135（-6.9%）——从 Chrome 提醒插件升级成"代客评论"的服务，卖"结果"而非"提醒"）</span>
+  </div>
+</div>
+
+<!-- CARD 3 -->
+<div class="card" id="idea-127">
+  <div class="card-header">
+    <span class="num">03</span>
+    <span class="headline">SkillTrust——Agent 技能/插件的安全认证与可信分发市场 &middot; Claude 官方目录 2,282 个安全扫描插件，Agent 工具进入"信任时代"</span>
+  </div>
+  <div class="fact">
+    8 月末，Anthropic 官方 Claude 插件目录登上 GitHub Trending 焦点：`anthropics/claude-plugins-official` 收录 2,282 个安全扫描过的扩展（35,722⭐），每个插件在上架前都要经过恶意代码、过度权限、数据处理方式的审查；同期 Zapier 的 SDK 把 AI Agent 接到 8,000+ 应用/服务。两条信号指向同一件事：Agent 工具生态正在从"谁都能发、靠嘴吹"的野蛮期，进入"官方安全扫描后收录"的信任期——工具的可信度成了硬门槛。关键洞察：一个人公司现在大量产出 skill/插件/MCP 工具，但"怎么让别人敢装我的工具"成了新瓶颈——没有官方目录背书，独立开发者的 skill 混在一堆来路不明的插件里，用户不敢装、企业更不敢用。往期 HarnessHub（运行时选型）、AgentMart（变现市场）都不同，这条是"Agent 供应链的安全认证与可信分发层"，是把"安全扫描"从大厂特权变成独立开发者也能买的服务。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"SkillTrust"——Agent 技能/插件的安全认证与可信分发市场。定位：不是"运行时选型"的 HarnessHub，是"Agent 供应链安全认证 + 可信分发"。① 安全扫描即服务（核心产品。独立开发者的 skill/插件/MCP 工具一键提交，AI + 规则扫描恶意代码/过度权限/数据外发/依赖投毒，输出可展示的安全报告 + 认证徽章）。② 可信分发目录（认证通过的 skill 进入中立目录，标注扫描结果与权限清单，用户可以"只看认证过的"，形成 Trustpilot-for-AI-skills 的信任网络）。③ 权限与数据流审计（把每个 skill"读什么、写什么、往哪发数据"可视化，企业和谨慎用户装前先看清，OPC 靠认证费/订阅 + 目录分发抽成变现）。定价：Free——1 次基础扫描。Maker——¥29/月，扫描 + 认证徽章。Pro——¥99/月，持续监控 + 目录上架 + 权限审计。冷启动：渠道 A——开源"SkillTrust Scanner"扫描脚本（MIT）。渠道 B——数据帖"2,282 个插件进了官方安全目录，你的 skill 却混在来路不明的插件里"。渠道 C——搭 Claude 插件目录热点顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#技能安全</span>
+    <span class="tag">#可信分发</span>
+    <span class="tag">#供应链</span>
+    <span class="tag">#Agent工具</span>
+    <span class="tag">#OPC信任</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; GitHub Trending 8/31 + DEV Top10（Anthropic 官方 Claude 插件目录 2,282 个安全扫描插件 35,722⭐，每个插件审查恶意代码/过度权限/数据处理；Zapier SDK 连接 Agent 至 8,000+ 应用）</span>
+  </div>
+</div>
+
+<!-- HOOK -->
+<div class="hook-box">
+  <div class="hook-label">本期钩子</div>
+  <div class="hook-text">
+    9 月 1 日三条信号指向同一层判断：上一期补"经营线"（看得见、收得巧、查得清），这一期补"Agent 化跃迁线"——从"给人看 / 提醒人"到"给 AI 看 / 替人动"。信号一：Olostep 登 Product Hunt #3——"把网页变成 AI 能用的干净数据"，网页的"第二用户"已经是 AI，一个人却还在用手工爬虫盯竞品/价格/榜单，这就是 WebSecond（AI 原生网页数据接入与变更监控）。信号二：Groups Watcher 账本拆解——月入 $29,800 但订阅反跌，因为值钱的不是"提醒你"是"替你出手"，一个人做工具却停在通知这一层，这就是 WarmAct（从提醒到代客行动的抓取引擎）。信号三：Claude 官方插件目录 2,282 个安全扫描插件——Agent 工具生态从"谁都能发"进入"信任时代"，独立开发者的 skill 却混在来路不明的插件里没人敢装，这就是 SkillTrust（Agent 技能安全认证与可信分发）。共同主线：一个人公司下一波机会，不是"再做一个工具"，是"把工具往 AI 那端再推一层"——数据让 AI 读、行动替人做、信任让人敢用。谁补齐"给 AI 看 / 替人动 / 让人信"三件套，谁就抓住 OPC 从"卖工具"走向"卖结果与信任"的第八波机会。
+  </div>
+</div>
+
+<!-- Navigation -->
+<div class="prev-next">
+  <a href="2026-08-25.html" class="pn-card">
+    <div class="pn-label">&larr; 上一期</div>
+    <div class="pn-title">Vol.032 &middot; DataBridge 数据接入 · RevenueShift 变现迁移 · AgentAnalytics 原生分析</div>
+  </a>
+  <a href="daily.html" class="pn-card pn-right">
+    <div class="pn-label">下一期 &rarr;</div>
+    <div class="pn-title">Vol.034 &middot; SignalPipeline 购买信号 · ShipPlan SDLC 驱动 · AgentBill 计费变现</div>
+  </a>
+</div>
+
+<div class="footer">
+  OPC IDEA &middot; 日报 &#65295; <a href="subscribe.html">订阅日报</a> &#65295; <a href="feed.xml">RSS</a> &#65295; <a href="./index.html">完整报告</a> &#65295; <a href="newsletter-strategy.md">启动策略</a><br>
+  北京 &middot; 2026年9月1日 &middot; Vol.033 &middot; 今日刷新<br>
+  商业&middot;认知观察者&middot;出品
+</div>
+
+</div>
+</body>
+</html>

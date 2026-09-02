@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Tue, 01 Sep 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Wed, 02 Sep 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 128 · SignalPipeline——OPC 的公开购买信号转销售管线引擎 · BrandJet 登 PH #2，网上有人正在求购你卖的东西</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-128</link>
+    <description>8月31日Product Hunt日榜#2被BrandJet拿下（274票），标语"Turn public buying signals into sales pipeline"：监听X/Reddit/LinkedIn和开放网络，捕捉"正在询问某企业能解决的问题"的人，把信号富化成线索，在一个平台里跑outreach/统一收件箱/CRM到签约的完整工作流，还带MCP支持让AI Agent直接消费这些信号。关键洞察：一个人没有销售团队，最痛的不是"没有线索"，是"网上明明有人正在求购我卖的东西，我却看不见"——购买意图散落在公开提问里，而冷邮件和投广告越来越难触达（往期AnswerRank讲"冷邮件已死、AI推荐成新渠道"，SoloPipe讲网站访客的入站转化）。BrandJet证明"把公开购买信号翻译成销售管线"是真需求，但面向有销售团队的公司，一个人接不住一整套CRM。这条是"公开社交平台B2B购买意图监听+一人销售管线"。做"SignalPipeline"——OPC的公开购买信号转销售管线引擎（不是"网站访客入站转化"的SoloPipe，也不是"社群本地服务代客行动"的WarmAct）：购买信号监听核心（监听X/Reddit/LinkedIn/垂直社区里"求推荐/求工具/吐槽竞品"的公开信号，按意图强弱打分排序）+线索富化与一人销售管线（信号富化成线索卡，进轻量CRM，自动起草第一封outreach）+AI Agent原生消费（MCP接入，让AI直接读信号流、回答"今天谁最值得联系"）。Free/Maker ¥29/Pro ¥99。冷启动：开源SignalPipeline Core监听脚本+数据帖"网上有人正在求购你的产品，你却还在写冷邮件"+搭BrandJet顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-034-01</guid>
+    <category>购买信号 / 销售管线 / 意图监听 / 一人销售 / OPC获客</category>
+  </item>
+
+  <item>
+    <title>IDEA 129 · ShipPlan——一人公司带护栏的 AI 全 SDLC 分步驱动 · Interactive Sessions 登 PH #3，12 个 agent 跑同一工单成本差 160 倍</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-129</link>
+    <description>8月31日Product Hunt日榜#3被Revolte的Interactive Sessions拿下（272票），标语"Drive the full SDLC with AI agents, step by step"：用户引导AI agent从架构、代码、测试、预发布到部署一步步走完，另有Autopilot模式跑Jira工单，全程带计划审批、内联diff、成本上限和审计轨迹。同期DEV社区把loop engineering捧成夏季热词：Anthropic的Boris Cherny说"I don't prompt Claude anymore. I have loops running that prompt Claude."；Manfred Steyer让12个AI agent跑同一张工单，成本差160倍、速度差19倍，结论一针见血——"每一个系统性失败都追溯到工单没写清楚，loops不修模糊的spec，只会原样执行它"。关键洞察：一个人vibe coding最容易翻车的两处——没有"计划审批+成本上限+审计轨迹"，AI一路狂奔把架构搞乱、账单跑飞；没人替你把需求写清楚，loop跑偏就批量产垃圾。往期LaunchQA（上线前质检）、ShipGrade（企业级交付分级）都不同，这条是"给一个人的完整SDLC分步驱动+护栏"。做"ShipPlan"——一人公司带护栏的AI全SDLC分步驱动：分步SDLC驱动（架构→代码→测试→预发布→部署拆成分步关卡，每步AI出方案你审批后进下一步）+成本上限与审计轨迹（每次运行设成本上限、记录每步diff和决策，超支即停）+需求澄清前置（开工前AI先审需求/工单，把没写清楚的地方追问清楚再启动）。Free/Maker ¥29/Pro ¥99。冷启动：开源ShipPlan Core SDLC分步模板+数据帖"12个agent跑同一工单成本差160倍，因为工单没写清楚"+搭Interactive Sessions顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-034-02</guid>
+    <category>SDLC驱动 / 计划审批 / 成本护栏 / 审计轨迹 / OPC交付</category>
+  </item>
+
+  <item>
+    <title>IDEA 130 · AgentBill——Agent 工具的宿主内计费与变现层 · 1 万个 MCP 服务器只有 5% 在赚钱</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-130</link>
+    <description>The Agent Times一份被反复引用的数据点破Agent经济的尴尬：MCP生态已有10,000+活跃服务器、TS/Python SDK累计9700万次月安装，但只有不到5%的服务器产生任何收入——"MCP经济是一个没有钱的经济"。ChatGPT App SDK的2026现状更直白：尚不支持内购或数字商品，变现唯一被支持的路径是link-out回自己的网站。Indie Hacker Ashifur Khan的帖子是活样本：用5个月把HookLayer（跑在ChatGPT/Claude里的MCP server）做到1,500+用户、40+国家、收入3个月涨约500%，但MRR只有$232，他自己点破——"在ChatGPT里卖MCP工具比普通仪表盘难，用户不愿在已付费的工具里再付一次钱"。同期DEV上的Tanso用MCP做entitlement/用量计费。关键洞察：Agent工具的变现断层——大家拼命发工具却收不到钱，缺的不是"再做一件工具"，是"给独立开发者的Agent工具分层计费/变现基础设施"。往期AgentMart（卖工具给AI Agent）、ComplianceAPI（收款合规）、CostAudit（账单审计）都不同，这条是"Agent工具本身的用量计费+entitlement门禁+宿主内定价"。做"AgentBill"——Agent工具的宿主内计费与变现层：用量计费与entitlement门禁（运行前一个API判断该不该跑、余额够不够、在不在套餐内）+宿主内变现策略（破解"用户不愿在宿主内二次付费"）+免费转付费转化引擎（盯"谁重度用但没付费"，自动提示升级时机）。Free/Maker ¥29/Pro ¥99。冷启动：开源AgentBill Core用量计费SDK+数据帖"1万个MCP服务器只有5%在赚钱，你缺的不是工具是计费层"+搭MCP变现热帖顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Wed, 02 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-034-03</guid>
+    <category>用量计费 / entitlement / 宿主内变现 / MCP经济 / OPC变现</category>
+  </item>
 
   <item>
     <title>IDEA 125 · WebSecond——OPC 的 AI 原生网页数据接入与变更监控层 · Olostep 登 PH #3，网页的"第二用户"已经是 AI</title>
