@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Wed, 02 Sep 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Thu, 03 Sep 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 131 · VoiceFront——OPC 的 AI 语音前台与电话接线引擎 · Dial 登 PH #7，10 秒给 AI 一个真实电话号码</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-131</link>
+    <description>9月2日Product Hunt日榜上三款"AI语音/客服agent"同框：Dial拿下#7，标语"Give your AI agent a real phone number in 10 seconds"（10秒给AI一个真实电话号码）；同期ThunderPhone主打"从2美分/分钟起构建可靠的AI电话agent"；Keiki做"一个工作流把一个面向客户的AI agent部署到所有渠道"。关键洞察：语音AI成本已被压到2美分/分钟——一个人公司过去雇不起前台、请不起24小时客服、接不住来电，现在几百块月租就能有一个"永远在线的电话前台"：接电话、问清来意、预约、报价、转接、记录。往期WarmAct（社群代客行动）、SoloPipe（网站访客转化）都不同，这条是"给一人公司的AI语音前台+电话销售接线"。做"VoiceFront"——一人公司的AI语音前台与电话接线：一键电话前台（10秒生成本地/虚拟号码，接电话→AI问清来意→按规则预约/报价/转接/记录）+语音销售接线（把"来电咨询"变成"报价+预约+跟进"完整流程，AI接住前80%重复问题，复杂单转人工，通话后自动生成客户卡和跟进待办）+多渠道统一接线（一个工作流把同一套AI客服agent接到电话/WhatsApp/网页/企微）。Free/Maker ¥29/Pro ¥99。冷启动：开源VoiceFront Core通话接线脚本+数据帖"2美分/分钟，你已经雇得起一个24小时电话前台了"+搭Dial/ThunderPhone顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Thu, 03 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-035-01</guid>
+    <category>AI语音 / 电话前台 / 语音接线 / 一人客服 / OPC获客</category>
+  </item>
+
+  <item>
+    <title>IDEA 132 · CiteGuard——AI 输出的溯源与可信度证明层 · Basedash AI Sources 登 PH #5，看到构建它的东西才信任每个答案</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-132</link>
+    <description>9月2日Product Hunt日榜#5被Basedash AI Sources拿下，标语"Trust every AI answer by seeing what built it"（看到构建它的内容才信任每个答案）。同一时间HN上两条帖子把"AI可信度/溯源"顶成热话题：一份Perplexity引用审计发现其引用存在"无法验证、被捏造的grounding"；另一份报告揭露"AI推荐背后的制造来源"。Anthropic上线浏览器端check-content查Claude生成文件的凭证；Mistral更新帮助页——除非opt-out，部分输入输出可能被用于训练。关键洞察：AI生成内容的可信度，正从"政策/公关议题"变成"可见的产品功能"——用户不再满足于"AI说了"，而要"每句话能不能溯源、能不能证明"。对一人公司，靠AI做内容/客服/GEO最怕"被指控编造来源"，一次翻车就毁信任。做"CiteGuard"——AI输出的溯源与可信度证明层：逐句溯源（给AI生成内容接上"每句话来源谁、能不能验证、置信度多少"的溯源标注，一键导出可核查引用清单）+内容可信度徽章（给官网/自媒体/客服回复加"经AI生成、来源可验证"的可信徽章和证据页）+训练/隐私边界审计（对照Mistral opt-out争议，检查"哪些工具在用你的数据训练、怎么opt-out"）。Free/Maker ¥29/Pro ¥99。冷启动：开源CiteGuard Core溯源标注库+数据帖"Perplexity的引用审计翻车了，你的AI答案经得起一次审计吗"+搭Basedash AI Sources顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Thu, 03 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-035-02</guid>
+    <category>答案溯源 / 可信度证明 / 引用审计 / AI可信 / OPC信任</category>
+  </item>
+
+  <item>
+    <title>IDEA 133 · SlimCode——AI 时代的代码瘦身与少写代码工具 · ponytail 冲上 Trending，最好的代码是你从没写过的代码</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-133</link>
+    <description>9月3日GitHub Trending上DietrichGebert/ponytail（12万+ stars）冲到榜首附近，哲学一句话点破："the best code is the code you never wrote"（最好的代码是你从没写过的代码）——让AI agent像"房间里最懒的资深开发"一样思考，优先识别"哪些代码根本不该写、哪些是死代码、哪些是过度工程"。同榜JustVugg/colibri用零依赖纯C引擎在消费级硬件上流式跑前沿MoE模型，minimind教人"约2小时训一个6400万参数小模型"。Reddit r/vibecoding的抱怨是反面：vibe coding让"AI写出我维护不了的意大利面代码"，一个典型setup光订阅就$70/月、还没写一行业务逻辑，代码库越长AI越"失忆"、改一处坏一片。关键洞察：vibe coding的反噬已显现——代码越堆越多、依赖越重、越被云和成本绑定，一个人维护不动；反潮流是"少写、删冗余、本地跑、零依赖"。做"SlimCode"——AI时代的一人代码瘦身层：死代码与过度工程识别（扫描AI生成的代码库，标出"从未调用的死代码、为没发生需求预留的过度设计、重复实现"，一键生成删除清单）+依赖与成本瘦身（标出"哪个依赖没用、哪个云服务空转烧钱、哪个API能用本地/开源替代"）+本地化迁移建议（分"哪些能力本地跑、哪些必须留云"）。Free/Maker ¥29/Pro ¥99。冷启动：开源SlimCode Core死代码扫描器+数据帖"你的AI写了一堆没人调用的代码，最懒的资深开发会先删掉它们"+搭Ponytail顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Thu, 03 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-035-03</guid>
+    <category>代码瘦身 / 死代码 / 少写代码 / 本地化 / OPC降本</category>
+  </item>
 
   <item>
     <title>IDEA 128 · SignalPipeline——OPC 的公开购买信号转销售管线引擎 · BrandJet 登 PH #2，网上有人正在求购你卖的东西</title>
