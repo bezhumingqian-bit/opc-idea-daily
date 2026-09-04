@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Thu, 03 Sep 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Fri, 04 Sep 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 134 · AgentVCS——多 AI Agent 的统一源码版本控制与变更台账 · atlas 冲上 Trending，给 agent 做源码版本控制</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-134</link>
+    <description>9月4日GitHub Trending上pacifio/atlas（单日888 stars）冲上榜，标语"Source control for agents"（给agent做源码版本控制——同时用多个coding agent，在一个地方追踪它们的改动并查询）。同期信号密集：NousResearch/hermes-agent（"The agent that grows with you"）单日+533、deepseek-ai/deepseek-harness把一切抽象成plugin的模块化编排、obra/superpowers给agent打包可复用工程实践。关键洞察：一个人已开始同时跑Claude Code+Codex+Cursor+Grok等多个coding agent，但"谁改了什么、哪个agent改坏了、怎么回滚、怎么查历史"没人管——git只管理代码，不管"这行是哪个agent写的、为了什么任务"。往期ShipPlan（SDLC分步+护栏）、PortableStack（可移植）都不同，这条是"给多agent的源码版本控制与变更台账"。做"AgentVCS"——多AI Agent的统一源码版本控制与变更台账：多Agent变更追踪（给每个agent的每次改动打上"哪个agent、哪个任务、为什么"的元数据，查出"这行是哪个agent什么时候写的"）+一键回滚与对比（跨agent的diff和精确回滚，某个agent改坏了能退到它的某次提交前）+变更查询与审计（"过去7天哪个agent动了数据库schema""哪些改动没经过我确认"）。Free/Maker ¥29/Pro ¥99。冷启动：开源AgentVCS Core变更追踪钩子+数据帖"你同时在跑4个coding agent，却没人记录谁改了什么"+搭atlas顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Fri, 04 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-036-01</guid>
+    <category>多Agent治理 / 源码版本控制 / 变更台账 / Agent协作 / OPC管理</category>
+  </item>
+
+  <item>
+    <title>IDEA 135 · VoiceKit——本地优先的 AI 声音内容引擎 · VoiceStudio 冲上 Trending，646 种语言的语音克隆本地免费跑</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-135</link>
+    <description>9月4日GitHub Trending上debpalash/VoiceStudio（单日+832至+1738 stars）冲上前列，标语"the open-source, fully-local ElevenLabs alternative"（开源、全本地化的ElevenLabs替代品）——语音克隆、语音设计、视频配音、听写、转写、有声书制作，支持646种语言，全部本地跑、音频不上云。关键洞察：语音AI的下一层不只是"便宜"（昨天VoiceFront讲的2美分/分钟电话前台），而是"本地化+去订阅+隐私"——一个人过去做有声书/多语言配音/播客/视频旁白，要么雇配音员、要么订阅ElevenLabs/云TTS、音频还得上传第三方、按字计费、封号就断供；现在开源让你本地免费完成646语言克隆/配音/有声书。往期VoiceFront（AI语音前台/电话）讲"接电话"，这条讲"做内容"——local-first语音内容生产引擎。做"VoiceKit"——本地优先的AI声音内容引擎：一键有声书与播客（把博客/课程/电子书一键转成多语言有声书和播客，本地跑不送云）+多语言视频配音（给产品demo/课程/短视频做646语言配音，一个人打开海外分发）+本地声音资产管理（克隆并管理自己的声音资产，不依赖第三方账号）。Free/Maker ¥29/Pro ¥99。冷启动：开源VoiceKit Core有声书管线+数据帖"646种语言的语音克隆，已经在本地免费跑起来了"+搭VoiceStudio顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Fri, 04 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-036-02</guid>
+    <category>本地优先 / 语音内容 / 有声书 / 多语言配音 / OPC内容</category>
+  </item>
+
+  <item>
+    <title>IDEA 136 · ForecastKit——给一人公司的无代码时序预测引擎 · timesfm 在列，不用数据科学家也能预测销量</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-136</link>
+    <description>9月4日GitHub Trending上google-research/timesfm（单日+343 stars）在列，TimesFM是Google Research发布的预训练时序基础模型——不用自己建模，直接拿历史数据（销量、需求、库存、传感器读数）预测未来。同一批indie hacker案例反复暴露同一痛点：Ankush的API分析SaaS做到$1M ARR，靠"帮客户看清用量与趋势"；那些"用Excel跑核心业务"的老板——建筑估算/房产管理/牙科诊所/物流——手里有大量历史数据，却没有数据科学团队做预测，只能靠直觉和拍脑袋。关键洞察：预测能力正从"需要雇数据科学家"变成"一个开源基础模型就能调用"——一人公司最缺的不是数据，是"把历史数据变成未来判断"的最后一公里。往期DataBridge（数据接入问答）、AgentAnalytics（原生分析）都不同，这条是"无代码时序预测"。做"ForecastKit"——给一人公司的无代码时序预测引擎：一键预测（上传CSV或接后台数据，自动做销量/需求/库存/现金流预测，带置信区间）+预警与自然语言解释（"下月库存可能断货""这个SKU需求在跌"，用大白话解释为什么）+经营决策建议（把预测落到"该补多少货、该不该调价、该不该招人"）。Free/Maker ¥29/Pro ¥99。冷启动：开源ForecastKit Core预测脚本+数据帖"你还雇不起数据科学家，但你已经能预测下个月的销量了"+搭timesfm顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Fri, 04 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-036-03</guid>
+    <category>时序预测 / 无代码 / 需求预测 / 库存预警 / OPC决策</category>
+  </item>
 
   <item>
     <title>IDEA 131 · VoiceFront——OPC 的 AI 语音前台与电话接线引擎 · Dial 登 PH #7，10 秒给 AI 一个真实电话号码</title>
