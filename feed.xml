@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Fri, 04 Sep 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Tue, 08 Sep 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 137 · LearnLoop——AI Agent 行为学习层 · Reflexio 登 PH #2，让 agent 从每次反馈里长记性</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-137</link>
+    <description>9月5日Product Hunt日榜#2被Reflexio拿下（274票），标语"Behavioral learning for AI agents"（给AI agent做行为学习）——把用户的每次纠正、每条失败路径、每个成功结果转成可复用的agent行为，且每条经验可见、可测试、可回滚，宣称能降30%+失败率、省60%+token。同期dif.sh（#1，346票，Markdown特性开关）、Ponytail（#3，少写代码）、GitWarren（pre-commit审查）、Hyperprobe（生产调试）都在"给agent装护栏"，唯独Reflexio是"让agent从反馈里长记性"。关键洞察：护栏是"你替agent想规则"，学习是"agent自己从错误里变聪明"——一个人同时跑多个coding agent，最痛的是"同样的坑反复踩"，上周纠正过的这周又犯。做"LearnLoop"——AI Agent行为学习层：行为沉淀（记录每次纠正/失败/成功，自动提炼成可复用规则）+跨agent复用（Claude踩的坑Codex/Cursor/Grok同步生效）+行为审计与回滚（每条行为可见、可测试、可回滚）。Free/Maker ¥29/Pro ¥99。冷启动：开源LearnLoop Core反馈记录钩子+数据帖"你上周刚纠正过它，这周它又忘了"+搭Reflexio顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Tue, 08 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-037-01</guid>
+    <category>行为学习 / Agent记忆 / 反馈沉淀 / 跨Agent复用 / OPC提效</category>
+  </item>
+
+  <item>
+    <title>IDEA 138 · ReadHuman——AI 文本去 AI 味拟人引擎 · humanizer 冲上 Trending，让 AI 写的东西像人写的</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-138</link>
+    <description>9月5-7日GitHub Trending上blader/humanizer（累计43,858 stars）持续霸榜，标语"remove artifacts from AI-generated text"（去掉AI生成文本里的AI味痕迹）——把那些用词、句式、结构上"一眼就是AI写的"的痕迹抹掉，让文本读起来像人写的。同期反向信号：上期CiteGuard讲的Basedash AI Sources（答案溯源）和Anthropic浏览器端check-content，都在"给AI内容打可验证标记"——一股力量要把AI内容"证明出来"，另一股要把AI内容"藏起来"。关键洞察：AI生成内容已泛滥到需要"去AI味"和"证AI身"两条产品线同时成立。对一人公司，用AI写邮件/内容/SEO/客服回复，最怕"一眼AI味"被平台降权、客户识破。做"ReadHuman"——AI文本拟人化引擎：去AI味改写（把AI初稿改成有人味、有个人风格的中文表达）+多语气/人设库（商务克制/随性口语/犀利直接/温暖客服）+AI痕迹检测与反向校验（先扫哪些段落AI味重，改完自检还剩多少）。Free/Maker ¥29/Pro ¥99。冷启动：开源ReadHuman Core改写规则库+数据帖"你的AI写出来的东西，客户一眼就认出来了"+搭humanizer顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Tue, 08 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-037-02</guid>
+    <category>去AI味 / 内容拟人 / 品牌人格 / GEO安全 / OPC内容</category>
+  </item>
+
+  <item>
+    <title>IDEA 139 · ModelPick——流量驱动的模型选型降本网关 · Experiential Labs 登 PH #6，让每一分 AI 预算花得聪明</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-139</link>
+    <description>9月5日Product Hunt日榜#6被Experiential Labs拿下（125票），标语"Open source AI gateway for traffic-driven model selection"——支持BYOK、自托管、1000+市场模型，核心是"用真实流量数据自动降本、推荐更优模型，甚至训练一个你自己拥有的专用模型"。往期CostAudit讲过"LLM账单多付是普遍现象"、多模型API路由讲过"接入N个模型却不知道用哪个"。关键洞察：模型太多，同一任务各家价格效果天差地别，一个人公司"该用哪个、哪个最划算"全凭拍脑袋，账单越滚越大却说不清钱花在哪。做"ModelPick"——流量驱动的模型选型降本网关：流量驱动选型（记录每个任务的输入/输出/成本/质量，推荐最划算模型）+智能降级与路由（大模型处理复杂、小模型处理简单，自动分流）+训练你自己的专用模型（用真实流量数据训专属小模型，摆脱对单一厂商依赖）。Free/Maker ¥29/Pro ¥99。冷启动：开源ModelPick Core选型记录脚本+数据帖"你接了6个模型API，却说不清钱花在哪了"+搭Experiential Labs顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Tue, 08 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-037-03</guid>
+    <category>模型选型 / 成本治理 / 智能路由 / 自有模型 / OPC降本</category>
+  </item>
 
   <item>
     <title>IDEA 134 · AgentVCS——多 AI Agent 的统一源码版本控制与变更台账 · atlas 冲上 Trending，给 agent 做源码版本控制</title>
