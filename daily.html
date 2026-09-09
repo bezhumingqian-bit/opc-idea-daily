@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<title>OPC IDEA · 2026年9月8日</title>
+<title>OPC IDEA · 2026年9月9日</title>
 <meta name="description" content="每日精选一人公司方向的精筛 IDEA · 一手源 · 今日已刷新">
 <meta property="og:type" content="article">
 <meta property="og:title" content="OPC IDEA · 一人公司方向每日精选">
-<meta property="og:description" content="今日："你上周刚纠正过它，这周它又忘了"——Reflexio 登 PH #2，OPC 缺一个 Agent 行为学习层 · "你的 AI 写出来的东西，客户一眼就认出来了"——humanizer 冲上 Trending，OPC 缺一个去 AI 味拟人引擎 · "你接了 6 个模型 API，却说不清钱花在哪了"——Experiential Labs 登 PH #6，OPC 缺一个流量驱动的选型降本网关。每日 09:00 自动刷新。">
+<meta property="og:description" content="今日："你的 AI 说它懂了，97% 是错的"——reverify 冲上 Trending，OPC 缺一个 AI 断言确定性验证层 · "你用了 3 倍 AI 时间，交付却没快 3 倍"——OpenAI 3.1 个 agent 日刷屏，OPC 缺一个工作流瓶颈诊断层 · "你的 AI 能造出任何东西，但你卖得掉吗"——DEV 一个 AI 自主接单实验 10 机会 0 成交，OPC 缺一个卖动审计层。每日 09:00 自动刷新。">
 <meta property="og:url" content="https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html">
 <meta property="og:image" content="https://bezhumingqian-bit.github.io/opc-idea-daily/icon-512.png">
 <meta property="og:site_name" content="OPC IDEA 日报">
@@ -103,12 +103,12 @@
 <div class="header">
   <div class="brand"><a href="./index.html">OPC IDEA &middot; 日报</a></div>
   <div class="header-title">一人公司方向&middot;每日精选</div>
-  <div class="header-date">2026年9月8日 &middot; 星期二 &middot; Vol.037 &middot; 今日已刷新</div>
+  <div class="header-date">2026年9月9日 &middot; 星期三 &middot; Vol.038 &middot; 今日已刷新</div>
   <div class="divider"></div>
   <div class="header-meta">
-    <span class="chip">"你上周刚纠正过它，这周它又忘了"——Reflexio 登 PH #2，OPC 缺一个 Agent 行为学习层</span>
-    <span class="chip">"你的 AI 写出来的东西，客户一眼就认出来了"——humanizer 冲上 Trending，OPC 缺一个去 AI 味拟人引擎</span>
-    <span class="chip">"你接了 6 个模型 API，却说不清钱花在哪了"——Experiential Labs 登 PH #6，OPC 缺一个流量驱动的选型降本网关</span>
+    <span class="chip">"你的 AI 说它懂了，97% 是错的"——reverify 冲上 Trending，OPC 缺一个 AI 断言确定性验证层</span>
+    <span class="chip">"你用了 3 倍 AI 时间，交付却没快 3 倍"——OpenAI 3.1 个 agent 日刷屏，OPC 缺一个工作流瓶颈诊断层</span>
+    <span class="chip">"你的 AI 能造出任何东西，但你卖得掉吗"——DEV 一个 AI 自主接单实验 10 机会 0 成交，OPC 缺一个卖动审计层</span>
     <span class="chip">已与近七期去重</span>
   </div>
   <div class="header-meta" style="margin-top:8px;">
@@ -117,74 +117,74 @@
 </div>
 
 <!-- CARD 1 -->
-<div class="card" id="idea-137">
+<div class="card" id="idea-140">
   <div class="card-header">
     <span class="num">01</span>
-    <span class="headline">LearnLoop——AI Agent 行为学习层 &middot; Reflexio 登 PH #2，让 agent 从每次反馈里长记性</span>
+    <span class="headline">VerifyGate——AI 断言确定性验证层 &middot; reverify 冲上 Trending，AI 说"它懂了"97% 是错的</span>
   </div>
   <div class="fact">
-    9 月 5 日，Product Hunt 日榜 #2 被 Reflexio 拿下（274 票），标语 "Behavioral learning for AI agents"（给 AI agent 做行为学习）——把用户的每次纠正、每条失败路径、每个成功结果，转成可复用的 agent 行为，且每条学到的"经验"可见、可测试、可回滚，官方宣称能把任务失败率降 30%+、token 省 60%+。同期 PH 上整整一排都在给 agent 装"护栏"：dif.sh（#1，346 票，Markdown 特性开关）、Ponytail（#3，"让新代码成为最后手段"）、GitWarren（pre-commit 代码审查）、Hyperprobe（生产调试）——它们全是"给 agent 加规则"，唯独 Reflexio 是"让 agent 从反馈里长记性"。关键洞察：护栏是"你替 agent 想规则"，学习是"agent 自己从错误里变聪明"。一个人同时跑 Claude Code + Codex + Cursor 等多个 coding agent，最痛的不是"没护栏"，是"同样的坑反复踩"——你上周刚纠正过"别用 A 库要用 B 库"，这周换个 agent 换个 session，它又犯。往期 AgentVCS（多 agent 版本控制）、ShipPlan（SDLC 护栏）、SlimCode（代码瘦身）都不同，这条是"agent 行为学习"。
+    9 月 9 日，GitHub Trending 上 2akouwu/reverify（单日 ⭐1,036）冲上榜，标语一句话点破："deterministic verification beats asking the model to be careful"（确定性验证胜过让模型"小心一点"）——一个 MCP server + CLI，把 AI 对代码或二进制的每一个"声称"交给模型之外的确定性工具验证，只有通过验证的才算数，模型自己说了不算。作者挑了幻觉率最高的场景——二进制逆向工程——做基准：71 个真实 Windows 系统文件，AI 教科书式回答的错误率高达 97%，reverify 全部拦下、无一漏放（同一套验证在 Linux/macOS/独立 aarch64 上重跑）。它还带一个 rollover 功能：把长任务交接给文件再开新 session，取代容易失真的自动摘要，兼容 Claude Code、Codex、Gemini CLI、OpenCode。关键洞察：agent 越强，越不能"让它小心点"，要把"它说的是不是真的"交给模型外的确定性工具钉死。往期 CiteGuard（答案溯源）、SlimCode（死代码）、ShipPlan（计划审批）都不同，这条是"AI 技术断言 vs 工具验证过的事实"。
   </div>
   <div class="next-step">
-    OPC 路径：做"LearnLoop"——AI Agent 行为学习层。定位：不是"给 agent 加护栏"的 ShipPlan/SlimCode，也不是"管版本"的 AgentVCS，是"把每次反馈沉淀成可复用行为"的 agent 学习引擎。① 行为沉淀（核心产品。记录你每次纠正、每次失败路径、每次成功结果，自动提炼成可复用的规则/技能，下次 agent 遇到同类任务先查"我学过什么"）。② 跨 agent 复用（Claude Code 踩过的坑、你纠正过的话，Codex/Cursor/Grok 同步生效，不换 agent 就失忆）。③ 行为审计与回滚（每条学到的行为可见、可测试、可回滚——"这条规则哪来的、还在不在用、要不要撤销"，一个面板统一管）。定价：Free——单 agent 反馈记录。Maker——¥29/月，3 个 agent + 跨 agent 复用。Pro——¥99/月，不限 agent + 行为审计面板 + CI 集成。冷启动：渠道 A——开源"LearnLoop Core"反馈记录钩子（MIT）。渠道 B——数据帖"你上周刚纠正过它，这周它又忘了"。渠道 C——搭 Reflexio 登榜顺风车。Founding Member：Pro ¥49/月终身。
+    OPC 路径：做"VerifyGate"——AI 断言确定性验证层。定位：不是"内容逐句溯源"的 CiteGuard，也不是"删死代码"的 SlimCode，是"把 AI 对代码/数据/二进制的每个技术断言，接一个确定性校验器，只有工具验证通过的才放行"。① 断言验证（核心产品。AI 说"这行代码是这个意思""这个二进制做了这个"，接确定性工具验证，错误断言直接拦下）。② 验证判据库（针对你的业务定义"什么算通过"——不是通用判据，是"你这个项目里哪些断言必须验证、用什么工具验"）。③ 长任务无缝交接（rollover，把跑不动的长任务交接给文件再开新 session，取代失真的自动摘要，跨 Claude Code/Codex/Gemini/Cursor 通用）。定价：Free——单项目断言验证。Maker——¥29/月，3 个项目 + 自定义判据。Pro——¥99/月，不限项目 + 长任务交接 + CI 集成。冷启动：渠道 A——开源"VerifyGate Core"验证钩子（MIT）。渠道 B——数据帖"你的 AI 说它懂了，97% 是错的"。渠道 C——搭 reverify 登榜顺风车。Founding Member：Pro ¥49/月终身。
   </div>
   <div class="tag-bar">
-    <span class="tag">#行为学习</span>
-    <span class="tag">#Agent记忆</span>
-    <span class="tag">#反馈沉淀</span>
-    <span class="tag">#跨Agent复用</span>
+    <span class="tag">#确定性验证</span>
+    <span class="tag">#断言校验</span>
+    <span class="tag">#Agent可信</span>
+    <span class="tag">#幻觉拦截</span>
     <span class="tag">#OPC提效</span>
   </div>
   <div class="meta">
-    <span>来源 &middot; Product Hunt 9/5（Reflexio #2 274票："Behavioral learning for AI agents，-30% 失败率 / -60% token"）+ 同期 dif.sh / Ponytail / GitWarren / Hyperprobe（"给 agent 装护栏"的对照组）</span>
+    <span>来源 &middot; GitHub Trending 9/9（2akouwu/reverify 单日 ⭐1,036："deterministic verification beats asking the model to be careful"，二进制逆向基准 71 个文件错误率 97% 全部拦下）</span>
   </div>
 </div>
 
 <!-- CARD 2 -->
-<div class="card" id="idea-138">
+<div class="card" id="idea-141">
   <div class="card-header">
     <span class="num">02</span>
-    <span class="headline">ReadHuman——AI 文本去 AI 味拟人引擎 &middot; humanizer 冲上 Trending，让 AI 写的东西像人写的</span>
+    <span class="headline">BottleneckMap——AI 工作流瓶颈诊断层 &middot; OpenAI 3.1 个 agent 日/人工日，交付却没快 3 倍</span>
   </div>
   <div class="fact">
-    9 月 5-7 日，GitHub Trending 上 blader/humanizer（累计 43,858 stars）持续霸榜，标语一句话说清："remove artifacts from AI-generated text"（去掉 AI 生成文本里的"AI 味"痕迹）——把那些用词、句式、结构上"一眼就是 AI 写的"的痕迹抹掉，让文本读起来像人写的。同期还有一个反向信号值得注意：上期 CiteGuard 讲的 Basedash AI Sources（答案溯源）和 Anthropic 浏览器端 check-content，都在做"给 AI 内容打上可验证标记"——一股力量要把 AI 内容"证明出来"，另一股力量要把 AI 内容"藏起来"。关键洞察：这两股力量其实是同一件事的两面——AI 生成内容已经泛滥到需要"去AI味"和"证AI身"两条产品线同时成立。对一人公司，用 AI 写邮件、写内容、写 SEO、写客服回复，最怕"一眼 AI 味"：平台降权、客户识破、同行嘲笑。往期 CiteGuard（答案溯源，方向相反）、反 AI-slop（Agent 设计）都不同，这条是"内容层的去 AI 味拟人"。
+    9 月 6 日，OpenAI 发布一份内部报告，一个数字刷屏：到 8 月中旬，它的研究组织每 1 个人工日跑 3.1 个 agent 日。但报告自己补了一句关键限定——代码更快、实验更多，不等于整个研究流程快了 3.1 倍，提速可能只是把"排队"挪到了别的环节。DEV 上 Marcus Kim 把这个洞见做成一张"瓶颈地图"：借用 Epoch AI 的六阶段（Decide/Design/Build/Run/Analyze/Communicate，决定/设计/构建/运行/分析/沟通），一句点破："AI 产出 5 个功能而你只能验证 1 个，Build 不再是你的问题，Analyze 才是。""AI 写 3 份提案而你还没想清楚能解决客户什么问题，Communicate 不是问题，Decide 才是。"关键洞察：别问"我用了多少 AI"，要问"哪一环卡住了 finished work"——量 token/commit/PR 这些"活动指标"很容易，但它们和"客户真正能用的成品"是两回事。往期 ForecastKit（预测）、AgentAnalytics（无 Cookie 分析）、DataBridge（数据接入）都不同，这条是"AI 工作流自身的瓶颈诊断"。
   </div>
   <div class="next-step">
-    OPC 路径：做"ReadHuman"——AI 文本拟人化引擎。定位：不是"证明 AI 生成"的 CiteGuard（方向相反），是"把 AI 初稿变成像人写的"润色引擎。① 去 AI 味改写（核心产品。把 AI 生成的邮件/文章/文案/客服回复，改写成自然、有人味、有个人风格的中文表达，去掉"首先/其次/总而言之/综上所述"式的机器腔）。② 多语气/人设库（商务克制、随性口语、犀利直接、温暖客服……一键切换，匹配你的品牌人格，而不是千篇一律的"AI 普通话"）。③ AI 痕迹检测 + 反向校验（先扫描哪些段落"AI 味重"、可能被平台降权，再针对性改写，改完还能自检"还剩多少 AI 味"）。定价：Free——单段改写。Maker——¥29/月，全渠道改写 + 人设库。Pro——¥99/月，批量内容 + AI 痕迹检测 + API 接入。冷启动：渠道 A——开源"ReadHuman Core"去 AI 味改写规则库（MIT）。渠道 B——数据帖"你的 AI 写出来的东西，客户一眼就认出来了"。渠道 C——搭 humanizer 登榜顺风车。Founding Member：Pro ¥49/月终身。
+    OPC 路径：做"BottleneckMap"——AI 工作流瓶颈诊断层。定位：不是"预测未来"的 ForecastKit，也不是"数据接入问答"的 DataBridge，是"给一人公司找出 AI 提速后到底卡在哪一环"的诊断工具。① 六阶段瓶颈地图（Decide/Design/Build/Run/Analyze/Communicate 每环：工作等多久、返工几次、最老未完成项是什么，可视化定位真瓶颈）。② 瓶颈定位建议（"卡在 Analyze 就别再要更多 feature 代码""卡在 Decide 就先把客户问题想清楚"，把 AI 火力对准瓶颈而不是撒向全场）。③ 交付 vs 活动对账（把 token/commit/PR/agent 时长这些"活动指标"，对齐到"客户可用的 finished work"，算出"你多用了多少 AI，交付到底快了多少"）。定价：Free——单项目六阶段诊断。Maker——¥29/月，10 个项目 + 瓶颈建议。Pro——¥99/月，不限项目 + 交付对账 + API 接入。冷启动：渠道 A——开源"BottleneckMap Core"六阶段模板（MIT）。渠道 B——数据帖"你用了 3 倍 AI 时间，交付却没快 3 倍"。渠道 C——搭 OpenAI 3.1x 报告顺风车。Founding Member：Pro ¥49/月终身。
   </div>
   <div class="tag-bar">
-    <span class="tag">#去AI味</span>
-    <span class="tag">#内容拟人</span>
-    <span class="tag">#品牌人格</span>
-    <span class="tag">#GEO安全</span>
-    <span class="tag">#OPC内容</span>
+    <span class="tag">#瓶颈诊断</span>
+    <span class="tag">#工作流</span>
+    <span class="tag">#交付对账</span>
+    <span class="tag">#六阶段</span>
+    <span class="tag">#OPC提效</span>
   </div>
   <div class="meta">
-    <span>来源 &middot; GitHub Trending 9/5-9/7（blader/humanizer 43.8K stars："remove artifacts from AI-generated text"）+ 反向信号 Basedash AI Sources / Anthropic check-content（证明 AI 生成的对照）</span>
+    <span>来源 &middot; OpenAI 9/6 内部报告（3.1 agent-workdays/人工日）+ DEV 9/8 Marcus Kim《OpenAI Now Runs 3.1 Agent-Workdays Per Human Workday》六阶段瓶颈地图</span>
   </div>
 </div>
 
 <!-- CARD 3 -->
-<div class="card" id="idea-139">
+<div class="card" id="idea-142">
   <div class="card-header">
     <span class="num">03</span>
-    <span class="headline">ModelPick——流量驱动的模型选型降本网关 &middot; Experiential Labs 登 PH #6，让每一分 AI 预算花得聪明</span>
+    <span class="headline">SellGate——AI 造物"卖得动"审计层 &middot; 一个 AI 自主接单实验：10 机会 0 成交，能造 ≠ 能卖</span>
   </div>
   <div class="fact">
-    9 月 5 日，Product Hunt 日榜 #6 被 Experiential Labs 拿下（125 票），标语 "Open source AI gateway for traffic-driven model selection"（开源 AI 网关，用真实流量数据做模型选型）——支持 BYOK、自托管、1000+ 市场模型，核心是"用你真实的流量数据自动降本、推荐更优模型，甚至训练一个你自己拥有的专用模型"。同一痛点在此前信源里反复出现：往期 CostAudit 讲过"LLM 账单多付是普遍现象"、多模型 API 路由讲过"接入 N 个模型却不知道用哪个"。关键洞察：模型太多了——同一个任务，GPT/Claude/Gemini/DeepSeek/Qwen 的价格和效果天差地别，一个人公司"该用哪个、哪个最划算"全凭拍脑袋，账单越滚越大却说不清钱花在哪。往期 CostAudit（事后审计追偿）、AgentBill（宿主内计费）都不同，这条是"流量驱动的选型降本 + 自有模型"。
+    DEV 上一篇长文《我试图让 AI 自主找活、赢单、交付，为什么失败了》刷了社区：作者用半年搭了一条 4 段流水线（Research 找机会 → Qualification 打分 → Delivery 交付 → Ledger 记账），写了 300+ 测试，工程上完全跑通；结果第一轮 AI 自主找到 10 个机会，通过资格审核 0 个、成交 0 个、收入 0、净亏损。复盘里每个候选都踩中至少一个坑：付费意愿是纯猜测（定价基于"看起来合理"，没有真实成交价格证据）、总有免费替代品（每个任务都能用免费工具或现成方案解决）、可达性无法验证（根本联系不上、约不到那个买单人）。作者最后把分工倒过来：发现机会交给人，AI 只做佐证。关键洞察："能造出来"和"能卖出去"是两个完全不同的问题——AI 让"造"变得廉价，稀缺转移到了"有没有人真的愿意付钱"。往期 SignalPipeline（购买信号监听）、RevenueShift（变现结构诊断）、SoloPipe（入站转化）都不同，这条是"造之前/造之中，给 AI 造物做'卖得动'真实性审计"。
   </div>
   <div class="next-step">
-    OPC 路径：做"ModelPick"——流量驱动的模型选型降本网关。定位：不是"统一接入多模型 API"的旧路由，也不是"事后审计追偿"的 CostAudit，是"用你真实流量自动选出最划算模型"的降本网关。① 流量驱动选型（核心产品。自动记录每个任务的输入/输出/成本/质量，用真实数据推荐"这个任务用哪个模型最划算"，而不是拍脑袋）。② 智能降级与路由（大模型处理复杂任务、小模型处理简单任务，自动分流，贵的模型不再被浪费在简单活上）。③ 训练你自己的专用模型（用积累的真实流量数据，训练一个专属于你的小模型，逐步摆脱对单一厂商的依赖和涨价风险）。定价：Free——单项目选型记录。Maker——¥29/月，10 个项目 + 智能路由。Pro——¥99/月，不限项目 + 自有模型训练 + API 接入。冷启动：渠道 A——开源"ModelPick Core"选型记录脚本（MIT）。渠道 B——数据帖"你接了 6 个模型 API，却说不清钱花在哪了"。渠道 C——搭 Experiential Labs 登榜顺风车。Founding Member：Pro ¥49/月终身。
+    OPC 路径：做"SellGate"——AI 造物卖动审计层。定位：不是"监听购买信号"的 SignalPipeline，也不是"诊断变现结构"的 RevenueShift，是"把 AI 造出来的东西，从'能跑'筛到'卖得动'"的需求真实性审计。① 付费意愿证据审计（核心。不是"定价看着合理"，是"有没有人真的按这个价成交过"——没有成交证据就标红）。② 免费替代品扫描（"这个需求是不是免费工具/现成方案就能解决"，是就标黄，别把 AI 火力浪费在免费的活上）。③ 可达性验证（"你到底能不能联系上、约得到这个买单人"，联系不上就标灰，别造一个卖不出去的东西）。定价：Free——单产品三项审计。Maker——¥29/月，10 个产品 + 审计报告。Pro——¥99/月，不限产品 + 可达性验证 + API 接入。冷启动：渠道 A——开源"SellGate Core"需求真实性清单（MIT）。渠道 B——数据帖"你的 AI 能造出任何东西，但你卖得掉吗"。渠道 C——搭 DEV 失败复盘顺风车。Founding Member：Pro ¥49/月终身。
   </div>
   <div class="tag-bar">
-    <span class="tag">#模型选型</span>
-    <span class="tag">#成本治理</span>
-    <span class="tag">#智能路由</span>
-    <span class="tag">#自有模型</span>
-    <span class="tag">#OPC降本</span>
+    <span class="tag">#需求真实性</span>
+    <span class="tag">#卖动审计</span>
+    <span class="tag">#付费意愿</span>
+    <span class="tag">#免费替代</span>
+    <span class="tag">#OPC变现</span>
   </div>
   <div class="meta">
-    <span>来源 &middot; Product Hunt 9/5（Experiential Labs #6 125票："traffic-driven model selection，BYOK / self-hosted / 1000+ models，train a specialized model you own"）+ 往期 CostAudit / 多模型 API 路由的"账单失控"痛点</span>
+    <span>来源 &middot; DEV 9/8《I Tried to Build a Company Where AI Autonomously Finds, Wins, and Delivers Work. Here's Why It Failed.》（4 段流水线、300+ 测试、10 机会 0 成交）</span>
   </div>
 </div>
 
@@ -192,25 +192,25 @@
 <div class="hook-box">
   <div class="hook-label">本期钩子</div>
   <div class="hook-text">
-    9 月 8 日三条信号指向同一层：当 AI 让"生产力"不再稀缺，稀缺转移到了三个更难的问题上——让它长记性、让它像个人、让它花得聪明。信号一：Reflexio 登 PH #2——"行为学习"，一个人同时跑多个 coding agent 却"同样的坑反复踩"，这就是 LearnLoop（Agent 行为学习层）。信号二：humanizer 冲上 Trending——"去掉 AI 文本的痕迹"，一个人用 AI 写内容却"一眼 AI 味"被降权识破，这就是 ReadHuman（AI 文本拟人引擎）。信号三：Experiential Labs 登 PH #6——"流量驱动的模型选型"，一个人接了一堆模型 API 却"说不清钱花在哪"，这就是 ModelPick（模型选型降本网关）。共同主线：上一期讲"管得住、负担得起、预判得了"（治理/本地化/预测），这一期更往前一步——AI 不仅要"用得上"，还要"学得会（长记性）、读得懂（像人）、算得清（省钱）"。谁先给一人公司补齐这三件套，谁就抓住 OPC 从"追 AI 生产力"走向"驾驭 AI 的智能、可信与经济"的下半场。
+    9 月 9 日三条信号指向同一个词：验。当 AI 让"造"变得廉价，稀缺转移到了三个"验"——验它对不对、验它快不快、验它卖不卖得动。信号一：reverify 冲上 Trending——"确定性验证胜过让模型小心点"，AI 说"它懂了"97% 是错的，这就是 VerifyGate（AI 断言确定性验证层）。信号二：OpenAI 每人工日跑 3.1 个 agent 日，交付却没快 3 倍——瓶颈从"造"挪到了"审"，这就是 BottleneckMap（AI 工作流瓶颈诊断层）。信号三：DEV 一个 AI 自主接单实验 10 个机会 0 成交——"能造"不等于"能卖"，这就是 SellGate（AI 造物卖动审计层）。共同主线：前几期讲"驾驭 AI 的智能、可信与经济"（长记性、像人、省钱），这一期再往下一层——AI 把"生产"压到几乎免费之后，真正稀缺的是"验证"：验证 AI 说的对不对、验证提效是不是真提效、验证造出来的东西有没有人买单。谁先给一人公司补齐这三件"验真"工具，谁就抓住 OPC 从"疯狂造"走向"造得对、造得快、卖得动"的下半场。
   </div>
 </div>
 
 <!-- Navigation -->
 <div class="prev-next">
-  <a href="2026-09-04.html" class="pn-card">
+  <a href="2026-09-08.html" class="pn-card">
     <div class="pn-label">&larr; 上一期</div>
-    <div class="pn-title">Vol.036 &middot; AgentVCS 多Agent治理 · VoiceKit 本地语音 · ForecastKit 时序预测</div>
+    <div class="pn-title">Vol.037 &middot; LearnLoop 行为学习 · ReadHuman 去AI味 · ModelPick 选型降本</div>
   </a>
   <div class="pn-card disabled pn-right">
     <div class="pn-label">下一期 &rarr;</div>
-    <div class="pn-title">Vol.038 &middot; 等待明天刷新</div>
+    <div class="pn-title">Vol.039 &middot; 等待明天刷新</div>
   </div>
 </div>
 
 <div class="footer">
   OPC IDEA &middot; 日报 &#65295; <a href="subscribe.html">订阅日报</a> &#65295; <a href="feed.xml">RSS</a> &#65295; <a href="./index.html">完整报告</a> &#65295; <a href="newsletter-strategy.md">启动策略</a><br>
-  北京 &middot; 2026年9月8日 &middot; Vol.037 &middot; 今日刷新<br>
+  北京 &middot; 2026年9月9日 &middot; Vol.038 &middot; 今日刷新<br>
   商业&middot;认知观察者&middot;出品
 </div>
 

@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Tue, 08 Sep 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Wed, 09 Sep 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 140 · VerifyGate——AI 断言确定性验证层 · reverify 冲上 Trending，AI 说"它懂了"97% 是错的</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-140</link>
+    <description>9月9日GitHub Trending上2akouwu/reverify（单日⭐1,036）冲上榜，标语"deterministic verification beats asking the model to be careful"（确定性验证胜过让模型小心一点）——一个MCP server + CLI，把AI对代码或二进制的每一个"声称"交给模型之外的确定性工具验证，只有通过验证的才算数，模型自己说了不算。作者挑了幻觉率最高的场景（二进制逆向工程）做基准：71个真实Windows系统文件，AI教科书式回答的错误率高达97%，reverify全部拦下、无一漏放。还带rollover功能（长任务交接给文件、替代失真摘要），兼容Claude Code/Codex/Gemini CLI/OpenCode。关键洞察：agent越强，越不能"让它小心点"，要把"它说的是不是真的"交给模型外的确定性工具钉死。做"VerifyGate"——AI断言确定性验证层：断言验证（AI说"这行代码/这个二进制是这个意思"，接确定性工具验证，错误直接拦下）+验证判据库（针对你的业务定义"什么算通过"）+长任务无缝交接（rollover，替代失真摘要）。Free/Maker ¥29/Pro ¥99。冷启动：开源VerifyGate Core验证钩子+数据帖"你的AI说它懂了，97%是错的"+搭reverify顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Wed, 09 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-038-01</guid>
+    <category>确定性验证 / 断言校验 / Agent可信 / 幻觉拦截 / OPC提效</category>
+  </item>
+
+  <item>
+    <title>IDEA 141 · BottleneckMap——AI 工作流瓶颈诊断层 · OpenAI 3.1 个 agent 日/人工日，交付却没快 3 倍</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-141</link>
+    <description>9月6日OpenAI发布内部报告，一个数字刷屏：研究组织每1个人工日跑3.1个agent日。但报告自己补了限定——代码更快、实验更多，不等于整个研究流程快了3.1倍，提速可能只是把"排队"挪到了别的环节。DEV上Marcus Kim把它做成六阶段"瓶颈地图"（Decide/Design/Build/Run/Analyze/Communicate），一句点破："AI产出5个功能而你只能验证1个，Build不再是问题，Analyze才是。"关键洞察：别问"我用了多少AI"，要问"哪一环卡住了finished work"——量token/commit/PR这些"活动指标"很容易，但它们和"客户真正能用的成品"是两回事。做"BottleneckMap"——AI工作流瓶颈诊断层：六阶段瓶颈地图（每环等多久、返工几次、最老未完成项，可视化定位真瓶颈）+瓶颈定位建议（"卡在Analyze就别再要更多feature代码"，把AI火力对准瓶颈）+交付vs活动对账（把token/commit/PR对齐到"客户可用的成品"）。Free/Maker ¥29/Pro ¥99。冷启动：开源BottleneckMap Core六阶段模板+数据帖"你用了3倍AI时间，交付却没快3倍"+搭OpenAI 3.1x报告顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Wed, 09 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-038-02</guid>
+    <category>瓶颈诊断 / 工作流 / 交付对账 / 六阶段 / OPC提效</category>
+  </item>
+
+  <item>
+    <title>IDEA 142 · SellGate——AI 造物"卖得动"审计层 · 一个 AI 自主接单实验：10 机会 0 成交，能造 ≠ 能卖</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-142</link>
+    <description>DEV上一篇长文《我试图让AI自主找活、赢单、交付，为什么失败了》刷了社区：作者用半年搭了4段流水线（Research找机会→Qualification打分→Delivery交付→Ledger记账），写了300+测试，工程上完全跑通；结果第一轮AI自主找到10个机会，通过审核0个、成交0个、收入0。复盘里每个候选都踩中至少一个坑：付费意愿是纯猜测（没有真实成交价格证据）、总有免费替代品、可达性无法验证。作者最后把分工倒过来：发现机会交给人，AI只做佐证。关键洞察："能造出来"和"能卖出去"是两个完全不同的问题——AI让"造"变得廉价，稀缺转移到了"有没有人真的愿意付钱"。做"SellGate"——AI造物卖动审计层：付费意愿证据审计（不是"定价看着合理"，是"有没有人真的按这个价成交过"，没有就标红）+免费替代品扫描（"免费工具就能解决"就标黄）+可达性验证（"联系不上买单人"就标灰）。Free/Maker ¥29/Pro ¥99。冷启动：开源SellGate Core需求真实性清单+数据帖"你的AI能造出任何东西，但你卖得掉吗"+搭DEV失败复盘顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Wed, 09 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-038-03</guid>
+    <category>需求真实性 / 卖动审计 / 付费意愿 / 免费替代 / OPC变现</category>
+  </item>
 
   <item>
     <title>IDEA 137 · LearnLoop——AI Agent 行为学习层 · Reflexio 登 PH #2，让 agent 从每次反馈里长记性</title>

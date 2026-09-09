@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<title>OPC IDEA · 2026年9月8日</title>
+<meta name="description" content="每日精选一人公司方向的精筛 IDEA · 一手源 · 今日已刷新">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta property="og:description" content="今日："你上周刚纠正过它，这周它又忘了"——Reflexio 登 PH #2，OPC 缺一个 Agent 行为学习层 · "你的 AI 写出来的东西，客户一眼就认出来了"——humanizer 冲上 Trending，OPC 缺一个去 AI 味拟人引擎 · "你接了 6 个模型 API，却说不清钱花在哪了"——Experiential Labs 登 PH #6，OPC 缺一个流量驱动的选型降本网关。每日 09:00 自动刷新。">
+<meta property="og:url" content="https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html">
+<meta property="og:image" content="https://bezhumingqian-bit.github.io/opc-idea-daily/icon-512.png">
+<meta property="og:site_name" content="OPC IDEA 日报">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta name="twitter:description" content="今日 3 条精筛 IDEA · 一手源 · 工作日每日 09:00 刷新">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+    background: #F5F1E8;
+    color: #2C2A26;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px 40px; }
+  .header {
+    background: #FAF7EE;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 32px 28px 28px;
+    margin-bottom: 16px;
+  }
+  .brand { font-size: 11px; letter-spacing: 4px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 14px; }
+  .brand a { color: #B5B0A4; text-decoration: none; }
+  .brand a:hover { color: #8A8474; }
+  .header-title { font-size: 26px; font-weight: 500; color: #2C2A26; letter-spacing: 1px; }
+  .header-date { font-size: 13px; color: #7A766C; margin-top: 6px; letter-spacing: 0.5px; }
+  .divider { height: 1px; background: #E6E1D6; margin: 18px 0; }
+  .header-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .chip { padding: 3px 10px; background: transparent; border: 1px solid #D8D2C5; border-radius: 2px; font-size: 11px; color: #7A766C; letter-spacing: 0.5px; }
+  .card {
+    background: #FFFEFC;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 22px 24px;
+    margin-bottom: 10px;
+  }
+  .card-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+  .num { width: 28px; height: 28px; border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; flex-shrink: 0; letter-spacing: 0.5px; background: #EEEAE0; color: #5A5443; }
+  .headline { font-size: 15.5px; font-weight: 500; color: #2C2A26; line-height: 1.5; flex: 1; padding-top: 3px; letter-spacing: 0.2px; }
+  .fact { font-size: 13.5px; color: #5F5B53; line-height: 1.75; margin-bottom: 12px; padding-left: 42px; }
+  .next-step { font-size: 13.5px; color: #2C2A26; line-height: 1.75; padding: 12px 16px; margin-left: 42px; background: #F7F4EC; border-left: 2px solid #8A8474; border-radius: 0 2px 2px 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; padding-left: 42px; font-size: 11.5px; color: #7A766C; }
+  .hook-box { background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 16px 20px; margin-bottom: 10px; }
+  .hook-label { font-size: 11px; letter-spacing: 2px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 8px; }
+  .hook-text { font-size: 14px; color: #2C2A26; line-height: 1.7; letter-spacing: 0.2px; }
+
+  .prev-next {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    margin-top: 18px; margin-bottom: 18px;
+  }
+  .pn-card {
+    background: #FFFEFC; border: 1px solid #E6E1D6; border-radius: 4px;
+    padding: 14px 18px; text-decoration: none; color: inherit; display: block;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .pn-card:hover { border-color: #C4BBA9; background: #FAF7EE; }
+  .pn-card.disabled { opacity: 0.4; pointer-events: none; }
+  .pn-label { font-size: 10.5px; letter-spacing: 1.5px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 4px; }
+  .pn-title { font-size: 13px; color: #2C2A26; line-height: 1.5; letter-spacing: 0.2px; }
+  .pn-right { text-align: right; }
+
+  .tag-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding-left: 42px; }
+  .tag { padding: 2px 8px; background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 2px; font-size: 10.5px; color: #7A766C; letter-spacing: 0.3px; }
+
+  .footer { text-align: center; margin-top: 28px; margin-bottom: 20px; font-size: 11px; color: #B5B0A4; letter-spacing: 0.5px; line-height: 2; }
+  .footer a { color: #8A8474; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  @media print {
+    body { background: white; }
+    .card, .header, .hook-box { box-shadow: none; border-color: #ccc; }
+    .prev-next, .footer, .header-meta { display: none; }
+  }
+  @media (max-width: 640px) {
+    .container { padding: 12px 12px 32px; }
+    .header { padding: 24px 20px 22px; }
+    .header-title { font-size: 22px; }
+    .card { padding: 18px 16px; }
+    .fact, .next-step { padding-left: 0; margin-left: 0; }
+    .tag-bar { padding-left: 0; }
+    .prev-next { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<a href="./index.html" style="display:inline-block;font-size:12px;color:#8A8474;text-decoration:none;letter-spacing:0.5px;margin-bottom:18px;">&larr; 返回归档首页</a>
+
+<div class="header">
+  <div class="brand"><a href="./index.html">OPC IDEA &middot; 日报</a></div>
+  <div class="header-title">一人公司方向&middot;每日精选</div>
+  <div class="header-date">2026年9月8日 &middot; 星期二 &middot; Vol.037 &middot; 今日已刷新</div>
+  <div class="divider"></div>
+  <div class="header-meta">
+    <span class="chip">"你上周刚纠正过它，这周它又忘了"——Reflexio 登 PH #2，OPC 缺一个 Agent 行为学习层</span>
+    <span class="chip">"你的 AI 写出来的东西，客户一眼就认出来了"——humanizer 冲上 Trending，OPC 缺一个去 AI 味拟人引擎</span>
+    <span class="chip">"你接了 6 个模型 API，却说不清钱花在哪了"——Experiential Labs 登 PH #6，OPC 缺一个流量驱动的选型降本网关</span>
+    <span class="chip">已与近七期去重</span>
+  </div>
+  <div class="header-meta" style="margin-top:8px;">
+    <a href="subscribe.html" style="font-size:13px;color:#8A8474;text-decoration:none;letter-spacing:0.3px;">每天09:00自动收到 &rarr;</a>
+  </div>
+</div>
+
+<!-- CARD 1 -->
+<div class="card" id="idea-137">
+  <div class="card-header">
+    <span class="num">01</span>
+    <span class="headline">LearnLoop——AI Agent 行为学习层 &middot; Reflexio 登 PH #2，让 agent 从每次反馈里长记性</span>
+  </div>
+  <div class="fact">
+    9 月 5 日，Product Hunt 日榜 #2 被 Reflexio 拿下（274 票），标语 "Behavioral learning for AI agents"（给 AI agent 做行为学习）——把用户的每次纠正、每条失败路径、每个成功结果，转成可复用的 agent 行为，且每条学到的"经验"可见、可测试、可回滚，官方宣称能把任务失败率降 30%+、token 省 60%+。同期 PH 上整整一排都在给 agent 装"护栏"：dif.sh（#1，346 票，Markdown 特性开关）、Ponytail（#3，"让新代码成为最后手段"）、GitWarren（pre-commit 代码审查）、Hyperprobe（生产调试）——它们全是"给 agent 加规则"，唯独 Reflexio 是"让 agent 从反馈里长记性"。关键洞察：护栏是"你替 agent 想规则"，学习是"agent 自己从错误里变聪明"。一个人同时跑 Claude Code + Codex + Cursor 等多个 coding agent，最痛的不是"没护栏"，是"同样的坑反复踩"——你上周刚纠正过"别用 A 库要用 B 库"，这周换个 agent 换个 session，它又犯。往期 AgentVCS（多 agent 版本控制）、ShipPlan（SDLC 护栏）、SlimCode（代码瘦身）都不同，这条是"agent 行为学习"。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"LearnLoop"——AI Agent 行为学习层。定位：不是"给 agent 加护栏"的 ShipPlan/SlimCode，也不是"管版本"的 AgentVCS，是"把每次反馈沉淀成可复用行为"的 agent 学习引擎。① 行为沉淀（核心产品。记录你每次纠正、每次失败路径、每次成功结果，自动提炼成可复用的规则/技能，下次 agent 遇到同类任务先查"我学过什么"）。② 跨 agent 复用（Claude Code 踩过的坑、你纠正过的话，Codex/Cursor/Grok 同步生效，不换 agent 就失忆）。③ 行为审计与回滚（每条学到的行为可见、可测试、可回滚——"这条规则哪来的、还在不在用、要不要撤销"，一个面板统一管）。定价：Free——单 agent 反馈记录。Maker——¥29/月，3 个 agent + 跨 agent 复用。Pro——¥99/月，不限 agent + 行为审计面板 + CI 集成。冷启动：渠道 A——开源"LearnLoop Core"反馈记录钩子（MIT）。渠道 B——数据帖"你上周刚纠正过它，这周它又忘了"。渠道 C——搭 Reflexio 登榜顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#行为学习</span>
+    <span class="tag">#Agent记忆</span>
+    <span class="tag">#反馈沉淀</span>
+    <span class="tag">#跨Agent复用</span>
+    <span class="tag">#OPC提效</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; Product Hunt 9/5（Reflexio #2 274票："Behavioral learning for AI agents，-30% 失败率 / -60% token"）+ 同期 dif.sh / Ponytail / GitWarren / Hyperprobe（"给 agent 装护栏"的对照组）</span>
+  </div>
+</div>
+
+<!-- CARD 2 -->
+<div class="card" id="idea-138">
+  <div class="card-header">
+    <span class="num">02</span>
+    <span class="headline">ReadHuman——AI 文本去 AI 味拟人引擎 &middot; humanizer 冲上 Trending，让 AI 写的东西像人写的</span>
+  </div>
+  <div class="fact">
+    9 月 5-7 日，GitHub Trending 上 blader/humanizer（累计 43,858 stars）持续霸榜，标语一句话说清："remove artifacts from AI-generated text"（去掉 AI 生成文本里的"AI 味"痕迹）——把那些用词、句式、结构上"一眼就是 AI 写的"的痕迹抹掉，让文本读起来像人写的。同期还有一个反向信号值得注意：上期 CiteGuard 讲的 Basedash AI Sources（答案溯源）和 Anthropic 浏览器端 check-content，都在做"给 AI 内容打上可验证标记"——一股力量要把 AI 内容"证明出来"，另一股力量要把 AI 内容"藏起来"。关键洞察：这两股力量其实是同一件事的两面——AI 生成内容已经泛滥到需要"去AI味"和"证AI身"两条产品线同时成立。对一人公司，用 AI 写邮件、写内容、写 SEO、写客服回复，最怕"一眼 AI 味"：平台降权、客户识破、同行嘲笑。往期 CiteGuard（答案溯源，方向相反）、反 AI-slop（Agent 设计）都不同，这条是"内容层的去 AI 味拟人"。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"ReadHuman"——AI 文本拟人化引擎。定位：不是"证明 AI 生成"的 CiteGuard（方向相反），是"把 AI 初稿变成像人写的"润色引擎。① 去 AI 味改写（核心产品。把 AI 生成的邮件/文章/文案/客服回复，改写成自然、有人味、有个人风格的中文表达，去掉"首先/其次/总而言之/综上所述"式的机器腔）。② 多语气/人设库（商务克制、随性口语、犀利直接、温暖客服……一键切换，匹配你的品牌人格，而不是千篇一律的"AI 普通话"）。③ AI 痕迹检测 + 反向校验（先扫描哪些段落"AI 味重"、可能被平台降权，再针对性改写，改完还能自检"还剩多少 AI 味"）。定价：Free——单段改写。Maker——¥29/月，全渠道改写 + 人设库。Pro——¥99/月，批量内容 + AI 痕迹检测 + API 接入。冷启动：渠道 A——开源"ReadHuman Core"去 AI 味改写规则库（MIT）。渠道 B——数据帖"你的 AI 写出来的东西，客户一眼就认出来了"。渠道 C——搭 humanizer 登榜顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#去AI味</span>
+    <span class="tag">#内容拟人</span>
+    <span class="tag">#品牌人格</span>
+    <span class="tag">#GEO安全</span>
+    <span class="tag">#OPC内容</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; GitHub Trending 9/5-9/7（blader/humanizer 43.8K stars："remove artifacts from AI-generated text"）+ 反向信号 Basedash AI Sources / Anthropic check-content（证明 AI 生成的对照）</span>
+  </div>
+</div>
+
+<!-- CARD 3 -->
+<div class="card" id="idea-139">
+  <div class="card-header">
+    <span class="num">03</span>
+    <span class="headline">ModelPick——流量驱动的模型选型降本网关 &middot; Experiential Labs 登 PH #6，让每一分 AI 预算花得聪明</span>
+  </div>
+  <div class="fact">
+    9 月 5 日，Product Hunt 日榜 #6 被 Experiential Labs 拿下（125 票），标语 "Open source AI gateway for traffic-driven model selection"（开源 AI 网关，用真实流量数据做模型选型）——支持 BYOK、自托管、1000+ 市场模型，核心是"用你真实的流量数据自动降本、推荐更优模型，甚至训练一个你自己拥有的专用模型"。同一痛点在此前信源里反复出现：往期 CostAudit 讲过"LLM 账单多付是普遍现象"、多模型 API 路由讲过"接入 N 个模型却不知道用哪个"。关键洞察：模型太多了——同一个任务，GPT/Claude/Gemini/DeepSeek/Qwen 的价格和效果天差地别，一个人公司"该用哪个、哪个最划算"全凭拍脑袋，账单越滚越大却说不清钱花在哪。往期 CostAudit（事后审计追偿）、AgentBill（宿主内计费）都不同，这条是"流量驱动的选型降本 + 自有模型"。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"ModelPick"——流量驱动的模型选型降本网关。定位：不是"统一接入多模型 API"的旧路由，也不是"事后审计追偿"的 CostAudit，是"用你真实流量自动选出最划算模型"的降本网关。① 流量驱动选型（核心产品。自动记录每个任务的输入/输出/成本/质量，用真实数据推荐"这个任务用哪个模型最划算"，而不是拍脑袋）。② 智能降级与路由（大模型处理复杂任务、小模型处理简单任务，自动分流，贵的模型不再被浪费在简单活上）。③ 训练你自己的专用模型（用积累的真实流量数据，训练一个专属于你的小模型，逐步摆脱对单一厂商的依赖和涨价风险）。定价：Free——单项目选型记录。Maker——¥29/月，10 个项目 + 智能路由。Pro——¥99/月，不限项目 + 自有模型训练 + API 接入。冷启动：渠道 A——开源"ModelPick Core"选型记录脚本（MIT）。渠道 B——数据帖"你接了 6 个模型 API，却说不清钱花在哪了"。渠道 C——搭 Experiential Labs 登榜顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#模型选型</span>
+    <span class="tag">#成本治理</span>
+    <span class="tag">#智能路由</span>
+    <span class="tag">#自有模型</span>
+    <span class="tag">#OPC降本</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; Product Hunt 9/5（Experiential Labs #6 125票："traffic-driven model selection，BYOK / self-hosted / 1000+ models，train a specialized model you own"）+ 往期 CostAudit / 多模型 API 路由的"账单失控"痛点</span>
+  </div>
+</div>
+
+<!-- HOOK -->
+<div class="hook-box">
+  <div class="hook-label">本期钩子</div>
+  <div class="hook-text">
+    9 月 8 日三条信号指向同一层：当 AI 让"生产力"不再稀缺，稀缺转移到了三个更难的问题上——让它长记性、让它像个人、让它花得聪明。信号一：Reflexio 登 PH #2——"行为学习"，一个人同时跑多个 coding agent 却"同样的坑反复踩"，这就是 LearnLoop（Agent 行为学习层）。信号二：humanizer 冲上 Trending——"去掉 AI 文本的痕迹"，一个人用 AI 写内容却"一眼 AI 味"被降权识破，这就是 ReadHuman（AI 文本拟人引擎）。信号三：Experiential Labs 登 PH #6——"流量驱动的模型选型"，一个人接了一堆模型 API 却"说不清钱花在哪"，这就是 ModelPick（模型选型降本网关）。共同主线：上一期讲"管得住、负担得起、预判得了"（治理/本地化/预测），这一期更往前一步——AI 不仅要"用得上"，还要"学得会（长记性）、读得懂（像人）、算得清（省钱）"。谁先给一人公司补齐这三件套，谁就抓住 OPC 从"追 AI 生产力"走向"驾驭 AI 的智能、可信与经济"的下半场。
+  </div>
+</div>
+
+<!-- Navigation -->
+<div class="prev-next">
+  <a href="2026-09-04.html" class="pn-card">
+    <div class="pn-label">&larr; 上一期</div>
+    <div class="pn-title">Vol.036 &middot; AgentVCS 多Agent治理 · VoiceKit 本地语音 · ForecastKit 时序预测</div>
+  </a>
+  <a href="daily.html" class="pn-card pn-right">
+    <div class="pn-label">下一期 &rarr;</div>
+    <div class="pn-title">Vol.038 &middot; VerifyGate 断言验证 · BottleneckMap 瓶颈诊断 · SellGate 卖动审计</div>
+  </a>
+</div>
+
+<div class="footer">
+  OPC IDEA &middot; 日报 &#65295; <a href="subscribe.html">订阅日报</a> &#65295; <a href="feed.xml">RSS</a> &#65295; <a href="./index.html">完整报告</a> &#65295; <a href="newsletter-strategy.md">启动策略</a><br>
+  北京 &middot; 2026年9月8日 &middot; Vol.037 &middot; 今日刷新<br>
+  商业&middot;认知观察者&middot;出品
+</div>
+
+</div>
+</body>
+</html>
