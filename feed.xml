@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Wed, 09 Sep 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Thu, 10 Sep 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 143 · ChartForge——AI 图表设计层 · diagram-design 单日涨 2286 星，39 种编辑级图表取代 Mermaid</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-143</link>
+    <description>9月10日GitHub Trending上cathrynlavery/diagram-design单日涨2,286星，是当天涨最快的项目，一句话点破定位：用39种"编辑级"图表风格取代Mermaid——同样的架构图、流程图、时序图，画出来不是"工程草稿"，而是能直接放进方案、报告、deck的"出版级"图表。同一天反向信号密集：abha.page 2.0把品牌色一键转成可交付设计系统，Kombai Gallery放出20,000+精选UI设计给agent和人类开发者用。共同指向一件事：AI让"写"变得廉价之后，最拖后腿的变成了"画"——文字已经像模像样，配图还是程序员审美的Mermaid，一眼被看穿"半成品"。关键洞察：内容生产的下一个瓶颈不是文字，是"图"。做"ChartForge"——AI图表设计层：一键图表美化（Mermaid/ASCII/白板图自动转39种编辑风格可交付图，套品牌色和排版规范）+方案/报告配图引擎（给AI写的方案/report/deck自动生成匹配图表，图随文走）+品牌设计系统桥接（品牌色/字体一键转图表主题）。Free/Maker ¥29/Pro ¥99。冷启动：开源ChartForge Core美化管线+数据帖"AI帮你写方案，图却还是工程图"+搭diagram-design顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Thu, 10 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-039-01</guid>
+    <category>图表设计 / 方案配图 / 可视化 / 品牌一致性 / OPC说服力</category>
+  </item>
+
+  <item>
+    <title>IDEA 144 · AgentVault——AI 工作流资产沉淀与分发层 · teamai-cli + superpowers 刷屏，prompt 散落各工具</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-144</link>
+    <description>9月10日GitHub Trending上冲得最快的一批项目，没一个是新模型或新框架：Tencent/teamai-cli（单日+563星）从共享git repo把团队的skill/rule/agent/hook/context同步到多个AI工具；obra/superpowers（283.8K星）把整套软件开发方法论固化成可跨Claude Code/Codex/Cursor/Gemini 8个harness安装的skill；affaan-m/ECC（254.8K星）更把68个agent、286个skill、94个命令shim打包成系统。核心洞察：agent生态正在从"装了多少skill"转向"怎么把skill、记忆、流程系统化管理"——一个人最痛的不是缺能力，而是"prompt、规则、SOP、踩过的坑"散落各工具，换一个就重来，沉淀不下来也复用不了。往期AgentVCS管"代码变更台账"，这条管"AI工作流资产（prompt/skill/rule/流程）的版本化沉淀与分发"。做"AgentVault"——AI工作流资产仓库：资产沉淀（散落各工具的prompt/skill/rule/工作流收进来，自动打标、去重、版本化，像git一样可回溯）+跨工具分发（一条规则一键同步到Claude Code/Codex/Cursor/Gemini，换工具不重来）+资产复用与团队共享（沉淀成"我的方法论库"，可导出分享、可团队共建）。Free/Maker ¥29/Pro ¥99。冷启动：开源AgentVault Core资产同步脚本+数据帖"你的prompt和SOP散落在4个工具里，换一个就重来"+搭teamai-cli/superpowers顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Thu, 10 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-039-02</guid>
+    <category>资产沉淀 / 跨工具分发 / 工作流 / 可复用 / OPC提效</category>
+  </item>
+
+  <item>
+    <title>IDEA 145 · TaskSpec——Agent 任务规格化引擎 · DEV 双爆款：给 agent 的是目标还是任务，决定它靠不靠谱</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-145</link>
+    <description>9月10日DEV上两篇agent实战帖刷了社区。aureliodev359《我让一个自主AI agent跑了一周，踩遍了所有的坑》总结5条铁律：一次运行只做一件事、默认权限"什么都不能干"、验证"内容对"而不是"内容存在"、别写死循环重试、边界比提示词更重要。同一天kharonte的《AI coding agent 1000小时后真正有效的工作流》点破同一个根因："给agent一个目标（goal），它会做几十个隐含决策，每个都合理、合起来完全跑偏；给一个精确scope+可验证done的任务（task），它才靠谱。"关键洞察：agent出错的根因往往不在模型，而在"你给的是目标还是任务"——autonomy要设计出来，不是打开开关。往期VerifyGate是"事后验结果"，这条是"事前把任务设计成可验收"。做"TaskSpec"——Agent任务规格化引擎：目标→规格转化（把"给网站加个登录"这种goal转成含精确scope、约束、done定义的任务规格）+验收标准生成（每条任务自动生成"2分钟可自查的done清单"）+边界与权限模板（默认零权限、一次一任务、重试间隔等护栏模板）。Free/Maker ¥29/Pro ¥99。冷启动：开源TaskSpec Core任务规格模板+数据帖"你给agent的是目标还是任务，决定它靠不靠谱"+搭DEV双爆款顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Thu, 10 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-039-03</guid>
+    <category>任务规格 / 验收标准 / Agent约束 / autonomy设计 / OPC可靠</category>
+  </item>
 
   <item>
     <title>IDEA 140 · VerifyGate——AI 断言确定性验证层 · reverify 冲上 Trending，AI 说"它懂了"97% 是错的</title>

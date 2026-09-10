@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<title>OPC IDEA · 2026年9月9日</title>
+<meta name="description" content="每日精选一人公司方向的精筛 IDEA · 一手源 · 今日已刷新">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta property="og:description" content="今日："你的 AI 说它懂了，97% 是错的"——reverify 冲上 Trending，OPC 缺一个 AI 断言确定性验证层 · "你用了 3 倍 AI 时间，交付却没快 3 倍"——OpenAI 3.1 个 agent 日刷屏，OPC 缺一个工作流瓶颈诊断层 · "你的 AI 能造出任何东西，但你卖得掉吗"——DEV 一个 AI 自主接单实验 10 机会 0 成交，OPC 缺一个卖动审计层。每日 09:00 自动刷新。">
+<meta property="og:url" content="https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html">
+<meta property="og:image" content="https://bezhumingqian-bit.github.io/opc-idea-daily/icon-512.png">
+<meta property="og:site_name" content="OPC IDEA 日报">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta name="twitter:description" content="今日 3 条精筛 IDEA · 一手源 · 工作日每日 09:00 刷新">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+    background: #F5F1E8;
+    color: #2C2A26;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px 40px; }
+  .header {
+    background: #FAF7EE;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 32px 28px 28px;
+    margin-bottom: 16px;
+  }
+  .brand { font-size: 11px; letter-spacing: 4px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 14px; }
+  .brand a { color: #B5B0A4; text-decoration: none; }
+  .brand a:hover { color: #8A8474; }
+  .header-title { font-size: 26px; font-weight: 500; color: #2C2A26; letter-spacing: 1px; }
+  .header-date { font-size: 13px; color: #7A766C; margin-top: 6px; letter-spacing: 0.5px; }
+  .divider { height: 1px; background: #E6E1D6; margin: 18px 0; }
+  .header-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .chip { padding: 3px 10px; background: transparent; border: 1px solid #D8D2C5; border-radius: 2px; font-size: 11px; color: #7A766C; letter-spacing: 0.5px; }
+  .card {
+    background: #FFFEFC;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 22px 24px;
+    margin-bottom: 10px;
+  }
+  .card-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+  .num { width: 28px; height: 28px; border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; flex-shrink: 0; letter-spacing: 0.5px; background: #EEEAE0; color: #5A5443; }
+  .headline { font-size: 15.5px; font-weight: 500; color: #2C2A26; line-height: 1.5; flex: 1; padding-top: 3px; letter-spacing: 0.2px; }
+  .fact { font-size: 13.5px; color: #5F5B53; line-height: 1.75; margin-bottom: 12px; padding-left: 42px; }
+  .next-step { font-size: 13.5px; color: #2C2A26; line-height: 1.75; padding: 12px 16px; margin-left: 42px; background: #F7F4EC; border-left: 2px solid #8A8474; border-radius: 0 2px 2px 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; padding-left: 42px; font-size: 11.5px; color: #7A766C; }
+  .hook-box { background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 16px 20px; margin-bottom: 10px; }
+  .hook-label { font-size: 11px; letter-spacing: 2px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 8px; }
+  .hook-text { font-size: 14px; color: #2C2A26; line-height: 1.7; letter-spacing: 0.2px; }
+
+  .prev-next {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    margin-top: 18px; margin-bottom: 18px;
+  }
+  .pn-card {
+    background: #FFFEFC; border: 1px solid #E6E1D6; border-radius: 4px;
+    padding: 14px 18px; text-decoration: none; color: inherit; display: block;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .pn-card:hover { border-color: #C4BBA9; background: #FAF7EE; }
+  .pn-card.disabled { opacity: 0.4; pointer-events: none; }
+  .pn-label { font-size: 10.5px; letter-spacing: 1.5px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 4px; }
+  .pn-title { font-size: 13px; color: #2C2A26; line-height: 1.5; letter-spacing: 0.2px; }
+  .pn-right { text-align: right; }
+
+  .tag-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding-left: 42px; }
+  .tag { padding: 2px 8px; background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 2px; font-size: 10.5px; color: #7A766C; letter-spacing: 0.3px; }
+
+  .footer { text-align: center; margin-top: 28px; margin-bottom: 20px; font-size: 11px; color: #B5B0A4; letter-spacing: 0.5px; line-height: 2; }
+  .footer a { color: #8A8474; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  @media print {
+    body { background: white; }
+    .card, .header, .hook-box { box-shadow: none; border-color: #ccc; }
+    .prev-next, .footer, .header-meta { display: none; }
+  }
+  @media (max-width: 640px) {
+    .container { padding: 12px 12px 32px; }
+    .header { padding: 24px 20px 22px; }
+    .header-title { font-size: 22px; }
+    .card { padding: 18px 16px; }
+    .fact, .next-step { padding-left: 0; margin-left: 0; }
+    .tag-bar { padding-left: 0; }
+    .prev-next { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<a href="./index.html" style="display:inline-block;font-size:12px;color:#8A8474;text-decoration:none;letter-spacing:0.5px;margin-bottom:18px;">&larr; 返回归档首页</a>
+
+<div class="header">
+  <div class="brand"><a href="./index.html">OPC IDEA &middot; 日报</a></div>
+  <div class="header-title">一人公司方向&middot;每日精选</div>
+  <div class="header-date">2026年9月9日 &middot; 星期三 &middot; Vol.038 &middot; 今日已刷新</div>
+  <div class="divider"></div>
+  <div class="header-meta">
+    <span class="chip">"你的 AI 说它懂了，97% 是错的"——reverify 冲上 Trending，OPC 缺一个 AI 断言确定性验证层</span>
+    <span class="chip">"你用了 3 倍 AI 时间，交付却没快 3 倍"——OpenAI 3.1 个 agent 日刷屏，OPC 缺一个工作流瓶颈诊断层</span>
+    <span class="chip">"你的 AI 能造出任何东西，但你卖得掉吗"——DEV 一个 AI 自主接单实验 10 机会 0 成交，OPC 缺一个卖动审计层</span>
+    <span class="chip">已与近七期去重</span>
+  </div>
+  <div class="header-meta" style="margin-top:8px;">
+    <a href="subscribe.html" style="font-size:13px;color:#8A8474;text-decoration:none;letter-spacing:0.3px;">每天09:00自动收到 &rarr;</a>
+  </div>
+</div>
+
+<!-- CARD 1 -->
+<div class="card" id="idea-140">
+  <div class="card-header">
+    <span class="num">01</span>
+    <span class="headline">VerifyGate——AI 断言确定性验证层 &middot; reverify 冲上 Trending，AI 说"它懂了"97% 是错的</span>
+  </div>
+  <div class="fact">
+    9 月 9 日，GitHub Trending 上 2akouwu/reverify（单日 ⭐1,036）冲上榜，标语一句话点破："deterministic verification beats asking the model to be careful"（确定性验证胜过让模型"小心一点"）——一个 MCP server + CLI，把 AI 对代码或二进制的每一个"声称"交给模型之外的确定性工具验证，只有通过验证的才算数，模型自己说了不算。作者挑了幻觉率最高的场景——二进制逆向工程——做基准：71 个真实 Windows 系统文件，AI 教科书式回答的错误率高达 97%，reverify 全部拦下、无一漏放（同一套验证在 Linux/macOS/独立 aarch64 上重跑）。它还带一个 rollover 功能：把长任务交接给文件再开新 session，取代容易失真的自动摘要，兼容 Claude Code、Codex、Gemini CLI、OpenCode。关键洞察：agent 越强，越不能"让它小心点"，要把"它说的是不是真的"交给模型外的确定性工具钉死。往期 CiteGuard（答案溯源）、SlimCode（死代码）、ShipPlan（计划审批）都不同，这条是"AI 技术断言 vs 工具验证过的事实"。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"VerifyGate"——AI 断言确定性验证层。定位：不是"内容逐句溯源"的 CiteGuard，也不是"删死代码"的 SlimCode，是"把 AI 对代码/数据/二进制的每个技术断言，接一个确定性校验器，只有工具验证通过的才放行"。① 断言验证（核心产品。AI 说"这行代码是这个意思""这个二进制做了这个"，接确定性工具验证，错误断言直接拦下）。② 验证判据库（针对你的业务定义"什么算通过"——不是通用判据，是"你这个项目里哪些断言必须验证、用什么工具验"）。③ 长任务无缝交接（rollover，把跑不动的长任务交接给文件再开新 session，取代失真的自动摘要，跨 Claude Code/Codex/Gemini/Cursor 通用）。定价：Free——单项目断言验证。Maker——¥29/月，3 个项目 + 自定义判据。Pro——¥99/月，不限项目 + 长任务交接 + CI 集成。冷启动：渠道 A——开源"VerifyGate Core"验证钩子（MIT）。渠道 B——数据帖"你的 AI 说它懂了，97% 是错的"。渠道 C——搭 reverify 登榜顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#确定性验证</span>
+    <span class="tag">#断言校验</span>
+    <span class="tag">#Agent可信</span>
+    <span class="tag">#幻觉拦截</span>
+    <span class="tag">#OPC提效</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; GitHub Trending 9/9（2akouwu/reverify 单日 ⭐1,036："deterministic verification beats asking the model to be careful"，二进制逆向基准 71 个文件错误率 97% 全部拦下）</span>
+  </div>
+</div>
+
+<!-- CARD 2 -->
+<div class="card" id="idea-141">
+  <div class="card-header">
+    <span class="num">02</span>
+    <span class="headline">BottleneckMap——AI 工作流瓶颈诊断层 &middot; OpenAI 3.1 个 agent 日/人工日，交付却没快 3 倍</span>
+  </div>
+  <div class="fact">
+    9 月 6 日，OpenAI 发布一份内部报告，一个数字刷屏：到 8 月中旬，它的研究组织每 1 个人工日跑 3.1 个 agent 日。但报告自己补了一句关键限定——代码更快、实验更多，不等于整个研究流程快了 3.1 倍，提速可能只是把"排队"挪到了别的环节。DEV 上 Marcus Kim 把这个洞见做成一张"瓶颈地图"：借用 Epoch AI 的六阶段（Decide/Design/Build/Run/Analyze/Communicate，决定/设计/构建/运行/分析/沟通），一句点破："AI 产出 5 个功能而你只能验证 1 个，Build 不再是你的问题，Analyze 才是。""AI 写 3 份提案而你还没想清楚能解决客户什么问题，Communicate 不是问题，Decide 才是。"关键洞察：别问"我用了多少 AI"，要问"哪一环卡住了 finished work"——量 token/commit/PR 这些"活动指标"很容易，但它们和"客户真正能用的成品"是两回事。往期 ForecastKit（预测）、AgentAnalytics（无 Cookie 分析）、DataBridge（数据接入）都不同，这条是"AI 工作流自身的瓶颈诊断"。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"BottleneckMap"——AI 工作流瓶颈诊断层。定位：不是"预测未来"的 ForecastKit，也不是"数据接入问答"的 DataBridge，是"给一人公司找出 AI 提速后到底卡在哪一环"的诊断工具。① 六阶段瓶颈地图（Decide/Design/Build/Run/Analyze/Communicate 每环：工作等多久、返工几次、最老未完成项是什么，可视化定位真瓶颈）。② 瓶颈定位建议（"卡在 Analyze 就别再要更多 feature 代码""卡在 Decide 就先把客户问题想清楚"，把 AI 火力对准瓶颈而不是撒向全场）。③ 交付 vs 活动对账（把 token/commit/PR/agent 时长这些"活动指标"，对齐到"客户可用的 finished work"，算出"你多用了多少 AI，交付到底快了多少"）。定价：Free——单项目六阶段诊断。Maker——¥29/月，10 个项目 + 瓶颈建议。Pro——¥99/月，不限项目 + 交付对账 + API 接入。冷启动：渠道 A——开源"BottleneckMap Core"六阶段模板（MIT）。渠道 B——数据帖"你用了 3 倍 AI 时间，交付却没快 3 倍"。渠道 C——搭 OpenAI 3.1x 报告顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#瓶颈诊断</span>
+    <span class="tag">#工作流</span>
+    <span class="tag">#交付对账</span>
+    <span class="tag">#六阶段</span>
+    <span class="tag">#OPC提效</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; OpenAI 9/6 内部报告（3.1 agent-workdays/人工日）+ DEV 9/8 Marcus Kim《OpenAI Now Runs 3.1 Agent-Workdays Per Human Workday》六阶段瓶颈地图</span>
+  </div>
+</div>
+
+<!-- CARD 3 -->
+<div class="card" id="idea-142">
+  <div class="card-header">
+    <span class="num">03</span>
+    <span class="headline">SellGate——AI 造物"卖得动"审计层 &middot; 一个 AI 自主接单实验：10 机会 0 成交，能造 ≠ 能卖</span>
+  </div>
+  <div class="fact">
+    DEV 上一篇长文《我试图让 AI 自主找活、赢单、交付，为什么失败了》刷了社区：作者用半年搭了一条 4 段流水线（Research 找机会 → Qualification 打分 → Delivery 交付 → Ledger 记账），写了 300+ 测试，工程上完全跑通；结果第一轮 AI 自主找到 10 个机会，通过资格审核 0 个、成交 0 个、收入 0、净亏损。复盘里每个候选都踩中至少一个坑：付费意愿是纯猜测（定价基于"看起来合理"，没有真实成交价格证据）、总有免费替代品（每个任务都能用免费工具或现成方案解决）、可达性无法验证（根本联系不上、约不到那个买单人）。作者最后把分工倒过来：发现机会交给人，AI 只做佐证。关键洞察："能造出来"和"能卖出去"是两个完全不同的问题——AI 让"造"变得廉价，稀缺转移到了"有没有人真的愿意付钱"。往期 SignalPipeline（购买信号监听）、RevenueShift（变现结构诊断）、SoloPipe（入站转化）都不同，这条是"造之前/造之中，给 AI 造物做'卖得动'真实性审计"。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"SellGate"——AI 造物卖动审计层。定位：不是"监听购买信号"的 SignalPipeline，也不是"诊断变现结构"的 RevenueShift，是"把 AI 造出来的东西，从'能跑'筛到'卖得动'"的需求真实性审计。① 付费意愿证据审计（核心。不是"定价看着合理"，是"有没有人真的按这个价成交过"——没有成交证据就标红）。② 免费替代品扫描（"这个需求是不是免费工具/现成方案就能解决"，是就标黄，别把 AI 火力浪费在免费的活上）。③ 可达性验证（"你到底能不能联系上、约得到这个买单人"，联系不上就标灰，别造一个卖不出去的东西）。定价：Free——单产品三项审计。Maker——¥29/月，10 个产品 + 审计报告。Pro——¥99/月，不限产品 + 可达性验证 + API 接入。冷启动：渠道 A——开源"SellGate Core"需求真实性清单（MIT）。渠道 B——数据帖"你的 AI 能造出任何东西，但你卖得掉吗"。渠道 C——搭 DEV 失败复盘顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#需求真实性</span>
+    <span class="tag">#卖动审计</span>
+    <span class="tag">#付费意愿</span>
+    <span class="tag">#免费替代</span>
+    <span class="tag">#OPC变现</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; DEV 9/8《I Tried to Build a Company Where AI Autonomously Finds, Wins, and Delivers Work. Here's Why It Failed.》（4 段流水线、300+ 测试、10 机会 0 成交）</span>
+  </div>
+</div>
+
+<!-- HOOK -->
+<div class="hook-box">
+  <div class="hook-label">本期钩子</div>
+  <div class="hook-text">
+    9 月 9 日三条信号指向同一个词：验。当 AI 让"造"变得廉价，稀缺转移到了三个"验"——验它对不对、验它快不快、验它卖不卖得动。信号一：reverify 冲上 Trending——"确定性验证胜过让模型小心点"，AI 说"它懂了"97% 是错的，这就是 VerifyGate（AI 断言确定性验证层）。信号二：OpenAI 每人工日跑 3.1 个 agent 日，交付却没快 3 倍——瓶颈从"造"挪到了"审"，这就是 BottleneckMap（AI 工作流瓶颈诊断层）。信号三：DEV 一个 AI 自主接单实验 10 个机会 0 成交——"能造"不等于"能卖"，这就是 SellGate（AI 造物卖动审计层）。共同主线：前几期讲"驾驭 AI 的智能、可信与经济"（长记性、像人、省钱），这一期再往下一层——AI 把"生产"压到几乎免费之后，真正稀缺的是"验证"：验证 AI 说的对不对、验证提效是不是真提效、验证造出来的东西有没有人买单。谁先给一人公司补齐这三件"验真"工具，谁就抓住 OPC 从"疯狂造"走向"造得对、造得快、卖得动"的下半场。
+  </div>
+</div>
+
+<!-- Navigation -->
+<div class="prev-next">
+  <a href="2026-09-08.html" class="pn-card">
+    <div class="pn-label">&larr; 上一期</div>
+    <div class="pn-title">Vol.037 &middot; LearnLoop 行为学习 · ReadHuman 去AI味 · ModelPick 选型降本</div>
+  </a>
+  <a href="daily.html" class="pn-card pn-right">
+    <div class="pn-label">下一期 &rarr;</div>
+    <div class="pn-title">Vol.039 &middot; ChartForge 图表设计 · AgentVault 资产沉淀 · TaskSpec 任务规格</div>
+  </a>
+</div>
+
+<div class="footer">
+  OPC IDEA &middot; 日报 &#65295; <a href="subscribe.html">订阅日报</a> &#65295; <a href="feed.xml">RSS</a> &#65295; <a href="./index.html">完整报告</a> &#65295; <a href="newsletter-strategy.md">启动策略</a><br>
+  北京 &middot; 2026年9月9日 &middot; Vol.038 &middot; 今日刷新<br>
+  商业&middot;认知观察者&middot;出品
+</div>
+
+</div>
+</body>
+</html>
