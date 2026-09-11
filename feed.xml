@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Thu, 10 Sep 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Fri, 11 Sep 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 146 · FocusFit——AI 输出注意力适配层 · i-have-adhd 35840 星登顶 GitHub，agent 输出信息够但读不下去</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-146</link>
+    <description>9月10日GitHub Trending第一名是一个不起眼的Python skill：ayghri/i-have-adhd，35,840星，登顶原因不是模型更强，而是它解决了一个所有人都有的痛点——agent输出"信息是够的，只是读不下去"。README写得很直白：先给下一步行动、清单最多5条、跳过开场铺垫、不要收尾客套。同一天obra/superpowers（284K星）、affaan-m/ECC（254K星）也在做同一件事的另一个侧面：把"该怎么用agent"的纪律固化成可复用资产。核心洞察：AI让生成变得无限廉价后，稀缺的不是更多信息，而是"把信息收成让人读得下去、能立刻行动的形态"——往期ReadHuman管"语气去AI味"，这条管"信息结构与密度"，两个维度。做"FocusFit"——AI输出注意力适配层：输出重塑引擎（800字输出自动压成"结论→3步行动→关键风险"三段式）+个性化注意力模板（限几条、要不要表格、结论放哪，一次配置处处生效）+多agent统一出口（Claude Code/Codex/Cursor/Gemini输出都过同一层重塑）。Free/Maker ¥29/Pro ¥99。冷启动：开源FocusFit Core重塑管线+数据帖"你的agent信息是够的，只是读不下去"+搭i-have-adhd登顶顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-040-01</guid>
+    <category>注意力设计 / 信息密度 / 输出重塑 / 认知适配 / OPC省心</category>
+  </item>
+
+  <item>
+    <title>IDEA 147 · ReproGate——Agent 修复前复现契约层 · DEV 爆款复盘：agent 修的 34 个 bug 里 11 个复发</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-147</link>
+    <description>9月10日DEV上一篇《How I Taught My AI Coding Agent to Reproduce Bugs Before Fixing Them》刷了社区：审计一个月里agent修的34个bug，11个后来复发——1/3是"治标不治本"。根因不是模型不会调试，而是"没先让bug复现就动手改"：LLM是"合理性机器"，给它bug报告它总能找到说得通的理论去改，但没有复现就没有ground truth，补丁编译过、旧测试也过（它们本来就抓不到这bug），看着绿油油，缺陷还躺着。典型翻车：报告"CSV导出丢最后一行"，agent找到分页里一个off-by-one改了还写了测试，merge后bug依旧——真实原因是buffer流没flush。解法只有一条硬规则：没有failing reproduction就不许改非测试代码，落成三层——prompt contract+pre-commit hook+repro script模板。核心洞察：往期VerifyGate是"验AI对代码的声称对不对"，这条是"修bug前先让bug复现"，事前复现契约vs事后验真，互补。做"ReproGate"——Agent修复前复现契约层：复现契约钩子（bug分支上，改任何非测试代码前必须先有failing repro落库，否则拦截）+复现模板库（failing test/repro script模板，测不出就给"3次尝试后停下来报告"）+复发追踪（记录复现→修复→验证闭环，一个月后回查复发）。Free/Maker ¥29/Pro ¥99。冷启动：开源ReproGate Core复现钩子+数据帖"你agent修的bug，1/3会复发"+搭DEV爆款复盘顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-040-02</guid>
+    <category>复现契约 / 修复护栏 / 防复发 / 确定性修复 / OPC可靠</category>
+  </item>
+
+  <item>
+    <title>IDEA 148 · FabForge——AI 制造设计层 · text-to-cad + pascalorg 同榜，agent 从写代码画图延伸到造实物</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-148</link>
+    <description>9月10日GitHub Trending上两个"造东西"的项目同时上榜：earthtojake/text-to-cad（15,222星），一套Python agent skills for CAD/CAE/CAM——把自然语言或草图转成可制造的CAD规格，再对接仿真（CAE）和加工（CAM）；pascalorg/editor（23,144星），开源3D架构编辑器，带本地CLI+MCP工具。共同指向一件事：agent的能力边界正在从"写代码、画2D图"延伸到"造实物"——CAD（设计）、CAE（仿真）、CAM（加工）这条制造链，过去要专业工程师+昂贵软件，现在开始被AI拉平。核心洞察：当AI让写方案、画图、写代码都免费，稀缺继续往"离物理世界更近"的一端迁移——谁能让一人公司把产品想法直接变成"能交给工厂或3D打印的实物"，谁就抓住AI造物下半场。做"FabForge"——AI制造设计层：想法→可制造规格（自然语言描述产品→自动生成可3D打印/可加工的CAD规格+BOM物料清单）+可制造性体检（自动检查壁厚、悬空、公差、材料是否可行）+工厂对接（规格转成工厂能直接报价的格式，3D打印/CNC/注塑各出各的工艺单）。Free/Maker ¥29/Pro ¥99。冷启动：开源FabForge Core规格生成管线+数据帖"你的AI能写代码画图，但它能造出实物吗"+搭text-to-cad/pascalorg顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Fri, 11 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-040-03</guid>
+    <category>制造设计 / CAD规格 / 可制造性 / 物理世界 / OPC造物</category>
+  </item>
 
   <item>
     <title>IDEA 143 · ChartForge——AI 图表设计层 · diagram-design 单日涨 2286 星，39 种编辑级图表取代 Mermaid</title>

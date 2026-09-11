@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<title>OPC IDEA · 2026年9月10日</title>
+<meta name="description" content="每日精选一人公司方向的精筛 IDEA · 一手源 · 今日已刷新">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta property="og:description" content="今日："AI 帮你写方案，图却还是工程图"——diagram-design 单日涨 2286 星，OPC 缺一个 AI 图表设计层 · "你的 prompt 和 SOP 散落在 4 个工具里"——teamai-cli + superpowers 刷屏，OPC 缺一个 AI 工作流资产仓库 · "你给 agent 的是目标还是任务"——DEV 双爆款，OPC 缺一个 Agent 任务规格化引擎。每日 09:00 自动刷新。">
+<meta property="og:url" content="https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html">
+<meta property="og:image" content="https://bezhumingqian-bit.github.io/opc-idea-daily/icon-512.png">
+<meta property="og:site_name" content="OPC IDEA 日报">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta name="twitter:description" content="今日 3 条精筛 IDEA · 一手源 · 工作日每日 09:00 刷新">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+    background: #F5F1E8;
+    color: #2C2A26;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px 40px; }
+  .header {
+    background: #FAF7EE;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 32px 28px 28px;
+    margin-bottom: 16px;
+  }
+  .brand { font-size: 11px; letter-spacing: 4px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 14px; }
+  .brand a { color: #B5B0A4; text-decoration: none; }
+  .brand a:hover { color: #8A8474; }
+  .header-title { font-size: 26px; font-weight: 500; color: #2C2A26; letter-spacing: 1px; }
+  .header-date { font-size: 13px; color: #7A766C; margin-top: 6px; letter-spacing: 0.5px; }
+  .divider { height: 1px; background: #E6E1D6; margin: 18px 0; }
+  .header-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .chip { padding: 3px 10px; background: transparent; border: 1px solid #D8D2C5; border-radius: 2px; font-size: 11px; color: #7A766C; letter-spacing: 0.5px; }
+  .card {
+    background: #FFFEFC;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 22px 24px;
+    margin-bottom: 10px;
+  }
+  .card-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+  .num { width: 28px; height: 28px; border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; flex-shrink: 0; letter-spacing: 0.5px; background: #EEEAE0; color: #5A5443; }
+  .headline { font-size: 15.5px; font-weight: 500; color: #2C2A26; line-height: 1.5; flex: 1; padding-top: 3px; letter-spacing: 0.2px; }
+  .fact { font-size: 13.5px; color: #5F5B53; line-height: 1.75; margin-bottom: 12px; padding-left: 42px; }
+  .next-step { font-size: 13.5px; color: #2C2A26; line-height: 1.75; padding: 12px 16px; margin-left: 42px; background: #F7F4EC; border-left: 2px solid #8A8474; border-radius: 0 2px 2px 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; padding-left: 42px; font-size: 11.5px; color: #7A766C; }
+  .hook-box { background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 16px 20px; margin-bottom: 10px; }
+  .hook-label { font-size: 11px; letter-spacing: 2px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 8px; }
+  .hook-text { font-size: 14px; color: #2C2A26; line-height: 1.7; letter-spacing: 0.2px; }
+
+  .prev-next {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    margin-top: 18px; margin-bottom: 18px;
+  }
+  .pn-card {
+    background: #FFFEFC; border: 1px solid #E6E1D6; border-radius: 4px;
+    padding: 14px 18px; text-decoration: none; color: inherit; display: block;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .pn-card:hover { border-color: #C4BBA9; background: #FAF7EE; }
+  .pn-card.disabled { opacity: 0.4; pointer-events: none; }
+  .pn-label { font-size: 10.5px; letter-spacing: 1.5px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 4px; }
+  .pn-title { font-size: 13px; color: #2C2A26; line-height: 1.5; letter-spacing: 0.2px; }
+  .pn-right { text-align: right; }
+
+  .tag-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding-left: 42px; }
+  .tag { padding: 2px 8px; background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 2px; font-size: 10.5px; color: #7A766C; letter-spacing: 0.3px; }
+
+  .footer { text-align: center; margin-top: 28px; margin-bottom: 20px; font-size: 11px; color: #B5B0A4; letter-spacing: 0.5px; line-height: 2; }
+  .footer a { color: #8A8474; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  @media print {
+    body { background: white; }
+    .card, .header, .hook-box { box-shadow: none; border-color: #ccc; }
+    .prev-next, .footer, .header-meta { display: none; }
+  }
+  @media (max-width: 640px) {
+    .container { padding: 12px 12px 32px; }
+    .header { padding: 24px 20px 22px; }
+    .header-title { font-size: 22px; }
+    .card { padding: 18px 16px; }
+    .fact, .next-step { padding-left: 0; margin-left: 0; }
+    .tag-bar { padding-left: 0; }
+    .prev-next { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<a href="./index.html" style="display:inline-block;font-size:12px;color:#8A8474;text-decoration:none;letter-spacing:0.5px;margin-bottom:18px;">&larr; 返回归档首页</a>
+
+<div class="header">
+  <div class="brand"><a href="./index.html">OPC IDEA &middot; 日报</a></div>
+  <div class="header-title">一人公司方向&middot;每日精选</div>
+  <div class="header-date">2026年9月10日 &middot; 星期四 &middot; Vol.039 &middot; 今日已刷新</div>
+  <div class="divider"></div>
+  <div class="header-meta">
+    <span class="chip">"AI 帮你写方案，图却还是工程图"——diagram-design 单日涨 2286 星，OPC 缺一个 AI 图表设计层</span>
+    <span class="chip">"你的 prompt 和 SOP 散落在 4 个工具里"——teamai-cli + superpowers 刷屏，OPC 缺一个 AI 工作流资产仓库</span>
+    <span class="chip">"你给 agent 的是目标还是任务"——DEV 双爆款，OPC 缺一个 Agent 任务规格化引擎</span>
+    <span class="chip">已与近七期去重</span>
+  </div>
+  <div class="header-meta" style="margin-top:8px;">
+    <a href="subscribe.html" style="font-size:13px;color:#8A8474;text-decoration:none;letter-spacing:0.3px;">每天09:00自动收到 &rarr;</a>
+  </div>
+</div>
+
+<!-- CARD 1 -->
+<div class="card" id="idea-143">
+  <div class="card-header">
+    <span class="num">01</span>
+    <span class="headline">ChartForge——AI 图表设计层 &middot; diagram-design 单日涨 2286 星，39 种编辑级图表取代 Mermaid</span>
+  </div>
+  <div class="fact">
+    9 月 10 日，GitHub Trending 上 cathrynlavery/diagram-design 单日涨 2,286 星，是当天涨最快的项目，一句话点破定位：用 39 种"编辑级"图表风格取代 Mermaid——同样的架构图、流程图、时序图，画出来不是"工程草稿"，而是能直接放进方案、报告、deck 的"出版级"图表。同一天反向信号密集：abha.page 2.0 把品牌色一键转成可交付设计系统，Kombai Gallery 放出 20,000+ 精选 UI 设计给 agent 和人类开发者用。共同指向一件事：AI 让"写"变得廉价之后，最拖后腿的变成了"画"。一个人用 AI 写方案、做 pitch、出报告，文字已经像模像样，但配图还是程序员审美的 Mermaid，一眼就被客户/投资人看穿"这是个半成品"。关键洞察：内容生产的下一个瓶颈不是文字，是"图"——谁能让 AI 生成的内容"看起来像人精心设计过的"，谁就补上一人公司"说服力"的最后一公里。往期 ReadHuman（去 AI 味文本）、VoiceKit（语音内容）都不同，这条是"AI 内容里的图表可视化升级"。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"ChartForge"——AI 图表设计层。定位：不是画图工具（Excalidraw/Figma），也不是 Mermaid 替代品本身，是"把 agent 产出的架构图/流程图/时序图，自动升级成编辑级、可交付的出版图表"。① 一键图表美化（核心产品。把 Mermaid/ASCII/白板图自动转成 39 种编辑风格的可交付图，套品牌色和排版规范）。② 方案/报告配图引擎（给 AI 写的方案/report/deck 自动生成匹配图表，图随文走、风格统一）。③ 品牌设计系统桥接（把品牌色/字体一键转成图表主题，保证"你的图"和"你的品牌"一致）。定价：Free——单项目图表美化。Maker——¥29/月，3 个项目 + 自定义主题。Pro——¥99/月，不限项目 + 配图引擎 + 品牌系统桥接。冷启动：渠道 A——开源"ChartForge Core"美化管线（MIT）。渠道 B——数据帖"AI 帮你写方案，图却还是工程图"。渠道 C——搭 diagram-design 登榜顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#图表设计</span>
+    <span class="tag">#方案配图</span>
+    <span class="tag">#可视化</span>
+    <span class="tag">#品牌一致性</span>
+    <span class="tag">#OPC说服力</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; GitHub Trending 9/10（cathrynlavery/diagram-design 单日 +2,286 星："39 种编辑级图表取代 Mermaid"；同期 abha.page 2.0 品牌色转设计系统、Kombai Gallery 20,000+ 精选 UI）</span>
+  </div>
+</div>
+
+<!-- CARD 2 -->
+<div class="card" id="idea-144">
+  <div class="card-header">
+    <span class="num">02</span>
+    <span class="headline">AgentVault——AI 工作流资产沉淀与分发层 &middot; teamai-cli + superpowers 刷屏，prompt 散落各工具</span>
+  </div>
+  <div class="fact">
+    9 月 10 日，GitHub Trending 上冲得最快的一批项目，没一个是新模型或新框架：Tencent/teamai-cli（单日 +563 星）从共享 git repo 把团队的 skill、rule、agent、hook、context 同步到多个 AI 工具；obra/superpowers（283.8K 星）把整套软件开发方法论（先问清需求→拆规格→测试驱动计划→subagent 开发）固化成可跨 Claude Code/Codex/Cursor/Gemini 8 个 harness 安装的 skill；affaan-m/ECC（254.8K 星）更把 68 个 agent、286 个 skill、94 个命令 shim 打包成一套系统。核心洞察一句话：agent 生态正在从"装了多少 skill"转向"怎么把 skill、记忆、流程系统化管理"。一个人今天同时用多个 coding agent，最痛的不是"缺能力"，而是"你的 prompt、规则、SOP、踩过的坑"散落在各工具里，换一个工具就重来一遍，沉淀不下来也复用不了。往期 AgentVCS（多 agent 源码版本控制）管的是"代码变更台账"，这条管的是"AI 工作流资产（prompt/skill/rule/流程）的版本化沉淀与分发"，两者不同。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"AgentVault"——AI 工作流资产仓库。定位：不是管"代码"的 AgentVCS，也不是单一工具的 skill 市场，是"把一人公司的 prompt、规则、SOP、踩坑经验沉淀成一个可版本化、可跨工具分发的资产库"。① 资产沉淀（核心产品。把散落各工具的 prompt/skill/rule/工作流收进来，自动打标、去重、版本化，像 git 一样可回溯）。② 跨工具分发（一条规则/一个 SOP 一键同步到 Claude Code/Codex/Cursor/Gemini，换工具不重来）。③ 资产复用与团队共享（沉淀成"我的方法论库"，可导出分享、可团队共建，把一个人的踩坑经验变成可卖/可复用的数字资产）。定价：Free——单项目资产沉淀。Maker——¥29/月，3 个项目 + 跨工具分发。Pro——¥99/月，不限项目 + 团队共享 + API 接入。冷启动：渠道 A——开源"AgentVault Core"资产同步脚本（MIT）。渠道 B——数据帖"你的 prompt 和 SOP 散落在 4 个工具里，换一个就重来"。渠道 C——搭 teamai-cli/superpowers 顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#资产沉淀</span>
+    <span class="tag">#跨工具分发</span>
+    <span class="tag">#工作流</span>
+    <span class="tag">#可复用</span>
+    <span class="tag">#OPC提效</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; GitHub Trending 9/10（Tencent/teamai-cli +563 星统一分发 skill/rule/MCP；obra/superpowers 283.8K 星方法论固化跨 8 harness；affaan-m/ECC 254.8K 星 68 agent+286 skill 系统化）</span>
+  </div>
+</div>
+
+<!-- CARD 3 -->
+<div class="card" id="idea-145">
+  <div class="card-header">
+    <span class="num">03</span>
+    <span class="headline">TaskSpec——Agent 任务规格化引擎 &middot; DEV 双爆款：给 agent 的是目标还是任务，决定它靠不靠谱</span>
+  </div>
+  <div class="fact">
+    9 月 10 日，DEV 上两篇 agent 实战帖刷了社区。aureliodev359《我让一个自主 AI agent 跑了一周，踩遍了所有的坑》总结 5 条铁律：一次运行只做一件事（agent 为点一个按钮换了 10 个选择器、耗 40 分钟触发反爬）；默认权限是"什么都不能干"（它给自己的帖子回复"收到，继续"）；验证"内容对"而不是"内容存在"（帖子只发出去第一段它还以为是全文）；别写死循环重试（一个失败循环比三次冷静运行更费时间）；边界比提示词更重要（不是"做好一点"，而是"只做这个、在这个地方、其它都问"）。同一天 kharonte 的《AI coding agent 1000 小时后真正有效的工作流》点破同一个根因："给 agent 一个目标（goal），它会做几十个隐含决策，每个都合理、合起来完全跑偏；给一个精确 scope + 可验证 done 的任务（task），它才靠谱。"关键洞察：agent 出错的根因往往不在模型，而在"你给的是目标还是任务"——autonomy 要设计出来，不是打开开关。往期 VerifyGate（验证 AI 断言对不对）是"事后验结果"，这条是"事前把任务设计成可验收"，两者互补。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"TaskSpec"——Agent 任务规格化引擎。定位：不是"验证产出"的 VerifyGate，也不是"管代码"的 AgentVCS，是"把一人公司脑子里模糊的目标，写成 agent 可执行的、可验收的任务规格"。① 目标→规格转化（核心产品。把"给网站加个登录""写篇爆款文案"这种 goal，转成含精确 scope、约束、done 定义的任务规格）。② 验收标准生成（每条任务自动生成"2 分钟内可自查的 done 清单"，验证内容对而不是存在）。③ 边界与权限模板（默认零权限、一次一任务、重试间隔等护栏模板，把"autonomy 设计"落成可复用的任务模板库）。定价：Free——单任务规格化。Maker——¥29/月，30 条任务 + 验收清单。Pro——¥99/月，不限任务 + 边界模板库 + API 接入。冷启动：渠道 A——开源"TaskSpec Core"任务规格模板（MIT）。渠道 B——数据帖"你给 agent 的是目标还是任务，决定它靠不靠谱"。渠道 C——搭 DEV 双爆款顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#任务规格</span>
+    <span class="tag">#验收标准</span>
+    <span class="tag">#Agent约束</span>
+    <span class="tag">#autonomy设计</span>
+    <span class="tag">#OPC可靠</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; DEV 9/10《5 Rules I Learned Running an Autonomous AI Agent for a Week》（autonomy 要设计、5 条铁律）+《The AI Coding Agent Workflow That Actually Works After 1,000 Hours》（goal vs task，精确 scope + 可验证 done）</span>
+  </div>
+</div>
+
+<!-- HOOK -->
+<div class="hook-box">
+  <div class="hook-label">本期钩子</div>
+  <div class="hook-text">
+    9 月 10 日三条信号指向同一个词：设计。当 AI 让"写"和"造"都变得廉价，稀缺转移到了三件"设计"——设计图、设计资产、设计任务。信号一：diagram-design 单日涨 2286 星——"AI 帮你写方案，图却还是工程图"，这就是 ChartForge（AI 图表设计层）。信号二：teamai-cli + superpowers 刷屏——"你的 prompt 和 SOP 散落在 4 个工具里，换一个就重来"，这就是 AgentVault（AI 工作流资产仓库）。信号三：DEV 双爆款——"你给 agent 的是目标还是任务，决定它靠不靠谱"，这就是 TaskSpec（Agent 任务规格化引擎）。共同主线：上一期讲"验"（验它对不对、快不快、卖不卖得动），这一期再往前一步讲"设计"——在把活儿交给 AI 之前，先把"图、资产、任务"设计好。AI 把"生产"压到几乎免费之后，真正稀缺的是"把 AI 的产出塑形成可交付、可复用、可验收的东西"。谁先帮一人公司完成这三次"塑形"，谁就抓住 OPC 从"能用 AI"走向"用好 AI"的下半场。
+  </div>
+</div>
+
+<!-- Navigation -->
+<div class="prev-next">
+  <a href="2026-09-09.html" class="pn-card">
+    <div class="pn-label">&larr; 上一期</div>
+    <div class="pn-title">Vol.038 &middot; VerifyGate 断言验证 · BottleneckMap 瓶颈诊断 · SellGate 卖动审计</div>
+  </a>
+  <a href="daily.html" class="pn-card pn-right">
+    <div class="pn-label">下一期 &rarr;</div>
+    <div class="pn-title">Vol.040 &middot; FocusFit 注意力适配 · ReproGate 复现契约 · FabForge 制造设计</div>
+  </a>
+</div>
+
+<div class="footer">
+  OPC IDEA &middot; 日报 &#65295; <a href="subscribe.html">订阅日报</a> &#65295; <a href="feed.xml">RSS</a> &#65295; <a href="./index.html">完整报告</a> &#65295; <a href="newsletter-strategy.md">启动策略</a><br>
+  北京 &middot; 2026年9月10日 &middot; Vol.039 &middot; 今日刷新<br>
+  商业&middot;认知观察者&middot;出品
+</div>
+
+</div>
+</body>
+</html>
