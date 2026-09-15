@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Fri, 11 Sep 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Tue, 15 Sep 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 149 · ContextSift——AI 上下文筛选与沙箱执行层 · context-mode 22,477 星登顶，agent 最贵的不是模型是上下文窗口</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-149</link>
+    <description>9月13日GitHub上mksglu/context-mode一周涨1,936星、累计22,477星，是当周涨最快的agent基建之一。痛点极其具体：上下文窗口被两头吃掉——加载81+个工具光工具定义吃掉143K token（200K窗口的72%），每次gh issue list、日志、快照都原文落进transcript。解法只有一句话"Think in Code"：让agent写脚本去算、只回传stdout，而不是把47个文件读进上下文。效果：一次会话315KB原始输出压到5.4KB（98%削减），30分钟就压缩的会话能跑3小时。适配17平台，检索是纯本地SQLite FTS5+BM25。核心洞察：往期FocusFit管"输出读不读得下去"，这条管"上下文窗口经济学"。做"ContextSift"——AI上下文筛选与沙箱执行层：沙箱执行层（大输出命令包进隔离子进程只回传stdout）+检索索引（本地SQLite FTS5+BM25）+上下文预算仪表盘。Free/Maker ¥29/Pro ¥99。冷启动：开源ContextSift Core+数据帖"你的agent最贵的不是模型，是上下文窗口"+搭context-mode 22K星顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Tue, 15 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-041-01</guid>
+    <category>上下文治理 / Token经济 / 沙箱执行 / ThinkInCode / OPC省钱</category>
+  </item>
+
+  <item>
+    <title>IDEA 150 · EnvSpin——自然语言→本地环境编排层 · vibe coding 的 Day-4 现实：AI 解决了写代码，没解决本地跑起来</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-150</link>
+    <description>9月中旬DEV《AI Wrote My Entire Web App. Then Localhost Happened》戳中vibe coding的暗刺：63%的vibe coding用户根本不是开发者，能用Cursor 72小时生成几千行全栈代码，却在Day 4撞墙——MySQL默认socket认证失败、Nginx第一次请求就502、80/3306端口被占用、自签证书配不对。根因：AI解决了"代码合成"，但"环境编排"对非技术用户还是一堵墙；Bolt/Lovable/Replit的浏览器沙箱有天花板。解法是MCP：让AI不吐shell命令，而是通过结构化端点直接起服务、建库、配虚拟主机、签发SSL（ServBay已打包成带MCP的一体化环境）。核心洞察：当"写代码"不再是瓶颈，瓶颈往"跑起来"迁移。做"EnvSpin"——自然语言→本地开发环境编排层：环境编排（自然语言→起服务/建库/虚拟主机/SSL）+一键诊断（读日志/查端口冲突/修502）+可复现快照。Free/Maker ¥29/Pro ¥99。冷启动：开源EnvSpin Core+数据帖"AI解决了写代码，没解决本地跑起来"+搭vibe coding Day-4爆款复盘顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Tue, 15 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-041-02</guid>
+    <category>环境编排 / 本地运行 / vibecoding / 非技术创业者 / OPC跑起来</category>
+  </item>
+
+  <item>
+    <title>IDEA 151 · ProofReady——SaaS 生产就绪验证层 · boilerplate 的"生产就绪"是营销词：测试全绿 ≠ 能上线</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-151</link>
+    <description>9月中旬Reddit r/SaaS对"AI时代SaaS boilerplate值不值"的讨论给出清醒判断：真正的生产级基础不是模板，是"把运营不变量编进代码的可执行工程手册"。最典型翻车：真实Paddle沙箱结账里两个订阅事件并发处理，各自没看到本地已有订阅记录，race出同一条provider ID——单测没抓到，因为单测只验证"一个事件能处理"，不验证重复投递、并发请求、未提交事务。作者把"生产就绪"拆成5条硬指标：fresh-clone验证、沙箱集成测试（真实支付/webhook而非mock）、并发测试、失败路径测试、部署演练。核心洞察：往期ReproGate管"修bug前先复现"，ShipPlan管"带护栏的SDLC"，这条管"上线前最后一道关"。做"ProofReady"——SaaS生产就绪验证层：并发/幂等体检（注入并发与重复事件抓race与双重扣费）+失败路径测试（过期会话/畸形webhook/worker崩溃/部分迁移）+部署演练报告。Free/Maker ¥29/Pro ¥99。冷启动：开源ProofReady Core竞态/幂等测试模板+数据帖"测试全绿≠能上线"+搭boilerplate讨论顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Tue, 15 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-041-03</guid>
+    <category>生产就绪 / 并发幂等 / 失败路径 / 上线体检 / OPC可靠</category>
+  </item>
 
   <item>
     <title>IDEA 146 · FocusFit——AI 输出注意力适配层 · i-have-adhd 35840 星登顶 GitHub，agent 输出信息够但读不下去</title>

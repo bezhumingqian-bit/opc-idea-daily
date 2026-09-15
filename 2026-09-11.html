@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<title>OPC IDEA · 2026年9月11日</title>
+<meta name="description" content="每日精选一人公司方向的精筛 IDEA · 一手源 · 今日已刷新">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta property="og:description" content="今日："你的 agent 信息是够的，只是读不下去"——i-have-adhd 35840 星登顶 GitHub，OPC 缺一个 AI 输出注意力适配层 · "你 agent 修的 bug，1/3 会复发"——DEV 爆款复盘，OPC 缺一个修复前复现契约层 · "你的 AI 能写代码画图，但它能造出实物吗"——text-to-cad + pascalorg 同榜，OPC 缺一个 AI 制造设计层。每日 09:00 自动刷新。">
+<meta property="og:url" content="https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html">
+<meta property="og:image" content="https://bezhumingqian-bit.github.io/opc-idea-daily/icon-512.png">
+<meta property="og:site_name" content="OPC IDEA 日报">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta name="twitter:description" content="今日 3 条精筛 IDEA · 一手源 · 工作日每日 09:00 刷新">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+    background: #F5F1E8;
+    color: #2C2A26;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px 40px; }
+  .header {
+    background: #FAF7EE;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 32px 28px 28px;
+    margin-bottom: 16px;
+  }
+  .brand { font-size: 11px; letter-spacing: 4px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 14px; }
+  .brand a { color: #B5B0A4; text-decoration: none; }
+  .brand a:hover { color: #8A8474; }
+  .header-title { font-size: 26px; font-weight: 500; color: #2C2A26; letter-spacing: 1px; }
+  .header-date { font-size: 13px; color: #7A766C; margin-top: 6px; letter-spacing: 0.5px; }
+  .divider { height: 1px; background: #E6E1D6; margin: 18px 0; }
+  .header-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .chip { padding: 3px 10px; background: transparent; border: 1px solid #D8D2C5; border-radius: 2px; font-size: 11px; color: #7A766C; letter-spacing: 0.5px; }
+  .card {
+    background: #FFFEFC;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 22px 24px;
+    margin-bottom: 10px;
+  }
+  .card-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+  .num { width: 28px; height: 28px; border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; flex-shrink: 0; letter-spacing: 0.5px; background: #EEEAE0; color: #5A5443; }
+  .headline { font-size: 15.5px; font-weight: 500; color: #2C2A26; line-height: 1.5; flex: 1; padding-top: 3px; letter-spacing: 0.2px; }
+  .fact { font-size: 13.5px; color: #5F5B53; line-height: 1.75; margin-bottom: 12px; padding-left: 42px; }
+  .next-step { font-size: 13.5px; color: #2C2A26; line-height: 1.75; padding: 12px 16px; margin-left: 42px; background: #F7F4EC; border-left: 2px solid #8A8474; border-radius: 0 2px 2px 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; padding-left: 42px; font-size: 11.5px; color: #7A766C; }
+  .hook-box { background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 16px 20px; margin-bottom: 10px; }
+  .hook-label { font-size: 11px; letter-spacing: 2px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 8px; }
+  .hook-text { font-size: 14px; color: #2C2A26; line-height: 1.7; letter-spacing: 0.2px; }
+
+  .prev-next {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    margin-top: 18px; margin-bottom: 18px;
+  }
+  .pn-card {
+    background: #FFFEFC; border: 1px solid #E6E1D6; border-radius: 4px;
+    padding: 14px 18px; text-decoration: none; color: inherit; display: block;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .pn-card:hover { border-color: #C4BBA9; background: #FAF7EE; }
+  .pn-card.disabled { opacity: 0.4; pointer-events: none; }
+  .pn-label { font-size: 10.5px; letter-spacing: 1.5px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 4px; }
+  .pn-title { font-size: 13px; color: #2C2A26; line-height: 1.5; letter-spacing: 0.2px; }
+  .pn-right { text-align: right; }
+
+  .tag-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding-left: 42px; }
+  .tag { padding: 2px 8px; background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 2px; font-size: 10.5px; color: #7A766C; letter-spacing: 0.3px; }
+
+  .footer { text-align: center; margin-top: 28px; margin-bottom: 20px; font-size: 11px; color: #B5B0A4; letter-spacing: 0.5px; line-height: 2; }
+  .footer a { color: #8A8474; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  @media print {
+    body { background: white; }
+    .card, .header, .hook-box { box-shadow: none; border-color: #ccc; }
+    .prev-next, .footer, .header-meta { display: none; }
+  }
+  @media (max-width: 640px) {
+    .container { padding: 12px 12px 32px; }
+    .header { padding: 24px 20px 22px; }
+    .header-title { font-size: 22px; }
+    .card { padding: 18px 16px; }
+    .fact, .next-step { padding-left: 0; margin-left: 0; }
+    .tag-bar { padding-left: 0; }
+    .prev-next { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<a href="./index.html" style="display:inline-block;font-size:12px;color:#8A8474;text-decoration:none;letter-spacing:0.5px;margin-bottom:18px;">&larr; 返回归档首页</a>
+
+<div class="header">
+  <div class="brand"><a href="./index.html">OPC IDEA &middot; 日报</a></div>
+  <div class="header-title">一人公司方向&middot;每日精选</div>
+  <div class="header-date">2026年9月11日 &middot; 星期五 &middot; Vol.040 &middot; 今日已刷新</div>
+  <div class="divider"></div>
+  <div class="header-meta">
+    <span class="chip">"你的 agent 信息是够的，只是读不下去"——i-have-adhd 35840 星登顶 GitHub，OPC 缺一个 AI 输出注意力适配层</span>
+    <span class="chip">"你 agent 修的 bug，1/3 会复发"——DEV 爆款复盘，OPC 缺一个修复前复现契约层</span>
+    <span class="chip">"你的 AI 能写代码画图，但它能造出实物吗"——text-to-cad + pascalorg 同榜，OPC 缺一个 AI 制造设计层</span>
+    <span class="chip">已与近七期去重</span>
+  </div>
+  <div class="header-meta" style="margin-top:8px;">
+    <a href="subscribe.html" style="font-size:13px;color:#8A8474;text-decoration:none;letter-spacing:0.3px;">每天09:00自动收到 &rarr;</a>
+  </div>
+</div>
+
+<!-- CARD 1 -->
+<div class="card" id="idea-146">
+  <div class="card-header">
+    <span class="num">01</span>
+    <span class="headline">FocusFit——AI 输出注意力适配层 &middot; i-have-adhd 35840 星登顶 GitHub，agent 输出信息够但读不下去</span>
+  </div>
+  <div class="fact">
+    9 月 10 日，GitHub Trending 第一名是一个不起眼的 Python skill：ayghri/i-have-adhd，35,840 星，登顶原因不是模型更强、也不是新框架，而是它解决了一个所有人都有的痛点——agent 输出"信息是够的，只是读不下去"。它的 README 把方法写得很直白：lead with the next action（先给下一步行动）、cap lists at 5（清单最多 5 条）、skip preamble（跳过开场铺垫）、no closers（不要收尾客套）。同一天冲上榜单的 obra/superpowers（284K 星）、affaan-m/ECC（254K 星）也都在做同一件事的另一个侧面：把"该怎么用 agent"的纪律固化成可复用资产。共同指向一个洞察：AI 让"生成"变得无限廉价之后，稀缺的不是更多信息，而是"把信息收成让人读得下去、能立刻行动的形态"。一个人每天和多个 coding agent 打交道，最耗神的不是它答不对，而是它答对了却淹没在 800 字铺垫和 12 条并列建议里，你得自己再花时间提炼。关键洞察：往期 ReadHuman 管的是"语气去 AI 味（像不像人写的）"，这条管的是"信息结构与密度（读不读得下去）"，是两个不同维度。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"FocusFit"——AI 输出注意力适配层。定位：不是去 AI 味的 ReadHuman，也不是生成更多内容的工具，是"把 agent 的冗长输出自动重塑成先结论、再行动、限条数的注意力友好格式"。① 输出重塑引擎（核心产品。把 agent 的 800 字输出自动压成"结论→3 步行动→关键风险"三段式，套你自己的信息密度偏好）。② 个性化注意力模板（每个人定义自己的"读得下去"标准：限几条、要不要表格、结论放哪、要不要结尾客套，一次配置处处生效）。③ 多 agent 统一出口（Claude Code / Codex / Cursor / Gemini 的输出都过同一层重塑，风格全局统一）。定价：Free——单 agent 输出重塑。Maker——¥29/月，3 个 agent + 自定义模板。Pro——¥99/月，不限 agent + 统一出口 + API 接入。冷启动：渠道 A——开源"FocusFit Core"重塑管线（MIT）。渠道 B——数据帖"你的 agent 信息是够的，只是读不下去"。渠道 C——搭 i-have-adhd 登顶顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#注意力设计</span>
+    <span class="tag">#信息密度</span>
+    <span class="tag">#输出重塑</span>
+    <span class="tag">#认知适配</span>
+    <span class="tag">#OPC省心</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; GitHub Trending 9/10（ayghri/i-have-adhd 35,840 星登顶，README：先行动、限 5 条、跳铺垫、无收尾；同期 obra/superpowers 284K 星、affaan-m/ECC 254K 星都在把"用 agent 的纪律"固化成资产）</span>
+  </div>
+</div>
+
+<!-- CARD 2 -->
+<div class="card" id="idea-147">
+  <div class="card-header">
+    <span class="num">02</span>
+    <span class="headline">ReproGate——Agent 修复前复现契约层 &middot; DEV 爆款复盘：agent 修的 34 个 bug 里 11 个复发</span>
+  </div>
+  <div class="fact">
+    9 月 10 日，DEV 上一篇《How I Taught My AI Coding Agent to Reproduce Bugs Before Fixing Them》刷了社区，作者甩出一组血淋淋的数字：审计一个月里 agent 修的 34 个 bug，有 11 个后来复发——整整 1/3 是"治标不治本"。根因不是模型不会调试，而是"没先让 bug 复现就动手改"：LLM 是一台"合理性机器"，给它一个 bug 报告，它总能找到一个说得通的理论去改，但没有复现就没有 ground truth——补丁编译过了、旧测试也过了（它们本来就抓不到这个 bug），一切看着绿油油，真正的缺陷还躺着。最典型的翻车：报告说"CSV 导出偶尔丢最后一行"，agent 找到分页里一个"看着对"的 off-by-one 改了、还写了测试，merge 后 bug 依旧——真实原因是 buffer 流没 flush。作者的解法只有一条硬规则：没有 failing reproduction（失败的复现）就不许改非测试代码，并落成三层——prompt contract（CLAUDE.md 写死协议）+ pre-commit hook（bug 分支拦截 Edit/Write）+ repro script 模板。关键洞察：往期 VerifyGate 是"验 AI 对代码的声称对不对（幻觉拦截）"，这条是"修 bug 前必须先让 bug 复现（防止治标）"——事前复现契约 vs 事后验真，两者互补。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"ReproGate"——Agent 修复前复现契约层。定位：不是验真的 VerifyGate，也不是管代码的 AgentVCS，是"把『先复现、再修复』这条纪律做成 agent 绕不过去的护栏"。① 复现契约钩子（核心产品。bug 分支上，agent 改任何非测试代码前，必须先有 failing repro 落库，否则直接拦截）。② 复现模板库（failing test / repro script 模板一键生成；测不出来就给"3 次尝试后停下来报告"的体面退出机制，杜绝"编个理由继续改"）。③ 复发追踪（记录每个 bug 的"复现→修复→验证"闭环，一个月后自动回查有没有"治好又复发"的）。定价：Free——单项目复现钩子。Maker——¥29/月，3 个项目 + 复现模板库。Pro——¥99/月，不限项目 + 复发追踪 + API 接入。冷启动：渠道 A——开源"ReproGate Core"复现钩子（MIT）。渠道 B——数据帖"你 agent 修的 bug，1/3 会复发"。渠道 C——搭 DEV 爆款复盘顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#复现契约</span>
+    <span class="tag">#修复护栏</span>
+    <span class="tag">#防复发</span>
+    <span class="tag">#确定性修复</span>
+    <span class="tag">#OPC可靠</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; DEV 9/10《How I Taught My AI Coding Agent to Reproduce Bugs Before Fixing Them》（34 个 agent 修的 bug 11 个复发，1/3 治标不治本；解法：prompt contract + pre-commit hook + repro script，没复现不许改代码）</span>
+  </div>
+</div>
+
+<!-- CARD 3 -->
+<div class="card" id="idea-148">
+  <div class="card-header">
+    <span class="num">03</span>
+    <span class="headline">FabForge——AI 制造设计层 &middot; text-to-cad + pascalorg 同榜，agent 从写代码画图延伸到造实物</span>
+  </div>
+  <div class="fact">
+    9 月 10 日，GitHub Trending 上两个"造东西"的项目同时上榜：earthtojake/text-to-cad（15,222 星），一套 Python agent skills for CAD / CAE / CAM——把自然语言或草图转成可制造的 CAD 规格，再直接对接仿真（CAE）和加工（CAM）；pascalorg/editor（23,144 星），开源 3D 架构编辑器，带本地 CLI + MCP 工具。共同指向一件事：agent 的能力边界正在从"写代码、画 2D 图"延伸到"造实物"——CAD（设计）、CAE（仿真）、CAM（加工）这条制造链，过去要专业工程师 + 昂贵软件才能跑通，现在开始被 AI 拉平。往期 VoiceKit（语音内容）、ForecastKit（时序预测）都停在数字世界，这是 agent 第一次系统性地把手伸向物理世界。关键洞察：当 AI 让"写方案、画图、写代码"都变得免费，稀缺会继续往"离物理世界更近"的一端迁移——谁能让一人公司/独立创客把脑子里的产品想法直接变成"能交给工厂或 3D 打印的实物"，谁就抓住 AI 造物下半场。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"FabForge"——AI 制造设计层。定位：不是 CAD 软件本身（SolidWorks/Fusion），也不是 text-to-cad 的复刻，是"把一人公司/独立创客的想法，转成能直接交给工厂或 3D 打印的可制造规格"。① 想法→可制造规格（核心产品。自然语言描述产品→自动生成可 3D 打印/可加工的 CAD 规格 + BOM 物料清单）。② 可制造性体检（自动检查壁厚、悬空、公差、材料是否可行，出图前先过"能不能造出来"这道关）。③ 工厂对接（把规格转成工厂能直接报价的格式，3D 打印 / CNC / 注塑各出各的工艺单）。定价：Free——单件可制造规格。Maker——¥29/月，10 件 + 可制造性体检。Pro——¥99/月，不限件 + 工厂对接 + API 接入。冷启动：渠道 A——开源"FabForge Core"规格生成管线（MIT）。渠道 B——数据帖"你的 AI 能写代码画图，但它能造出实物吗"。渠道 C——搭 text-to-cad / pascalorg 顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#制造设计</span>
+    <span class="tag">#CAD规格</span>
+    <span class="tag">#可制造性</span>
+    <span class="tag">#物理世界</span>
+    <span class="tag">#OPC造物</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; GitHub Trending 9/10（earthtojake/text-to-cad 15,222 星 agent skills for CAD/CAE/CAM；pascalorg/editor 23,144 星开源 3D 架构编辑器 + 本地 CLI + MCP）</span>
+  </div>
+</div>
+
+<!-- HOOK -->
+<div class="hook-box">
+  <div class="hook-label">本期钩子</div>
+  <div class="hook-text">
+    9 月 11 日三条信号指向同一个词：收口。当 AI 让"生成"变得无限廉价，真正的活儿在三件"收口"——把输出收成读得下去的、把修复收成靠得住的、把想法收成能造出实物的。信号一：i-have-adhd 35840 星登顶——"你的 agent 信息是够的，只是读不下去"，这就是 FocusFit（AI 输出注意力适配层）。信号二：DEV 爆款复盘——"你 agent 修的 bug，1/3 会复发"，因为没先复现就动手，这就是 ReproGate（Agent 修复前复现契约层）。信号三：text-to-cad + pascalorg 同榜——"你的 AI 能写代码画图，但它能造出实物吗"，这就是 FabForge（AI 制造设计层）。共同主线：上一期讲"设计"（在把活儿交给 AI 之前，先把图、资产、任务塑形好），这一期再往下一层讲"收口"——AI 生成了一大堆，最后能不能变成"读得下去、靠得住、摸得着"的交付物，才决定它是玩具还是生产力。谁先帮一人公司把 AI 的产出收成真正的成品，谁就抓住 OPC 从"疯狂生成"走向"稳稳交付"的下半场。
+  </div>
+</div>
+
+<!-- Navigation -->
+<div class="prev-next">
+  <a href="2026-09-10.html" class="pn-card">
+    <div class="pn-label">&larr; 上一期</div>
+    <div class="pn-title">Vol.039 &middot; ChartForge 图表设计 · AgentVault 资产沉淀 · TaskSpec 任务规格</div>
+  </a>
+  <a href="daily.html" class="pn-card pn-right">
+    <div class="pn-label">下一期 &rarr;</div>
+    <div class="pn-title">Vol.041 &middot; ContextSift 上下文筛选 · EnvSpin 本地环境 · ProofReady 生产就绪</div>
+  </a>
+</div>
+
+<div class="footer">
+  OPC IDEA &middot; 日报 &#65295; <a href="subscribe.html">订阅日报</a> &#65295; <a href="feed.xml">RSS</a> &#65295; <a href="./index.html">完整报告</a> &#65295; <a href="newsletter-strategy.md">启动策略</a><br>
+  北京 &middot; 2026年9月11日 &middot; Vol.040 &middot; 今日刷新<br>
+  商业&middot;认知观察者&middot;出品
+</div>
+
+</div>
+</body>
+</html>
