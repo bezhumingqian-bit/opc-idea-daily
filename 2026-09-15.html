@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<title>OPC IDEA · 2026年9月15日</title>
+<meta name="description" content="每日精选一人公司方向的精筛 IDEA · 一手源 · 今日已刷新">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta property="og:description" content="今日："agent 最贵的不是模型，是上下文窗口"——context-mode 22,477 星登顶 GitHub，OPC 缺一个上下文筛选层 · "AI 解决了写代码，没解决本地跑起来"——vibe coding 的 Day-4 现实，OPC 缺一个本地环境编排层 · "测试全绿 ≠ 能上线"——boilerplate 的"生产就绪"是营销词，OPC 缺一个生产就绪验证层。每日 09:00 自动刷新。">
+<meta property="og:url" content="https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html">
+<meta property="og:image" content="https://bezhumingqian-bit.github.io/opc-idea-daily/icon-512.png">
+<meta property="og:site_name" content="OPC IDEA 日报">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta name="twitter:description" content="今日 3 条精筛 IDEA · 一手源 · 工作日每日 09:00 刷新">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+    background: #F5F1E8;
+    color: #2C2A26;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px 40px; }
+  .header {
+    background: #FAF7EE;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 32px 28px 28px;
+    margin-bottom: 16px;
+  }
+  .brand { font-size: 11px; letter-spacing: 4px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 14px; }
+  .brand a { color: #B5B0A4; text-decoration: none; }
+  .brand a:hover { color: #8A8474; }
+  .header-title { font-size: 26px; font-weight: 500; color: #2C2A26; letter-spacing: 1px; }
+  .header-date { font-size: 13px; color: #7A766C; margin-top: 6px; letter-spacing: 0.5px; }
+  .divider { height: 1px; background: #E6E1D6; margin: 18px 0; }
+  .header-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .chip { padding: 3px 10px; background: transparent; border: 1px solid #D8D2C5; border-radius: 2px; font-size: 11px; color: #7A766C; letter-spacing: 0.5px; }
+  .card {
+    background: #FFFEFC;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 22px 24px;
+    margin-bottom: 10px;
+  }
+  .card-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+  .num { width: 28px; height: 28px; border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; flex-shrink: 0; letter-spacing: 0.5px; background: #EEEAE0; color: #5A5443; }
+  .headline { font-size: 15.5px; font-weight: 500; color: #2C2A26; line-height: 1.5; flex: 1; padding-top: 3px; letter-spacing: 0.2px; }
+  .fact { font-size: 13.5px; color: #5F5B53; line-height: 1.75; margin-bottom: 12px; padding-left: 42px; }
+  .next-step { font-size: 13.5px; color: #2C2A26; line-height: 1.75; padding: 12px 16px; margin-left: 42px; background: #F7F4EC; border-left: 2px solid #8A8474; border-radius: 0 2px 2px 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; padding-left: 42px; font-size: 11.5px; color: #7A766C; }
+  .hook-box { background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 16px 20px; margin-bottom: 10px; }
+  .hook-label { font-size: 11px; letter-spacing: 2px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 8px; }
+  .hook-text { font-size: 14px; color: #2C2A26; line-height: 1.7; letter-spacing: 0.2px; }
+
+  .prev-next {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    margin-top: 18px; margin-bottom: 18px;
+  }
+  .pn-card {
+    background: #FFFEFC; border: 1px solid #E6E1D6; border-radius: 4px;
+    padding: 14px 18px; text-decoration: none; color: inherit; display: block;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .pn-card:hover { border-color: #C4BBA9; background: #FAF7EE; }
+  .pn-card.disabled { opacity: 0.4; pointer-events: none; }
+  .pn-label { font-size: 10.5px; letter-spacing: 1.5px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 4px; }
+  .pn-title { font-size: 13px; color: #2C2A26; line-height: 1.5; letter-spacing: 0.2px; }
+  .pn-right { text-align: right; }
+
+  .tag-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding-left: 42px; }
+  .tag { padding: 2px 8px; background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 2px; font-size: 10.5px; color: #7A766C; letter-spacing: 0.3px; }
+
+  .footer { text-align: center; margin-top: 28px; margin-bottom: 20px; font-size: 11px; color: #B5B0A4; letter-spacing: 0.5px; line-height: 2; }
+  .footer a { color: #8A8474; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  @media print {
+    body { background: white; }
+    .card, .header, .hook-box { box-shadow: none; border-color: #ccc; }
+    .prev-next, .footer, .header-meta { display: none; }
+  }
+  @media (max-width: 640px) {
+    .container { padding: 12px 12px 32px; }
+    .header { padding: 24px 20px 22px; }
+    .header-title { font-size: 22px; }
+    .card { padding: 18px 16px; }
+    .fact, .next-step { padding-left: 0; margin-left: 0; }
+    .tag-bar { padding-left: 0; }
+    .prev-next { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<a href="./index.html" style="display:inline-block;font-size:12px;color:#8A8474;text-decoration:none;letter-spacing:0.5px;margin-bottom:18px;">&larr; 返回归档首页</a>
+
+<div class="header">
+  <div class="brand"><a href="./index.html">OPC IDEA &middot; 日报</a></div>
+  <div class="header-title">一人公司方向&middot;每日精选</div>
+  <div class="header-date">2026年9月15日 &middot; 星期二 &middot; Vol.041 &middot; 今日已刷新</div>
+  <div class="divider"></div>
+  <div class="header-meta">
+    <span class="chip">"agent 最贵的不是模型，是上下文窗口"——context-mode 22,477 星登顶 GitHub，OPC 缺一个上下文筛选层</span>
+    <span class="chip">"AI 解决了写代码，没解决本地跑起来"——vibe coding 的 Day-4 现实，OPC 缺一个本地环境编排层</span>
+    <span class="chip">"测试全绿 ≠ 能上线"——boilerplate 的"生产就绪"是营销词，OPC 缺一个生产就绪验证层</span>
+    <span class="chip">已与近七期去重</span>
+  </div>
+  <div class="header-meta" style="margin-top:8px;">
+    <a href="subscribe.html" style="font-size:13px;color:#8A8474;text-decoration:none;letter-spacing:0.3px;">每天09:00自动收到 &rarr;</a>
+  </div>
+</div>
+
+<!-- CARD 1 -->
+<div class="card" id="idea-149">
+  <div class="card-header">
+    <span class="num">01</span>
+    <span class="headline">ContextSift——AI 上下文筛选与沙箱执行层 &middot; context-mode 22,477 星登顶，agent 最贵的不是模型是上下文窗口</span>
+  </div>
+  <div class="fact">
+    9 月 13 日，GitHub 上 mksglu/context-mode 一周涨 1,936 星、累计 22,477 星，是当周涨得最快的 agent 基建之一（2 月还上过 HN 第一、570+ 分）。它解决的痛点极其具体：上下文窗口被两头吃掉——加载 81+ 个工具，光工具定义就吃掉 143K token（200K 窗口的 72%）；每次 gh issue list、日志、浏览器快照都原文落进 transcript，一路被带下去。作者的解法只有一句话 "Think in Code"：让 agent 写脚本去算、只回传 stdout，而不是把 47 个文件读进上下文。效果夸张：一次会话 315KB 的原始输出，压缩到 5.4KB（98% 削减），原来 30 分钟就触发上下文压缩的会话，能跑 3 小时。它适配 17 个平台（Claude Code / Codex / Cursor / Gemini CLI…），检索是纯本地 SQLite FTS5 + BM25，不调 LLM、无遥测。关键洞察：往期 FocusFit 管的是"输出读不读得下去"（信息结构），这条管的是"上下文窗口经济学"（什么东西根本不进窗口）——Token 成本与长会话质量塌陷，两个维度互补。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"ContextSift"——AI 上下文筛选与沙箱执行层。定位：不是去 AI 味的 ReadHuman，也不是输出重塑的 FocusFit，是"把不该进上下文窗口的原始工具输出挡在门外，让 agent 用代码去算、而不是用上下文去读"。① 沙箱执行层（核心产品。把 gh/log/快照这类大输出命令包进隔离子进程，只回传 stdout，超阈值自动全文落库）。② 检索索引（全文进本地 SQLite FTS5 + BM25，agent 按需检索，不调 LLM、无遥测）。③ 上下文预算仪表盘（可视化每个工具/命令吃掉多少 token，一键揪出"吃上下文大户"）。定价：Free——单项目沙箱执行。Maker——¥29/月，3 个项目 + 检索索引。Pro——¥99/月，不限项目 + 预算仪表盘 + 团队共用索引。冷启动：渠道 A——开源"ContextSift Core"沙箱执行管线（MIT）。渠道 B——数据帖"你的 agent 最贵的不是模型，是上下文窗口"。渠道 C——搭 context-mode 22K 星顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#上下文治理</span>
+    <span class="tag">#Token经济</span>
+    <span class="tag">#沙箱执行</span>
+    <span class="tag">#ThinkInCode</span>
+    <span class="tag">#OPC省钱</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; GitHub mksglu/context-mode 22,477 星（9/13 周涨 1,936；2 月 HN 第一 570+ 分；98% 上下文削减，17 平台适配，本地 SQLite FTS5 + BM25 检索，无 LLM 无遥测）</span>
+  </div>
+</div>
+
+<!-- CARD 2 -->
+<div class="card" id="idea-150">
+  <div class="card-header">
+    <span class="num">02</span>
+    <span class="headline">EnvSpin——自然语言→本地环境编排层 &middot; vibe coding 的 Day-4 现实：AI 解决了写代码，没解决本地跑起来</span>
+  </div>
+  <div class="fact">
+    9 月中旬 DEV 上一篇《AI Wrote My Entire Web App. Then Localhost Happened》戳中 vibe coding 的一根暗刺：63% 的 vibe coding 用户根本不是开发者，他们能用 Cursor 72 小时生成几千行全栈代码，却在 Day 4 撞墙——MySQL 默认 socket 认证失败、Nginx 第一次请求就 502、80/3306 端口被后台进程隐形占用、自签证书怎么配都报错。根因是：AI 已经解决了"代码合成"，但"环境编排"对非技术用户还是一堵墙。Bolt/Lovable/Replit 的浏览器沙箱又有天花板——导出后端逻辑、后台队列、复杂支付集成都难。作者的解法是 MCP：让 AI 不再吐 shell 命令（brew install…、sudo nano /etc/hosts），而是通过结构化 MCP 端点直接起服务、建库、配虚拟主机、签发 SSL；ServBay 已经把 PHP/Node/MySQL/Redis/Nginx 打包成带 MCP 的一体化环境。关键洞察：当"写代码"不再是瓶颈，瓶颈往"跑起来"迁移——谁能把"自然语言→本地可运行环境"这段补齐，谁就接住那批非技术的一人公司创业者。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"EnvSpin"——自然语言→本地开发环境编排层。定位：不是又一门语言运行时，也不是 Docker 教程，是"让非技术的一人公司用一句话把 AI 生成的 app 在本地/云上真正跑起来"。① 环境编排（核心产品。自然语言→起服务、建库、配虚拟主机、签发 SSL，AI 通过结构化端点操作，不吐 shell 命令）。② 一键诊断（读日志、查端口冲突、定位 502/认证失败，把"终端报错"翻译成"人话 + 一键修复"）。③ 可复现快照（把配好的环境一键导出成快照，换机、上云、给同事复现都不重来）。定价：Free——单项目环境编排。Maker——¥29/月，3 个项目 + 诊断。Pro——¥99/月，不限项目 + 快照 + 团队环境共享。冷启动：渠道 A——开源"EnvSpin Core"环境编排脚本（MIT）。渠道 B——数据帖"AI 解决了写代码，没解决本地跑起来"。渠道 C——搭 vibe coding Day-4 爆款复盘顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#环境编排</span>
+    <span class="tag">#本地运行</span>
+    <span class="tag">#vibecoding</span>
+    <span class="tag">#非技术创业者</span>
+    <span class="tag">#OPC跑起来</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; DEV《AI Wrote My Entire Web App. Then Localhost Happened》（63% vibe coding 用户非开发者；Day-4 撞墙：MySQL 认证 / 502 / 端口冲突 / SSL；MCP 让 AI 结构化操作本地栈，ServBay 一体化环境）</span>
+  </div>
+</div>
+
+<!-- CARD 3 -->
+<div class="card" id="idea-151">
+  <div class="card-header">
+    <span class="num">03</span>
+    <span class="headline">ProofReady——SaaS 生产就绪验证层 &middot; boilerplate 的"生产就绪"是营销词：测试全绿 ≠ 能上线</span>
+  </div>
+  <div class="fact">
+    9 月中旬 Reddit r/SaaS 上对"AI 时代 SaaS boilerplate 值不值"的讨论给了一个极其清醒的判断：真正的生产级基础不是模板，是"把运营不变量编进代码的可执行工程手册"。最典型的翻车：一个真实 Paddle 沙箱结账里，两个订阅事件并发处理，各自都没看到本地已有的订阅记录，于是 race 出同一条 provider ID——单测套件根本没抓到，因为单测只验证"一个事件能处理"，不验证"重复投递、并发请求、未提交事务"这些生产里天天发生的场景。作者把"生产就绪"拆成 5 条硬指标：fresh-clone 验证（新机器照文档能跑起来）、沙箱集成测试（真实支付/邮件/webhook 而不是 mock）、并发测试（订阅/余额/credit 有唯一约束或锁）、失败路径测试（过期会话/畸形 webhook/worker 崩溃/部分迁移）、部署演练（migration/rollback/worker 启动）。关键洞察：往期 ReproGate 管"修 bug 前先复现"，ShipPlan 管"带护栏的 SDLC"，这条管"上线前最后一道关"——把"看着绿油油"的代码，压成"扛得住并发与失败"的生产系统。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"ProofReady"——SaaS 生产就绪验证层。定位：不是测代码的 ShipPlan，也不是修 bug 的 ReproGate，是"给一人公司快速搭的 SaaS 做上线前体检，把竞态、幂等、失败路径这些生产坑在上线前揪出来"。① 并发/幂等体检（核心产品。对订阅、余额、credit 这类"收钱"的链路，自动注入并发与重复事件，抓 race 与双重扣费）。② 失败路径测试（过期会话、畸形 webhook、worker 崩溃、部分迁移、缺环境变量，专测"不该崩却会崩"的场景）。③ 部署演练报告（migration/rollback/worker 启动路径预演，出"能不能上生产"的红黄绿清单）。定价：Free——单项目并发体检。Maker——¥29/月，3 个项目 + 失败路径测试。Pro——¥99/月，不限项目 + 部署演练 + API 接入。冷启动：渠道 A——开源"ProofReady Core"竞态/幂等测试模板（MIT）。渠道 B——数据帖"测试全绿 ≠ 能上线，生产就绪是营销词"。渠道 C——搭 boilerplate 讨论 + solo SaaS 成本拆解顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#生产就绪</span>
+    <span class="tag">#并发幂等</span>
+    <span class="tag">#失败路径</span>
+    <span class="tag">#上线体检</span>
+    <span class="tag">#OPC可靠</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; Reddit r/SaaS《SaaS Boilerplates in the AI Agent Era》+ kubaik《Solo SaaS cost showdown》（Paddle 沙箱并发订阅 race 出同一条 provider ID，单测没抓到；生产就绪 = 5 条硬指标：fresh-clone / 沙箱集成 / 并发 / 失败路径 / 部署演练）</span>
+  </div>
+</div>
+
+<!-- HOOK -->
+<div class="hook-box">
+  <div class="hook-label">本期钩子</div>
+  <div class="hook-text">
+    9 月 15 日三条信号指向同一段路：最后一公里。当 AI 让"写出来"变得无限廉价，真正难的活儿全在"跑起来、靠得住"这一段——省下上下文、跑通本地、扛住生产。信号一：context-mode 22,477 星——"agent 最贵的不是模型，是上下文窗口"，这就是 ContextSift（AI 上下文筛选与沙箱执行层）。信号二：vibe coding 的 Day-4 现实——"AI 解决了写代码，没解决本地跑起来"，这就是 EnvSpin（自然语言→本地环境编排层）。信号三：boilerplate 的"生产就绪"是营销词——"测试全绿 ≠ 能上线"，这就是 ProofReady（SaaS 生产就绪验证层）。共同主线：上一期讲"收口"（读得下去、靠得住、摸得着），这一期再往底层走一步讲"落地"——AI 生成了一大堆代码，最后能不能省下上下文、跑通环境、扛住生产，才决定它是 demo 还是生意。谁先帮一人公司走完从 demo 到 production 的最后一公里，谁就抓住 OPC 从"疯狂生成"走向"稳定交付"的下半场。
+  </div>
+</div>
+
+<!-- Navigation -->
+<div class="prev-next">
+  <a href="2026-09-11.html" class="pn-card">
+    <div class="pn-label">&larr; 上一期</div>
+    <div class="pn-title">Vol.040 &middot; FocusFit 注意力适配 · ReproGate 复现契约 · FabForge 制造设计</div>
+  </a>
+  <a href="daily.html" class="pn-card pn-right">
+    <div class="pn-label">下一期 &rarr;</div>
+    <div class="pn-title">Vol.042 &middot; 前往最新一期</div>
+  </a>
+</div>
+
+<div class="footer">
+  OPC IDEA &middot; 日报 &#65295; <a href="subscribe.html">订阅日报</a> &#65295; <a href="feed.xml">RSS</a> &#65295; <a href="./index.html">完整报告</a> &#65295; <a href="newsletter-strategy.md">启动策略</a><br>
+  北京 &middot; 2026年9月15日 &middot; Vol.041 &middot; 今日刷新<br>
+  商业&middot;认知观察者&middot;出品
+</div>
+
+</div>
+</body>
+</html>

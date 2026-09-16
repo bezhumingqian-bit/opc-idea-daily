@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Tue, 15 Sep 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Wed, 16 Sep 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 152 · PolicyGate——Agent 动作策略门禁层 · OpenBot 4,881 星，agent 越来越多问题不是够不够聪明是怎么管住它</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-152</link>
+    <description>9月15日AI Agent GitHub Digest给出清醒判断：当天上榜的五个agent项目，没一个在比"谁更聪明"，全在比"怎么管住一群agent"。最典型是CopilotKit/OpenBot（4,881星，上线一个月，Trendshift当日第三）——把任何AG-UI agent包装成"AI同事"，每个配一台容器化电脑（浏览器/文件/登录态），可实时看它干活、随时接管。关键在"decide→record→act"焊进架构：每个浏览器/文件/MCP动作都要先过CEL策略门禁，deny优先于allow，规则坏了宁可不放行。同方向还有AgentVerse-OS（隔离Incus工作区）、YourDesk（MCP连远程桌面）、agent-launcher、Elva（API面向agent消费者带鉴权审计）。核心洞察：往期AgentVCS管"代码变更台账"，这条管"运行时每个动作的允许/拒绝"——事后记录vs事前门禁，互补。做"PolicyGate"——Agent动作策略门禁层：动作策略门禁（浏览器/文件/MCP/外部API动作包进CEL策略deny优先）+实时接管控制台（可视化agent动作一键暂停/接管/回滚）+动作审计账本（每个动作留痕可回溯）。Free/Maker ¥29/Pro ¥99。冷启动：开源PolicyGate Core+数据帖"模型不再是新闻，治理层才是"+搭OpenBot 4.9K星顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Wed, 16 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-042-01</guid>
+    <category>Agent治理 / 策略门禁 / 动作审计 / 运行时控制 / OPC可控</category>
+  </item>
+
+  <item>
+    <title>IDEA 153 · DataReach——Agent 零过路费数据接入层 · Agent-Reach 81,215 星单日登顶，官方 API 把 agent 的数据饥渴堵成了钱</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-153</link>
+    <description>9月15日Panniantong/Agent-Reach单日冲到GitHub Trending第一、81,215星。它一句话：一条CLI让任何agent免费读/搜Twitter、Reddit、YouTube、GitHub、Bilibili、小红书，不付一分API费。痛点极其具体：Twitter官方API basic档$200/月、pro档$5,000/月，Reddit 2023改价惹开发者反弹——一个要监控50个subreddit、100账号、20频道的agent，官方API成本动辄几千美元/月，对一人公司不可持续。Agent-Reach走浏览器自动化+公开端点绕开官方API，语言无关。核心洞察：AI行业的数据饥渴官方API喂不起，市场用脚投票"绕过"，但CFAA等法规是平台反击的弹药——护城河不是技术，是合规与分寸感。做"DataReach"——Agent数据接入中间层（合规优先）：多平台数据接入（Twitter/Reddit/YouTube/GitHub/B站/小红书公开数据统一成agent可读标准化流）+合规路由与配额（区分官方API/公开端点/需授权三通道）+调研流水线模板（把监控50个subreddit+100账号+20频道做成可复用模板）。Free/Maker ¥29/Pro ¥99。冷启动：开源DataReach Core+数据帖"官方API把agent的数据饥渴堵成了钱"+搭Agent-Reach 81K星顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Wed, 16 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-042-02</guid>
+    <category>数据接入 / 零过路费 / 调研管线 / 合规路由 / OPC喂得饱</category>
+  </item>
+
+  <item>
+    <title>IDEA 154 · LocalRun——本地前沿模型推理层 · colibri 29,375 星，把 744B-2.8T 参数 MoE 跑在消费级硬件上</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-154</link>
+    <description>9月14日AI Agent GitHub Digest里，JustVugg/colibri（29,375星，单周+960）是最"硬"的一个：纯C写的零依赖推理引擎，把744B到2.8T参数的frontier MoE（GLM-5.3、Kimi K3、DeepSeek V4）跑在消费级硬件上。核心思路是把VRAM、RAM、磁盘当一层内存——专家只在被激活时才从存储流进来，全模型永远不用整体塞进显存。作者一句话极其清醒："没有速度SLA，但有硬性的语义保证"——内存不够只会变慢，绝不悄悄掉精度或绕道换专家。这条戳中两件同时变贵的事：一是API账单（JetBrains 2026上半年AI支出涨近10倍），二是"数据出不了内网"的合规红线。核心洞察：往期ModelPick管"选哪个模型省钱"，这条管"根本不走API、模型跑在自己机器上"——选型vs主权，互补。做"LocalRun"——本地前沿模型推理与托管层：本地推理托管（colibri式本地推理+内存分层一键部署）+语义保证监控（跑批实时校验掉精度/绕专家就报）+成本对比仪表盘（本地vs API月度账单对比）。Free/Maker ¥29/Pro ¥99。冷启动：开源LocalRun Core+数据帖"把2.8T参数模型跑在自己机器上"+搭colibri 29K星顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Wed, 16 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-042-03</guid>
+    <category>本地推理 / 数据主权 / 语义保证 / 成本对比 / OPC跑得起</category>
+  </item>
 
   <item>
     <title>IDEA 149 · ContextSift——AI 上下文筛选与沙箱执行层 · context-mode 22,477 星登顶，agent 最贵的不是模型是上下文窗口</title>
