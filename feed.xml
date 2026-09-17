@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Wed, 16 Sep 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Thu, 17 Sep 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 155 · ResearchTree——AI 研究可复现层 · OpenResearch 3,343 星登顶，AI 干活的记忆存在一个最容易丢的地方：聊天窗口</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-155</link>
+    <description>9月16日alphaXiv团队的OpenResearch（3,343星，+531单日，GitHub日榜第一，MIT）把编码agent改造成研究agent：把Claude Code/Codex/OpenCode/Cursor搬进本地研究工作台，让agent从"聊天框里的助手"变成"实验记录本旁的研究员"。核心是一个git-native的"实验树"——从baseline起栈式叠加变体，每个研究方向独立agent会话+独立git worktree；每次运行都immutable存档当次代码快照，日志/diff/结果/产物全拴在产生它们的commit上。本地优先：项目/会话/实验/日志全存本机（本地SQLite+orx CLI），接LM Studio/Ollama零API开销，算力可本地/SSH/云任意路由，账本总在自己机器上。核心洞察：AI自动化研究的竞争，正从"谁跑得完"转向"谁的结果可信"。做"ResearchTree"——AI研究可复现层：实验树工作台（baseline→变体栈式叠加+独立worktree）+可复现档案（每次运行immutable存档到commit）+多算力路由（本地/远程/云聚合，账本留本机）。Free/Maker ¥29/Pro ¥99。冷启动：开源ResearchTree Core+数据帖"AI干活的记忆存在一个最容易丢的地方"+搭OpenResearch登顶顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Thu, 17 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-043-01</guid>
+    <category>研究可复现 / 实验树 / 本地优先 / 可审计 / OPC信得过</category>
+  </item>
+
+  <item>
+    <title>IDEA 156 · DeterministicReview——确定性审查管线 · open-code-review 2,756 日增空降榜首，审查错一次就伤人信任把不能出错的环节焊死</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-156</link>
+    <description>9月16日阿里开源的open-code-review（28,527星，+2,756空降GitHub榜首，Apache-2.0）给出清醒架构判断：审查的正确解法不是"更聪明的模型"，而是"确定性工程流水线+LLM Agent混合"。把审查拆两半——文件筛选/规则匹配/评论定位这些"不能出错"的环节用工程逻辑硬约束（确定性、可复现、零幻觉），模型只做动态判断和上下文检索。README硬数据：同样模型下精度更高、token只用约九分之一。内置NPE/线程安全/XSS/SQLi检查，支持Go自定义规则，集成Claude Code/Codex/Cursor/OpenCode。核心洞察：审查/审校/核对这类"错一次就伤人信任"的场景，架构原则是确定性为主、智能为辅。做"DeterministicReview"——确定性审查管线：确定性规则引擎（不能错的环节硬约束零幻觉）+混合审查管线（确定性+LLM拼接，token省九成）+多场景审查模板（代码审查/内容审校/财务核对/合同体检）。Free/Maker ¥29/Pro ¥99。冷启动：开源DeterministicReview Core+数据帖"审查错一次就伤人信任"+搭open-code-review登顶顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Thu, 17 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-043-02</guid>
+    <category>确定性优先 / 混合审查 / 降本九成 / 零幻觉 / OPC信得过</category>
+  </item>
+
+  <item>
+    <title>IDEA 157 · VoiceIntent——语音表达智能层 · Voiskey 480 票冲上 Product Hunt #2，AI 不该重写你是谁语音输入的瓶颈从听写转向表达</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-157</link>
+    <description>9月16日Voiskey以首日480+upvotes冲上Product Hunt产品日榜第二名，定位"Expression Intelligence"（表达智能）而非又一个语音转文字工具。"Say it rough. Send it right."——过去语音输入拼"听写准不准"，Voiskey拼"懂不懂你想说什么"：先理解真实意图，再把粗糙口语按场景重写成恰当措辞（IM/邮件/文档语气全自动适配，保留个人词典与写作风格）。护城河在隐私：音频和转录默认只存本机，零服务器留存，端到端加密，SOC 2 Type II+ISO 27001。同期语音赛道爆发：Palabra.ai同传<1s、Typeless免费额度从8K砍到2K词、Phonic 600ms响应领跑。核心洞察：语音输入竞争正从"转录准确率"翻页，进入"表达智能+本机隐私"新战场。做"VoiceIntent"——语音表达智能层：意图理解（rough speech转结构化意图）+分场景表达（IM/邮件/文档/对外文案自动适配，保留个人风格）+本机隐私引擎（零服务器留存端到端加密）。Free/Maker ¥29/Pro ¥99。冷启动：开源VoiceIntent Core+数据帖"AI不该重写你是谁"+搭Voiskey PH#2顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Thu, 17 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-043-03</guid>
+    <category>表达智能 / 意图理解 / 本机隐私 / 分场景表达 / OPC信得过</category>
+  </item>
 
   <item>
     <title>IDEA 152 · PolicyGate——Agent 动作策略门禁层 · OpenBot 4,881 星，agent 越来越多问题不是够不够聪明是怎么管住它</title>

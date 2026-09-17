@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<title>OPC IDEA · 2026年9月16日</title>
+<title>OPC IDEA · 2026年9月17日</title>
 <meta name="description" content="每日精选一人公司方向的精筛 IDEA · 一手源 · 今日已刷新">
 <meta property="og:type" content="article">
 <meta property="og:title" content="OPC IDEA · 一人公司方向每日精选">
-<meta property="og:description" content="今日："模型不再是新闻，治理层才是"——OpenBot 4,881 星，把 agent 每个动作都过 CEL 策略门禁 · "官方 API 把 agent 的数据饥渴堵成了钱"——Agent-Reach 81,215 星单日登顶，OPC 缺一个零过路费数据接入层 · "把 2.8T 参数模型跑在自己机器上"——colibri 29,375 星，OPC 缺一个本地前沿模型推理层。每日 09:00 自动刷新。">
+<meta property="og:description" content="今日："AI 干活的记忆存在一个最容易丢的地方——聊天窗口"——OpenResearch 3,343 星登顶日榜，把编码 agent 变成可复现的研究员 · "审查错一次就伤人信任，把不能出错的环节焊死"——open-code-review 2,756 日增空降榜首，token 只用九分之一 · "AI 不该重写你是谁"——Voiskey 480 票冲上 Product Hunt #2，语音输入的瓶颈从听写转向表达。每日 09:00 自动刷新。">
 <meta property="og:url" content="https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html">
 <meta property="og:image" content="https://bezhumingqian-bit.github.io/opc-idea-daily/icon-512.png">
 <meta property="og:site_name" content="OPC IDEA 日报">
@@ -103,12 +103,12 @@
 <div class="header">
   <div class="brand"><a href="./index.html">OPC IDEA &middot; 日报</a></div>
   <div class="header-title">一人公司方向&middot;每日精选</div>
-  <div class="header-date">2026年9月16日 &middot; 星期三 &middot; Vol.042 &middot; 今日已刷新</div>
+  <div class="header-date">2026年9月17日 &middot; 星期四 &middot; Vol.043 &middot; 今日已刷新</div>
   <div class="divider"></div>
   <div class="header-meta">
-    <span class="chip">"模型不再是新闻，治理层才是"——OpenBot 4,881 星，把 agent 每个动作都过 CEL 策略门禁</span>
-    <span class="chip">"官方 API 把 agent 的数据饥渴堵成了钱"——Agent-Reach 81,215 星单日登顶，OPC 缺一个零过路费数据接入层</span>
-    <span class="chip">"把 2.8T 参数模型跑在自己机器上"——colibri 29,375 星，OPC 缺一个本地前沿模型推理层</span>
+    <span class="chip">"AI 干活的记忆，存在一个最容易丢的地方——聊天窗口"——OpenResearch 3,343 星登顶，把编码 agent 变成可复现的研究员</span>
+    <span class="chip">"审查错一次就伤人信任，把不能出错的环节焊死"——open-code-review 2,756 日增空降榜首，token 只用九分之一</span>
+    <span class="chip">"AI 不该重写你是谁"——Voiskey 480 票冲上 Product Hunt #2，语音输入的瓶颈从听写转向表达</span>
     <span class="chip">已与近七期去重</span>
   </div>
   <div class="header-meta" style="margin-top:8px;">
@@ -117,74 +117,74 @@
 </div>
 
 <!-- CARD 1 -->
-<div class="card" id="idea-152">
+<div class="card" id="idea-155">
   <div class="card-header">
     <span class="num">01</span>
-    <span class="headline">PolicyGate——Agent 动作策略门禁层 &middot; OpenBot 4,881 星：agent 越来越多，问题不是它够不够聪明，是怎么管住它</span>
+    <span class="headline">ResearchTree——AI 研究可复现层 &middot; OpenResearch 3,343 星登顶：AI 干活的记忆存在一个最容易丢的地方，聊天窗口</span>
   </div>
   <div class="fact">
-    9 月 15 日的 AI Agent GitHub Digest 给了一个极其清醒的判断：当天上榜的五个 agent 项目，没一个在比"哪个更聪明"，全在比"怎么把一群 agent 管住"。最典型的是 CopilotKit/OpenBot（4,881 星，上线一个月，Trendshift 当日仓库第三）——它把任何 AG-UI agent（LangGraph / Mastra / CrewAI / Pydantic AI / Google ADK）包装成一个"AI 同事"，每个都配一台自己的容器化电脑（浏览器、文件、登录态），你能实时看它干活、随时接管。关键在"decide → record → act"被焊进架构：每个浏览器 / 文件 / MCP 动作都要先过一道 CEL 策略门禁，deny 优先于 allow，规则坏了宁可不放行。同一方向还有 AgentVerse-OS（每个项目一个隔离 Incus 工作区）、YourDesk（MCP 连真实远程桌面）、agent-launcher（六个 coding agent CLI 收进一个桌面 App）、Elva（Postman 的接替者，让 API 面向"agent 消费者"带鉴权与审计）。核心洞察：往期 AgentVCS 管"多 agent 的代码变更台账"，这条管"agent 运行时每个动作的允许 / 拒绝"——一个是事后记录，一个是事前门禁，两层互补。
+    9 月 16 日，alphaXiv 团队的 OpenResearch（3,343 星，单日 +531，GitHub 日榜第一，MIT 协议）把「编码 agent」改造成了「研究 agent」。它干的事一句话：把你已经装好的 Claude Code / Codex / OpenCode / Cursor 搬进一个本地研究工作台，让 agent 从「聊天框里的助手」变成「实验记录本旁的研究员」。核心机制是一个 git-native 的「实验树」——从 baseline 起栈式叠加变体，每个研究方向一个独立 agent 会话 + 一个隔离的 git worktree，两个 agent 可以同时争论学习率而互不踩文件；每次运行都会把当次代码快照 immutable 存档，日志、diff、结果、产物全拴在产生它们的那个 commit 上。三个月后想查「当时那组好结果怎么跑出来的」，翻的是仓库，不是聊天记录。更关键的是「本地优先」：项目、会话、实验、日志全存本机（本地 SQLite + orx CLI + 本地 dashboard），还能接 LM Studio / Ollama 本地模型做到零 API 开销，算力可本地 / SSH 远程 / Slurm / K8s / Ray / Modal 任意路由，但账本永远在自己机器上。核心洞察（引自当日 AI 前线复盘）：AI 自动化研究的竞争，正从「谁跑得完」转向「谁的结果可信」。
   </div>
   <div class="next-step">
-    OPC 路径：做"PolicyGate"——Agent 动作策略门禁层。定位：一人公司现在可能同时跑 4-5 个 coding / 运营 agent，缺的不是更聪明的模型，是一套"谁、在什么条件下、能对什么动手"的运行时门禁。① 动作策略门禁（核心产品。把 agent 的浏览器 / 文件 / MCP / 外部 API 动作都包进 CEL 策略，deny 优先，规则坏了拒绝放行）。② 实时接管控制台（可视化每个 agent 正在干什么，一键暂停 / 接管 / 回滚）。③ 动作审计账本（每个动作留痕：谁发起、过了哪条规则、结果如何，出问题能回溯）。定价：Free——单 agent 门禁。Maker——¥29/月，3 个 agent + 审计账本。Pro——¥99/月，不限 agent + 实时接管 + 团队策略共享。冷启动：渠道 A——开源"PolicyGate Core"策略引擎（MIT）。渠道 B——数据帖"模型不再是新闻，治理层才是"。渠道 C——搭 OpenBot 4.9K 星顺风车。Founding Member：Pro ¥49/月终身。
+    OPC 路径：做"ResearchTree"——AI 研究可复现层。定位：一人公司现在用 agent 做市场调研、竞品分析、内容实验、增长 A/B 测试时，缺的不是"能跑"，是"结果可复现、可追溯、可审计"——上周那个好结论到底是哪组参数跑出来的，翻聊天记录已经找不到了。① 实验树工作台（核心产品。baseline → 变体栈式叠加实验，每个调研方向独立 worktree，agent 各跑各的不串台）。② 可复现档案（每次运行 immutable 存档到 commit，日志 / 结果 / 产物绑定代码快照，三个月后一键回溯）。③ 多算力路由（本地 / 远程 GPU / 云聚合，账本与数据全留本机，敏感调研不出门）。定价：Free——单项目实验树。Maker——¥29/月，3 个项目 + 可复现档案。Pro——¥99/月，不限项目 + 多算力路由 + 团队共享。冷启动：渠道 A——开源"ResearchTree Core"实验树引擎（MIT）。渠道 B——数据帖"AI 干活的记忆存在一个最容易丢的地方——聊天窗口"。渠道 C——搭 OpenResearch 登顶顺风车。Founding Member：Pro ¥49/月终身。
   </div>
   <div class="tag-bar">
-    <span class="tag">#Agent治理</span>
-    <span class="tag">#策略门禁</span>
-    <span class="tag">#动作审计</span>
-    <span class="tag">#运行时控制</span>
-    <span class="tag">#OPC可控</span>
+    <span class="tag">#研究可复现</span>
+    <span class="tag">#实验树</span>
+    <span class="tag">#本地优先</span>
+    <span class="tag">#可审计</span>
+    <span class="tag">#OPC信得过</span>
   </div>
   <div class="meta">
-    <span>来源 &middot; AI Agent GitHub Digest 09-15 + CopilotKit/OpenBot 4,881 星（decide→record→act 架构，CEL 策略门禁 deny 优先；AgentVerse-OS 隔离工作区 / YourDesk MCP 远程桌面 / Elva agent 消费者 API）</span>
+    <span>来源 &middot; GitHub alphaXiv/OpenResearch 3,343 星（9/16 日榜第一 +531；git-native 实验树 / 独立 worktree / immutable 存档到 commit；本地 SQLite + orx CLI；接 LM Studio/Ollama 零 API 开销）</span>
   </div>
 </div>
 
 <!-- CARD 2 -->
-<div class="card" id="idea-153">
+<div class="card" id="idea-156">
   <div class="card-header">
     <span class="num">02</span>
-    <span class="headline">DataReach——Agent 零过路费数据接入层 &middot; Agent-Reach 81,215 星单日登顶：官方 API 把 agent 的数据饥渴堵成了钱</span>
+    <span class="headline">DeterministicReview——确定性审查管线 &middot; open-code-review 2,756 日增空降榜首：审查错一次就伤人信任，把不能出错的环节焊死</span>
   </div>
   <div class="fact">
-    9 月 15 日，Panniantong/Agent-Reach 单日冲到 GitHub Trending 第一、81,215 星——当天最亮的项目。它做的事一句话：一条 CLI 让任何 agent 免费读 / 搜 Twitter、Reddit、YouTube、GitHub、Bilibili、小红书，不付一分 API 费。痛点极其具体：Twitter 官方 API basic 档 $200/月、pro 档 $5,000/月，Reddit 2023 改价惹得开发者集体反弹——一个要监控 50 个 subreddit、100 个账号、20 个频道的 agent，官方 API 成本动辄几千美元/月，对一人公司不可持续。Agent-Reach 走浏览器自动化 + 公开端点绕开官方 API，架构语言无关（agent 当子进程调用）。关键洞察：AI 行业的数据饥渴，官方 API 根本喂不起，所以市场在用脚投票"绕过"。但风险同样真实——CFAA 等法规是平台反击的弹药，这个赛道的护城河不是技术，是"合规与合规之外的分寸感"。往期 SignalPipeline 管"购买信号"，ContextBase 管"上下文统一"，这条管"agent 吃数据的入口"——数据接入这个底座，过去被 API 经济垄断，现在正在被撕开。
+    9 月 16 日，阿里巴巴开源的 open-code-review（28,527 星，单日 +2,756 空降 GitHub 榜首，Apache-2.0，当天就发了 v1.12.3）给出一个极其清醒的架构判断：代码审查这件事，正确解法不是"更聪明的模型"，而是"确定性工程流水线 + LLM Agent 的混合"。它把审查拆成两半——文件筛选、规则匹配、评论定位这些「不能出错」的环节，用工程逻辑硬约束（确定性、可复现、零幻觉）；模型只负责它真正擅长的动态判断和上下文检索。README 给出硬数据：同样模型下，这套混合管线比纯靠通用 agent 跑审查，精度更高、token 只用约九分之一。它内置 NPE、线程安全、XSS、SQL 注入等确定性检查，支持 Go 自定义规则，并已集成 Claude Code / Codex / Cursor / OpenCode，配一个 OpenAI 或 Anthropic 模型就能开工。同一天的反向信号（来自 DailyDawn 复盘）是：HN 上一篇 507 分热帖曝光了专有 AI 工具在 RubyGems 缓存漏洞上的风险，开发者开始担心把敏感代码交给黑盒专有审查工具。核心洞察：审查、审校、核对这类「错一次就伤人信任」的场景，架构原则是确定性为主、智能为辅——LLM 不是越多越好，把不能错的环节焊死，模型只做它该做的那一小块。
   </div>
   <div class="next-step">
-    OPC 路径：做"DataReach"——Agent 数据接入中间层（合规优先）。定位：一人公司的 agent 做市场调研 / 趋势 / 竞品监控时，缺一个"把多平台公开数据统一喂给 agent"的接入层，而不是给每个平台交几百万 API 费。① 多平台数据接入（核心产品。Twitter / Reddit / YouTube / GitHub / B站 / 小红书公开数据统一成 agent 可读的标准化流）。② 合规路由与配额（区分"官方 API / 公开端点 / 需授权"三种通道，按平台政策自动选合规路径，出边界就拦）。③ 调研流水线模板（把"监控 50 个 subreddit + 100 账号 + 20 频道"这类调研任务做成可复用模板，agent 即插即用）。定价：Free——单平台接入。Maker——¥29/月，3 平台 + 调研模板。Pro——¥99/月，全平台 + 合规路由 + 团队共享。冷启动：渠道 A——开源"DataReach Core"数据标准化管线（MIT）。渠道 B——数据帖"官方 API 把 agent 的数据饥渴堵成了钱"。渠道 C——搭 Agent-Reach 81K 星顺风车。Founding Member：Pro ¥49/月终身。
+    OPC 路径：做"DeterministicReview"——确定性审查管线。定位：一人公司现在让 agent 做代码审查、内容审校、财务核对、合同体检时，最怕的是"模型悄悄出错还看不出来"。缺的不是更强的模型，是一套"该确定的地方焊死、该智能的地方才用模型"的混合管线。① 确定性规则引擎（核心产品。文件筛选 / 规则匹配 / 定位标注等"不能错"的环节用工程逻辑硬约束，零幻觉可复现）。② 混合审查管线（确定性 + LLM 拼接，模型只做动态判断与上下文检索，同样结果 token 省九成）。③ 多场景审查模板（代码审查 / 内容审校 / 财务核对 / 合同体检各出一套确定性规则 + 模型判断组合）。定价：Free——单场景审查。Maker——¥29/月，3 场景 + 确定性规则库。Pro——¥99/月，不限场景 + 自定义规则 + 团队共享。冷启动：渠道 A——开源"DeterministicReview Core"确定性规则引擎（MIT）。渠道 B——数据帖"审查错一次就伤人信任，把不能出错的环节焊死"。渠道 C——搭 open-code-review 登顶顺风车。Founding Member：Pro ¥49/月终身。
   </div>
   <div class="tag-bar">
-    <span class="tag">#数据接入</span>
-    <span class="tag">#零过路费</span>
-    <span class="tag">#调研管线</span>
-    <span class="tag">#合规路由</span>
-    <span class="tag">#OPC喂得饱</span>
+    <span class="tag">#确定性优先</span>
+    <span class="tag">#混合审查</span>
+    <span class="tag">#降本九成</span>
+    <span class="tag">#零幻觉</span>
+    <span class="tag">#OPC信得过</span>
   </div>
   <div class="meta">
-    <span>来源 &middot; GitHub Panniantong/Agent-Reach 81,215 星（9/15 单日 Trending 第一；Twitter API basic $200/月 / pro $5,000/月，Reddit 2023 改价；浏览器自动化 + 公开端点绕官方 API，CFAA 合规风险）</span>
+    <span>来源 &middot; GitHub alibaba/open-code-review 28,527 星（9/16 日榜第一 +2,756；确定性工程流水线 + LLM 混合，token 约省九成；内置 NPE/线程安全/XSS/SQLi 检查，支持 Go 自定义规则；集成 Claude Code/Codex/Cursor/OpenCode）</span>
   </div>
 </div>
 
 <!-- CARD 3 -->
-<div class="card" id="idea-154">
+<div class="card" id="idea-157">
   <div class="card-header">
     <span class="num">03</span>
-    <span class="headline">LocalRun——本地前沿模型推理层 &middot; colibri 29,375 星：把 744B-2.8T 参数 MoE 跑在消费级硬件上</span>
+    <span class="headline">VoiceIntent——语音表达智能层 &middot; Voiskey 480 票冲上 Product Hunt #2：AI 不该重写你是谁，语音输入的瓶颈从听写转向表达</span>
   </div>
   <div class="fact">
-    9 月 14 日的 AI Agent GitHub Digest 里，JustVugg/colibri（29,375 星，单周 +960）是最"硬"的一个：一个纯 C 写的零依赖推理引擎，把 744B 到 2.8T 参数的 frontier MoE（GLM-5.3、Kimi K3、DeepSeek V4）跑在消费级硬件上。核心思路是把 VRAM、RAM、磁盘当一层内存——专家只在被激活时才从存储流进来，全模型永远不用整体塞进显存。作者的一句话极其清醒："没有速度 SLA，但有硬性的语义保证"——内存不够只会变慢，绝不会悄悄掉精度或绕道换专家。这条信息戳中的是两件同时变贵的事：一是 API 账单（JetBrains 2026 上半年 AI 支出涨了近 10 倍），二是"数据出不了内网"的合规红线。当模型能在家用 GPU 上跑、还保证语义正确，一人公司的"数据主权 + 成本可控"就从口号变成可执行项。关键洞察：往期 ModelPick 管"选哪个模型省钱"，这条管"根本不走 API、模型跑在自己机器上"——一个是选型，一个是主权，两个维度互补。
+    9 月 16 日，Voiskey 以首日 480+ upvotes 冲上 Product Hunt 产品日榜第二名，打出的定位是"Expression Intelligence"（表达智能），而不是又一个语音转文字工具。它的洞察一句话戳破语音输入的旧范式："Say it rough. Send it right."——过去语音输入拼的是「听写准不准」（verbatim 转录），Voiskey 拼的是「懂不懂你想说什么」：先理解说话人的真实意图，再把粗糙的口语按场景重写成恰当的措辞。同样一句报喜，IM 里是"Quick bit of good news 🎉 去看看"，邮件里是"Sharing a quick update... 请抽空查看"，对外文档又换一种正式语气——风格、语气、称呼全部自动适配，同时保留你的个人词典和写作习惯，而不是把你改成另一个人的模板。护城河落在隐私：所有听写音频和转录默认只存本机，零服务器留存，端到端加密，SOC 2 Type II + ISO 27001 双认证。同一天语音赛道整体爆发（AGI Hunt 日报）：Palabra.ai 实时同传延迟 <1 秒、无字幕无耳机，Saboo 开源了保险理赔语音 agent，Typeless 把免费额度从 8K 砍到 2K 词（变现焦虑的另一个侧面），Phonic 以 600ms 响应领跑延迟榜。核心洞察：语音输入的竞争，正从"转录准确率"这一页翻过去，进入"表达智能 + 本机隐私"的新战场。
   </div>
   <div class="next-step">
-    OPC 路径：做"LocalRun"——本地前沿模型推理与托管层。定位：帮一人公司 / 小团队把"敏感数据处理、长期跑批、合规内网"这些场景留在本地，不交 API 费、数据不出门。① 本地推理托管（核心产品。把 colibri 式本地推理 + 内存分层打包成一键部署，自然语言描述需求 → 自动配置硬件 / 显存 / 磁盘分层）。② 语义保证监控（跑批时实时校验有没有掉精度 / 绕专家，出问题就报，呼应 colibri 的"hard semantic guarantee"）。③ 成本对比仪表盘（本地 vs API 的月度账单对比，帮老板算清楚什么时候该本地、什么时候该 API）。定价：Free——单机本地推理。Maker——¥29/月，3 台机器 + 语义监控。Pro——¥99/月，不限机器 + 成本仪表盘 + 团队内网共享。冷启动：渠道 A——开源"LocalRun Core"本地推理部署脚本（MIT）。渠道 B——数据帖"把 2.8T 参数模型跑在自己机器上"。渠道 C——搭 colibri 29K 星顺风车。Founding Member：Pro ¥49/月终身。
+    OPC 路径：做"VoiceIntent"——语音表达智能层。定位：一人公司做内容、客服、销售、外贸、社群运营时，大量时间花在"把随口说的话改成得体文字"，缺一个"懂意图、保隐私、分场景表达"的输入端。① 意图理解（核心产品。把 rough speech 转成结构化意图——要报喜还是求帮忙、要说服还是澄清）。② 分场景表达（IM / 邮件 / 文档 / 对外文案自动适配不同语气与格式，保留个人词典与写作风格，不把人改成模板）。③ 本机隐私引擎（音频与转录零服务器留存、端到端加密，敏感商务沟通不出门）。定价：Free——单场景表达。Maker——¥29/月，全场景 + 个人风格学习。Pro——¥99/月，全场景 + 团队自定义词典 + 隐私审计。冷启动：渠道 A——开源"VoiceIntent Core"意图理解管线（MIT）。渠道 B——数据帖"AI 不该重写你是谁，语音输入的瓶颈从听写转向表达"。渠道 C——搭 Voiskey PH #2 顺风车。Founding Member：Pro ¥49/月终身。
   </div>
   <div class="tag-bar">
-    <span class="tag">#本地推理</span>
-    <span class="tag">#数据主权</span>
-    <span class="tag">#语义保证</span>
-    <span class="tag">#成本对比</span>
-    <span class="tag">#OPC跑得起</span>
+    <span class="tag">#表达智能</span>
+    <span class="tag">#意图理解</span>
+    <span class="tag">#本机隐私</span>
+    <span class="tag">#分场景表达</span>
+    <span class="tag">#OPC信得过</span>
   </div>
   <div class="meta">
-    <span>来源 &middot; GitHub JustVugg/colibri 29,375 星（纯 C 零依赖推理，VRAM/RAM/磁盘内存分层跑 744B-2.8T MoE；"无速度 SLA 但有硬性语义保证"；JetBrains 2026 上半年 AI 支出涨近 10 倍）</span>
+    <span>来源 &middot; Product Hunt Voiskey 首日 480+ upvotes（#2 Product of the Day；"Say it rough. Send it right."；Expression Intelligence 意图理解 + 分场景改写 + 个人词典；零服务器留存 SOC2/ISO27001；同期 Palabra.ai 同传 <1s / Typeless 砍免费额度）</span>
   </div>
 </div>
 
@@ -192,25 +192,25 @@
 <div class="hook-box">
   <div class="hook-label">本期钩子</div>
   <div class="hook-text">
-    9 月 16 日三条信号指向同一件事：当 agent 从"帮我写代码"进化到"替我干活"，一人公司缺的不是更强的模型，而是让 agent 真正自主运行的三块底座——敢不敢让它动手、喂不喂得饱它、养不养得起它。信号一：OpenBot 4,881 星——"模型不再是新闻，治理层才是"，这就是 PolicyGate（Agent 动作策略门禁层）。信号二：Agent-Reach 81,215 星——"官方 API 把 agent 的数据饥渴堵成了钱"，这就是 DataReach（Agent 零过路费数据接入层）。信号三：colibri 29,375 星——"把 2.8T 参数模型跑在自己机器上"，这就是 LocalRun（本地前沿模型推理层）。共同主线：上一期讲"落地"（省上下文、跑环境、扛生产），这一期往上游走一步讲"供给"——AI 生成了一大堆能干活的东西，最后能不能管得住、喂得饱、养得起，才决定 agent 是玩具还是劳力。谁先帮一人公司把 agent 从"造出来"推进到"养起来"，谁就抓住 OPC 从"疯狂生成"走向"自主运行"的新阶段。
+    9 月 17 日三条信号指向同一件事：当 AI 生成的东西多到用不完，稀缺不再是"更多"，而是"哪些能信"。信号一：OpenResearch 3,343 星——"AI 干活的记忆存在一个最容易丢的地方——聊天窗口"，这就是 ResearchTree（AI 研究可复现层）。信号二：open-code-review 2,756 日增登顶——"审查错一次就伤人信任，把不能出错的环节焊死"，这就是 DeterministicReview（确定性审查管线）。信号三：Voiskey 480 票冲上 PH #2——"AI 不该重写你是谁"，这就是 VoiceIntent（语音表达智能层）。共同主线：往期 Vol.042 讲"供给"（管得住 / 喂得饱 / 养得起），Vol.041 讲"落地"（省上下文 / 跑环境 / 扛生产），这一期再往上走一步讲"可信"——研究要可信（实验树可复现）、审查要可信（确定性硬约束）、表达要可信（不篡改你）。当生成不再稀缺，信任成为新的稀缺资源：谁先帮一人公司把 agent 从"能生成"推进到"信得过"，谁就抓住 OPC 从"疯狂生成"走向"可信交付"的新阶段。
   </div>
 </div>
 
 <!-- Navigation -->
 <div class="prev-next">
-  <a href="2026-09-15.html" class="pn-card">
+  <a href="2026-09-16.html" class="pn-card">
     <div class="pn-label">&larr; 上一期</div>
-    <div class="pn-title">Vol.041 &middot; ContextSift 上下文筛选 · EnvSpin 本地环境 · ProofReady 生产就绪</div>
+    <div class="pn-title">Vol.042 &middot; PolicyGate 动作策略门禁 · DataReach 数据接入 · LocalRun 本地推理</div>
   </a>
   <div class="pn-card disabled pn-right">
     <div class="pn-label">下一期 &rarr;</div>
-    <div class="pn-title">Vol.043 &middot; 等待明天刷新</div>
+    <div class="pn-title">Vol.044 &middot; 等待明天刷新</div>
   </div>
 </div>
 
 <div class="footer">
   OPC IDEA &middot; 日报 &#65295; <a href="subscribe.html">订阅日报</a> &#65295; <a href="feed.xml">RSS</a> &#65295; <a href="./index.html">完整报告</a> &#65295; <a href="newsletter-strategy.md">启动策略</a><br>
-  北京 &middot; 2026年9月16日 &middot; Vol.042 &middot; 今日刷新<br>
+  北京 &middot; 2026年9月17日 &middot; Vol.043 &middot; 今日刷新<br>
   商业&middot;认知观察者&middot;出品
 </div>
 
