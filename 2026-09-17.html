@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<title>OPC IDEA · 2026年9月17日</title>
+<meta name="description" content="每日精选一人公司方向的精筛 IDEA · 一手源 · 今日已刷新">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta property="og:description" content="今日："AI 干活的记忆存在一个最容易丢的地方——聊天窗口"——OpenResearch 3,343 星登顶日榜，把编码 agent 变成可复现的研究员 · "审查错一次就伤人信任，把不能出错的环节焊死"——open-code-review 2,756 日增空降榜首，token 只用九分之一 · "AI 不该重写你是谁"——Voiskey 480 票冲上 Product Hunt #2，语音输入的瓶颈从听写转向表达。每日 09:00 自动刷新。">
+<meta property="og:url" content="https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html">
+<meta property="og:image" content="https://bezhumingqian-bit.github.io/opc-idea-daily/icon-512.png">
+<meta property="og:site_name" content="OPC IDEA 日报">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta name="twitter:description" content="今日 3 条精筛 IDEA · 一手源 · 工作日每日 09:00 刷新">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+    background: #F5F1E8;
+    color: #2C2A26;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px 40px; }
+  .header {
+    background: #FAF7EE;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 32px 28px 28px;
+    margin-bottom: 16px;
+  }
+  .brand { font-size: 11px; letter-spacing: 4px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 14px; }
+  .brand a { color: #B5B0A4; text-decoration: none; }
+  .brand a:hover { color: #8A8474; }
+  .header-title { font-size: 26px; font-weight: 500; color: #2C2A26; letter-spacing: 1px; }
+  .header-date { font-size: 13px; color: #7A766C; margin-top: 6px; letter-spacing: 0.5px; }
+  .divider { height: 1px; background: #E6E1D6; margin: 18px 0; }
+  .header-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .chip { padding: 3px 10px; background: transparent; border: 1px solid #D8D2C5; border-radius: 2px; font-size: 11px; color: #7A766C; letter-spacing: 0.5px; }
+  .card {
+    background: #FFFEFC;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 22px 24px;
+    margin-bottom: 10px;
+  }
+  .card-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+  .num { width: 28px; height: 28px; border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; flex-shrink: 0; letter-spacing: 0.5px; background: #EEEAE0; color: #5A5443; }
+  .headline { font-size: 15.5px; font-weight: 500; color: #2C2A26; line-height: 1.5; flex: 1; padding-top: 3px; letter-spacing: 0.2px; }
+  .fact { font-size: 13.5px; color: #5F5B53; line-height: 1.75; margin-bottom: 12px; padding-left: 42px; }
+  .next-step { font-size: 13.5px; color: #2C2A26; line-height: 1.75; padding: 12px 16px; margin-left: 42px; background: #F7F4EC; border-left: 2px solid #8A8474; border-radius: 0 2px 2px 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; padding-left: 42px; font-size: 11.5px; color: #7A766C; }
+  .hook-box { background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 16px 20px; margin-bottom: 10px; }
+  .hook-label { font-size: 11px; letter-spacing: 2px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 8px; }
+  .hook-text { font-size: 14px; color: #2C2A26; line-height: 1.7; letter-spacing: 0.2px; }
+
+  .prev-next {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    margin-top: 18px; margin-bottom: 18px;
+  }
+  .pn-card {
+    background: #FFFEFC; border: 1px solid #E6E1D6; border-radius: 4px;
+    padding: 14px 18px; text-decoration: none; color: inherit; display: block;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .pn-card:hover { border-color: #C4BBA9; background: #FAF7EE; }
+  .pn-card.disabled { opacity: 0.4; pointer-events: none; }
+  .pn-label { font-size: 10.5px; letter-spacing: 1.5px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 4px; }
+  .pn-title { font-size: 13px; color: #2C2A26; line-height: 1.5; letter-spacing: 0.2px; }
+  .pn-right { text-align: right; }
+
+  .tag-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding-left: 42px; }
+  .tag { padding: 2px 8px; background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 2px; font-size: 10.5px; color: #7A766C; letter-spacing: 0.3px; }
+
+  .footer { text-align: center; margin-top: 28px; margin-bottom: 20px; font-size: 11px; color: #B5B0A4; letter-spacing: 0.5px; line-height: 2; }
+  .footer a { color: #8A8474; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  @media print {
+    body { background: white; }
+    .card, .header, .hook-box { box-shadow: none; border-color: #ccc; }
+    .prev-next, .footer, .header-meta { display: none; }
+  }
+  @media (max-width: 640px) {
+    .container { padding: 12px 12px 32px; }
+    .header { padding: 24px 20px 22px; }
+    .header-title { font-size: 22px; }
+    .card { padding: 18px 16px; }
+    .fact, .next-step { padding-left: 0; margin-left: 0; }
+    .tag-bar { padding-left: 0; }
+    .prev-next { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<a href="./index.html" style="display:inline-block;font-size:12px;color:#8A8474;text-decoration:none;letter-spacing:0.5px;margin-bottom:18px;">&larr; 返回归档首页</a>
+
+<div class="header">
+  <div class="brand"><a href="./index.html">OPC IDEA &middot; 日报</a></div>
+  <div class="header-title">一人公司方向&middot;每日精选</div>
+  <div class="header-date">2026年9月17日 &middot; 星期四 &middot; Vol.043 &middot; 今日已刷新</div>
+  <div class="divider"></div>
+  <div class="header-meta">
+    <span class="chip">"AI 干活的记忆，存在一个最容易丢的地方——聊天窗口"——OpenResearch 3,343 星登顶，把编码 agent 变成可复现的研究员</span>
+    <span class="chip">"审查错一次就伤人信任，把不能出错的环节焊死"——open-code-review 2,756 日增空降榜首，token 只用九分之一</span>
+    <span class="chip">"AI 不该重写你是谁"——Voiskey 480 票冲上 Product Hunt #2，语音输入的瓶颈从听写转向表达</span>
+    <span class="chip">已与近七期去重</span>
+  </div>
+  <div class="header-meta" style="margin-top:8px;">
+    <a href="subscribe.html" style="font-size:13px;color:#8A8474;text-decoration:none;letter-spacing:0.3px;">每天09:00自动收到 &rarr;</a>
+  </div>
+</div>
+
+<!-- CARD 1 -->
+<div class="card" id="idea-155">
+  <div class="card-header">
+    <span class="num">01</span>
+    <span class="headline">ResearchTree——AI 研究可复现层 &middot; OpenResearch 3,343 星登顶：AI 干活的记忆存在一个最容易丢的地方，聊天窗口</span>
+  </div>
+  <div class="fact">
+    9 月 16 日，alphaXiv 团队的 OpenResearch（3,343 星，单日 +531，GitHub 日榜第一，MIT 协议）把「编码 agent」改造成了「研究 agent」。它干的事一句话：把你已经装好的 Claude Code / Codex / OpenCode / Cursor 搬进一个本地研究工作台，让 agent 从「聊天框里的助手」变成「实验记录本旁的研究员」。核心机制是一个 git-native 的「实验树」——从 baseline 起栈式叠加变体，每个研究方向一个独立 agent 会话 + 一个隔离的 git worktree，两个 agent 可以同时争论学习率而互不踩文件；每次运行都会把当次代码快照 immutable 存档，日志、diff、结果、产物全拴在产生它们的那个 commit 上。三个月后想查「当时那组好结果怎么跑出来的」，翻的是仓库，不是聊天记录。更关键的是「本地优先」：项目、会话、实验、日志全存本机（本地 SQLite + orx CLI + 本地 dashboard），还能接 LM Studio / Ollama 本地模型做到零 API 开销，算力可本地 / SSH 远程 / Slurm / K8s / Ray / Modal 任意路由，但账本永远在自己机器上。核心洞察（引自当日 AI 前线复盘）：AI 自动化研究的竞争，正从「谁跑得完」转向「谁的结果可信」。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"ResearchTree"——AI 研究可复现层。定位：一人公司现在用 agent 做市场调研、竞品分析、内容实验、增长 A/B 测试时，缺的不是"能跑"，是"结果可复现、可追溯、可审计"——上周那个好结论到底是哪组参数跑出来的，翻聊天记录已经找不到了。① 实验树工作台（核心产品。baseline → 变体栈式叠加实验，每个调研方向独立 worktree，agent 各跑各的不串台）。② 可复现档案（每次运行 immutable 存档到 commit，日志 / 结果 / 产物绑定代码快照，三个月后一键回溯）。③ 多算力路由（本地 / 远程 GPU / 云聚合，账本与数据全留本机，敏感调研不出门）。定价：Free——单项目实验树。Maker——¥29/月，3 个项目 + 可复现档案。Pro——¥99/月，不限项目 + 多算力路由 + 团队共享。冷启动：渠道 A——开源"ResearchTree Core"实验树引擎（MIT）。渠道 B——数据帖"AI 干活的记忆存在一个最容易丢的地方——聊天窗口"。渠道 C——搭 OpenResearch 登顶顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#研究可复现</span>
+    <span class="tag">#实验树</span>
+    <span class="tag">#本地优先</span>
+    <span class="tag">#可审计</span>
+    <span class="tag">#OPC信得过</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; GitHub alphaXiv/OpenResearch 3,343 星（9/16 日榜第一 +531；git-native 实验树 / 独立 worktree / immutable 存档到 commit；本地 SQLite + orx CLI；接 LM Studio/Ollama 零 API 开销）</span>
+  </div>
+</div>
+
+<!-- CARD 2 -->
+<div class="card" id="idea-156">
+  <div class="card-header">
+    <span class="num">02</span>
+    <span class="headline">DeterministicReview——确定性审查管线 &middot; open-code-review 2,756 日增空降榜首：审查错一次就伤人信任，把不能出错的环节焊死</span>
+  </div>
+  <div class="fact">
+    9 月 16 日，阿里巴巴开源的 open-code-review（28,527 星，单日 +2,756 空降 GitHub 榜首，Apache-2.0，当天就发了 v1.12.3）给出一个极其清醒的架构判断：代码审查这件事，正确解法不是"更聪明的模型"，而是"确定性工程流水线 + LLM Agent 的混合"。它把审查拆成两半——文件筛选、规则匹配、评论定位这些「不能出错」的环节，用工程逻辑硬约束（确定性、可复现、零幻觉）；模型只负责它真正擅长的动态判断和上下文检索。README 给出硬数据：同样模型下，这套混合管线比纯靠通用 agent 跑审查，精度更高、token 只用约九分之一。它内置 NPE、线程安全、XSS、SQL 注入等确定性检查，支持 Go 自定义规则，并已集成 Claude Code / Codex / Cursor / OpenCode，配一个 OpenAI 或 Anthropic 模型就能开工。同一天的反向信号（来自 DailyDawn 复盘）是：HN 上一篇 507 分热帖曝光了专有 AI 工具在 RubyGems 缓存漏洞上的风险，开发者开始担心把敏感代码交给黑盒专有审查工具。核心洞察：审查、审校、核对这类「错一次就伤人信任」的场景，架构原则是确定性为主、智能为辅——LLM 不是越多越好，把不能错的环节焊死，模型只做它该做的那一小块。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"DeterministicReview"——确定性审查管线。定位：一人公司现在让 agent 做代码审查、内容审校、财务核对、合同体检时，最怕的是"模型悄悄出错还看不出来"。缺的不是更强的模型，是一套"该确定的地方焊死、该智能的地方才用模型"的混合管线。① 确定性规则引擎（核心产品。文件筛选 / 规则匹配 / 定位标注等"不能错"的环节用工程逻辑硬约束，零幻觉可复现）。② 混合审查管线（确定性 + LLM 拼接，模型只做动态判断与上下文检索，同样结果 token 省九成）。③ 多场景审查模板（代码审查 / 内容审校 / 财务核对 / 合同体检各出一套确定性规则 + 模型判断组合）。定价：Free——单场景审查。Maker——¥29/月，3 场景 + 确定性规则库。Pro——¥99/月，不限场景 + 自定义规则 + 团队共享。冷启动：渠道 A——开源"DeterministicReview Core"确定性规则引擎（MIT）。渠道 B——数据帖"审查错一次就伤人信任，把不能出错的环节焊死"。渠道 C——搭 open-code-review 登顶顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#确定性优先</span>
+    <span class="tag">#混合审查</span>
+    <span class="tag">#降本九成</span>
+    <span class="tag">#零幻觉</span>
+    <span class="tag">#OPC信得过</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; GitHub alibaba/open-code-review 28,527 星（9/16 日榜第一 +2,756；确定性工程流水线 + LLM 混合，token 约省九成；内置 NPE/线程安全/XSS/SQLi 检查，支持 Go 自定义规则；集成 Claude Code/Codex/Cursor/OpenCode）</span>
+  </div>
+</div>
+
+<!-- CARD 3 -->
+<div class="card" id="idea-157">
+  <div class="card-header">
+    <span class="num">03</span>
+    <span class="headline">VoiceIntent——语音表达智能层 &middot; Voiskey 480 票冲上 Product Hunt #2：AI 不该重写你是谁，语音输入的瓶颈从听写转向表达</span>
+  </div>
+  <div class="fact">
+    9 月 16 日，Voiskey 以首日 480+ upvotes 冲上 Product Hunt 产品日榜第二名，打出的定位是"Expression Intelligence"（表达智能），而不是又一个语音转文字工具。它的洞察一句话戳破语音输入的旧范式："Say it rough. Send it right."——过去语音输入拼的是「听写准不准」（verbatim 转录），Voiskey 拼的是「懂不懂你想说什么」：先理解说话人的真实意图，再把粗糙的口语按场景重写成恰当的措辞。同样一句报喜，IM 里是"Quick bit of good news 🎉 去看看"，邮件里是"Sharing a quick update... 请抽空查看"，对外文档又换一种正式语气——风格、语气、称呼全部自动适配，同时保留你的个人词典和写作习惯，而不是把你改成另一个人的模板。护城河落在隐私：所有听写音频和转录默认只存本机，零服务器留存，端到端加密，SOC 2 Type II + ISO 27001 双认证。同一天语音赛道整体爆发（AGI Hunt 日报）：Palabra.ai 实时同传延迟 <1 秒、无字幕无耳机，Saboo 开源了保险理赔语音 agent，Typeless 把免费额度从 8K 砍到 2K 词（变现焦虑的另一个侧面），Phonic 以 600ms 响应领跑延迟榜。核心洞察：语音输入的竞争，正从"转录准确率"这一页翻过去，进入"表达智能 + 本机隐私"的新战场。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"VoiceIntent"——语音表达智能层。定位：一人公司做内容、客服、销售、外贸、社群运营时，大量时间花在"把随口说的话改成得体文字"，缺一个"懂意图、保隐私、分场景表达"的输入端。① 意图理解（核心产品。把 rough speech 转成结构化意图——要报喜还是求帮忙、要说服还是澄清）。② 分场景表达（IM / 邮件 / 文档 / 对外文案自动适配不同语气与格式，保留个人词典与写作风格，不把人改成模板）。③ 本机隐私引擎（音频与转录零服务器留存、端到端加密，敏感商务沟通不出门）。定价：Free——单场景表达。Maker——¥29/月，全场景 + 个人风格学习。Pro——¥99/月，全场景 + 团队自定义词典 + 隐私审计。冷启动：渠道 A——开源"VoiceIntent Core"意图理解管线（MIT）。渠道 B——数据帖"AI 不该重写你是谁，语音输入的瓶颈从听写转向表达"。渠道 C——搭 Voiskey PH #2 顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#表达智能</span>
+    <span class="tag">#意图理解</span>
+    <span class="tag">#本机隐私</span>
+    <span class="tag">#分场景表达</span>
+    <span class="tag">#OPC信得过</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; Product Hunt Voiskey 首日 480+ upvotes（#2 Product of the Day；"Say it rough. Send it right."；Expression Intelligence 意图理解 + 分场景改写 + 个人词典；零服务器留存 SOC2/ISO27001；同期 Palabra.ai 同传 <1s / Typeless 砍免费额度）</span>
+  </div>
+</div>
+
+<!-- HOOK -->
+<div class="hook-box">
+  <div class="hook-label">本期钩子</div>
+  <div class="hook-text">
+    9 月 17 日三条信号指向同一件事：当 AI 生成的东西多到用不完，稀缺不再是"更多"，而是"哪些能信"。信号一：OpenResearch 3,343 星——"AI 干活的记忆存在一个最容易丢的地方——聊天窗口"，这就是 ResearchTree（AI 研究可复现层）。信号二：open-code-review 2,756 日增登顶——"审查错一次就伤人信任，把不能出错的环节焊死"，这就是 DeterministicReview（确定性审查管线）。信号三：Voiskey 480 票冲上 PH #2——"AI 不该重写你是谁"，这就是 VoiceIntent（语音表达智能层）。共同主线：往期 Vol.042 讲"供给"（管得住 / 喂得饱 / 养得起），Vol.041 讲"落地"（省上下文 / 跑环境 / 扛生产），这一期再往上走一步讲"可信"——研究要可信（实验树可复现）、审查要可信（确定性硬约束）、表达要可信（不篡改你）。当生成不再稀缺，信任成为新的稀缺资源：谁先帮一人公司把 agent 从"能生成"推进到"信得过"，谁就抓住 OPC 从"疯狂生成"走向"可信交付"的新阶段。
+  </div>
+</div>
+
+<!-- Navigation -->
+<div class="prev-next">
+  <a href="2026-09-16.html" class="pn-card">
+    <div class="pn-label">&larr; 上一期</div>
+    <div class="pn-title">Vol.042 &middot; PolicyGate 动作策略门禁 · DataReach 数据接入 · LocalRun 本地推理</div>
+  </a>
+  <a href="daily.html" class="pn-card pn-right">
+    <div class="pn-label">下一期 &rarr;</div>
+    <div class="pn-title">Vol.044 &middot; RevAgent 变现收钱 · TraceReplay 生产观测 · AgentHome 多Agent统一</div>
+  </a>
+</div>
+
+<div class="footer">
+  OPC IDEA &middot; 日报 &#65295; <a href="subscribe.html">订阅日报</a> &#65295; <a href="feed.xml">RSS</a> &#65295; <a href="./index.html">完整报告</a> &#65295; <a href="newsletter-strategy.md">启动策略</a><br>
+  北京 &middot; 2026年9月17日 &middot; Vol.043 &middot; 今日刷新<br>
+  商业&middot;认知观察者&middot;出品
+</div>
+
+</div>
+</body>
+</html>

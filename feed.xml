@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Thu, 17 Sep 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Fri, 18 Sep 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 158 · RevAgent——AI 变现收钱层 · CREEM 2.0 登顶 Product Hunt 当日 #1，AI 把 build 打到周末收钱却没有</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-158</link>
+    <description>9月17日CREEM 2.0冲上Product Hunt当日榜首（Product of the Day #1），官宣€5M seed（累计€6.8M，Inovo VC领投）。创始人Gabriel Ferraz一句话："Building a product went from months to a weekend. Getting paid for it did not."——AI把"做出来"的成本打到周末，"收得到钱"没跟上。CREEM把merchant of record（MoR）升级成完整商业表面：自有域名checkout、AI时代billing（credit wallet/usage-based/custom meters）、affiliate、CLI，让agent通过MCP把"开店→定价→收款→对账→监控"跑起来。3.9%+40c、190+国收款；团队1→15人、ARR翻倍破€2M。同向信号：ZeroClick（卖产品给agent）、Weave Router 2.0、tiun、Appwrite 2.0。核心洞察：AI把"做出来"成本打到周末，一人公司瓶颈回到"经营"——怎么收得到钱、让agent替你收钱。做"RevAgent"——AI变现收钱层：变现编排（agent通过CLI配置商品/定价/订阅/usage billing自动化"建店→收款→对账"）+合规收钱（MoR代缴税务/退款/190+国payout）+变现审计（收入/退款/佣金/渠道成本串成仪表盘agent自动巡检）。Free/Maker ¥29/Pro ¥99。冷启动：开源RevAgent Core变现编排CLI+数据帖"AI把build打到周末收钱却没有"+搭CREEM 2.0登顶顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Fri, 18 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-044-01</guid>
+    <category>变现收钱 / Agent经济 / MoR合规 / 收款编排 / OPC卖得动</category>
+  </item>
+
+  <item>
+    <title>IDEA 159 · TraceReplay——Agent 生产失败检测与回放层 · Raindrop 官宣 $50M，agent 上线后最危险的失败传统 eval 测不出来</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-159</link>
+    <description>9月17日AI Agent安全与失败检测公司Raindrop官宣$50M Series A（CRV+Lightspeed领投，OpenAI/Anthropic/Thinky Machines研究者参投）。它抓"生产环境里agent悄悄失败"：幻觉（hallucinations）和tool call错误——传统eval根本测不出来，因为eval用理想化输入，生产里是真实脏数据。同步推出Raindrop Simulations：自动mock服务和数据库，每次PR回放数千条历史trace，测agent改动会不会把以前能跑通的场景搞崩。客户Vercel/Clay/Framer/Speak。同向信号：cloudflare/security-audit-skill +3606空降榜首、open-code-review连续第二天榜首、QAgent（Stop shipping on vibes）。核心洞察：agent从"能生成"走到"信得过"后，下一坎是"上线后不出错"——靠回放真实历史trace来抓。做"TraceReplay"——Agent生产失败检测与回放层：生产失败检测（抓hallucinations/tool call错误/静默降级）+回放回归测试（数千条历史trace存档每次改动回放一遍）+模拟服务沙箱（自动mock数据库/API隔离环境先跑）。Free/Maker ¥29/Pro ¥99。冷启动：开源TraceReplay Core trace回放引擎+数据帖"agent上线后最危险的失败传统eval测不出来"+搭Raindrop $50M顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Fri, 18 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-044-02</guid>
+    <category>生产观测 / 回放回归 / 失败检测 / Agent可靠性 / OPC信得过</category>
+  </item>
+
+  <item>
+    <title>IDEA 160 · AgentHome——多 Agent 统一身份与记忆层 · Polyphonic/Mnemos，你同时在用 5 个 coding agent 每个活在独立终端里</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-160</link>
+    <description>9月17日开发者RileyRalmuto发布免费Mac beta工具Polyphonic，把Claude Code、Codex、Kimi Code、Grok及ACP标准agent（Hermes、OpenClaw）放进"同一个家"：共享项目/文件/会话历史，每个agent一个加密身份，靠Mnemos提供持续记忆。定位一句话戳破痛点："agents各住在独立终端里，没有共享上下文"。同向信号：volcengine/OpenViking（+276，self-evolving context database统一memory/RAG/skills）、MemTensor/MemOS、wshobson/agents（多harness插件市场）、agent-skills。核心洞察：一个人同时跑4-5个coding agent已成常态，但记忆/身份/会话互相隔离——多agent时代缺一个"家"来统一身份与记忆。做"AgentHome"——多Agent统一身份与记忆层：统一记忆层（多agent项目/文件/会话/决策收敛到可检索记忆库跨agent共享）+加密身份（每个agent独立加密身份权限/密钥/登录态隔离）+会话连续性（跨终端/跨agent会话历史对齐A干到一半B能接上）。Free/Maker ¥29/Pro ¥99。冷启动：开源AgentHome Core多agent记忆hub+数据帖"你同时在用5个coding agent每个活在独立终端里"+搭Polyphonic/Mnemos顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Fri, 18 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-044-03</guid>
+    <category>多Agent / 统一记忆 / 加密身份 / 会话连续 / OPC管得住</category>
+  </item>
 
   <item>
     <title>IDEA 155 · ResearchTree——AI 研究可复现层 · OpenResearch 3,343 星登顶，AI 干活的记忆存在一个最容易丢的地方：聊天窗口</title>
