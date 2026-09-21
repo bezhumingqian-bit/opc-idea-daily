@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Fri, 18 Sep 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Mon, 21 Sep 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 161 · OpRun——Agent 运营预算与毛利核算层 · Runable $21M 负毛利，AI 把运营交给 agent 跑账却没人算得清</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-161</link>
+    <description>9月中旬Runable官宣$21M Series A（Susquehanna+Nexus领投）：1.5M用户、上线3周ARR破$2M、估值约$65M——但媒体拆解成本结构后点破：负毛利。给1.5M用户跑复杂agent的推理成本跑赢了收入，创始人把论题浓缩成"output与outcome的区别"：大多数AI工具停在生成内容/代码，Runable要做"build, run, and grow a business"。同日HN榜首不是模型不是融资，是开发者自省《I stopped drinking the AI Kool-Aid》：token成本随上下文非线性涨、prompt随上游模型更新悄悄腐烂、非确定性产出让回归测试近乎不可能。同向信号：MakersClaw 2.0（agent运营公司的OS自带budget）、Bolt Forge（开源模型50X降本）。核心洞察：AI把"做出来""跑起来"成本打下来后，一人公司开始把"运营"也交给agent——负毛利说明"算不清账"才是下一个坑。做"OpRun"——Agent运营预算与毛利核算层：运营预算（每个agent自动化设预算上限自动降级/暂停/换便宜模型）+毛利核算（推理成本+渠道成本+收入串成毛利账agent巡检）+停损护栏（负毛利任务自动熔断）。Free/Maker ¥29/Pro ¥99。冷启动：开源OpRun Core成本核算CLI+数据帖"AI把运营交给agent跑负毛利没人算得清"+搭Runable $21M顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Mon, 21 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-045-01</guid>
+    <category>运营核算 / 毛利审计 / 预算护栏 / 成本真相 / OPC算得清</category>
+  </item>
+
+  <item>
+    <title>IDEA 162 · ToolBridge——Agent 工具调用协议适配与路由层 · Ruby UTCP，MCP 之外工具调用协议在分化</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-162</link>
+    <description>9月19日Ruby UTCP冲上Product Hunt当日榜，定位"MCP的可扩展、安全替代方案"，实现UTCP 1.1（Universal Tool Call Protocol）：12种传输、streaming、auth、OpenAPI自动发现、CodeMode可编程多工具工作流。同日GitHub趋势tool-calling/computer-use生态持续分化：trycua/cua（computer-use 2.0开源驱动+859星）、ECC（多编码agent性能优化harness 26万星）、agent-skills（生产级agent工程技能9.7万星）。核心洞察：MCP成为事实标准后，工具调用协议开始分化——一个人同时用Claude Code/Codex/Cursor，每个都有自己的工具生态，工具"一次开发、处处可用"成了新缺口。做"ToolBridge"——Agent工具调用协议适配与路由层：协议适配（工具一次声明自动生成MCP/UTCP/ACP多协议适配跨agent复用）+智能路由（按agent协议/权限/延迟选最优传输与工具实现）+安全网关（统一鉴权/审计/速率限制可追溯）。Free/Maker ¥29/Pro ¥99。冷启动：开源ToolBridge Core协议适配层+数据帖"MCP之外工具调用协议在分化"+搭Ruby UTCP顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Mon, 21 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-045-02</guid>
+    <category>工具协议 / MCP替代 / 协议路由 / 安全网关 / OPC接得通</category>
+  </item>
+
+  <item>
+    <title>IDEA 163 · ScreenSide——看屏 GUI 自动化层 · Sider Omni Sidebar + CUA-S1，你的 Mac 每个 App 都该有个 agent 侧边栏</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-163</link>
+    <description>9月18-19日Sider Omni Sidebar冲上Product Hunt当日前列（371-374票），定位"给每个Mac App一个agent侧边栏"：agent直接看屏、直接在App上操作，复用你已有的ChatGPT/Codex credits（GPT-6 Astra），不用复制粘贴或上传。同向信号：CUA-S1（HN桌面UI自动化模型"像快速反应的大脑直接控制桌面界面"）、trycua/cua（+859星computer-use 2.0开源驱动）、Cactus Needle（2-bit/8-29MB边缘自动化模型跑在手机/穿戴/家居/微控制器）。核心洞察：agent从"终端干活"走向"看屏操作任意App"——一人公司跨App的重复GUI杂活（搬数据/录报销/导报表/跨系统对账）还靠人手，是下一块待自动化的地。做"ScreenSide"——看屏GUI自动化层：屏幕感知（截屏理解任意App界面无需API/插件）+动作执行（鼠标/键盘/表单自动操作跨App搬运）+复用已有credits（跑在已有ChatGPT/Codex/本地模型上不叠加新订阅）。Free/Maker ¥29/Pro ¥99。冷启动：开源ScreenSide Core屏幕感知引擎+数据帖"你的Mac每个App都该有个agent侧边栏"+搭Sider Omni Sidebar顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Mon, 21 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-045-03</guid>
+    <category>看屏agent / GUI自动化 / 跨App搬运 / 复用credits / OPC干得了</category>
+  </item>
 
   <item>
     <title>IDEA 158 · RevAgent——AI 变现收钱层 · CREEM 2.0 登顶 Product Hunt 当日 #1，AI 把 build 打到周末收钱却没有</title>
