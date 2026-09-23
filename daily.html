@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<title>OPC IDEA · 2026年9月21日</title>
+<title>OPC IDEA · 2026年9月23日</title>
 <meta name="description" content="每日精选一人公司方向的精筛 IDEA · 一手源 · 今日已刷新">
 <meta property="og:type" content="article">
 <meta property="og:title" content="OPC IDEA · 一人公司方向每日精选">
-<meta property="og:description" content="今日："AI 把运营交给 agent 跑，负毛利却没人算得清"——Runable $21M（1.5M 用户 / 3周 $2M ARR / 负毛利），agent 从内容工具转向业务运营者 · "MCP 之外，工具调用协议在分化"——Ruby UTCP 实现 UTCP 1.1，工具一次开发处处可用成新缺口 · "你的 Mac 每个 App 都该有个 agent 侧边栏"——Sider Omni Sidebar + CUA-S1，看屏自动化。每日 09:00 自动刷新。">
+<meta property="og:description" content="今日："卡住 agent 的不是缺工具，是工具背后的合同"——treg 2,113 星（60+ 供应商 3000+ 端点按次计费免签约），agent 的瓶颈从推理转向借能力 · "让 agent 不开 Excel 也能算表格"——univer 15,214 星登顶 TS，办公 headless 运行时 · "先转写后剪辑，比喂原始帧省 token 也更准"——video-use 25,702 星，视频剪辑退化成文本问题。每日 09:00 自动刷新。">
 <meta property="og:url" content="https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html">
 <meta property="og:image" content="https://bezhumingqian-bit.github.io/opc-idea-daily/icon-512.png">
 <meta property="og:site_name" content="OPC IDEA 日报">
@@ -103,12 +103,12 @@
 <div class="header">
   <div class="brand"><a href="./index.html">OPC IDEA &middot; 日报</a></div>
   <div class="header-title">一人公司方向&middot;每日精选</div>
-  <div class="header-date">2026年9月21日 &middot; 星期一 &middot; Vol.045 &middot; 今日已刷新</div>
+  <div class="header-date">2026年9月23日 &middot; 星期三 &middot; Vol.046 &middot; 今日已刷新</div>
   <div class="divider"></div>
   <div class="header-meta">
-    <span class="chip">"AI 把运营交给 agent 跑，负毛利却没人算得清"——Runable $21M（1.5M 用户 / 3周 $2M ARR / 负毛利），agent 从内容工具转向业务运营者</span>
-    <span class="chip">"MCP 之外，工具调用协议在分化"——Ruby UTCP 实现 UTCP 1.1，工具一次开发处处可用成新缺口</span>
-    <span class="chip">"你的 Mac 每个 App 都该有个 agent 侧边栏"——Sider Omni Sidebar + CUA-S1，看屏自动化</span>
+    <span class="chip">"卡住 agent 的不是缺工具，是工具背后的合同"——treg 2,113 星（60+ 供应商 3000+ 端点按次计费免签约），agent 的瓶颈从推理转向借能力</span>
+    <span class="chip">"让 agent 不开 Excel 也能算表格"——univer 15,214 星登顶 TS，办公 headless 运行时</span>
+    <span class="chip">"先转写后剪辑，比喂原始帧省 token 也更准"——video-use 25,702 星，视频剪辑退化成文本问题</span>
     <span class="chip">已与近七期去重</span>
   </div>
   <div class="header-meta" style="margin-top:8px;">
@@ -117,74 +117,74 @@
 </div>
 
 <!-- CARD 1 -->
-<div class="card" id="idea-161">
+<div class="card" id="idea-164">
   <div class="card-header">
     <span class="num">01</span>
-    <span class="headline">OpRun——Agent 运营预算与毛利核算层 &middot; Runable $21M 负毛利：AI 把运营交给 agent 跑，账却没人算得清</span>
+    <span class="headline">ToolMart——Agent 工具计量市场与账号托管层 &middot; treg「OpenRouter for agent tools」：卡住 agent 的不是缺工具，是工具背后的合同</span>
   </div>
   <div class="fact">
-    9 月中旬，Runable 官宣 $21M Series A（Susquehanna Venture Capital + Nexus Venture Partners 领投）：1.5M 用户、上线 3 周 ARR 破 $2M、估值约 $65M——但媒体拆解其成本结构后点破一个关键事实：负毛利。给 1.5M 用户跑复杂 agent 的推理成本跑赢了收入，创始人 Umesh Kumar 把论题浓缩成"output 与 outcome 的区别"：大多数 AI 工具停在生成内容/代码（output），Runable 要做的是"build, run, and grow a business"（outcome）。同日 HN 榜首不是模型、不是融资，是一篇开发者自省《I stopped drinking the AI Kool-Aid》：token 成本随上下文非线性涨、prompt 随上游模型更新悄悄腐烂、非确定性产出让回归测试近乎不可能。同向信号密集：MakersClaw 2.0（PH，"agent 运营公司的 OS"，自带 budget、连续跑 go-to-market）、Bolt Forge（开源模型 50X 用量降本）。核心洞察：AI 把"做出来"和"跑起来"的成本都打下来后，一人公司开始把"运营"也交给 agent——但负毛利说明"算不清账"才是下一个坑。
+    9 月 22 日，GitHub 趋势上 superdesigndev/treg（2,113 星，+197）用一句话重新定义一个缺口："OpenRouter，但给 agent 工具而不是模型"——一个 base URL + 一个 token，agent 就能调用 60+ 供应商的 3000+ 计量端点（外链数据、社媒趋势、联系人富化、广告、爬虫、图/视频生成），按次计费，无需逐个签约。它点破一个被忽略的真相：真正卡住 agent 的通常不是"缺工具"，而是"工具卡在合同/月费/企业审批后面"——Semrush $139/月、Crunchbase $99/月，或压根没有公开 API。与 Composio 的本质区别：这是计量市场，不是 OAuth 集成平台；账号由 treg 集中托管，密钥注入在服务端，调用方永远拿不到密钥。同向信号：同日 Product Hunt 顶部 Jev（typed decisions）、Superset Mobile（移动端编排 coding agent）、Arcjet（运行时安全）都在把"agent 能不能在真实生产里用起来"推成共识。核心洞察：当 agent 已经能规划、能下命令，它的上限不再靠推理，而靠它能"借到"哪些被合同和账号挡在门外的能力。
   </div>
   <div class="next-step">
-    OPC 路径：做"OpRun"——Agent 运营预算与毛利核算层。定位：一人公司把获客/客服/内容/支付交给 agent 跑，最怕"agent 干得很勤，账却是负的"。缺的不是又一个 agent，是"让 agent 在预算内跑、每项自动化算得清毛利"的核算层。① 运营预算（核心产品。给每个 agent 自动化设预算上限，接近阈值自动降级/暂停/换便宜模型）。② 毛利核算（把每项自动化的推理成本、渠道成本、带来的收入串成一条毛利账，agent 每天巡检异常）。③ 停损护栏（负毛利任务自动熔断，回报不达标的自动化自动下线）。定价：Free——单自动化预算。Maker——¥29/月，3 项自动化 + 毛利核算。Pro——¥99/月，不限自动化 + 停损护栏 + 团队共享。冷启动：渠道 A——开源"OpRun Core"成本核算 CLI。渠道 B——数据帖"AI 把运营交给 agent 跑，负毛利没人算得清"。渠道 C——搭 Runable $21M 顺风车。Founding Member：Pro ¥49/月终身。
+    OPC 路径：做"ToolMart"——Agent 工具计量市场与账号托管层。定位：一人公司给 agent 接数据/工具时，最烦的不是找不到工具，而是每个工具都要单独注册、谈价、绑卡、过企业审批。缺的不是又一个工具目录，是"一个 token 用遍所有工具、按次付费、免签约"的计量市场。① 工具目录（核心产品。3000+ 计量端点按任务分类，agent 按"要什么"搜索而非按"哪家卖"）。② 计量计费（按次计费，一张账单，用量可审计）。③ 账号托管（服务端密钥注入，agent 拿结果不拿密钥，权限可回收）。定价：Free——按需单工具。Maker——¥29/月，30 次调用 + 常用目录。Pro——¥99/月，不限调用 + 账号托管 + 用量审计。冷启动：渠道 A——开源"ToolMart Core"计量网关。渠道 B——数据帖"卡住 agent 的不是缺工具，是工具背后的合同"。渠道 C——搭 treg 顺风车。Founding Member：Pro ¥49/月终身。
   </div>
   <div class="tag-bar">
-    <span class="tag">#运营核算</span>
-    <span class="tag">#毛利审计</span>
-    <span class="tag">#预算护栏</span>
-    <span class="tag">#成本真相</span>
-    <span class="tag">#OPC算得清</span>
+    <span class="tag">#工具计量市场</span>
+    <span class="tag">#账号托管</span>
+    <span class="tag">#按次计费</span>
+    <span class="tag">#免签约</span>
+    <span class="tag">#OPC借得到</span>
   </div>
   <div class="meta">
-    <span>来源 &middot; Runable $21M Series A（1.5M 用户 / 3周 $2M ARR / 负毛利）+ HN 榜首《I stopped drinking the AI Kool-Aid》+ MakersClaw 2.0（agent 运营公司 OS，自带 budget）+ Bolt Forge（开源模型 50X）</span>
+    <span>来源 &middot; superdesigndev/treg（GitHub 2,113 星，60+ 供应商 3000+ 端点按次计费免签约）+ Jev（typed decisions）+ Superset Mobile + Arcjet</span>
   </div>
 </div>
 
 <!-- CARD 2 -->
-<div class="card" id="idea-162">
+<div class="card" id="idea-165">
   <div class="card-header">
     <span class="num">02</span>
-    <span class="headline">ToolBridge——Agent 工具调用协议适配与路由层 &middot; Ruby UTCP：MCP 之外，工具调用协议在分化</span>
+    <span class="headline">OfficeHarness——Agent 办公文档 headless 运行时 &middot; univer「Office Harness for AI Agents」：让 agent 不开 Excel 也能算表格</span>
   </div>
   <div class="fact">
-    9 月 19 日，Ruby UTCP 冲上 Product Hunt 当日榜，定位"MCP 的可扩展、安全替代方案"，实现 UTCP 1.1（Universal Tool Call Protocol）：12 种传输、streaming、auth、OpenAPI 自动发现、CodeMode 可编程多工具工作流。同日 GitHub 趋势上 tool-calling / computer-use 生态持续分化：trycua/cua（computer-use 2.0 开源驱动，+859 星当日）、affaan-m/ECC（面向多种编码 agent 的性能与流程优化 harness，26 万星）、addyosmani/agent-skills（生产级 agent 工程技能，9.7 万星）。核心洞察：MCP 成为事实标准之后，工具调用协议开始分化——一个人同时用 Claude Code / Codex / Cursor，每个都有自己的工具生态，工具"一次开发、处处可用"成了新的缺口。
+    9 月 22 日，dream-num/univer（15,214 星）冲上 GitHub TypeScript 日榜第一，做了一次很"反直觉"的重新定位：从"可嵌入的 Office SDK"改为"AI Agent 的 Office Harness"——同一套 headless 运行时跑在浏览器或 Node.js，让人和 agent 编辑同一份文件。关键架构判断：大多数"Office+AI"的做法是让 agent 去调已有应用的 API；univer 反过来，把表格公式引擎和画布渲染器变成可嵌入的无头组件，agent 能在服务端跑表格逻辑，而不用真的打开一份 Excel。同向信号：同日 GitHub 趋势里 docling（文档解析喂给 gen-AI 管线，+585）、diffusionstudio/editor（把视频剪辑表达成代码）、vercel/json-render（从 JSON 渲染动态 UI，+291）都在做同一件事——把"只有人能操作的格式"变成"agent 能直接计算的格式"。核心洞察：agent 处理办公三件套（表格/文档/PPT）长期卡在"要么开真应用、要么没有渲染引擎"；谁把办公的画布与公式引擎做成 agent 可借的 headless 运行时，谁就占了"算得动"的入口。
   </div>
   <div class="next-step">
-    OPC 路径：做"ToolBridge"——Agent 工具调用协议适配与路由层。定位：一人公司给不同 agent 接 MCP server / 工具时，要按 Claude Code / Codex / Cursor 各自的协议重复适配。缺的不是又一个协议，是"工具一次注册、跨 MCP / UTCP / ACP 处处可用"的适配路由层。① 协议适配（核心产品。工具一次声明，自动生成 MCP / UTCP / ACP 多协议适配，跨 agent 复用）。② 智能路由（按 agent 的协议、权限、延迟自动选择最优传输与工具实现）。③ 安全网关（统一的鉴权、审计、速率限制，工具调用可追溯）。定价：Free——单协议适配。Maker——¥29/月，3 个工具 + 智能路由。Pro——¥99/月，不限工具 + 安全网关 + 团队共享。冷启动：渠道 A——开源"ToolBridge Core"协议适配层。渠道 B——数据帖"MCP 之外，工具调用协议在分化"。渠道 C——搭 Ruby UTCP 顺风车。Founding Member：Pro ¥49/月终身。
+    OPC 路径：做"OfficeHarness"——Agent 办公文档 headless 运行时。定位：一人公司让 agent 做报表、对账、合同、PPT 时，最头疼的是让 agent"算得动"Excel 公式、排得动文档版式。缺的不是又一个在线表格，是"agent 能无头调用的办公引擎"。① 无头公式引擎（核心产品。服务端跑表格公式/透视/图表，不开 Excel）。② 文档渲染层（docx/pptx 无头渲染成 agent 可读结构）。③ 人机同文件（同一份文件人和 agent 都能编辑，冲突可合并）。定价：Free——单文档。Maker——¥29/月，10 份文档 + 公式引擎。Pro——¥99/月，不限文档 + 渲染层 + 团队共享。冷启动：渠道 A——开源"OfficeHarness Core"无头引擎。渠道 B——数据帖"让 agent 不开 Excel 也能算表格"。渠道 C——搭 univer 登顶顺风车。Founding Member：Pro ¥49/月终身。
   </div>
   <div class="tag-bar">
-    <span class="tag">#工具协议</span>
-    <span class="tag">#MCP替代</span>
-    <span class="tag">#协议路由</span>
-    <span class="tag">#安全网关</span>
-    <span class="tag">#OPC接得通</span>
+    <span class="tag">#办公文档</span>
+    <span class="tag">#无头运行时</span>
+    <span class="tag">#公式引擎</span>
+    <span class="tag">#人机同文件</span>
+    <span class="tag">#OPC算得动</span>
   </div>
   <div class="meta">
-    <span>来源 &middot; Ruby UTCP（Product Hunt Sept 19，UTCP 1.1 12 传输 / auth / streaming / OpenAPI discovery / CodeMode）+ trycua/cua（computer-use 2.0 +859 星）+ ECC harness</span>
+    <span>来源 &middot; dream-num/univer（GitHub 15,214 星，TypeScript #1，Office Harness for AI Agents）+ docling + diffusionstudio/editor + vercel/json-render</span>
   </div>
 </div>
 
 <!-- CARD 3 -->
-<div class="card" id="idea-163">
+<div class="card" id="idea-166">
   <div class="card-header">
     <span class="num">03</span>
-    <span class="headline">ScreenSide——看屏 GUI 自动化层 &middot; Sider Omni Sidebar + CUA-S1：你的 Mac 每个 App 都该有个 agent 侧边栏</span>
+    <span class="headline">CutAgent——转写先行的 agent 视频剪辑层 &middot; video-use：先转写后剪辑，比喂原始帧省 token 也更准</span>
   </div>
   <div class="fact">
-    9 月 18-19 日，Sider Omni Sidebar 冲上 Product Hunt 当日前列（371-374 票），定位"给每个 Mac App 一个 agent 侧边栏"：agent 直接看屏、直接在 App 上操作，复用你已有的 ChatGPT / Codex credits（GPT-6 Astra），不用复制粘贴或上传内容。同向信号密集：CUA-S1（HN，桌面 UI 自动化模型，"像快速反应的大脑直接控制桌面界面"）、trycua/cua（+859 星，computer-use 2.0 开源驱动，跨 OS fleet）、Cactus Needle（2-bit / 8-29MB 边缘自动化模型，跑在手机/穿戴/家居/微控制器上）。核心洞察：agent 从"终端里干活"走向"看屏操作任意 App"——一人公司那些跨 App 的重复 GUI 杂活（搬数据、录报销、导报表、跨系统对账）还靠人手，是下一块待自动化的地。
+    9 月 22 日，browser-use/video-use（25,702 星）让 Claude Code 直接剪视频：把原始素材丢进一个文件夹，聊天即得 final.mp4——删语气词和死气、调色、烧字幕、自动生成转场，全由 agent 完成。最有价值的是一处工程判断：LLM 从不着帧看视频，先读 ElevenLabs Scribe 的转写（词级时间戳、说话人分离、连笑声和掌声都有标签），只在需要核对某一刀时才拉一张"胶片条+波形"合成图。先转写、后剪辑，比把原始帧喂给模型省 token，也更精确。同向信号密集：OpenCut（CapCut 开源替代，+129）、autoclip（自动切片/高光生成，+395）、OpenCreator（视频/图/语音/数字人 agent 工作流，+263）——视频剪辑正成为"把耗时手工活交给 agent"的最大一块。核心洞察：剪辑真正的瓶颈不是"能不能剪"，是"理解时间轴"；把视频先变成文本，剪辑问题就退化成了文本问题。
   </div>
   <div class="next-step">
-    OPC 路径：做"ScreenSide"——看屏 GUI 自动化层。定位：一人公司的重复性 GUI 操作（把 A 平台数据搬到 B、录报销、导周报、跨 App 对账）仍靠人手点。缺的不是又一个模型，是"看屏 + 点界面 + 复用已有 credits"的 GUI agent 层。① 屏幕感知（核心产品。截屏理解任意 App 界面，无需 API / 插件）。② 动作执行（鼠标 / 键盘 / 表单自动操作，跨 App 搬运数据、录单、导出）。③ 复用已有 credits（跑在你已有的 ChatGPT / Codex / 本地模型上，不叠加新订阅）。定价：Free——单屏识别。Maker——¥29/月，3 个自动化脚本 + 动作执行。Pro——¥99/月，不限脚本 + 跨 App 编排 + 团队共享。冷启动：渠道 A——开源"ScreenSide Core"屏幕感知引擎。渠道 B——数据帖"你的 Mac 每个 App 都该有个 agent 侧边栏"。渠道 C——搭 Sider Omni Sidebar 顺风车。Founding Member：Pro ¥49/月终身。
+    OPC 路径：做"CutAgent"——转写先行的 agent 视频剪辑层。定位：一人公司做内容（口播、课程、播客、产品 demo）最烧时间的是剪辑；而大多数剪的是"删废话、对节拍、加字幕、调色"这类可规则化的活。缺的不是又一个剪辑软件，是"先转写、再按语义切"的 agent 剪辑层。① 转写先行（核心产品。素材先转成带时间戳的文本，语气词/重复/停顿标注）。② 语义剪辑（按"删哪句、留哪段"的文字指令精准下刀，自动对齐节拍）。③ 成片装配（字幕/转场/调色一键套模板，复用已有视频模型/工具链）。定价：Free——5 分钟素材。Maker——¥29/月，30 分钟 + 语义剪辑。Pro——¥99/月，不限时长 + 批量 + 团队共享。冷启动：渠道 A——开源"CutAgent Core"转写剪辑引擎。渠道 B——数据帖"先转写后剪辑，比喂原始帧省 token 也更准"。渠道 C——搭 video-use 25K 星顺风车。Founding Member：Pro ¥49/月终身。
   </div>
   <div class="tag-bar">
-    <span class="tag">#看屏agent</span>
-    <span class="tag">#GUI自动化</span>
-    <span class="tag">#跨App搬运</span>
-    <span class="tag">#复用credits</span>
-    <span class="tag">#OPC干得了</span>
+    <span class="tag">#视频剪辑</span>
+    <span class="tag">#转写先行</span>
+    <span class="tag">#语义剪辑</span>
+    <span class="tag">#内容自动化</span>
+    <span class="tag">#OPC剪得快</span>
   </div>
   <div class="meta">
-    <span>来源 &middot; Sider Omni Sidebar（Product Hunt，Mac 全 App agent 侧边栏，复用 ChatGPT / Codex credits）+ CUA-S1（HN 桌面 UI 自动化模型）+ trycua/cua + Cactus Needle</span>
+    <span>来源 &middot; browser-use/video-use（GitHub 25,702 星，Claude Code 剪辑 + ElevenLabs 转写）+ OpenCut + autoclip + OpenCreator</span>
   </div>
 </div>
 
@@ -192,25 +192,25 @@
 <div class="hook-box">
   <div class="hook-label">本期钩子</div>
   <div class="hook-text">
-    9 月 21 日三条信号指向同一件事：当"做出来"和"跑起来"都不再是瓶颈，一人公司的下一道坎回到"把 agent 塞进真实业务之后，怎么算得清、接得通、干得了"。信号一：Runable $21M 负毛利 + HN《I stopped drinking the AI Kool-Aid》——"AI 把运营交给 agent 跑，负毛利没人算得清"，这就是 OpRun（运营毛利核算层）。信号二：Ruby UTCP——"MCP 之外，工具调用协议在分化"，这就是 ToolBridge（协议适配路由层）。信号三：Sider Omni Sidebar + CUA-S1——"你的 Mac 每个 App 都该有个 agent 侧边栏"，这就是 ScreenSide（看屏 GUI 自动化层）。共同主线：往期 Vol.041 讲"落地"，Vol.042 讲"供给"，Vol.043 讲"可信"，Vol.044 讲"经营"（收得到钱），这一期回到经营落地的三件基本功——算得清（运营毛利）、接得通（工具协议）、干得了（看屏杂活）。当生成、可信都不再稀缺，稀缺的是"让 agent 替你干活，还干得明白、算得清楚、接得顺畅"。
+    9 月 23 日三条信号指向同一件事：当 agent 已经能规划、能下命令，它的上限不再靠"推理"，而靠它能"借到"多少被合同、格式和账号挡在门外的能力。信号一：treg——"卡住 agent 的不是缺工具，是工具背后的合同"，这就是 ToolMart（工具计量市场）。信号二：univer——"让 agent 不开 Excel 也能算表格"，这就是 OfficeHarness（办公无头运行时）。信号三：video-use——"先转写后剪辑，比喂原始帧省 token 也更准"，这就是 CutAgent（转写先行剪辑层）。共同主线：往期 Vol.042 讲"供给"，Vol.043 讲"可信"，Vol.044 讲"经营"，Vol.045 讲"接得通"（工具协议），这一期再往下一层——接得通之后，要"借得到"：工具（借账号）、办公（借引擎）、剪辑（借转写）。当推理不再是瓶颈，稀缺的是"把 agent 缺的那块能力，做成它能随时借到的基础设施"。
   </div>
 </div>
 
 <!-- Navigation -->
 <div class="prev-next">
-  <a href="2026-09-18.html" class="pn-card">
+  <a href="2026-09-21.html" class="pn-card">
     <div class="pn-label">&larr; 上一期</div>
-    <div class="pn-title">Vol.044 &middot; RevAgent 变现收钱 · TraceReplay 生产观测 · AgentHome 多Agent统一</div>
+    <div class="pn-title">Vol.045 &middot; OpRun 运营毛利核算 · ToolBridge 工具协议路由 · ScreenSide 看屏自动化</div>
   </a>
   <div class="pn-card disabled pn-right">
     <div class="pn-label">下一期 &rarr;</div>
-    <div class="pn-title">Vol.046 &middot; 等待明天刷新</div>
+    <div class="pn-title">Vol.047 &middot; 等待明天刷新</div>
   </div>
 </div>
 
 <div class="footer">
   OPC IDEA &middot; 日报 &#65295; <a href="subscribe.html">订阅日报</a> &#65295; <a href="feed.xml">RSS</a> &#65295; <a href="./index.html">完整报告</a> &#65295; <a href="newsletter-strategy.md">启动策略</a><br>
-  北京 &middot; 2026年9月21日 &middot; Vol.045 &middot; 今日刷新<br>
+  北京 &middot; 2026年9月23日 &middot; Vol.046 &middot; 今日刷新<br>
   商业&middot;认知观察者&middot;出品
 </div>
 

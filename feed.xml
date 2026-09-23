@@ -5,8 +5,35 @@
   <link>https://bezhumingqian-bit.github.io/opc-idea-daily/</link>
   <description>每天推送一人公司（One-Person Company）方向的精筛 IDEA，周末合并深度版。独立开发者 / solopreneur / 创业探索者专用。</description>
   <language>zh-CN</language>
-  <lastBuildDate>Mon, 21 Sep 2026 09:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Wed, 23 Sep 2026 09:00:00 +0800</lastBuildDate>
   <atom:link href="https://bezhumingqian-bit.github.io/opc-idea-daily/feed.xml" rel="self" type="application/rss+xml" />
+
+  <item>
+    <title>IDEA 164 · ToolMart——Agent 工具计量市场与账号托管层 · treg「OpenRouter for agent tools」，卡住 agent 的不是缺工具是工具背后的合同</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-164</link>
+    <description>9月22日GitHub趋势上superdesigndev/treg（2,113星+197）用一句话重新定义缺口："OpenRouter，但给agent工具而不是模型"——一个base URL+一个token，agent就能调用60+供应商的3000+计量端点（外链数据/社媒趋势/联系人富化/广告/爬虫/图视频生成），按次计费无需逐个签约。它点破被忽略的真相：真正卡住agent的不是"缺工具"，而是"工具卡在合同/月费/企业审批后面"——Semrush $139/月、Crunchbase $99/月或压根没公开API。与Composio的本质区别：这是计量市场不是OAuth集成平台；账号集中托管，密钥注入在服务端，调用方永远拿不到密钥。同向信号：Product Hunt顶部Jev（typed decisions）、Superset Mobile（移动端编排coding agent）、Arcjet（运行时安全）。核心洞察：当agent已经能规划、能下命令，它的上限不再靠推理，而靠它能"借到"哪些被合同和账号挡在门外的能力。做"ToolMart"——Agent工具计量市场与账号托管层：工具目录（3000+计量端点按任务分类agent按"要什么"搜索）+计量计费（按次计费一张账单用量可审计）+账号托管（服务端密钥注入agent拿结果不拿密钥）。Free/Maker ¥29/Pro ¥99。冷启动：开源ToolMart Core计量网关+数据帖"卡住agent的不是缺工具是工具背后的合同"+搭treg顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Wed, 23 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-046-01</guid>
+    <category>工具计量市场 / 账号托管 / 按次计费 / 免签约 / OPC借得到</category>
+  </item>
+
+  <item>
+    <title>IDEA 165 · OfficeHarness——Agent 办公文档 headless 运行时 · univer「Office Harness for AI Agents」，让 agent 不开 Excel 也能算表格</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-165</link>
+    <description>9月22日dream-num/univer（15,214星）冲上GitHub TypeScript日榜第一，做了反直觉的重新定位：从"可嵌入Office SDK"改为"AI Agent的Office Harness"——同一套headless运行时跑在浏览器或Node.js，让人和agent编辑同一份文件。关键架构判断：多数"Office+AI"做法是让agent调已有应用API；univer反过来把表格公式引擎和画布渲染器变成可嵌入的无头组件，agent能在服务端跑表格逻辑而不用真开Excel。同向信号：docling（文档解析喂gen-AI管线+585）、diffusionstudio/editor（视频剪辑表达成代码）、vercel/json-render（JSON渲染动态UI+291）都在做同一件事——把"只有人能操作的格式"变成"agent能直接计算的格式"。核心洞察：agent处理办公三件套长期卡在"要么开真应用要么没渲染引擎"；谁把办公的画布与公式引擎做成agent可借的headless运行时谁就占了"算得动"的入口。做"OfficeHarness"——Agent办公文档headless运行时：无头公式引擎（服务端跑表格公式/透视/图表不开Excel）+文档渲染层（docx/pptx无头渲染成agent可读结构）+人机同文件（同一份文件人和agent都能编辑冲突可合并）。Free/Maker ¥29/Pro ¥99。冷启动：开源OfficeHarness Core无头引擎+数据帖"让agent不开Excel也能算表格"+搭univer登顶顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Wed, 23 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-046-02</guid>
+    <category>办公文档 / 无头运行时 / 公式引擎 / 人机同文件 / OPC算得动</category>
+  </item>
+
+  <item>
+    <title>IDEA 166 · CutAgent——转写先行的 agent 视频剪辑层 · video-use，先转写后剪辑比喂原始帧省 token 也更准</title>
+    <link>https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html#idea-166</link>
+    <description>9月22日browser-use/video-use（25,702星）让Claude Code直接剪视频：素材丢进文件夹，聊天即得final.mp4——删语气词和死气、调色、烧字幕、自动转场全由agent完成。最有价值的是一处工程判断：LLM从不着帧看视频，先读ElevenLabs Scribe的转写（词级时间戳、说话人分离、连笑声掌声都有标签），只在需要核对某一刀时才拉一张"胶片条+波形"合成图。先转写、后剪辑，比把原始帧喂给模型省token，也更精确。同向信号密集：OpenCut（CapCut开源替代+129）、autoclip（自动切片/高光生成+395）、OpenCreator（视频/图/语音/数字人agent工作流+263）——视频剪辑正成为"把耗时手工活交给agent"的最大一块。核心洞察：剪辑真正的瓶颈不是"能不能剪"是"理解时间轴"；把视频先变成文本，剪辑问题就退化成了文本问题。做"CutAgent"——转写先行的agent视频剪辑层：转写先行（素材先转成带时间戳的文本语气词/重复/停顿标注）+语义剪辑（按"删哪句留哪段"的文字指令精准下刀自动对齐节拍）+成片装配（字幕/转场/调色一键套模板复用已有视频模型/工具链）。Free/Maker ¥29/Pro ¥99。冷启动：开源CutAgent Core转写剪辑引擎+数据帖"先转写后剪辑比喂原始帧省token也更准"+搭video-use 25K星顺风车。Founding Member ¥49/月终身。</description>
+    <pubDate>Wed, 23 Sep 2026 09:00:00 +0800</pubDate>
+    <guid isPermaLink="false">opc-idea-046-03</guid>
+    <category>视频剪辑 / 转写先行 / 语义剪辑 / 内容自动化 / OPC剪得快</category>
+  </item>
 
   <item>
     <title>IDEA 161 · OpRun——Agent 运营预算与毛利核算层 · Runable $21M 负毛利，AI 把运营交给 agent 跑账却没人算得清</title>

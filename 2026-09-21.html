@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<title>OPC IDEA · 2026年9月21日</title>
+<meta name="description" content="每日精选一人公司方向的精筛 IDEA · 一手源 · 今日已刷新">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta property="og:description" content="今日："AI 把运营交给 agent 跑，负毛利却没人算得清"——Runable $21M（1.5M 用户 / 3周 $2M ARR / 负毛利），agent 从内容工具转向业务运营者 · "MCP 之外，工具调用协议在分化"——Ruby UTCP 实现 UTCP 1.1，工具一次开发处处可用成新缺口 · "你的 Mac 每个 App 都该有个 agent 侧边栏"——Sider Omni Sidebar + CUA-S1，看屏自动化。每日 09:00 自动刷新。">
+<meta property="og:url" content="https://bezhumingqian-bit.github.io/opc-idea-daily/daily.html">
+<meta property="og:image" content="https://bezhumingqian-bit.github.io/opc-idea-daily/icon-512.png">
+<meta property="og:site_name" content="OPC IDEA 日报">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OPC IDEA · 一人公司方向每日精选">
+<meta name="twitter:description" content="今日 3 条精筛 IDEA · 一手源 · 工作日每日 09:00 刷新">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+    background: #F5F1E8;
+    color: #2C2A26;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 20px 16px 40px; }
+  .header {
+    background: #FAF7EE;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 32px 28px 28px;
+    margin-bottom: 16px;
+  }
+  .brand { font-size: 11px; letter-spacing: 4px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 14px; }
+  .brand a { color: #B5B0A4; text-decoration: none; }
+  .brand a:hover { color: #8A8474; }
+  .header-title { font-size: 26px; font-weight: 500; color: #2C2A26; letter-spacing: 1px; }
+  .header-date { font-size: 13px; color: #7A766C; margin-top: 6px; letter-spacing: 0.5px; }
+  .divider { height: 1px; background: #E6E1D6; margin: 18px 0; }
+  .header-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .chip { padding: 3px 10px; background: transparent; border: 1px solid #D8D2C5; border-radius: 2px; font-size: 11px; color: #7A766C; letter-spacing: 0.5px; }
+  .card {
+    background: #FFFEFC;
+    border: 1px solid #E6E1D6;
+    border-radius: 4px;
+    padding: 22px 24px;
+    margin-bottom: 10px;
+  }
+  .card-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+  .num { width: 28px; height: 28px; border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; flex-shrink: 0; letter-spacing: 0.5px; background: #EEEAE0; color: #5A5443; }
+  .headline { font-size: 15.5px; font-weight: 500; color: #2C2A26; line-height: 1.5; flex: 1; padding-top: 3px; letter-spacing: 0.2px; }
+  .fact { font-size: 13.5px; color: #5F5B53; line-height: 1.75; margin-bottom: 12px; padding-left: 42px; }
+  .next-step { font-size: 13.5px; color: #2C2A26; line-height: 1.75; padding: 12px 16px; margin-left: 42px; background: #F7F4EC; border-left: 2px solid #8A8474; border-radius: 0 2px 2px 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 16px; padding-left: 42px; font-size: 11.5px; color: #7A766C; }
+  .hook-box { background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 4px; padding: 16px 20px; margin-bottom: 10px; }
+  .hook-label { font-size: 11px; letter-spacing: 2px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 8px; }
+  .hook-text { font-size: 14px; color: #2C2A26; line-height: 1.7; letter-spacing: 0.2px; }
+
+  .prev-next {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    margin-top: 18px; margin-bottom: 18px;
+  }
+  .pn-card {
+    background: #FFFEFC; border: 1px solid #E6E1D6; border-radius: 4px;
+    padding: 14px 18px; text-decoration: none; color: inherit; display: block;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .pn-card:hover { border-color: #C4BBA9; background: #FAF7EE; }
+  .pn-card.disabled { opacity: 0.4; pointer-events: none; }
+  .pn-label { font-size: 10.5px; letter-spacing: 1.5px; color: #B5B0A4; text-transform: uppercase; margin-bottom: 4px; }
+  .pn-title { font-size: 13px; color: #2C2A26; line-height: 1.5; letter-spacing: 0.2px; }
+  .pn-right { text-align: right; }
+
+  .tag-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; padding-left: 42px; }
+  .tag { padding: 2px 8px; background: #F7F4EC; border: 1px solid #E6E1D6; border-radius: 2px; font-size: 10.5px; color: #7A766C; letter-spacing: 0.3px; }
+
+  .footer { text-align: center; margin-top: 28px; margin-bottom: 20px; font-size: 11px; color: #B5B0A4; letter-spacing: 0.5px; line-height: 2; }
+  .footer a { color: #8A8474; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  @media print {
+    body { background: white; }
+    .card, .header, .hook-box { box-shadow: none; border-color: #ccc; }
+    .prev-next, .footer, .header-meta { display: none; }
+  }
+  @media (max-width: 640px) {
+    .container { padding: 12px 12px 32px; }
+    .header { padding: 24px 20px 22px; }
+    .header-title { font-size: 22px; }
+    .card { padding: 18px 16px; }
+    .fact, .next-step { padding-left: 0; margin-left: 0; }
+    .tag-bar { padding-left: 0; }
+    .prev-next { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<a href="./index.html" style="display:inline-block;font-size:12px;color:#8A8474;text-decoration:none;letter-spacing:0.5px;margin-bottom:18px;">&larr; 返回归档首页</a>
+
+<div class="header">
+  <div class="brand"><a href="./index.html">OPC IDEA &middot; 日报</a></div>
+  <div class="header-title">一人公司方向&middot;每日精选</div>
+  <div class="header-date">2026年9月21日 &middot; 星期一 &middot; Vol.045 &middot; 今日已刷新</div>
+  <div class="divider"></div>
+  <div class="header-meta">
+    <span class="chip">"AI 把运营交给 agent 跑，负毛利却没人算得清"——Runable $21M（1.5M 用户 / 3周 $2M ARR / 负毛利），agent 从内容工具转向业务运营者</span>
+    <span class="chip">"MCP 之外，工具调用协议在分化"——Ruby UTCP 实现 UTCP 1.1，工具一次开发处处可用成新缺口</span>
+    <span class="chip">"你的 Mac 每个 App 都该有个 agent 侧边栏"——Sider Omni Sidebar + CUA-S1，看屏自动化</span>
+    <span class="chip">已与近七期去重</span>
+  </div>
+  <div class="header-meta" style="margin-top:8px;">
+    <a href="subscribe.html" style="font-size:13px;color:#8A8474;text-decoration:none;letter-spacing:0.3px;">每天09:00自动收到 &rarr;</a>
+  </div>
+</div>
+
+<!-- CARD 1 -->
+<div class="card" id="idea-161">
+  <div class="card-header">
+    <span class="num">01</span>
+    <span class="headline">OpRun——Agent 运营预算与毛利核算层 &middot; Runable $21M 负毛利：AI 把运营交给 agent 跑，账却没人算得清</span>
+  </div>
+  <div class="fact">
+    9 月中旬，Runable 官宣 $21M Series A（Susquehanna Venture Capital + Nexus Venture Partners 领投）：1.5M 用户、上线 3 周 ARR 破 $2M、估值约 $65M——但媒体拆解其成本结构后点破一个关键事实：负毛利。给 1.5M 用户跑复杂 agent 的推理成本跑赢了收入，创始人 Umesh Kumar 把论题浓缩成"output 与 outcome 的区别"：大多数 AI 工具停在生成内容/代码（output），Runable 要做的是"build, run, and grow a business"（outcome）。同日 HN 榜首不是模型、不是融资，是一篇开发者自省《I stopped drinking the AI Kool-Aid》：token 成本随上下文非线性涨、prompt 随上游模型更新悄悄腐烂、非确定性产出让回归测试近乎不可能。同向信号密集：MakersClaw 2.0（PH，"agent 运营公司的 OS"，自带 budget、连续跑 go-to-market）、Bolt Forge（开源模型 50X 用量降本）。核心洞察：AI 把"做出来"和"跑起来"的成本都打下来后，一人公司开始把"运营"也交给 agent——但负毛利说明"算不清账"才是下一个坑。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"OpRun"——Agent 运营预算与毛利核算层。定位：一人公司把获客/客服/内容/支付交给 agent 跑，最怕"agent 干得很勤，账却是负的"。缺的不是又一个 agent，是"让 agent 在预算内跑、每项自动化算得清毛利"的核算层。① 运营预算（核心产品。给每个 agent 自动化设预算上限，接近阈值自动降级/暂停/换便宜模型）。② 毛利核算（把每项自动化的推理成本、渠道成本、带来的收入串成一条毛利账，agent 每天巡检异常）。③ 停损护栏（负毛利任务自动熔断，回报不达标的自动化自动下线）。定价：Free——单自动化预算。Maker——¥29/月，3 项自动化 + 毛利核算。Pro——¥99/月，不限自动化 + 停损护栏 + 团队共享。冷启动：渠道 A——开源"OpRun Core"成本核算 CLI。渠道 B——数据帖"AI 把运营交给 agent 跑，负毛利没人算得清"。渠道 C——搭 Runable $21M 顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#运营核算</span>
+    <span class="tag">#毛利审计</span>
+    <span class="tag">#预算护栏</span>
+    <span class="tag">#成本真相</span>
+    <span class="tag">#OPC算得清</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; Runable $21M Series A（1.5M 用户 / 3周 $2M ARR / 负毛利）+ HN 榜首《I stopped drinking the AI Kool-Aid》+ MakersClaw 2.0（agent 运营公司 OS，自带 budget）+ Bolt Forge（开源模型 50X）</span>
+  </div>
+</div>
+
+<!-- CARD 2 -->
+<div class="card" id="idea-162">
+  <div class="card-header">
+    <span class="num">02</span>
+    <span class="headline">ToolBridge——Agent 工具调用协议适配与路由层 &middot; Ruby UTCP：MCP 之外，工具调用协议在分化</span>
+  </div>
+  <div class="fact">
+    9 月 19 日，Ruby UTCP 冲上 Product Hunt 当日榜，定位"MCP 的可扩展、安全替代方案"，实现 UTCP 1.1（Universal Tool Call Protocol）：12 种传输、streaming、auth、OpenAPI 自动发现、CodeMode 可编程多工具工作流。同日 GitHub 趋势上 tool-calling / computer-use 生态持续分化：trycua/cua（computer-use 2.0 开源驱动，+859 星当日）、affaan-m/ECC（面向多种编码 agent 的性能与流程优化 harness，26 万星）、addyosmani/agent-skills（生产级 agent 工程技能，9.7 万星）。核心洞察：MCP 成为事实标准之后，工具调用协议开始分化——一个人同时用 Claude Code / Codex / Cursor，每个都有自己的工具生态，工具"一次开发、处处可用"成了新的缺口。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"ToolBridge"——Agent 工具调用协议适配与路由层。定位：一人公司给不同 agent 接 MCP server / 工具时，要按 Claude Code / Codex / Cursor 各自的协议重复适配。缺的不是又一个协议，是"工具一次注册、跨 MCP / UTCP / ACP 处处可用"的适配路由层。① 协议适配（核心产品。工具一次声明，自动生成 MCP / UTCP / ACP 多协议适配，跨 agent 复用）。② 智能路由（按 agent 的协议、权限、延迟自动选择最优传输与工具实现）。③ 安全网关（统一的鉴权、审计、速率限制，工具调用可追溯）。定价：Free——单协议适配。Maker——¥29/月，3 个工具 + 智能路由。Pro——¥99/月，不限工具 + 安全网关 + 团队共享。冷启动：渠道 A——开源"ToolBridge Core"协议适配层。渠道 B——数据帖"MCP 之外，工具调用协议在分化"。渠道 C——搭 Ruby UTCP 顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#工具协议</span>
+    <span class="tag">#MCP替代</span>
+    <span class="tag">#协议路由</span>
+    <span class="tag">#安全网关</span>
+    <span class="tag">#OPC接得通</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; Ruby UTCP（Product Hunt Sept 19，UTCP 1.1 12 传输 / auth / streaming / OpenAPI discovery / CodeMode）+ trycua/cua（computer-use 2.0 +859 星）+ ECC harness</span>
+  </div>
+</div>
+
+<!-- CARD 3 -->
+<div class="card" id="idea-163">
+  <div class="card-header">
+    <span class="num">03</span>
+    <span class="headline">ScreenSide——看屏 GUI 自动化层 &middot; Sider Omni Sidebar + CUA-S1：你的 Mac 每个 App 都该有个 agent 侧边栏</span>
+  </div>
+  <div class="fact">
+    9 月 18-19 日，Sider Omni Sidebar 冲上 Product Hunt 当日前列（371-374 票），定位"给每个 Mac App 一个 agent 侧边栏"：agent 直接看屏、直接在 App 上操作，复用你已有的 ChatGPT / Codex credits（GPT-6 Astra），不用复制粘贴或上传内容。同向信号密集：CUA-S1（HN，桌面 UI 自动化模型，"像快速反应的大脑直接控制桌面界面"）、trycua/cua（+859 星，computer-use 2.0 开源驱动，跨 OS fleet）、Cactus Needle（2-bit / 8-29MB 边缘自动化模型，跑在手机/穿戴/家居/微控制器上）。核心洞察：agent 从"终端里干活"走向"看屏操作任意 App"——一人公司那些跨 App 的重复 GUI 杂活（搬数据、录报销、导报表、跨系统对账）还靠人手，是下一块待自动化的地。
+  </div>
+  <div class="next-step">
+    OPC 路径：做"ScreenSide"——看屏 GUI 自动化层。定位：一人公司的重复性 GUI 操作（把 A 平台数据搬到 B、录报销、导周报、跨 App 对账）仍靠人手点。缺的不是又一个模型，是"看屏 + 点界面 + 复用已有 credits"的 GUI agent 层。① 屏幕感知（核心产品。截屏理解任意 App 界面，无需 API / 插件）。② 动作执行（鼠标 / 键盘 / 表单自动操作，跨 App 搬运数据、录单、导出）。③ 复用已有 credits（跑在你已有的 ChatGPT / Codex / 本地模型上，不叠加新订阅）。定价：Free——单屏识别。Maker——¥29/月，3 个自动化脚本 + 动作执行。Pro——¥99/月，不限脚本 + 跨 App 编排 + 团队共享。冷启动：渠道 A——开源"ScreenSide Core"屏幕感知引擎。渠道 B——数据帖"你的 Mac 每个 App 都该有个 agent 侧边栏"。渠道 C——搭 Sider Omni Sidebar 顺风车。Founding Member：Pro ¥49/月终身。
+  </div>
+  <div class="tag-bar">
+    <span class="tag">#看屏agent</span>
+    <span class="tag">#GUI自动化</span>
+    <span class="tag">#跨App搬运</span>
+    <span class="tag">#复用credits</span>
+    <span class="tag">#OPC干得了</span>
+  </div>
+  <div class="meta">
+    <span>来源 &middot; Sider Omni Sidebar（Product Hunt，Mac 全 App agent 侧边栏，复用 ChatGPT / Codex credits）+ CUA-S1（HN 桌面 UI 自动化模型）+ trycua/cua + Cactus Needle</span>
+  </div>
+</div>
+
+<!-- HOOK -->
+<div class="hook-box">
+  <div class="hook-label">本期钩子</div>
+  <div class="hook-text">
+    9 月 21 日三条信号指向同一件事：当"做出来"和"跑起来"都不再是瓶颈，一人公司的下一道坎回到"把 agent 塞进真实业务之后，怎么算得清、接得通、干得了"。信号一：Runable $21M 负毛利 + HN《I stopped drinking the AI Kool-Aid》——"AI 把运营交给 agent 跑，负毛利没人算得清"，这就是 OpRun（运营毛利核算层）。信号二：Ruby UTCP——"MCP 之外，工具调用协议在分化"，这就是 ToolBridge（协议适配路由层）。信号三：Sider Omni Sidebar + CUA-S1——"你的 Mac 每个 App 都该有个 agent 侧边栏"，这就是 ScreenSide（看屏 GUI 自动化层）。共同主线：往期 Vol.041 讲"落地"，Vol.042 讲"供给"，Vol.043 讲"可信"，Vol.044 讲"经营"（收得到钱），这一期回到经营落地的三件基本功——算得清（运营毛利）、接得通（工具协议）、干得了（看屏杂活）。当生成、可信都不再稀缺，稀缺的是"让 agent 替你干活，还干得明白、算得清楚、接得顺畅"。
+  </div>
+</div>
+
+<!-- Navigation -->
+<div class="prev-next">
+  <a href="2026-09-18.html" class="pn-card">
+    <div class="pn-label">&larr; 上一期</div>
+    <div class="pn-title">Vol.044 &middot; RevAgent 变现收钱 · TraceReplay 生产观测 · AgentHome 多Agent统一</div>
+  </a>
+  <a href="daily.html" class="pn-card pn-right">
+    <div class="pn-label">下一期 &rarr;</div>
+    <div class="pn-title">Vol.046 &middot; 2026年9月23日</div>
+  </a>
+</div>
+
+<div class="footer">
+  OPC IDEA &middot; 日报 &#65295; <a href="subscribe.html">订阅日报</a> &#65295; <a href="feed.xml">RSS</a> &#65295; <a href="./index.html">完整报告</a> &#65295; <a href="newsletter-strategy.md">启动策略</a><br>
+  北京 &middot; 2026年9月21日 &middot; Vol.045 &middot; 今日刷新<br>
+  商业&middot;认知观察者&middot;出品
+</div>
+
+</div>
+</body>
+</html>
